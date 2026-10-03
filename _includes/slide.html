@@ -7,11 +7,15 @@ Opties:
   full=true     tekst boven, afbeelding over de hele breedte (voor brede grafieken)
   photo=true    afbeelding vult het vak (foto's)
   statement=true  donkere slide zonder afbeelding, voor een conclusie
+  big="Top 5"     groot kerngetal boven de kop (voor een resultaat zonder grafiek)
   kicker="Data"   label naast het nummer (Probleem, Data, Modellen, Methode, Resultaten, Evaluatie)
 {%- endcomment -%}
 <section class="slide{% if include.full %} slide--full{% endif %}{% if include.statement %} slide--statement{% endif %}{% unless include.src %} slide--text{% endunless %}">
   <div class="slide__text">
     <p class="slide__num">{% if include.kicker %}<span class="slide__kicker">{{ include.kicker }}</span>{% endif %}</p>
+    {%- if include.big %}
+    <p class="slide__big">{{ include.big }}</p>
+    {%- endif %}
     <h2>{{ include.title }}</h2>
     {%- if include.text %}
     <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>

@@ -8,7 +8,7 @@ title: "Master's thesis: nowcasting economic growth with deep learning"
 lead: "Can a neural network that combines monthly and quarterly data directly 'nowcast' the economy better than central banks?"
 description: Three custom LSTM and GRU architectures for nowcasting GDP growth, tested against Dynamic Factor Models and ARMA.
 image: /assets/img/projects/scriptie_rmse_vergelijking_en.png
-abstract: "GDP is published quarterly and with a delay, while monthly data arrives much sooner. I designed three LSTM and GRU architectures that process both frequencies directly and tested them year by year against the models central banks use. Between 2000 and 2019 they are 11% below the error of the Dynamic Factor Model; in crises the difference is not significant."
+abstract: "GDP is published quarterly and with a delay, while monthly figures arrive much sooner. I designed three neural networks that combine both directly. From 2000 to 2019 their forecast error is 11% lower than that of the central-bank model."
 course: MSc Data Science and Society, Tilburg University
 team: Individual research
 code: https://github.com/GKruidenier/GDP-nowcasting-thesis
@@ -23,41 +23,44 @@ stats:
 models:
   - name: "ARMA"
     tag: "benchmark"
-    text: "Predicts growth from GDP's own past only. The easy-to-beat lower bound."
+    text: "Predicts GDP from its own past only."
   - name: "Dynamic Factor Model"
     tag: "benchmark"
-    text: "Summarises hundreds of indicators into a few underlying factors. The central-bank standard and hard to beat."
+    text: "The central-bank standard: summarises all indicators into a few factors."
   - name: "Quarterly-RNN"
     tag: "comparison"
-    text: "An LSTM/GRU network that first averages monthly data into quarters. Shows what the mixed-frequency approach adds."
+    text: "The same kind of network, but with quarterly averages only."
   - name: "Repeat-RNN"
     tag: "own design"
     own: true
-    text: "Runs monthly and repeats the last known quarterly value until a new one arrives."
+    text: "Reads every month and repeats the latest quarterly figure."
   - name: "Multilayer-RNN"
     tag: "own design"
     own: true
-    text: "A bottom layer reads the quarters, a layer on top reads along every month."
+    text: "A quarterly layer with a monthly layer on top."
   - name: "Alternate-RNN"
     tag: "own design"
     own: true
-    text: "A quarterly and a monthly network take turns and share the same memory."
+    text: "Monthly and quarterly networks take turns and share their memory."
+sample:
+  caption: "What the data looks like"
+  columns: ["Month", "Industry", "Unemployment", "GDP growth"]
+  rows:
+    - ["Jan 2024", "101.5", "3.7%", "–"]
+    - ["Feb 2024", "102.7", "3.9%", "–"]
+    - ["Mar 2024", "102.5", "3.9%", "+0.4%"]
+    - ["Apr 2024", "102.4", "3.9%", "?"]
+  note: "Two of the 238 indicators. GDP arrives once a quarter; the question mark is what the model estimates."
 ---
 
-{% include slide.html kicker="Problem" title="GDP always arrives late" text="The official GDP figure is published weeks after a quarter ends, while policymakers have to decide now. Monthly data on jobs, production and interest rates arrives much sooner. Can a neural network use those monthly figures directly to estimate growth for this quarter? That is called nowcasting." src="/assets/img/projects/scriptie_concept_en.svg" alt="Sketch: monthly and quarterly data feed into a recurrent network that estimates GDP for the current quarter" full=true %}
+{% include slide.html kicker="Problem" title="How is the economy doing right now?" text="The GDP figure arrives weeks after a quarter ends. Can a model use the monthly figures already in to estimate this quarter's growth?" src="/assets/img/projects/scriptie_concept_en.svg" alt="Sketch: monthly and quarterly data feed a network that estimates GDP growth for the current quarter" full=true %}
 
-{% include slide.html kicker="Data" title="Sixty years of the US economy" text="121 monthly and 117 quarterly indicators from FRED-MD and FRED-QD, from 1960 up to and including 2024. Growth is usually calm, with sharp drops in recessions. COVID (2020) is the largest shock in the whole series." src="/assets/img/projects/scriptie_bbp_groei.png" alt="Line chart of quarterly US GDP growth 1960–2024 with recessions shaded grey" full=true %}
+{% include data.html kicker="Data" title="Monthly and quarterly figures mixed" text="121 monthly and 117 quarterly indicators of the US economy, 1960–2024." src="/assets/img/projects/scriptie_bbp_groei_en.png" alt="Line chart of quarterly US GDP growth 1960–2024, with sharp drops in recessions" %}
 
-{% include slide.html kicker="Data" title="Later in the quarter, more signal" text="Monthly figures from later in the quarter are clearly more strongly related to GDP. That extra information is exactly what a nowcasting model should use as it comes in." src="/assets/img/projects/scriptie_correlatie_binnen_kwartaal.png" alt="Line chart: average correlation with GDP is higher for monthly data from the second and third month of the quarter" %}
+{% include models.html kicker="Models" title="Two benchmarks, three own designs" text="LSTM and GRU are networks with a memory for time series. I adapted them to read monthly and quarterly data at the same time." %}
 
-{% include models.html kicker="Models" title="Two benchmarks, three own designs" text="LSTM and GRU are neural networks with a memory, built for sequences over time. But they expect the same kind of data at every step. So I designed three variants that read monthly and quarterly data side by side, each tested with LSTM and with GRU." %}
+{% include slide.html kicker="Method" title="From raw series to nowcast" text="Retrained every year on all data so far and tested on the following year, as it would work in practice." src="/assets/img/projects/scriptie_pipeline_en.svg" alt="Pipeline: monthly and quarterly data, making stationary and feature selection, a mixed-frequency RNN and as output this quarter's GDP growth" full=true %}
 
-{% include slide.html kicker="Method" title="From raw series to a fair test" text="Every step from data to evaluation. The models never see future data: they are retrained each year and only predict the following year." src="/assets/img/projects/scriptie_methode_en.svg" alt="Six-step method diagram: data, preprocessing, feature selection with LARS, models, recursive testing and evaluation" full=true %}
+{% include slide.html kicker="Results" title="11% more accurate than central banks" text="From 2000 to 2019 my networks (blue) beat every benchmark, including ARMA (−23%)." src="/assets/img/projects/scriptie_rmse_vergelijking_en.png" alt="Bar chart: Repeat-LSTM and Alternate-GRU have a lower error than Quarterly-GRU, the Dynamic Factor Model and ARMA" %}
 
-{% include slide.html kicker="Method" title="As it would work in practice" text="Retrained every year on all data since 1960 and tested on the following year. Every run repeated with five seeds so that chance plays no role." src="/assets/img/projects/scriptie_opzet_en.svg" alt="Timeline: each round the training period from 1960 grows by one year and the next year is tested" full=true %}
-
-{% include slide.html kicker="Results" title="Beating the benchmark" text="From 2000 to 2019 my architectures (blue) beat every benchmark: **11% lower error** than the Dynamic Factor Model and 23% lower than ARMA." src="/assets/img/projects/scriptie_rmse_vergelijking_en.png" alt="Bar chart: Repeat-LSTM and Alternate-GRU have a lower RMSE than Quarterly-GRU, the Dynamic Factor Model and ARMA" %}
-
-{% include slide.html kicker="Results" title="Predicted versus actual" text="Alternate-GRU tracks growth closely. Including the COVID years it still has the lowest error of all models." src="/assets/img/projects/scriptie_voorspelling_vs_werkelijk.png" alt="Line chart of predicted and actual GDP growth 2000–2019 with recessions marked" full=true %}
-
-{% include slide.html kicker="Evaluation" title="More complex is not always better" text="In crises, exactly when a good forecast matters most, the difference with the Dynamic Factor Model was not significant. That contradicts earlier research. There was also a trade-off: some variants are strong early in a quarter, others at the end." statement=true %}
+{% include slide.html kicker="Evaluation" title="More complex is not always better" text="In crises, exactly when it matters, the difference with the central-bank model was not significant. That contradicts earlier research." statement=true %}

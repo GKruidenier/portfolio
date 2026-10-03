@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="900" height="380" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<rect x="70" y="50" width="330" height="300" rx="12" fill="#e4e1d8"/>
+<rect x="60" y="40" width="330" height="300" rx="12" fill="#ffffff" stroke="#6f7686" stroke-width="1.5"/>
+<text x="84" y="84" font-size="18" fill="#1d2230" font-weight="700" text-anchor="start" >Feature-based video mosaic</text>
+<text x="84" y="110" font-size="14" fill="#4a5163" font-weight="500" text-anchor="start" >C.-T. Hsu, T.-H. Cheng et al.</text>
+<text x="84" y="132" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start" >ICIP · 2000</text>
+<rect x="84" y="162" width="282" height="9" rx="4.5" fill="#e9e7e1"/>
+<rect x="84" y="186" width="264" height="9" rx="4.5" fill="#e9e7e1"/>
+<rect x="84" y="210" width="282" height="9" rx="4.5" fill="#e9e7e1"/>
+<rect x="84" y="234" width="264" height="9" rx="4.5" fill="#e9e7e1"/>
+<rect x="84" y="258" width="282" height="9" rx="4.5" fill="#e9e7e1"/>
+<rect x="84" y="282" width="242" height="9" rx="4.5" fill="#e9e7e1"/>
+<text x="84" y="155" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="start" letter-spacing="1">SAMENVATTING</text>
+<line x1="414" y1="190.0" x2="620" y2="190.0" stroke="#6f7686" stroke-width="2" marker-end="url(#a)"/>
+<text x="517.0" y="176.0" font-size="15" fill="#6f7686" font-weight="600" text-anchor="middle" >model</text>
+<circle cx="740" cy="190.0" r="104" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
+<text x="740" y="196.0" font-size="64" fill="#1f56a8" font-weight="700" text-anchor="middle" >?</text>
+<text x="740" y="236.0" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >aantal citaties</text>
+</svg>

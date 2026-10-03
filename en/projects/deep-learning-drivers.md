@@ -8,7 +8,7 @@ title: Detecting distracted drivers with deep learning
 lead: "Can a neural network tell from a camera image what state a driver is in?"
 description: A custom CNN that recognises six driver states with 95% accuracy, compared with a baseline and transfer learning (DenseNet121).
 image: /assets/img/projects/deeplearning_nauwkeurigheid_vergelijking_en.png
-abstract: "A custom convolutional neural network recognises six driver states from in-car camera images, from safe driving to yawning. With Optuna tuning, more dropout and an architecture with doubling filters, accuracy rose from 79% to 95%, well above transfer learning with DenseNet121."
+abstract: "A custom convolutional neural network recognises six driver states from a single camera image. Targeted tuning raised accuracy from 79% to 95%, well above a pretrained network."
 course: Deep Learning, spring 2025
 team: Six students (group 6) · I built the best model
 tools: [Python, TensorFlow/Keras, CNN, Optuna, Transfer learning, DenseNet121]
@@ -22,31 +22,29 @@ stats:
 models:
   - name: "Baseline CNN"
     tag: "starting point"
-    text: "A small network with three layers of 8 filters each. Reached 79%, but memorised the training data too much."
+    text: "Small three-layer network: 79%."
   - name: "Custom CNN"
     tag: "best model"
     own: true
-    text: "Four layers where the number of filters doubles per layer (32 to 256), with batch normalisation and dropout against overfitting."
+    text: "Four layers, filters double per layer, with dropout."
   - name: "DenseNet121"
     tag: "transfer learning"
-    text: "A network already trained on millions of photos, with custom layers on top for these six classes."
+    text: "Already trained on millions of photos, adapted to this task."
 ---
 
-{% include slide.html kicker="Problem" title="Can a camera tell how the driver is doing?" text="Distraction and fatigue behind the wheel cause many accidents. In-car systems can warn drivers, but only if a model can tell from one camera image whether someone is driving safely, distracted, drinking, sleepy or yawning." src="/assets/img/projects/deeplearning_voorbeeldbeelden.png" alt="Grid of example driver images, each with its label" photo=true %}
+{% include slide.html kicker="Problem" title="Is the driver distracted?" text="Distraction and fatigue cause many accidents. Can a model tell from a single camera image?" src="/assets/img/projects/deeplearning_voorbeeldbeelden.png" alt="Grid of example driver images, each with its label" photo=true %}
 
-{% include slide.html kicker="Data" title="Six classes, unevenly distributed" text="Greyscale images of 72 × 128 pixels from the Kaggle dataset *Driver Inattention Detection*. Drinking and yawning are much rarer than safe driving." src="/assets/img/projects/deeplearning_klassenverdeling.png" alt="Bar chart of the number of images per class" %}
+{% include slide.html kicker="Data" title="Almost 15,000 images, unevenly spread" text="Greyscale images of 72 × 128 pixels in six classes. Drinking and yawning are rare." src="/assets/img/projects/deeplearning_klassen_en.png" alt="Bar chart: safe driving 6,180 images, dangerous driving 4,642, distracted 2,080, sleepy 979, yawning 546 and drinking 428" %}
 
-{% include models.html kicker="Models" title="Build or reuse?" text="A convolutional neural network (CNN) learns to recognise patterns in images by itself, from edges to postures. We compared a custom CNN with a pretrained network." %}
+{% include models.html kicker="Models" title="Build or reuse?" text="A CNN learns to recognise patterns in images by itself, from edges to postures." %}
 
-{% include slide.html kicker="Method" title="Step by step from 79% to 95%" text="Every change was tested separately on a validation set; only what helped was kept. The test set was used only at the end." src="/assets/img/projects/deeplearning_methode_en.svg" alt="Six-step method diagram: data, baseline, preprocessing, tuning, architecture and evaluation" full=true %}
+{% include slide.html kicker="Method" title="How the network looks" text="Each layer summarises the image into more and more features. The last layer picks one of the six states." src="/assets/img/projects/deeplearning_pipeline_en.svg" alt="Pipeline: a camera image passes four layers with 32 to 256 filters and a dense layer, which picks one of six states" full=true %}
 
-{% include slide.html kicker="Results" title="The custom CNN wins clearly" text="95% accuracy on the test set, versus 79% for the baseline and 84% for DenseNet121. Average recall rose from 0.65 to 0.92." src="/assets/img/projects/deeplearning_nauwkeurigheid_vergelijking_en.png" alt="Bar chart of test accuracy: baseline 79%, DenseNet121 84%, custom CNN 95%" %}
+{% include slide.html kicker="Results" title="From 79% to 95%" text="The custom CNN beats the baseline and DenseNet121 (84%). Average recall rose from 0.65 to 0.92." src="/assets/img/projects/deeplearning_nauwkeurigheid_vergelijking_en.png" alt="Bar chart of test accuracy: baseline 79%, DenseNet121 84%, custom CNN 95%" %}
 
-{% include slide.html kicker="Results" title="Learns without overfitting" text="Training and validation stay close together. Per class, the AUC lies between 0.97 and 1.00." src="/assets/img/projects/deeplearning_leercurve_beste_model.png" alt="Line chart of training and validation accuracy per epoch" src2="/assets/img/projects/deeplearning_roc_beste_model.png" alt2="ROC curves per class with AUC between 0.97 and 1.00" full=true %}
-
-{% include slide.html kicker="Evaluation" title="Strong, but not ready for the road" text="'Distracted' and 'safe driving' remain the hardest pair. Colour images and higher resolution could help. Real use also requires attention to bias between groups of drivers, privacy and security." statement=true %}
+{% include slide.html kicker="Evaluation" title="Strong, but not ready for the road" text="'Distracted' and 'safe driving' remain the hardest to tell apart. Real use also requires attention to bias and privacy." statement=true %}
 
 <div class="role" markdown="1">
 ## My role
-I built the best model: the second Optuna round, the choice for dropout and the doubling-filter architecture. I also prepared the images and ran the DenseNet121 experiments.
+I built the best model: the second Optuna round, the choice for dropout and the doubling filters. I also ran the DenseNet121 experiments.
 </div>

@@ -1,0 +1,32 @@
+{%- comment -%}
+Data-slide: korte tekst, een paar echte rijen uit de data (front matter `sample:`) en eventueel een grafiek.
+Gebruik: {% include data.html kicker="Data" title="..." text="..." src="/assets/img/projects/x.png" alt="..." %}
+{%- endcomment -%}
+<section class="slide slide--full slide--data">
+  <div class="slide__text">
+    <p class="slide__num">{% if include.kicker %}<span class="slide__kicker">{{ include.kicker }}</span>{% endif %}</p>
+    <h2>{{ include.title }}</h2>
+    {%- if include.text %}
+    <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    {%- endif %}
+  </div>
+  <div class="data-grid{% unless include.src %} data-grid--single{% endunless %}">
+    <figure class="sample">
+      <figcaption>{{ page.sample.caption }}</figcaption>
+      <div class="sample__scroll">
+        <table>
+          <thead><tr>{% for c in page.sample.columns %}<th>{{ c }}</th>{% endfor %}</tr></thead>
+          <tbody>
+            {%- for r in page.sample.rows %}
+            <tr>{% for v in r %}<td{% if v == "?" %} class="is-unknown"{% elsif v == "–" %} class="is-empty"{% endif %}>{{ v }}</td>{% endfor %}</tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+      {%- if page.sample.note %}<p class="sample__note">{{ page.sample.note }}</p>{% endif %}
+    </figure>
+    {%- if include.src %}
+    <a class="data-grid__chart" href="{{ include.src | relative_url }}"><img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy"></a>
+    {%- endif %}
+  </div>
+</section>

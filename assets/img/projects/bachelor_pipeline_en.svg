@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="960" height="470" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<text x="30" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">SOURCES</text>
+<text x="262" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">ANALYSIS</text>
+<text x="548" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">SYNTHESIS</text>
+<text x="862" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5">CONCLUSION</text>
+<rect x="30" y="180.0" width="178" height="46" rx="23.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="119.0" y="210.0" font-size="17" fill="#4a5163" font-weight="600" text-anchor="middle" >Preclinical</text>
+<rect x="30" y="254.0" width="178" height="46" rx="23.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="119.0" y="284.0" font-size="17" fill="#4a5163" font-weight="600" text-anchor="middle" >Clinical</text>
+<rect x="262" y="106.0" width="236" height="76" rx="12" fill="#f6e7da" stroke="#c9783d" stroke-width="1.5"/>
+<text x="280" y="138.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Role of glutamine</text>
+<text x="280" y="164.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >why tumours need it</text>
+<rect x="262" y="202.0" width="236" height="76" rx="12" fill="#f6e7da" stroke="#c9783d" stroke-width="1.5"/>
+<text x="280" y="234.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Resistance</text>
+<text x="280" y="260.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >which detours cells take</text>
+<rect x="262" y="298.0" width="236" height="76" rx="12" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="280" y="330.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Combinations</text>
+<text x="280" y="356.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >what closes the detours</text>
+<path d="M210,203.0 C236.0,203.0 236.0,144.0 256,144.0" fill="none" stroke="#e4e1d8" stroke-width="1.8" marker-end="url(#a)"/>
+<path d="M210,203.0 C236.0,203.0 236.0,240.0 256,240.0" fill="none" stroke="#e4e1d8" stroke-width="1.8" marker-end="url(#a)"/>
+<path d="M210,277.0 C236.0,277.0 236.0,240.0 256,240.0" fill="none" stroke="#e4e1d8" stroke-width="1.8" marker-end="url(#a)"/>
+<path d="M210,203.0 C236.0,203.0 236.0,336.0 256,336.0" fill="none" stroke="#e4e1d8" stroke-width="1.8" marker-end="url(#a)"/>
+<path d="M210,277.0 C236.0,277.0 236.0,336.0 256,336.0" fill="none" stroke="#e4e1d8" stroke-width="1.8" marker-end="url(#a)"/>
+<path d="M500,144.0 C524.0,144.0 524.0,240 542,240" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M500,240.0 C524.0,240.0 524.0,240 542,240" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M500,336.0 C524.0,336.0 524.0,240 542,240" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="548" y="180.0" width="196" height="120" rx="14" fill="#1d2230"/>
+<text x="646.0" y="236" font-size="24" fill="#ffffff" font-weight="700" text-anchor="middle" >Weigh</text>
+<text x="646.0" y="264" font-size="14.5" fill="#c9cdd8" font-weight="400" text-anchor="middle" >evidence per combination</text>
+<line x1="746" y1="240" x2="782" y2="240" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
+<circle cx="862" cy="240" r="72" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
+<text x="862" y="221" font-size="18" fill="#1f56a8" font-weight="700" text-anchor="middle" >Several</text>
+<text x="862" y="243" font-size="18" fill="#1f56a8" font-weight="700" text-anchor="middle" >routes</text>
+<text x="862" y="267" font-size="13.5" fill="#1f56a8" font-weight="500" text-anchor="middle" >blocked at once</text>
+<line x1="30" y1="420" x2="930" y2="420" stroke="#e4e1d8"/>
+<text x="30" y="450" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >35-page literature review · BSc Biomedical Sciences, Utrecht University</text>
+</svg>

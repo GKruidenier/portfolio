@@ -8,7 +8,7 @@ title: Filmaanbevelingen op basis van 27 miljoen beoordelingen
 lead: "Hoe goed kun je voorspellen welk cijfer iemand geeft aan een film die hij nog niet heeft gezien?"
 description: Een aanbevelingssysteem op de MovieLens-data met KNNBaseline en SVD, getuned en gevalideerd. RMSE 0,803.
 image: /assets/img/projects/recommender_rmse_vergelijking.png
-abstract: "Op 27 miljoen MovieLens-beoordelingen vergeleken we een buurmethode (KNN) met matrixfactorisatie (SVD). Na slim verkleinen, tunen en dubbel valideren zit de beste SVD gemiddeld minder dan één ster naast het echte cijfer."
+abstract: "Op 27 miljoen MovieLens-beoordelingen vergeleken we twee technieken voor aanbevelingen. Na slim verkleinen en tunen zit de beste (SVD) gemiddeld 0,8 ster naast het echte cijfer, tegen 1,4 bij gokken."
 course: Analysis of Customer Data, mei 2025
 team: Drie studenten (groep 9)
 tools: [Python, pandas, Surprise, Collaborative filtering, KNN, SVD, Hyperparameter-tuning]
@@ -22,30 +22,38 @@ stats:
 models:
   - name: "NormalPredictor"
     tag: "baseline"
-    text: "Gokt een cijfer uit de algemene verdeling, zonder naar gebruiker of film te kijken."
+    text: "Gokt een cijfer uit de algemene verdeling."
   - name: "KNNBaseline"
     tag: "model"
-    text: "Zoekt films die door dezelfde mensen vergelijkbaar worden beoordeeld. Goed uit te leggen, maar zwaar voor het geheugen."
+    text: "Kijkt naar films die dezelfde mensen vergelijkbaar beoordeelden."
   - name: "SVD"
     tag: "model"
-    text: "Vat gebruikers en films samen in verborgen 'smaakfactoren' en voorspelt het cijfer uit hoe goed die bij elkaar passen."
+    own: true
+    text: "Vat kijkers en films samen in verborgen smaakfactoren."
+sample:
+  caption: "Zo ziet de data eruit"
+  columns: ["Kijker", "Film", "Cijfer", "Datum"]
+  rows:
+    - ["1", "307", "3,5", "27-10-2009"]
+    - ["1", "481", "3,5", "27-10-2009"]
+    - ["1", "1091", "1,5", "27-10-2009"]
+    - ["1", "1257", "4,5", "27-10-2009"]
+  note: "Eén rij per beoordeling: 27 miljoen rijen van 283.228 kijkers."
 ---
 
-{% include slide.html kicker="Probleem" title="Welke film vindt iemand goed?" text="Een streamingdienst wil films aanraden die iemand echt waardeert. Dat komt neer op één vraag: welk cijfer zou deze gebruiker geven aan een film die hij nog niet heeft gezien?" %}
+{% include slide.html kicker="Probleem" title="Welk cijfer zou je deze film geven?" text="Dat is de kern van elk aanbevelingssysteem: de lege vakjes invullen, zodat je kunt aanraden wat iemand waarschijnlijk goed vindt." src="/assets/img/projects/recommender_probleem.svg" alt="Raster van kijkers en films met ingevulde cijfers en lege vakjes; één leeg vakje wordt voorspeld als 4,2 sterren" full=true %}
 
-{% include slide.html kicker="Data" title="27 miljoen beoordelingen, heel scheef" text="283.228 gebruikers en 53.889 films. 4 sterren komt het vaakst voor. Eén gebruiker gaf 23.715 beoordelingen, terwijl de helft van de films er minder dan 7 heeft." src="/assets/img/projects/recommender_verdeling_beoordelingen.png" alt="Staafdiagram van de verdeling van beoordelingen; 4 sterren komt het vaakst voor" src2="/assets/img/projects/recommender_beoordelingen_per_gebruiker.png" alt2="Verdeling van het aantal beoordelingen per gebruiker" full=true %}
+{% include data.html kicker="Data" title="27 miljoen beoordelingen" text="Kijkers geven vooral hoge cijfers, en een kleine groep geeft het merendeel ervan." src="/assets/img/projects/recommender_cijfers.png" alt="Staafdiagram van de verdeling van cijfers; 4 sterren komt het vaakst voor" %}
 
-{% include slide.html kicker="Data" title="Een kleine top krijgt bijna alle aandacht" text="Een klein deel van de films trekt het gros van de beoordelingen. Daarom werkten we met de 4.000 populairste films en 40.000 actiefste gebruikers, en een steekproef van 3,1 miljoen beoordelingen met 99% dezelfde verdeling." src="/assets/img/projects/recommender_long_tail.png" alt="Lijngrafiek: de relatieve frequentie van beoordelingen daalt steil over de populairste films" %}
+{% include models.html kicker="Modellen" title="Drie manieren om een cijfer te voorspellen" %}
 
-{% include models.html kicker="Modellen" title="Drie manieren om een cijfer te voorspellen" text="Twee bekende technieken voor aanbevelingssystemen (collaborative filtering), vergeleken met een willekeurige voorspeller." %}
+{% include slide.html kicker="Methode" title="Van 27 miljoen naar 3,1 miljoen rijen" text="We hielden de populairste films en actiefste kijkers en namen een steekproef met 99% dezelfde verdeling. Daarna tunen met 5-voudige cross-validatie." src="/assets/img/projects/recommender_pipeline.svg" alt="Pipeline: kijker, film en cijfer worden verkleind en gesampled, daarna voorspelt SVD het cijfer voor een nieuwe film" full=true %}
 
-{% include slide.html kicker="Methode" title="Van 27 miljoen rijen tot getuned model" text="Eerst verkennen en verkleinen, daarna tunen met cross-validatie en de beste instellingen nog eens toetsen met een andere seed." src="/assets/img/projects/recommender_methode.svg" alt="Methodeschema in zes stappen: data, verkennen, verkleinen, modellen, tunen en evaluatie" full=true %}
+{% include slide.html kicker="Resultaten" title="SVD wint: 0,80 ster ernaast" text="Gokken zit er 1,43 ster naast, KNN 0,81. Met een andere seed veranderde de fout maar 0,0002." src="/assets/img/projects/recommender_rmse_vergelijking.png" alt="Staafdiagram van de fout (RMSE) per model, voor en na tuning" %}
 
-{% include slide.html kicker="Resultaten" title="SVD wint" text="De getunede SVD zit gemiddeld **0,80 ster** naast het echte cijfer, tegen 1,43 bij gokken. KNN volgt met 0,81. Met een andere seed veranderde de fout maar 0,0002." src="/assets/img/projects/recommender_rmse_vergelijking.png" alt="Staafdiagram van de RMSE per model, voor en na tuning" %}
-
-{% include slide.html kicker="Evaluatie" title="Uitleg of schaal?" text="KNN is beter uit te leggen, maar liep vast op geheugen toen we gebruikers vergeleken. SVD is nauwkeuriger en schaalt beter, maar zijn smaakfactoren zijn niet te interpreteren. Ons advies: KNN als uitleg telt, SVD als schaal telt." statement=true %}
+{% include slide.html kicker="Evaluatie" title="Uitleg of schaal?" text="KNN is beter uit te leggen, maar liep vast op geheugen. SVD is nauwkeuriger en schaalt beter, maar is minder transparant." statement=true %}
 
 <div class="role" markdown="1">
 ## Mijn rol
-Ik deed het grootste deel: data-exploratie, het verkleinen van de dataset, het tunen van de modellen en de validatie.
+Ik deed het grootste deel: data-exploratie, het verkleinen van de data, het tunen en de validatie.
 </div>

@@ -8,7 +8,7 @@ title: Which players will quit? Predicting churn in a mobile game
 lead: "Can you tell after the first few days whether a new player will stay or quit?"
 description: Churn defined from raw play logs and predicted with logistic regression, Random Forest and XGBoost. Highest grade of all groups.
 image: /assets/img/projects/churn_modelvergelijking_prauc_en.png
-abstract: "From 150,000 games of a mobile game we defined churn ourselves: does a player keep playing after their first five days? Using eight behavioural features, logistic regression, Random Forest and XGBoost predict this almost five times better than guessing. Highest grade of all groups."
+abstract: "From 150,000 games of a mobile game we defined ourselves when a player has quit. Using eight behavioural features, our models predict after five days who will return, almost five times better than guessing. Highest grade of all groups."
 course: Analysis of Customer Data, autumn 2025
 team: Four students (group 5) · highest grade of all groups
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]
@@ -22,37 +22,41 @@ stats:
 models:
   - name: "Guessing"
     tag: "lower bound"
-    text: "Without a model you would pick the right returners 7.9% of the time (PR-AUC 0.08)."
+    text: "Without a model you catch 7.9% of returners."
   - name: "Logistic regression"
     tag: "model"
-    text: "Gives each feature a fixed weight and adds them up. Simple and easy to explain."
+    text: "Adds up the features with a fixed weight."
   - name: "Random Forest"
     tag: "model"
-    text: "Hundreds of decision trees that each see part of the data and vote together."
+    text: "Hundreds of decision trees that vote together."
   - name: "XGBoost"
     tag: "model"
-    text: "Trees built one after another, each correcting the mistakes of the previous one."
+    own: true
+    text: "Trees that correct each other's mistakes step by step."
+sample:
+  caption: "What the data looks like"
+  columns: ["Player", "Timestamp", "Score"]
+  rows:
+    - ["3526…9119", "13 Jan 2015 13:54", "0"]
+    - ["3526…9119", "13 Jan 2015 13:55", "7"]
+    - ["3526…9119", "13 Jan 2015 13:55", "6"]
+    - ["3526…9119", "14 Jan 2015 00:38", "252"]
+  note: "One row per game played: 153,929 rows, nothing else."
 ---
 
-{% include slide.html kicker="Problem" title="Who will quit, and when do you know?" text="In free mobile games most new players disappear within a day. Knowing early which players will stay lets a company step in. But there is no subscription to cancel: we had to derive what 'quitting' means from behaviour." %}
+{% include slide.html kicker="Problem" title="When has a player quit?" text="There is no subscription to cancel. We follow a new player for five days and predict whether they come back afterwards." src="/assets/img/projects/churn_probleem_en.svg" alt="Timeline: three players are followed for five days; only player C plays again in the twelve days after and counts as a stayer" full=true %}
 
-{% include slide.html kicker="Data" title="Players quit very quickly" text="153,929 games of *Dodge the Mud*, each with only a timestamp, score and device ID. 44% play one game and 79% stop within a day. Player lifetimes show a second peak around five days." src="/assets/img/projects/churn_spelersretentie.png" alt="Pie chart: 44% play one game, 35% stop within a day, 7% within five days and 13% play longer" src2="/assets/img/projects/churn_levensduur_spelers.png" alt2="Histograms of player lifetime, with a second peak around five days" full=true %}
+{% include data.html kicker="Data" title="Only a timestamp, a score and an ID" text="Most new players are gone again within a day." src="/assets/img/projects/churn_speelduur_en.png" alt="Bar chart: 44% play one game, 35% stop within a day, 7% within five days and 13% play longer" %}
 
-{% include models.html kicker="Models" title="Three models versus guessing" text="Three common churn models, from simple and explainable to powerful, compared with what you would get without a model." %}
+{% include models.html kicker="Models" title="Three models versus guessing" text="From simple and explainable to powerful." %}
 
-{% include slide.html kicker="Method" title="From raw logs to a reliable prediction" text="We follow each player for five days and check whether they come back in the twelve days after. Both windows come from the data. All models were tuned and then re-tested with another seed." src="/assets/img/projects/churn_methode_en.svg" alt="Six-step method diagram: raw data, labelling churn, features, models, tuning and evaluation" full=true %}
+{% include slide.html kicker="Method" title="From raw logs to prediction" text="From the logs we built 13 behavioural features and kept the 8 strongest. All models were tuned and then tested again." src="/assets/img/projects/churn_pipeline_en.svg" alt="Pipeline: timestamp, score and device ID become a churn label and eight features for XGBoost, which gives each new player's chance of returning" full=true %}
 
-{% include slide.html kicker="Method" title="What sets stayers apart" text="We built 13 features of early play behaviour from the raw logs and kept the 8 that best separate churners from stayers without overlapping." src="/assets/img/projects/churn_effectgrootte_features.png" alt="Horizontal bar chart of the effect size (Cohen's d) of each feature between churners and stayers" %}
+{% include slide.html kicker="Results" title="Five times better than guessing" text="All models reach a PR-AUC of 0.37–0.38 (guessing: 0.08). When the model says 'will return', it is right two times out of three." src="/assets/img/projects/churn_modelvergelijking_prauc_en.png" alt="Bar chart: logistic regression, Random Forest and XGBoost reach a PR-AUC of 0.37 to 0.38 versus 0.08 for guessing" %}
 
-{% include slide.html kicker="Results" title="Five times better than guessing" text="All three models reach a PR-AUC of 0.37–0.38 versus 0.08 for guessing. XGBoost scores slightly best, but the differences are small." src="/assets/img/projects/churn_modelvergelijking_prauc_en.png" alt="Bar chart: logistic regression, Random Forest and XGBoost reach a PR-AUC of 0.37 to 0.38 versus 0.08 for guessing" %}
-
-{% include slide.html kicker="Results" title="Reliable when the model says 'yes'" text="Of the 493 predicted returners, 324 actually return: two in three, versus 7.9% when guessing." src="/assets/img/projects/churn_confusionmatrix_xgboost.png" alt="XGBoost confusion matrix" src2="/assets/img/projects/churn_roc_xgboost.png" alt2="XGBoost ROC curve with an AUC of 0.79" full=true %}
-
-{% include slide.html kicker="Results" title="Playing time says the most" text="In all three models, total playing time in the first days is the strongest predictor." src="/assets/img/projects/churn_feature_importance_vergelijking.png" alt="Grouped bar chart of the most important features per model" %}
-
-{% include slide.html kicker="Evaluation" title="Good at churners, weaker at stayers" text="The models still miss many players who do come back (recall 12–16%), mostly because of the imbalance our definition creates. A next step is tuning for recall or trying other observation windows." statement=true %}
+{% include slide.html kicker="Evaluation" title="Good at churners, weaker at stayers" text="The models still miss many returners (recall 12–16%). A next step is tuning for recall or trying other time windows." statement=true %}
 
 <div class="role" markdown="1">
 ## My role
-Together with one teammate I did the methodology and analysis: churn definition, feature engineering, model training and evaluation. Highest grade of all groups.
+Together with one teammate I did the methodology and analysis: churn definition, features, models and evaluation.
 </div>

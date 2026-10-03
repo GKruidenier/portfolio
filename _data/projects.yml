@@ -6,8 +6,8 @@
   category: master
   featured: true
   year: "2026"
-  image: /assets/img/projects/scriptie_methode.svg
-  image_en: /assets/img/projects/scriptie_methode_en.svg
+  image: /assets/img/projects/scriptie_pipeline_thumb.svg
+  image_en: /assets/img/projects/scriptie_pipeline_thumb_en.svg
   tags: [PyTorch, LSTM/GRU, Time series]
   nl:
     title: "Masterscriptie: economische groei in real time voorspellen"
@@ -27,8 +27,8 @@
 - id: churn
   category: master
   year: "2025"
-  image: /assets/img/projects/churn_methode.svg
-  image_en: /assets/img/projects/churn_methode_en.svg
+  image: /assets/img/projects/churn_pipeline_thumb.svg
+  image_en: /assets/img/projects/churn_pipeline_thumb_en.svg
   tags: [XGBoost, scikit-learn, Feature engineering]
   nl:
     title: Welke spelers haken af? Churn voorspellen in een mobiele game
@@ -48,8 +48,8 @@
 - id: recommender
   category: master
   year: "2025"
-  image: /assets/img/projects/recommender_methode.svg
-  image_en: /assets/img/projects/recommender_methode_en.svg
+  image: /assets/img/projects/recommender_pipeline_thumb.svg
+  image_en: /assets/img/projects/recommender_pipeline_thumb_en.svg
   tags: [Surprise, SVD, KNN]
   nl:
     title: Filmaanbevelingen op basis van 27 miljoen beoordelingen
@@ -69,8 +69,8 @@
 - id: deeplearning
   category: master
   year: "2025"
-  image: /assets/img/projects/deeplearning_methode.svg
-  image_en: /assets/img/projects/deeplearning_methode_en.svg
+  image: /assets/img/projects/deeplearning_pipeline_thumb.svg
+  image_en: /assets/img/projects/deeplearning_pipeline_thumb_en.svg
   tags: [TensorFlow/Keras, CNN, Optuna]
   nl:
     title: Afgeleide bestuurders herkennen met deep learning
@@ -90,8 +90,8 @@
 - id: citations
   category: master
   year: "2025"
-  image: /assets/img/projects/citaties_methode.svg
-  image_en: /assets/img/projects/citaties_methode_en.svg
+  image: /assets/img/projects/citaties_pipeline_thumb.svg
+  image_en: /assets/img/projects/citaties_pipeline_thumb_en.svg
   tags: [NLP, Sentence-BERT, Ridge]
   nl:
     title: Voorspellen hoe vaak een wetenschappelijk artikel wordt geciteerd
@@ -111,8 +111,8 @@
 - id: bachelor-thesis
   category: bachelor
   year: "2023"
-  image: /assets/img/projects/bachelor_methode.svg
-  image_en: /assets/img/projects/bachelor_methode_en.svg
+  image: /assets/img/projects/bachelor_pipeline_thumb.svg
+  image_en: /assets/img/projects/bachelor_pipeline_thumb_en.svg
   tags: [Literature review, Cancer metabolism]
   nl:
     title: "Bachelorscriptie: combinatietherapieën met glutaminemetabolismeremmers"
