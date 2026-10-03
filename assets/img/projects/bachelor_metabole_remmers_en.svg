@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 480" width="940" height="480" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
-<rect width="940" height="480" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 500" width="940" height="500" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="940" height="500" fill="#ffffff"/>
 <defs><marker id="mg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="mb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2a6fd6"/></marker><marker id="mp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d6588a"/></marker><marker id="mgr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a5b"/></marker><marker id="mpu" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7b5cc4"/></marker><marker id="mgy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#bdbdbd"/></marker><marker id="my" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f9c"/></marker></defs>
-<g transform="translate(0,30)">
+<g transform="translate(0,40)">
 <ellipse cx="470" cy="210" rx="250" ry="170" fill="#fdf1f3" stroke="#d98a98" stroke-width="3"/>
 <circle cx="470" cy="210" r="40" fill="#f1f1f1" stroke="#c7c7c7" stroke-width="2.5"/>
 <path d="M475.9,186.5 L457.1,214.7 L468.8,214.7 L462.9,234.7 L482.9,205.3 L471.2,205.3 Z" fill="#c7c7c7"/>

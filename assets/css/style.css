@@ -500,3 +500,13 @@ p { margin: 0 0 1em; }
 .chapter__cols { grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); }
 .chapter__cols > .chapter__figure { position: sticky; top: 88px; }
 @media (max-width: 820px) { .chapter__cols { grid-template-columns: 1fr; } .chapter__cols > .chapter__figure { position: static; } }
+
+/* Omwegen: figuur bovenaan, routes eronder als raster */
+.prose .routes--grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
+.prose .routes--grid li { grid-column: span 2; font-size: .94rem; line-height: 1.55; }
+.prose .routes--grid li:nth-child(4) { grid-column: 2 / span 2; }
+@media (max-width: 900px) {
+  .prose .routes--grid { grid-template-columns: 1fr 1fr; }
+  .prose .routes--grid li, .prose .routes--grid li:nth-child(4) { grid-column: auto; }
+}
+@media (max-width: 600px) { .prose .routes--grid { grid-template-columns: 1fr; } }
