@@ -1,77 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
-<rect width="960" height="400" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1210 430" width="1210" height="430" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="1210" height="430" fill="#ffffff"/>
 <defs><marker id="mg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="mb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2a6fd6"/></marker><marker id="mp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d6588a"/></marker><marker id="mgr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a5b"/></marker><marker id="mpu" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7b5cc4"/></marker><marker id="mgy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#bdbdbd"/></marker><marker id="my" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f9c"/></marker></defs>
-<text x="30" y="40" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">Alleen glutamine remmen</text>
-<text x="30" y="62" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start">de tumor zet meer 'rem-eiwitten' op zijn oppervlak</text>
-<path d="M30,95 C180,105 180,325 30,335 Z" fill="#fdf1f3" stroke="#d98a98" stroke-width="3"/>
-<text x="48" y="221" font-size="14" fill="#b06a78" font-weight="700" text-anchor="start">tumorcel</text>
-<line x1="121.0" y1="155" x2="137.0" y2="155" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="137.0" y1="155" x2="147.0" y2="147" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="137.0" y1="155" x2="147.0" y2="163" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="135.0" y1="195" x2="151.0" y2="195" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="151.0" y1="195" x2="161.0" y2="187" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="151.0" y1="195" x2="161.0" y2="203" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="135.0" y1="235" x2="151.0" y2="235" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="151.0" y1="235" x2="161.0" y2="227" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="151.0" y1="235" x2="161.0" y2="243" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="121.0" y1="275" x2="137.0" y2="275" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="137.0" y1="275" x2="147.0" y2="267" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="137.0" y1="275" x2="147.0" y2="283" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="376.0" y1="215.0" x2="384.0" y2="215.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="362.5" y1="247.5" x2="368.2" y2="253.2" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="330.0" y1="261.0" x2="330.0" y2="269.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="297.5" y1="247.5" x2="291.8" y2="253.2" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="284.0" y1="215.0" x2="276.0" y2="215.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="297.5" y1="182.5" x2="291.8" y2="176.8" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="330.0" y1="169.0" x2="330.0" y2="161.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="362.5" y1="182.5" x2="368.2" y2="176.8" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<circle cx="330" cy="215" r="46" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
-<text x="330" y="221" font-size="15" fill="#1f56a8" font-weight="700" text-anchor="middle">T-cel</text>
-<line x1="180" y1="195" x2="278" y2="205" stroke="#2a6fd6" stroke-width="3" stroke-linecap="round"/>
-<line x1="180" y1="235" x2="278" y2="225" stroke="#2a6fd6" stroke-width="3" stroke-linecap="round"/>
-<rect x="318" y="279" width="8" height="24" rx="2" fill="#c0392b"/><rect x="334" y="279" width="8" height="24" rx="2" fill="#c0392b"/>
-<text x="330" y="327" font-size="14" fill="#c0392b" font-weight="700" text-anchor="middle">T-cel geremd</text>
-<line x1="30" y1="368" x2="46" y2="368" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="46" y1="368" x2="56" y2="360" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="46" y1="368" x2="56" y2="376" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<text x="64" y="373" font-size="13" fill="#4a5163" font-weight="600" text-anchor="start">rem-eiwit</text>
-<text x="500" y="40" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">+ immuuntherapie</text>
-<text x="500" y="62" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start">een medicijn blokkeert de rem</text>
-<path d="M500,95 C650,105 650,325 500,335 Z" fill="#fdf1f3" stroke="#d98a98" stroke-width="3" stroke-dasharray="10 6"/>
-<text x="518" y="221" font-size="14" fill="#b06a78" font-weight="700" text-anchor="start">tumorcel</text>
-<line x1="591.0" y1="155" x2="607.0" y2="155" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="607.0" y1="155" x2="617.0" y2="147" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="607.0" y1="155" x2="617.0" y2="163" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<rect x="619.0" y="144" width="12" height="22" rx="4" fill="#3a9a5b"/>
-<line x1="605.0" y1="195" x2="621.0" y2="195" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="621.0" y1="195" x2="631.0" y2="187" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="621.0" y1="195" x2="631.0" y2="203" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<rect x="633.0" y="184" width="12" height="22" rx="4" fill="#3a9a5b"/>
-<line x1="605.0" y1="235" x2="621.0" y2="235" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="621.0" y1="235" x2="631.0" y2="227" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="621.0" y1="235" x2="631.0" y2="243" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<rect x="633.0" y="224" width="12" height="22" rx="4" fill="#3a9a5b"/>
-<line x1="591.0" y1="275" x2="607.0" y2="275" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="607.0" y1="275" x2="617.0" y2="267" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="607.0" y1="275" x2="617.0" y2="283" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<rect x="619.0" y="264" width="12" height="22" rx="4" fill="#3a9a5b"/>
-<line x1="846.0" y1="215.0" x2="854.0" y2="215.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="832.5" y1="247.5" x2="838.2" y2="253.2" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="800.0" y1="261.0" x2="800.0" y2="269.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="767.5" y1="247.5" x2="761.8" y2="253.2" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="754.0" y1="215.0" x2="746.0" y2="215.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="767.5" y1="182.5" x2="761.8" y2="176.8" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="800.0" y1="169.0" x2="800.0" y2="161.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="832.5" y1="182.5" x2="838.2" y2="176.8" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<circle cx="800" cy="215" r="46" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
-<text x="800" y="221" font-size="15" fill="#1f56a8" font-weight="700" text-anchor="middle">T-cel</text>
-<path d="M744,209 L690,197 L700,217 L650,211" fill="none" stroke="#2a6fd6" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#mg)"/>
-<text x="800" y="299" font-size="14" fill="#1f56a8" font-weight="700" text-anchor="middle">T-cel valt aan</text>
-<line x1="500" y1="368" x2="516" y2="368" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="516" y1="368" x2="526" y2="360" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<line x1="516" y1="368" x2="526" y2="376" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
-<text x="534" y="373" font-size="13" fill="#4a5163" font-weight="600" text-anchor="start">rem-eiwit</text>
-<rect x="650" y="357" width="12" height="22" rx="4" fill="#3a9a5b"/>
-<text x="670" y="373" font-size="13" fill="#4a5163" font-weight="600" text-anchor="start">medicijn</text>
-<line x1="470" y1="30" x2="470" y2="390" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="24" y="40" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">1. Glutamine geremd</text>
+<text x="24" y="62" font-size="13.5" fill="#6f7686" font-weight="400" text-anchor="start">de afweer wordt sterker</text>
+<path d="M24,125 C154,134 154,326 24,335 Z" fill="#f4eef0" stroke="#d98a98" stroke-width="3"/>
+<text x="38" y="236" font-size="13.5" fill="#b06a78" font-weight="700" text-anchor="start">tumorcel</text>
+<line x1="64" y1="100" x2="84" y2="148" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5"/>
+<line x1="62" y1="130" x2="88" y2="122" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<text x="94" y="106" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="start">glutamine</text>
+<text x="38" y="256" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="start">verhongert</text>
+<line x1="332.0" y1="210.0" x2="340.0" y2="210.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="320.3" y1="238.3" x2="325.9" y2="243.9" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="292.0" y1="250.0" x2="292.0" y2="258.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="263.7" y1="238.3" x2="258.1" y2="243.9" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="252.0" y1="210.0" x2="244.0" y2="210.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="263.7" y1="181.7" x2="258.1" y2="176.1" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="292.0" y1="170.0" x2="292.0" y2="162.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="320.3" y1="181.7" x2="325.9" y2="176.1" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="292" cy="210" r="40" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
+<text x="292" y="216" font-size="14" fill="#1f56a8" font-weight="700" text-anchor="middle">T-cel</text>
+<path d="M372,120 Q352,160 332,180" fill="none" stroke="#e9a400" stroke-width="3.5" marker-end="url(#mg)"/>
+<text x="376" y="114" font-size="12.5" fill="#9a6a00" font-weight="700" text-anchor="end">andere brandstof</text>
+<circle cx="222" cy="320" r="12" fill="#e6e6e6" stroke="#b5b5b5" stroke-width="1.5"/>
+<circle cx="262" cy="334" r="12" fill="#e6e6e6" stroke="#b5b5b5" stroke-width="1.5"/>
+<circle cx="302" cy="320" r="12" fill="#e6e6e6" stroke="#b5b5b5" stroke-width="1.5"/>
+<line x1="204" y1="310" x2="320" y2="344" stroke="#c0392b" stroke-width="3"/>
+<text x="262" y="370" font-size="12.5" fill="#4a5163" font-weight="600" text-anchor="middle">minder afweerremmende cellen</text>
+<text x="292" y="268" font-size="13.5" fill="#1f56a8" font-weight="700" text-anchor="middle">actiever</text>
+<line x1="410" y1="30" x2="410" y2="400" stroke="#e4e1d8" stroke-width="1.5"/>
+<circle cx="410" cy="230" r="14" fill="#ffffff" stroke="#6f7686" stroke-width="1.5"/>
+<path d="M405,224 l8,6 l-8,6" fill="none" stroke="#4a5163" stroke-width="2.2"/>
+<text x="424" y="40" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">2. Maar de tumor remt terug</text>
+<text x="424" y="62" font-size="13.5" fill="#6f7686" font-weight="400" text-anchor="start">hij zet meer rem-eiwitten op zijn oppervlak</text>
+<path d="M424,125 C554,134 554,326 424,335 Z" fill="#fdf1f3" stroke="#d98a98" stroke-width="3"/>
+<text x="438" y="236" font-size="13.5" fill="#b06a78" font-weight="700" text-anchor="start">tumorcel</text>
+<line x1="503.0" y1="170" x2="519.0" y2="170" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="519.0" y1="170" x2="529.0" y2="162" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="519.0" y1="170" x2="529.0" y2="178" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="517.0" y1="210" x2="533.0" y2="210" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="533.0" y1="210" x2="543.0" y2="202" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="533.0" y1="210" x2="543.0" y2="218" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="517.0" y1="250" x2="533.0" y2="250" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="533.0" y1="250" x2="543.0" y2="242" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="533.0" y1="250" x2="543.0" y2="258" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="503.0" y1="290" x2="519.0" y2="290" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="519.0" y1="290" x2="529.0" y2="282" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="519.0" y1="290" x2="529.0" y2="298" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="732.0" y1="230.0" x2="740.0" y2="230.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="720.3" y1="258.3" x2="725.9" y2="263.9" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="692.0" y1="270.0" x2="692.0" y2="278.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="663.7" y1="258.3" x2="658.1" y2="263.9" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="652.0" y1="230.0" x2="644.0" y2="230.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="663.7" y1="201.7" x2="658.1" y2="196.1" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="692.0" y1="190.0" x2="692.0" y2="182.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="720.3" y1="201.7" x2="725.9" y2="196.1" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="692" cy="230" r="40" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
+<text x="692" y="236" font-size="14" fill="#1f56a8" font-weight="700" text-anchor="middle">T-cel</text>
+<line x1="558" y1="210" x2="646" y2="220" stroke="#2a6fd6" stroke-width="3" stroke-linecap="round"/>
+<line x1="558" y1="250" x2="646" y2="240" stroke="#2a6fd6" stroke-width="3" stroke-linecap="round"/>
+<rect x="680" y="288" width="8" height="22" rx="2" fill="#c0392b"/><rect x="696" y="288" width="8" height="22" rx="2" fill="#c0392b"/>
+<text x="692" y="334" font-size="13.5" fill="#c0392b" font-weight="700" text-anchor="middle">T-cel geremd</text>
+<line x1="810" y1="30" x2="810" y2="400" stroke="#e4e1d8" stroke-width="1.5"/>
+<circle cx="810" cy="230" r="14" fill="#ffffff" stroke="#6f7686" stroke-width="1.5"/>
+<path d="M805,224 l8,6 l-8,6" fill="none" stroke="#4a5163" stroke-width="2.2"/>
+<text x="824" y="40" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">3. + immuuntherapie</text>
+<text x="824" y="62" font-size="13.5" fill="#6f7686" font-weight="400" text-anchor="start">een medicijn haalt de rem weg</text>
+<path d="M824,125 C954,134 954,326 824,335 Z" fill="#fdf1f3" stroke="#d98a98" stroke-width="3" stroke-dasharray="10 6"/>
+<text x="838" y="236" font-size="13.5" fill="#b06a78" font-weight="700" text-anchor="start">tumorcel</text>
+<line x1="903.0" y1="170" x2="919.0" y2="170" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="919.0" y1="170" x2="929.0" y2="162" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="919.0" y1="170" x2="929.0" y2="178" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="931.0" y="159" width="12" height="22" rx="4" fill="#3a9a5b"/>
+<line x1="917.0" y1="210" x2="933.0" y2="210" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="933.0" y1="210" x2="943.0" y2="202" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="933.0" y1="210" x2="943.0" y2="218" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="945.0" y="199" width="12" height="22" rx="4" fill="#3a9a5b"/>
+<line x1="917.0" y1="250" x2="933.0" y2="250" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="933.0" y1="250" x2="943.0" y2="242" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="933.0" y1="250" x2="943.0" y2="258" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="945.0" y="239" width="12" height="22" rx="4" fill="#3a9a5b"/>
+<line x1="903.0" y1="290" x2="919.0" y2="290" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="919.0" y1="290" x2="929.0" y2="282" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="919.0" y1="290" x2="929.0" y2="298" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="931.0" y="279" width="12" height="22" rx="4" fill="#3a9a5b"/>
+<line x1="1132.0" y1="230.0" x2="1140.0" y2="230.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1120.3" y1="258.3" x2="1125.9" y2="263.9" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1092.0" y1="270.0" x2="1092.0" y2="278.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1063.7" y1="258.3" x2="1058.1" y2="263.9" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1052.0" y1="230.0" x2="1044.0" y2="230.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1063.7" y1="201.7" x2="1058.1" y2="196.1" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1092.0" y1="190.0" x2="1092.0" y2="182.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1120.3" y1="201.7" x2="1125.9" y2="196.1" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="1092" cy="230" r="40" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
+<text x="1092" y="236" font-size="14" fill="#1f56a8" font-weight="700" text-anchor="middle">T-cel</text>
+<path d="M1042,224 L1000,212 L1010,232 L974,226" fill="none" stroke="#2a6fd6" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#mg)"/>
+<text x="1092" y="304" font-size="13.5" fill="#1f56a8" font-weight="700" text-anchor="middle">T-cel valt aan</text>
+<line x1="24" y1="406" x2="40" y2="406" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="40" y1="406" x2="50" y2="398" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="40" y1="406" x2="50" y2="414" stroke="#c9783d" stroke-width="3.5" stroke-linecap="round"/>
+<text x="58" y="411" font-size="13" fill="#4a5163" font-weight="600" text-anchor="start">rem-eiwit</text>
+<rect x="180" y="395" width="12" height="22" rx="4" fill="#3a9a5b"/>
+<text x="200" y="411" font-size="13" fill="#4a5163" font-weight="600" text-anchor="start">medicijn (checkpointremmer)</text>
 </svg>

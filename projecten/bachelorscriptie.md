@@ -65,7 +65,7 @@ tools: [Literatuuronderzoek, Kankermetabolisme, Immunotherapie, Wetenschappelijk
 <div class="therapy__tabs" role="tablist">
 <button type="button" class="therapy__tab therapy__tab--red is-active" role="tab" id="tab-met" aria-controls="pane-met" aria-selected="true"><span class="therapy__plus">+</span><span><strong>Andere remmers</strong><small>suiker, vet en glutamaat dicht</small></span></button>
 <button type="button" class="therapy__tab therapy__tab--purple" role="tab" id="tab-rad" aria-controls="pane-rad" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Bestraling</strong><small>geen schild, meer schade</small></span></button>
-<button type="button" class="therapy__tab therapy__tab--blue" role="tab" id="tab-imm" aria-controls="pane-imm" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Immuuntherapie</strong><small>T-cellen weer aan het werk</small></span></button>
+<button type="button" class="therapy__tab therapy__tab--blue" role="tab" id="tab-imm" aria-controls="pane-imm" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Immuuntherapie</strong><small>afweer sterker, rem eraf</small></span></button>
 </div>
 <div class="therapy__pane therapy__pane--red is-active" role="tabpanel" id="pane-met" aria-labelledby="tab-met">
 <div class="therapy__text"><p>Remmers die ook de andere brandstofroutes blokkeren: het gebruik van suiker, het verbranden van vet en de andere weg naar glutamaat. Zonder omwegen valt de motor stil. In diermodellen remden zulke combinaties de tumorgroei sterker dan elk middel apart.</p><p class="therapy__note">Niet alles hield stand: één combinatie die in het lab werkte, voegde bij patiënten met nierkanker niets toe.</p></div>
@@ -82,10 +82,10 @@ tools: [Literatuuronderzoek, Kankermetabolisme, Immunotherapie, Wetenschappelijk
 </figure>
 </div>
 <div class="therapy__pane therapy__pane--blue" role="tabpanel" id="pane-imm" aria-labelledby="tab-imm">
-<div class="therapy__text"><p>Glutamine remmen kan het afweersysteem helpen: afweercellen (T-cellen) worden actiever en bereiken de tumor beter.</p><p>Maar de tumor reageert door meer rem-eiwitten op zijn oppervlak te zetten, die T-cellen afremmen. Een immuuntherapie die die rem blokkeert, lost dat op. Samen werkten ze sterker dan elk middel apart.</p></div>
+<div class="therapy__text"><p>Glutamine remmen maakt de afweer tegen de tumor juist sterker. Afweercellen (T-cellen) zijn flexibeler dan tumorcellen: zonder glutamine schakelen ze over op andere brandstoffen en worden ze actiever, terwijl de tumor verhongert. Ook komen er minder cellen rond de tumor die de afweer afremmen.</p><p>Maar glutamine remmen kan ook het rem-eiwit op de tumor verhogen. Een checkpointremmer haalt die rem weg, waardoor de extra actieve T-cellen hun werk kunnen doen. Samen werkte dat sterker dan elk middel apart.</p></div>
 <figure class="chapter__figure">
-  <a href="{{ '/assets/img/projects/bachelor_immuuntherapie.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_immuuntherapie.svg' | relative_url }}" alt="Twee panelen: links remmen rem-eiwitten op de tumorcel de T-cel; rechts blokkeert een medicijn de rem en valt de T-cel de tumorcel aan" loading="lazy"></a>
-  <figcaption>Links: rem-eiwitten houden de T-cel tegen. Rechts: een medicijn blokkeert de rem en de T-cel valt aan. Eigen figuur.</figcaption>
+  <a href="{{ '/assets/img/projects/bachelor_immuuntherapie.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_immuuntherapie.svg' | relative_url }}" alt="Drie stappen: glutamine geremd, waardoor de tumor verhongert en de T-cel op andere brandstof actiever wordt; daarna zet de tumor rem-eiwitten op en wordt de T-cel geremd; met een checkpointremmer is de rem weg en valt de T-cel aan" loading="lazy"></a>
+  <figcaption>1: zonder glutamine wordt de afweer sterker. 2: de tumor remt terug met rem-eiwitten. 3: een checkpointremmer haalt de rem weg. Eigen figuur.</figcaption>
 </figure>
 </div>
 </div>

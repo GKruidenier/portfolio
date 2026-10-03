@@ -510,3 +510,5 @@ p { margin: 0 0 1em; }
   .prose .routes--grid li, .prose .routes--grid li:nth-child(4) { grid-column: auto; }
 }
 @media (max-width: 600px) { .prose .routes--grid { grid-template-columns: 1fr; } }
+.therapy__pane--blue { grid-template-columns: 1fr; }
+.therapy__pane--blue .therapy__text { max-width: 46em; }

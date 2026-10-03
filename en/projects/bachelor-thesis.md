@@ -65,7 +65,7 @@ tools: [Literature research, Cancer metabolism, Immunotherapy, Scientific writin
 <div class="therapy__tabs" role="tablist">
 <button type="button" class="therapy__tab therapy__tab--red is-active" role="tab" id="tab-met" aria-controls="pane-met" aria-selected="true"><span class="therapy__plus">+</span><span><strong>Other inhibitors</strong><small>close sugar, fat and glutamate</small></span></button>
 <button type="button" class="therapy__tab therapy__tab--purple" role="tab" id="tab-rad" aria-controls="pane-rad" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Radiation</strong><small>no shield, more damage</small></span></button>
-<button type="button" class="therapy__tab therapy__tab--blue" role="tab" id="tab-imm" aria-controls="pane-imm" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Immunotherapy</strong><small>puts T cells back to work</small></span></button>
+<button type="button" class="therapy__tab therapy__tab--blue" role="tab" id="tab-imm" aria-controls="pane-imm" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Immunotherapy</strong><small>stronger defence, brake off</small></span></button>
 </div>
 <div class="therapy__pane therapy__pane--red is-active" role="tabpanel" id="pane-met" aria-labelledby="tab-met">
 <div class="therapy__text"><p>Inhibitors that also block the other fuel routes: the use of sugar, the burning of fat and the other route to glutamate. Without detours the engine stops. In animal models such combinations slowed tumour growth more than either drug alone.</p><p class="therapy__note">Not everything held up: one combination that worked in the lab added nothing in patients with kidney cancer.</p></div>
@@ -82,10 +82,10 @@ tools: [Literature research, Cancer metabolism, Immunotherapy, Scientific writin
 </figure>
 </div>
 <div class="therapy__pane therapy__pane--blue" role="tabpanel" id="pane-imm" aria-labelledby="tab-imm">
-<div class="therapy__text"><p>Blocking glutamine can help the immune system: immune cells (T cells) become more active and reach the tumour more easily.</p><p>But the tumour responds by putting more brake proteins on its surface, which hold T cells back. An immunotherapy that blocks that brake solves this. Together they worked better than either alone.</p></div>
+<div class="therapy__text"><p>Blocking glutamine actually makes the immune response against the tumour stronger. Immune cells (T cells) are more flexible than tumour cells: without glutamine they switch to other fuels and become more active, while the tumour starves. There are also fewer cells around the tumour that hold the immune response back.</p><p>But blocking glutamine can also raise the brake protein on the tumour. A checkpoint inhibitor removes that brake, so the extra-active T cells can do their job. Together this worked better than either drug alone.</p></div>
 <figure class="chapter__figure">
-  <a href="{{ '/assets/img/projects/bachelor_immuuntherapie_en.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_immuuntherapie_en.svg' | relative_url }}" alt="Two panels: on the left brake proteins on the tumour cell hold the T cell back; on the right a drug blocks the brake and the T cell attacks the tumour cell" loading="lazy"></a>
-  <figcaption>Left: brake proteins hold the T cell back. Right: a drug blocks the brake and the T cell attacks. Own figure.</figcaption>
+  <a href="{{ '/assets/img/projects/bachelor_immuuntherapie_en.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_immuuntherapie_en.svg' | relative_url }}" alt="Three steps: glutamine blocked, so the tumour starves and the T cell becomes more active on other fuel; then the tumour puts up brake proteins and the T cell is held back; with a checkpoint inhibitor the brake is gone and the T cell attacks" loading="lazy"></a>
+  <figcaption>1: without glutamine the immune response gets stronger. 2: the tumour brakes back with brake proteins. 3: a checkpoint inhibitor removes the brake. Own figure.</figcaption>
 </figure>
 </div>
 </div>
