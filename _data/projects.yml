@@ -34,15 +34,15 @@
     title: Welke spelers haken af? Churn voorspellen in een mobiele game
     label: Analysis of Customer Data · groep 5
     summary: Churn zelf gedefinieerd uit 150.000 gespeelde potjes en voorspeld na de eerste vijf speeldagen. Hoogste cijfer van alle groepen.
-    metric: "5×"
-    metric_label: beter dan gokken in het vinden van terugkeerders
+    metric: "8 op 10"
+    metric_label: keer de afhaker riskanter ingeschat dan een blijver
     url: /projecten/churn-voorspelling/
   en:
     title: Which players will quit? Predicting churn in a mobile game
     label: Analysis of Customer Data · group 5
     summary: Defined churn from 150,000 games played and predicted it after a player's first five days. Highest grade of all groups.
-    metric: "5×"
-    metric_label: better than guessing at finding returners
+    metric: "8 in 10"
+    metric_label: times the quitter ranked riskier than a stayer
     url: /en/projects/churn-prediction/
 
 - id: recommender

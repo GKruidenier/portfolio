@@ -1,38 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 370" width="1060" height="370" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
-<rect width="1060" height="370" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 392" width="1060" height="392" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="1060" height="392" fill="#ffffff"/>
 <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
-<rect x="200.0" y="70" width="211.76470588235293" height="260" fill="#e7effb"/>
-<rect x="411.7647058823529" y="70" width="508.2352941176471" height="260" fill="#f6e7da"/>
-<text x="305.88235294117646" y="52" font-size="17" fill="#1f56a8" font-weight="700" text-anchor="middle" >Observatie: 5 dagen</text>
-<text x="665.8823529411765" y="52" font-size="17" fill="#c9783d" font-weight="700" text-anchor="middle" >Kijken of iemand terugkomt: 12 dagen</text>
-<text x="30" y="131" font-size="17" fill="#1d2230" font-weight="600" text-anchor="start" >Speler A</text>
-<line x1="200.0" y1="125" x2="920.0" y2="125" stroke="#e4e1d8" stroke-width="2"/>
-<circle cx="200.0" cy="125" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="200.8" cy="125" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="202.1" cy="125" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<text x="934.0" y="131" font-size="16" fill="#6f7686" font-weight="700" text-anchor="start" >afgehaakt</text>
-<text x="30" y="216" font-size="17" fill="#1d2230" font-weight="600" text-anchor="start" >Speler B</text>
-<line x1="200.0" y1="210" x2="920.0" y2="210" stroke="#e4e1d8" stroke-width="2"/>
-<circle cx="200.0" cy="210" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="216.9" cy="210" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="250.8" cy="210" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="331.3" cy="210" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="335.5" cy="210" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<text x="934.0" y="216" font-size="16" fill="#6f7686" font-weight="700" text-anchor="start" >afgehaakt</text>
-<text x="30" y="301" font-size="17" fill="#1d2230" font-weight="600" text-anchor="start" >Speler C</text>
-<line x1="200.0" y1="295" x2="920.0" y2="295" stroke="#e4e1d8" stroke-width="2"/>
-<circle cx="200.0" cy="295" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="221.2" cy="295" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="284.7" cy="295" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="377.9" cy="295" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
-<circle cx="602.4" cy="295" r="9" fill="#c9783d" stroke="#ffffff" stroke-width="2"/>
-<circle cx="606.6" cy="295" r="9" fill="#c9783d" stroke="#ffffff" stroke-width="2"/>
-<text x="934.0" y="301" font-size="16" fill="#c9783d" font-weight="700" text-anchor="start" >komt terug</text>
-<line x1="200.0" y1="330" x2="920.0" y2="330" stroke="#6f7686"/>
-<line x1="200.0" y1="330" x2="200.0" y2="336" stroke="#6f7686"/>
-<text x="200.0" y="356" font-size="15" fill="#4a5163" font-weight="500" text-anchor="middle" >dag 0</text>
-<line x1="411.7647058823529" y1="330" x2="411.7647058823529" y2="336" stroke="#6f7686"/>
-<text x="411.7647058823529" y="356" font-size="15" fill="#4a5163" font-weight="500" text-anchor="middle" >dag 5</text>
-<line x1="920.0" y1="330" x2="920.0" y2="336" stroke="#6f7686"/>
-<text x="920.0" y="356" font-size="15" fill="#4a5163" font-weight="500" text-anchor="middle" >dag 17</text>
+<rect x="200.0" y="92" width="211.76470588235293" height="260" fill="#e7effb"/>
+<rect x="411.7647058823529" y="92" width="508.2352941176471" height="260" fill="#f6e7da"/>
+<text x="305.88235294117646" y="44" font-size="17" fill="#1f56a8" font-weight="700" text-anchor="middle" >Observatie: 5 dagen</text>
+<text x="305.88235294117646" y="68" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >genoeg gedrag om spelers te onderscheiden</text>
+<text x="665.8823529411765" y="44" font-size="17" fill="#c9783d" font-weight="700" text-anchor="middle" >Speelt iemand nog? 12 dagen</text>
+<text x="665.8823529411765" y="68" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >90% van de gewone pauzes is korter</text>
+<text x="30" y="153" font-size="17" fill="#1d2230" font-weight="600" text-anchor="start" >Speler A</text>
+<line x1="200.0" y1="147" x2="920.0" y2="147" stroke="#e4e1d8" stroke-width="2"/>
+<circle cx="200.0" cy="147" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="200.8" cy="147" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="202.1" cy="147" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<text x="934.0" y="153" font-size="16" fill="#c9783d" font-weight="700" text-anchor="start" >afgehaakt</text>
+<text x="30" y="238" font-size="17" fill="#1d2230" font-weight="600" text-anchor="start" >Speler B</text>
+<line x1="200.0" y1="232" x2="920.0" y2="232" stroke="#e4e1d8" stroke-width="2"/>
+<circle cx="200.0" cy="232" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="216.9" cy="232" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="250.8" cy="232" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="331.3" cy="232" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="335.5" cy="232" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<text x="934.0" y="238" font-size="16" fill="#c9783d" font-weight="700" text-anchor="start" >afgehaakt</text>
+<text x="30" y="323" font-size="17" fill="#1d2230" font-weight="600" text-anchor="start" >Speler C</text>
+<line x1="200.0" y1="317" x2="920.0" y2="317" stroke="#e4e1d8" stroke-width="2"/>
+<circle cx="200.0" cy="317" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="221.2" cy="317" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="284.7" cy="317" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="377.9" cy="317" r="9" fill="#2a6fd6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="602.4" cy="317" r="9" fill="#4a5163" stroke="#ffffff" stroke-width="2"/>
+<circle cx="606.6" cy="317" r="9" fill="#4a5163" stroke="#ffffff" stroke-width="2"/>
+<text x="934.0" y="323" font-size="16" fill="#6f7686" font-weight="700" text-anchor="start" >speelt nog</text>
+<line x1="200.0" y1="352" x2="920.0" y2="352" stroke="#6f7686"/>
+<line x1="200.0" y1="352" x2="200.0" y2="358" stroke="#6f7686"/>
+<text x="200.0" y="378" font-size="15" fill="#4a5163" font-weight="500" text-anchor="middle" >dag 0</text>
+<line x1="411.7647058823529" y1="352" x2="411.7647058823529" y2="358" stroke="#6f7686"/>
+<text x="411.7647058823529" y="378" font-size="15" fill="#4a5163" font-weight="500" text-anchor="middle" >dag 5</text>
+<line x1="920.0" y1="352" x2="920.0" y2="358" stroke="#6f7686"/>
+<text x="920.0" y="378" font-size="15" fill="#4a5163" font-weight="500" text-anchor="middle" >dag 17</text>
 </svg>

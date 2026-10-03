@@ -12,7 +12,7 @@
 <rect x="30" y="291.0" width="178" height="46" rx="23.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
 <text x="119.0" y="321.0" font-size="17" fill="#4a5163" font-weight="600" text-anchor="middle" >Player ID</text>
 <rect x="262" y="154.0" width="236" height="76" rx="12" fill="#f6e7da" stroke="#c9783d" stroke-width="1.5"/>
-<text x="280" y="186.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Who comes back?</text>
+<text x="280" y="186.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Who quits?</text>
 <text x="280" y="212.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >watch 5 days, wait 12</text>
 <rect x="262" y="250.0" width="236" height="76" rx="12" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
 <text x="280" y="282.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >8 behaviour features</text>
@@ -29,7 +29,7 @@
 <line x1="746" y1="240" x2="782" y2="240" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
 <circle cx="862" cy="240" r="72" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
 <text x="862" y="221" font-size="18" fill="#1f56a8" font-weight="700" text-anchor="middle" >Chance of</text>
-<text x="862" y="243" font-size="18" fill="#1f56a8" font-weight="700" text-anchor="middle" >return</text>
+<text x="862" y="243" font-size="18" fill="#1f56a8" font-weight="700" text-anchor="middle" >quitting</text>
 <text x="862" y="267" font-size="13.5" fill="#1f56a8" font-weight="500" text-anchor="middle" >per new player</text>
 <line x1="30" y1="381" x2="930" y2="381" stroke="#e4e1d8"/>
 <text x="30" y="411" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Tested on players the model had not seen · twice, with a different random split</text>
