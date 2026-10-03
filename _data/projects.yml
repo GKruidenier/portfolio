@@ -6,8 +6,8 @@
   category: master
   featured: true
   year: "2026"
-  image: /assets/img/projects/scriptie_rmse_vergelijking.png
-  image_en: /assets/img/projects/scriptie_rmse_vergelijking_en.png
+  image: /assets/img/projects/scriptie_concept.svg
+  image_en: /assets/img/projects/scriptie_concept_en.svg
   tags: [PyTorch, LSTM/GRU, Time series]
   nl:
     title: "Masterscriptie: economische groei in real time voorspellen"
@@ -90,7 +90,8 @@
 - id: citations
   category: master
   year: "2025"
-  image: ""
+  image: /assets/img/projects/citaties_pipeline.svg
+  image_en: /assets/img/projects/citaties_pipeline_en.svg
   tags: [NLP, Sentence-BERT, Ridge]
   nl:
     title: Voorspellen hoe vaak een wetenschappelijk artikel wordt geciteerd
@@ -110,7 +111,7 @@
 - id: bachelor-thesis
   category: bachelor
   year: "2023"
-  image: ""
+  image: /assets/img/projects/bachelor_combinatietherapie.png
   tags: [Literature review, Cancer metabolism]
   nl:
     title: "Bachelorscriptie: combinatietherapieën met glutaminemetabolismeremmers"

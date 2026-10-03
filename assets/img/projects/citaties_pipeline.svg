@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 300" width="930" height="300" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="930" height="300" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<text x="40" y="40" font-size="14" fill="#6f7686" font-weight="600" text-anchor="start" letter-spacing="1">INVOER</text>
+<rect x="40" y="70" width="150" height="32" rx="16" fill="#faf9f6" stroke="#e4e1d8"/>
+<text x="115" y="91" font-size="13.5" fill="#4a5163" font-weight="500" text-anchor="middle" >Titel</text>
+<rect x="40" y="112" width="150" height="32" rx="16" fill="#faf9f6" stroke="#e4e1d8"/>
+<text x="115" y="133" font-size="13.5" fill="#4a5163" font-weight="500" text-anchor="middle" >Samenvatting</text>
+<rect x="40" y="154" width="150" height="32" rx="16" fill="#faf9f6" stroke="#e4e1d8"/>
+<text x="115" y="175" font-size="13.5" fill="#4a5163" font-weight="500" text-anchor="middle" >Auteurs</text>
+<rect x="40" y="196" width="150" height="32" rx="16" fill="#faf9f6" stroke="#e4e1d8"/>
+<text x="115" y="217" font-size="13.5" fill="#4a5163" font-weight="500" text-anchor="middle" >Tijdschrift</text>
+<rect x="40" y="238" width="150" height="32" rx="16" fill="#faf9f6" stroke="#e4e1d8"/>
+<text x="115" y="259" font-size="13.5" fill="#4a5163" font-weight="500" text-anchor="middle" >Jaar</text>
+<rect x="270" y="70" width="230" height="56" rx="10" fill="#e7effb" stroke="#2a6fd6"/>
+<text x="286" y="94" font-size="14.5" fill="#1d2230" font-weight="650" text-anchor="start" >TF-IDF</text>
+<text x="286" y="113" font-size="12" fill="#4a5163" font-weight="400" text-anchor="start" >woorden in titel en samenvatting</text>
+<rect x="270" y="140" width="230" height="56" rx="10" fill="#e7effb" stroke="#2a6fd6"/>
+<text x="286" y="164" font-size="14.5" fill="#1d2230" font-weight="650" text-anchor="start" >Sentence-BERT</text>
+<text x="286" y="183" font-size="12" fill="#4a5163" font-weight="400" text-anchor="start" >betekenis van de titel</text>
+<rect x="270" y="210" width="230" height="56" rx="10" fill="#f6e7da" stroke="#c9783d"/>
+<text x="286" y="234" font-size="14.5" fill="#1d2230" font-weight="650" text-anchor="start" >Metadata</text>
+<text x="286" y="253" font-size="12" fill="#4a5163" font-weight="400" text-anchor="start" >auteurs, tijdschrift, decennium</text>
+<text x="270" y="40" font-size="14" fill="#6f7686" font-weight="600" text-anchor="start" letter-spacing="1">FEATURES</text>
+<path d="M192,86 C230,86 232,98 264,98" fill="none" stroke="#e4e1d8" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M192,128 C230,128 232,98 264,98" fill="none" stroke="#e4e1d8" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M192,86 C230,86 232,168 264,168" fill="none" stroke="#e4e1d8" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M192,170 C230,170 232,238 264,238" fill="none" stroke="#e4e1d8" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M192,212 C230,212 232,238 264,238" fill="none" stroke="#e4e1d8" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M192,254 C230,254 232,238 264,238" fill="none" stroke="#e4e1d8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="590" y="40" font-size="14" fill="#6f7686" font-weight="600" text-anchor="start" letter-spacing="1">MODEL</text>
+<path d="M502,98 C550,98 550,165 584,165" fill="none" stroke="#6f7686" stroke-width="1.4" marker-end="url(#arr)"/>
+<path d="M502,168 C550,168 550,165 584,165" fill="none" stroke="#6f7686" stroke-width="1.4" marker-end="url(#arr)"/>
+<path d="M502,238 C550,238 550,165 584,165" fill="none" stroke="#6f7686" stroke-width="1.4" marker-end="url(#arr)"/>
+<rect x="590" y="125" width="150" height="80" rx="12" fill="#1d2230"/>
+<text x="665" y="161" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle" >Ridge</text>
+<text x="665" y="183" font-size="12" fill="#c9cdd8" font-weight="400" text-anchor="middle" >lineaire regressie</text>
+<line x1="742" y1="165" x2="782" y2="165" stroke="#6f7686" stroke-width="1.6" marker-end="url(#arr)"/>
+<circle cx="840" cy="165" r="52" fill="#e7effb" stroke="#2a6fd6" stroke-width="2"/>
+<text x="840" y="160" font-size="14.5" fill="#1f56a8" font-weight="700" text-anchor="middle" >√ citaties</text>
+<text x="840" y="179" font-size="12" fill="#1f56a8" font-weight="500" text-anchor="middle" >per artikel</text>
+<text x="840" y="40" font-size="14" fill="#6f7686" font-weight="600" text-anchor="middle" letter-spacing="1">VOORSPELLING</text>
+</svg>

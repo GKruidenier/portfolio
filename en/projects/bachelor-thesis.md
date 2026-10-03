@@ -5,30 +5,24 @@ ref: bachelor-thesis
 project: bachelor-thesis
 section: bachelor
 title: "Bachelor's thesis: combination therapies with glutamine metabolism inhibitors"
-lead: Which drug combinations can strengthen glutamine metabolism inhibitors against cancer and break through resistance?
+lead: "Which drug combinations break cancer cells' resistance to glutamine metabolism inhibitors?"
 description: Literature review of combination therapies that can break cancer cells' resistance to glutamine metabolism inhibitors.
+abstract: "Many tumours run on glutamine, but inhibitors lose their effect as soon as cancer cells find a detour. In this literature review I mapped those detours and the combination therapies that can close them, from metabolic inhibitors to radiotherapy and immunotherapy."
+image: /assets/img/projects/bachelor_combinatietherapie.png
 course: BSc Biomedical Sciences, Utrecht University, 2023
 team: Individual literature review
 tools: [Literature research, Cancer metabolism, Immunotherapy, Scientific writing]
 ---
 
-## The question
+{% include slide.html title="A cancer cell's detours" text="Inhibitors block the breakdown of glutamine, but the cell switches to glucose, fatty acids and other routes to glutamate." src="/assets/img/projects/bachelor_glutamineroutes.png" alt="Diagram of a cancer cell with the routes from glutamine, glucose, fatty acids and aspartate into the TCA cycle, and the inhibitors per route" %}
 
-Many cancer cells depend heavily on the amino acid glutamine to grow. Drugs that inhibit glutamine metabolism are therefore a promising treatment, but cancer cells often find a way around them: they switch to other metabolic pathways and become resistant. My research question was which drug combinations can break through that resistance.
+{% include slide.html title="Oxidative stress as a weak spot" text="High oxidative stress predicts sensitivity better than glutamine use. Therapies that raise it, such as radiotherapy, are therefore promising." src="/assets/img/projects/bachelor_oxidatieve_stress.png" alt="Diagram of glutathione production via cystine transport and the factors that raise or lower reactive oxygen species (ROS)" %}
 
-## Approach
+{% include slide.html title="Closing the exits" text="Combinations with inhibitors of glucose uptake, mTOR and fatty acid oxidation block the routes the cell uses to escape." src="/assets/img/projects/bachelor_combinatietherapie.png" alt="Diagram of a cancer cell showing the targets of combination therapies alongside glutaminase inhibitors" %}
 
-A 35-page literature review that first sets out the role of glutamine in the growth and survival of cancer cells, then the existing inhibitors, their effect on the immune system and the resistance mechanisms, and finally the combination therapies tested in preclinical and clinical research.
-
-## Key insights
-
-- **Combinations that close the escape routes.** Inhibitors of glycolysis, fatty acid oxidation and alternative routes of glutamate production work together with glutaminase inhibitors, because they block the pathways cancer cells use to escape.
-- **Oxidative stress as a lever.** High oxidative stress turns out to predict sensitivity to glutaminase inhibitors better than how much glutamine a tumour uses. That makes combinations with therapies that raise oxidative stress, such as radiotherapy, promising.
-- **An unexpected ally in the immune system.** Glutamine metabolism inhibitors can actually strengthen the immune response against cancer, which makes combining them with immunotherapy (checkpoint inhibitors) interesting.
-
-> **Conclusion:** inhibiting glutamine metabolism alone is not enough. The future lies in combinations that tackle several pathways at once, so the cancer cell has no way out.
+{% include slide.html title="Not one brake, but several" text="These inhibitors can also strengthen the immune response against cancer, which makes combining them with immunotherapy interesting." statement=true %}
 
 <div class="role" markdown="1">
-## What I bring to data science
-Reading large amounts of research critically, weighing conflicting results and writing up a complex story clearly. I now use those skills when judging models and explaining results.
+## What I take into data science
+Reading a lot of research critically, weighing conflicting results and writing up a complex story clearly.
 </div>

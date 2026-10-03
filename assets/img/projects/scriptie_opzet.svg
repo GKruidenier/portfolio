@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 446" width="960" height="446" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="960" height="446" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<text x="40" y="38" font-size="16" fill="#1d2230" font-weight="600" text-anchor="start" >Elk jaar opnieuw trainen, het jaar erna testen</text>
+<rect x="603.4" y="60" width="8.7" height="235" fill="#1d2230" opacity=".07"/>
+<rect x="686.9" y="60" width="19.9" height="235" fill="#1d2230" opacity=".07"/>
+<rect x="838.9" y="60" width="4.0" height="235" fill="#1d2230" opacity=".07"/>
+<text x="78" y="83" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end" >Ronde 2000</text>
+<rect x="90.0" y="70" width="498.5" height="18" rx="4" fill="#e7effb" stroke="#2a6fd6" stroke-width="1"/>
+<rect x="589.5" y="70" width="11.5" height="18" rx="3" fill="#c9783d"/>
+<text x="78" y="117" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end" >Ronde 2001</text>
+<rect x="90.0" y="104" width="510.9" height="18" rx="4" fill="#e7effb" stroke="#2a6fd6" stroke-width="1"/>
+<rect x="601.9" y="104" width="11.5" height="18" rx="3" fill="#c9783d"/>
+<text x="78" y="151" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end" >Ronde 2002</text>
+<rect x="90.0" y="138" width="523.4" height="18" rx="4" fill="#e7effb" stroke="#2a6fd6" stroke-width="1"/>
+<rect x="614.4" y="138" width="11.5" height="18" rx="3" fill="#c9783d"/>
+<circle cx="738.0" cy="180" r="2.4" fill="#6f7686"/>
+<circle cx="752.0" cy="180" r="2.4" fill="#6f7686"/>
+<circle cx="766.0" cy="180" r="2.4" fill="#6f7686"/>
+<text x="78" y="213" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end" >Ronde 2023</text>
+<rect x="90.0" y="200" width="785.1" height="18" rx="4" fill="#e7effb" stroke="#2a6fd6" stroke-width="1"/>
+<rect x="876.1" y="200" width="11.5" height="18" rx="3" fill="#c9783d"/>
+<text x="78" y="247" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end" >Ronde 2024</text>
+<rect x="90.0" y="234" width="797.5" height="18" rx="4" fill="#e7effb" stroke="#2a6fd6" stroke-width="1"/>
+<rect x="888.5" y="234" width="11.5" height="18" rx="3" fill="#c9783d"/>
+<line x1="90" y1="278" x2="900" y2="278" stroke="#6f7686"/>
+<line x1="90.0" y1="278" x2="90.0" y2="283" stroke="#6f7686"/>
+<text x="90.0" y="300" font-size="12" fill="#6f7686" font-weight="400" text-anchor="middle" >1960</text>
+<line x1="214.6" y1="278" x2="214.6" y2="283" stroke="#6f7686"/>
+<text x="214.6" y="300" font-size="12" fill="#6f7686" font-weight="400" text-anchor="middle" >1970</text>
+<line x1="339.2" y1="278" x2="339.2" y2="283" stroke="#6f7686"/>
+<text x="339.2" y="300" font-size="12" fill="#6f7686" font-weight="400" text-anchor="middle" >1980</text>
+<line x1="463.8" y1="278" x2="463.8" y2="283" stroke="#6f7686"/>
+<text x="463.8" y="300" font-size="12" fill="#6f7686" font-weight="400" text-anchor="middle" >1990</text>
+<line x1="588.5" y1="278" x2="588.5" y2="283" stroke="#6f7686"/>
+<text x="588.5" y="300" font-size="12" fill="#6f7686" font-weight="400" text-anchor="middle" >2000</text>
+<line x1="713.1" y1="278" x2="713.1" y2="283" stroke="#6f7686"/>
+<text x="713.1" y="300" font-size="12" fill="#6f7686" font-weight="400" text-anchor="middle" >2010</text>
+<line x1="837.7" y1="278" x2="837.7" y2="283" stroke="#6f7686"/>
+<text x="837.7" y="300" font-size="12" fill="#6f7686" font-weight="400" text-anchor="middle" >2020</text>
+<text x="90" y="338" font-size="13" fill="#1d2230" font-weight="600" text-anchor="start" >Evaluatie</text>
+<path d="M588.5,322 V328 H900.0 V322" fill="none" stroke="#1d2230" stroke-width="1.6"/>
+<text x="744.2" y="346" font-size="12.5" fill="#1d2230" font-weight="600" text-anchor="middle" >2000–2024</text>
+<path d="M588.5,360 V366 H837.7 V360" fill="none" stroke="#4a5163" stroke-width="1.6"/>
+<text x="713.1" y="384" font-size="12.5" fill="#4a5163" font-weight="600" text-anchor="middle" >2000–2019</text>
+<rect x="90" y="409" width="22" height="13" rx="3" fill="#e7effb" stroke="#2a6fd6"/>
+<text x="120" y="420" font-size="12.5" fill="#4a5163" font-weight="400" text-anchor="start" >Training: alle data tot dan toe</text>
+<rect x="371" y="409" width="22" height="13" rx="3" fill="#c9783d" stroke="#c9783d"/>
+<text x="401" y="420" font-size="12.5" fill="#4a5163" font-weight="400" text-anchor="start" >Test: het jaar erna</text>
+<rect x="568" y="409" width="22" height="13" rx="3" fill="#1d2230" opacity=".12"/>
+<text x="598" y="420" font-size="12.5" fill="#4a5163" font-weight="400" text-anchor="start" >Recessie</text>
+</svg>

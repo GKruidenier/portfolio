@@ -1,0 +1,27 @@
+{%- comment -%}
+Eén slide op een projectpagina. De nummering gaat vanzelf.
+Gebruik:
+  {% include slide.html title="Kop" text="Eén of twee korte zinnen." src="/assets/img/projects/x.png" alt="..." %}
+Opties:
+  src2 / alt2   tweede afbeelding naast de eerste
+  full=true     tekst boven, afbeelding over de hele breedte (voor brede grafieken)
+  photo=true    afbeelding vult het vak (foto's)
+  statement=true  donkere slide zonder afbeelding, voor een conclusie
+{%- endcomment -%}
+<section class="slide{% if include.full %} slide--full{% endif %}{% if include.statement %} slide--statement{% endif %}{% unless include.src %} slide--text{% endunless %}">
+  <div class="slide__text">
+    <p class="slide__num" aria-hidden="true"></p>
+    <h2>{{ include.title }}</h2>
+    {%- if include.text %}
+    <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    {%- endif %}
+  </div>
+  {%- if include.src %}
+  <div class="slide__media{% if include.src2 %} slide__media--pair{% endif %}{% if include.photo %} slide__media--photo{% endif %}">
+    <a href="{{ include.src | relative_url }}"><img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy"></a>
+    {%- if include.src2 %}
+    <a href="{{ include.src2 | relative_url }}"><img src="{{ include.src2 | relative_url }}" alt="{{ include.alt2 }}" loading="lazy"></a>
+    {%- endif %}
+  </div>
+  {%- endif %}
+</section>

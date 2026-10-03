@@ -29,7 +29,15 @@ Na publicatie staat de site op **https://gkruidenier.github.io/portfolio/** (Ned
 2. Kopieer een bestaande projectpagina, bijvoorbeeld `projecten/oosterslicht.md`, naar `projecten/jobscout-ai.md` en `en/projects/jobscout-ai.md`.
 3. Pas bovenaan `ref`, `project` (gelijk aan het `id` in `projects.yml`) en `permalink` of bestandsnaam aan, en schrijf de tekst.
 
-Een grafiek in een projectpagina zet je erin met:
+In deze variant bestaat een projectpagina uit een korte `abstract:` bovenaan (in de front matter) en een reeks slides. Een slide voeg je toe met:
+
+```liquid
+{% include slide.html title="Kop" text="Eén of twee korte zinnen." src="/assets/img/projects/mijn_grafiek.png" alt="Wat er te zien is" %}
+```
+
+Opties: `full=true` (brede afbeelding), `src2`/`alt2` (twee afbeeldingen naast elkaar), `photo=true` en `statement=true` (donkere conclusieslide zonder afbeelding). De zelfgemaakte schema's worden gegenereerd als SVG.
+
+Een losse grafiek in een projectpagina zet je erin met:
 
 ```liquid
 {% include figure.html src="/assets/img/projects/mijn_grafiek.png" alt="Wat er te zien is" caption="Onderschrift" %}

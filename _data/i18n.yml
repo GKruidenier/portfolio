@@ -16,6 +16,7 @@ nl:
   team: Team
   code: Code
   my_role: Mijn rol
+  abstract: In het kort
   next: Volgend project
   coming_soon: Binnenkort
   footer: Gebouwd met Jekyll en gehost op GitHub Pages.
@@ -37,6 +38,7 @@ en:
   team: Team
   code: Code
   my_role: My role
+  abstract: Abstract
   next: Next project
   coming_soon: Coming soon
   footer: Built with Jekyll and hosted on GitHub Pages.

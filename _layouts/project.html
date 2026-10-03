@@ -46,7 +46,16 @@ layout: default
   </div>
   {%- endif %}
 
-  <div class="wrap wrap--narrow prose">
+  {%- if page.abstract %}
+  <div class="wrap wrap--narrow">
+    <div class="abstract">
+      <p class="eyebrow">{{ t.abstract }}</p>
+      <p>{{ page.abstract }}</p>
+    </div>
+  </div>
+  {%- endif %}
+
+  <div class="wrap deck prose">
     {{ content }}
   </div>
 

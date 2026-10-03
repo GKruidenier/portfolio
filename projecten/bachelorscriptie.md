@@ -5,30 +5,24 @@ ref: bachelor-thesis
 project: bachelor-thesis
 section: bachelor
 title: "Bachelorscriptie: combinatietherapieën met glutaminemetabolismeremmers"
-lead: Welke combinaties van medicijnen kunnen de werking van glutaminemetabolismeremmers bij kanker versterken en resistentie doorbreken?
+lead: "Welke medicijncombinaties doorbreken de resistentie van kankercellen tegen glutaminemetabolismeremmers?"
 description: Literatuurstudie naar combinatietherapieën die de resistentie van kankercellen tegen glutaminemetabolismeremmers kunnen doorbreken.
+abstract: "Veel tumoren draaien op glutamine, maar remmers daarvan verliezen hun werking zodra kankercellen een omweg vinden. In deze literatuurstudie bracht ik die omwegen in kaart en welke combinatietherapieën ze kunnen afsluiten, van metabole remmers tot radiotherapie en immuuntherapie."
+image: /assets/img/projects/bachelor_combinatietherapie.png
 course: BSc Biomedische Wetenschappen, Universiteit Utrecht, 2023
 team: Individuele literatuurstudie
 tools: [Literatuuronderzoek, Kankermetabolisme, Immunotherapie, Wetenschappelijk schrijven]
 ---
 
-## De vraag
+{% include slide.html title="De omwegen van een kankercel" text="Remmers blokkeren de afbraak van glutamine, maar de cel schakelt over op glucose, vetzuren en andere routes naar glutamaat." src="/assets/img/projects/bachelor_glutamineroutes.png" alt="Schema van een kankercel met de routes van glutamine, glucose, vetzuren en aspartaat naar de citroenzuurcyclus, en de remmers per route" %}
 
-Veel kankercellen zijn voor hun groei sterk afhankelijk van het aminozuur glutamine. Medicijnen die het glutaminemetabolisme remmen zijn daarom een veelbelovende behandeling, maar kankercellen vinden vaak een omweg: ze schakelen over op andere stofwisselingsroutes en worden resistent. Mijn onderzoeksvraag was welke combinaties van medicijnen die resistentie kunnen doorbreken.
+{% include slide.html title="Oxidatieve stress als zwakke plek" text="Hoge oxidatieve stress voorspelt gevoeligheid beter dan glutaminegebruik. Therapieën die dat verhogen, zoals radiotherapie, zijn daarom kansrijk." src="/assets/img/projects/bachelor_oxidatieve_stress.png" alt="Schema van glutathionproductie via het cystine-transport en de factoren die reactieve zuurstofsoorten (ROS) verhogen of verlagen" %}
 
-## Aanpak
+{% include slide.html title="De uitwegen afsluiten" text="Combinaties met remmers van glucoseopname, mTOR en vetzuuroxidatie blokkeren de routes waarlangs de cel ontsnapt." src="/assets/img/projects/bachelor_combinatietherapie.png" alt="Schema van een kankercel met de aangrijpingspunten van combinatietherapieën naast glutaminaseremmers" %}
 
-Een literatuurstudie van 35 pagina's waarin ik eerst de rol van glutamine in de groei en overleving van kankercellen uiteenzet, daarna de bestaande remmers, hun effect op het immuunsysteem en de resistentiemechanismen, en tot slot de combinatietherapieën die in preklinisch en klinisch onderzoek zijn getest.
-
-## Belangrijkste inzichten
-
-- **Combinaties die de omweg afsluiten.** Remmers van glycolyse, vetzuuroxidatie en alternatieve routes voor glutamaatproductie werken samen met glutaminaseremmers, omdat ze de routes blokkeren waarlangs kankercellen ontsnappen.
-- **Oxidatieve stress als aanknopingspunt.** Hoge oxidatieve stress blijkt een betere voorspeller van gevoeligheid voor glutaminaseremmers dan de hoeveelheid glutamine die een tumor gebruikt. Daardoor zijn combinaties met therapieën die oxidatieve stress verhogen, zoals radiotherapie, kansrijk.
-- **Een onverwachte bondgenoot in het immuunsysteem.** Glutaminemetabolismeremmers kunnen de afweer tegen kanker juist versterken, wat combinatie met immuuntherapie (checkpointremmers) interessant maakt.
-
-> **Conclusie:** alleen het glutaminemetabolisme remmen is niet genoeg. De toekomst ligt in combinaties die meerdere routes tegelijk aanpakken, zodat de kankercel geen uitweg meer heeft.
+{% include slide.html title="Niet één rem, maar meerdere" text="Bovendien kunnen deze remmers de afweer tegen kanker versterken, wat combinatie met immuuntherapie interessant maakt." statement=true %}
 
 <div class="role" markdown="1">
 ## Wat ik meeneem naar data science
-Grote hoeveelheden onderzoek kritisch lezen, tegenstrijdige resultaten wegen en een complex verhaal helder opschrijven. Die vaardigheden gebruik ik nu bij het beoordelen van modellen en het uitleggen van resultaten.
+Veel onderzoek kritisch lezen, tegenstrijdige resultaten wegen en een complex verhaal helder opschrijven.
 </div>
