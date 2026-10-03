@@ -8,6 +8,8 @@ title: Voorspellen hoe vaak een wetenschappelijk artikel wordt geciteerd
 lead: "Kun je uit titel, samenvatting, auteurs, tijdschrift en jaar voorspellen hoe vaak een artikel geciteerd wordt?"
 description: Een NLP- en regressiepipeline (TF-IDF, Sentence-BERT, Ridge) die het aantal citaties voorspelt. Top 5 van het vak Machine Learning.
 abstract: "Een reproduceerbare pipeline die uit titel, samenvatting, auteurs, tijdschrift en jaar voorspelt hoe vaak een artikel wordt geciteerd. Een eenvoudige Ridge-regressie op goed gekozen features eindigde in de top 5 van het vak."
+abstract_image: /assets/img/projects/citaties_abstract.svg
+abstract_alt: "Visuele samenvatting: een artikel wordt omgezet in getallen en een eenvoudige Ridge-regressie voorspelt het aantal citaties; top 5 van het vak"
 course: Machine Learning, MSc Data Science and Society
 team: Individueel project
 tools: [Python, scikit-learn, NLTK, TF-IDF, Sentence-BERT, Ridge, LightGBM, Random Forest]

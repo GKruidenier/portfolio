@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 400" width="970" height="400" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="970" height="400" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c9783d"/></marker></defs>
+<text x="40" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Camerabeeld</text>
+<text x="40" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >bestuurder in de auto</text>
+<text x="330" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Eigen neuraal netwerk</text>
+<text x="330" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >leert zelf wat er te zien is</text>
+<text x="820" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="middle" >Bevinding</text>
+<text x="820" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="middle" >zes toestanden herkend</text>
+<rect x="40" y="116" width="230" height="180" rx="10" fill="#e9e9e9" stroke="#bdbdbd" stroke-width="1.5"/>
+<circle cx="168" cy="182" r="28" fill="#8f8f8f"/>
+<path d="M110,296 C114,228 222,228 226,296 Z" fill="#8f8f8f"/>
+<path d="M62,284 A60,60 0 0 1 136,230" fill="none" stroke="#5f5f5f" stroke-width="8" stroke-linecap="round"/>
+<rect x="200" y="168" width="20" height="34" rx="4" fill="#c9783d" transform="rotate(14 210 185)"/>
+<text x="155.0" y="326" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >72 × 128 pixels, grijs</text>
+<line x1="276" y1="206" x2="324" y2="206" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
+<path d="M332,131.0 l10,-10 h18 v150 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="332" y="131.0" width="18" height="150" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<line x1="362" y1="206" x2="380" y2="206" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M384,147.0 l10,-10 h26 v118 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="384" y="147.0" width="26" height="118" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<line x1="422" y1="206" x2="440" y2="206" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M444,162.0 l10,-10 h36 v88 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="444" y="162.0" width="36" height="88" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<line x1="492" y1="206" x2="510" y2="206" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M514,176.0 l10,-10 h48 v60 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="514" y="176.0" width="48" height="60" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="447.0" y="318" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >steeds meer kenmerken per laag</text>
+<line x1="574" y1="206" x2="640" y2="206" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="648" y="104" width="120" height="24" rx="12" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="708" y="121" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >veilig</text>
+<rect x="648" y="134" width="120" height="24" rx="12" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="708" y="151" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >gevaarlijk</text>
+<rect x="648" y="164" width="120" height="24" rx="12" fill="#c9783d" stroke="#c9783d" stroke-width="1.2"/>
+<text x="708" y="181" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" >⚠ afgeleid</text>
+<rect x="648" y="194" width="120" height="24" rx="12" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="708" y="211" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >drinken</text>
+<rect x="648" y="224" width="120" height="24" rx="12" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="708" y="241" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >slaperig</text>
+<rect x="648" y="254" width="120" height="24" rx="12" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="708" y="271" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >gapen</text>
+<circle cx="870" cy="196" r="72" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
+<text x="870" y="202" font-size="34" fill="#1f56a8" font-weight="700" text-anchor="middle" >95%</text>
+<text x="870" y="228" font-size="14" fill="#1f56a8" font-weight="600" text-anchor="middle" >juist herkend</text>
+<text x="870" y="300" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >eerste model: 79%</text>
+</svg>

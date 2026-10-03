@@ -402,3 +402,8 @@ p { margin: 0 0 1em; }
 .slide--models .models { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 .slide--models .models:has(> :nth-child(5)) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 820px) { .slide--models .models, .slide--models .models:has(> :nth-child(5)) { grid-template-columns: 1fr; } }
+
+/* Visuele samenvatting in het abstract-blok */
+.abstract__figure { display: block; margin-top: 18px; border-top: 1px solid var(--line); padding-top: 16px; }
+.abstract__figure img { width: 100%; height: auto; }
+.wrap--narrow:has(.abstract__figure) { max-width: calc(940px + 2 * var(--gutter)); }

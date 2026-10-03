@@ -9,6 +9,8 @@ lead: "Kan een neuraal netwerk dat maand- en kwartaaldata direct combineert de e
 description: Drie eigen LSTM- en GRU-architecturen voor het real-time voorspellen van bbp-groei, getoetst tegen Dynamic Factor Models en ARMA.
 image: /assets/img/projects/scriptie_rmse_vergelijking.png
 abstract: "Het bbp verschijnt per kwartaal en met vertraging, maandcijfers komen veel sneller. Ik ontwierp drie neurale netwerken die beide direct combineren. Van 2000 tot 2019 is hun voorspelfout 11% lager dan die van het model van centrale banken."
+abstract_image: /assets/img/projects/scriptie_concept.svg
+abstract_alt: "Visuele samenvatting: maand- en kwartaaldata gaan samen een eigen netwerk in dat de bbp-groei van het lopende kwartaal schat"
 course: MSc Data Science and Society, Tilburg University
 team: Individueel onderzoek
 code: https://github.com/GKruidenier/GDP-nowcasting-thesis
@@ -53,7 +55,7 @@ sample:
   note: "Twee van de 238 indicatoren. Het bbp komt eens per kwartaal; het vraagteken is wat het model schat."
 ---
 
-{% include slide.html kicker="Probleem" title="Hoe gaat het nú met de economie?" text="Het bbp-cijfer komt pas weken na afloop van een kwartaal. Kan een model met de maandcijfers die al binnen zijn de groei van dit kwartaal schatten?" src="/assets/img/projects/scriptie_concept.svg" alt="Schets: maand- en kwartaaldata gaan samen een netwerk in dat de bbp-groei van het lopende kwartaal schat" full=true %}
+{% include slide.html kicker="Probleem" title="Hoe gaat het nú met de economie?" text="Het bbp-cijfer komt pas weken na afloop van een kwartaal. Kan een model met de maandcijfers die al binnen zijn de groei van dit kwartaal schatten?" src="/assets/img/projects/scriptie_probleem.svg" alt="Tijdlijn: maandcijfers komen elke maand binnen, maar het bbp van het eerste kwartaal is pas weken na afloop van het kwartaal bekend" full=true %}
 
 {% include data.html kicker="Data" title="Maand- en kwartaalcijfers door elkaar" text="121 maand- en 117 kwartaalindicatoren van de Amerikaanse economie, 1960–2024." src="/assets/img/projects/scriptie_bbp_groei_nl.png" alt="Lijngrafiek van de kwartaalgroei van het Amerikaanse bbp 1960–2024, met scherpe dalen in de recessies" %}
 

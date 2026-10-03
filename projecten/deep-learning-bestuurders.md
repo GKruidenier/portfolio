@@ -9,6 +9,8 @@ lead: "Kan een neuraal netwerk aan een camerabeeld zien in welke toestand een be
 description: Een eigen CNN dat zes toestanden van bestuurders herkent met 95% nauwkeurigheid, vergeleken met een baseline en transfer learning (DenseNet121).
 image: /assets/img/projects/deeplearning_nauwkeurigheid_vergelijking.png
 abstract: "Een eigen convolutioneel neuraal netwerk herkent uit één camerabeeld zes toestanden van een bestuurder. Door gericht te tunen steeg de nauwkeurigheid van 79% naar 95%, ruim boven een voorgetraind netwerk."
+abstract_image: /assets/img/projects/deeplearning_abstract.svg
+abstract_alt: "Visuele samenvatting: een camerabeeld van een bestuurder met telefoon gaat door een eigen neuraal netwerk, dat 'afgeleid' herkent; 95% van de beelden juist, eerste model 79%"
 course: Deep Learning, voorjaar 2025
 team: Zes studenten (groep 6) · ik bouwde het beste model
 tools: [Python, TensorFlow/Keras, CNN, Optuna, Transfer learning, DenseNet121]

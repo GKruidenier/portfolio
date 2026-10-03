@@ -8,6 +8,8 @@ title: Predicting how often a scientific paper will be cited
 lead: "Can you predict how often a paper will be cited from its title, abstract, authors, venue and year?"
 description: An NLP and regression pipeline (TF-IDF, Sentence-BERT, Ridge) that predicts citation counts. Top 5 of the Machine Learning course.
 abstract: "A reproducible pipeline that predicts how often a paper will be cited from its title, abstract, authors, venue and year. A simple Ridge regression on well-chosen features finished in the top 5 of the course."
+abstract_image: /assets/img/projects/citaties_abstract_en.svg
+abstract_alt: "Visual summary: a paper is turned into numbers and a simple Ridge regression predicts its citation count; top 5 of the course"
 course: Machine Learning, MSc Data Science and Society
 team: Individual project
 tools: [Python, scikit-learn, NLTK, TF-IDF, Sentence-BERT, Ridge, LightGBM, Random Forest]

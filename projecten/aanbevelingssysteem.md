@@ -9,6 +9,8 @@ lead: "Hoe goed kun je voorspellen welk cijfer iemand geeft aan een film die hij
 description: Een aanbevelingssysteem op de MovieLens-data met KNNBaseline en SVD, getuned en gevalideerd. RMSE 0,803.
 image: /assets/img/projects/recommender_rmse_vergelijking.png
 abstract: "Op 27 miljoen MovieLens-beoordelingen vergeleken we twee technieken voor aanbevelingen. Na slim verkleinen en tunen zit de beste (SVD) gemiddeld 0,8 ster naast het echte cijfer, tegen 1,4 bij gokken."
+abstract_image: /assets/img/projects/recommender_abstract.svg
+abstract_alt: "Visuele samenvatting: een grotendeels leeg raster van kijkers en films; SVD koppelt smaakprofielen en vult het lege vakje in met 4,2 sterren, gemiddeld 0,8 ster naast het echte cijfer"
 course: Analysis of Customer Data, mei 2025
 team: Drie studenten (groep 9)
 tools: [Python, pandas, Surprise, Collaborative filtering, KNN, SVD, Hyperparameter-tuning]

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 380" width="990" height="380" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="990" height="380" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c9783d"/></marker></defs>
+<rect x="70.0" y="80" width="425.0" height="210" fill="#e7effb"/>
+<text x="282.5" y="66" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >1e kwartaal</text>
+<line x1="70.0" y1="290" x2="920.0" y2="290" stroke="#6f7686" stroke-width="1.5"/>
+<line x1="70.0" y1="290" x2="70.0" y2="296" stroke="#6f7686"/>
+<text x="140.83333333333331" y="316" font-size="14" fill="#4a5163" font-weight="500" text-anchor="middle" >jan</text>
+<rect x="210.66666666666666" y="252" width="14" height="30" rx="3" fill="#2a6fd6" opacity=".8"/>
+<line x1="211.66666666666666" y1="290" x2="211.66666666666666" y2="296" stroke="#6f7686"/>
+<text x="282.5" y="316" font-size="14" fill="#4a5163" font-weight="500" text-anchor="middle" >feb</text>
+<rect x="352.3333333333333" y="252" width="14" height="30" rx="3" fill="#2a6fd6" opacity=".8"/>
+<line x1="353.3333333333333" y1="290" x2="353.3333333333333" y2="296" stroke="#6f7686"/>
+<text x="424.16666666666663" y="316" font-size="14" fill="#4a5163" font-weight="500" text-anchor="middle" >mrt</text>
+<rect x="494.0" y="252" width="14" height="30" rx="3" fill="#2a6fd6" opacity=".8"/>
+<line x1="495.0" y1="290" x2="495.0" y2="296" stroke="#6f7686"/>
+<text x="565.8333333333333" y="316" font-size="14" fill="#4a5163" font-weight="500" text-anchor="middle" >apr</text>
+<rect x="635.6666666666666" y="252" width="14" height="30" rx="3" fill="#2a6fd6" opacity=".8"/>
+<line x1="636.6666666666666" y1="290" x2="636.6666666666666" y2="296" stroke="#6f7686"/>
+<text x="707.5" y="316" font-size="14" fill="#4a5163" font-weight="500" text-anchor="middle" >mei</text>
+<rect x="777.3333333333334" y="252" width="14" height="30" rx="3" fill="#2a6fd6" opacity=".8"/>
+<line x1="778.3333333333334" y1="290" x2="778.3333333333334" y2="296" stroke="#6f7686"/>
+<text x="849.1666666666667" y="316" font-size="14" fill="#4a5163" font-weight="500" text-anchor="middle" >jun</text>
+<text x="76.0" y="240" font-size="14" fill="#1f56a8" font-weight="600" text-anchor="start" >maandcijfers</text>
+<line x1="424.1666666666667" y1="100" x2="424.1666666666667" y2="290" stroke="#1d2230" stroke-width="1.6" stroke-dasharray="3 4"/>
+<text x="414.1666666666667" y="122" font-size="15" fill="#1d2230" font-weight="700" text-anchor="end" >nu</text>
+<text x="414.1666666666667" y="142" font-size="13.5" fill="#4a5163" font-weight="500" text-anchor="end" >Q1 nog onbekend</text>
+<path d="M612.5833333333333,186 l14,14 l-14,14 l-14,-14 z" fill="#c9783d"/>
+<text x="612.5833333333333" y="176" font-size="14" fill="#c9783d" font-weight="700" text-anchor="middle" >bbp Q1 bekend</text>
+<path d="M495.0,232 H612.5833333333333" stroke="#c9783d" stroke-width="2" marker-end="url(#r)"/>
+<text x="553.7916666666666" y="226" font-size="13" fill="#c9783d" font-weight="600" text-anchor="middle" >weken wachten</text>
+<text x="70" y="356" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Een nowcast schat het bbp van het lopende kwartaal met de maandcijfers die er al zijn.</text>
+</svg>

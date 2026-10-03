@@ -9,6 +9,8 @@ lead: "Can a neural network tell from a camera image what state a driver is in?"
 description: A custom CNN that recognises six driver states with 95% accuracy, compared with a baseline and transfer learning (DenseNet121).
 image: /assets/img/projects/deeplearning_nauwkeurigheid_vergelijking_en.png
 abstract: "A custom convolutional neural network recognises six driver states from a single camera image. Targeted tuning raised accuracy from 79% to 95%, well above a pretrained network."
+abstract_image: /assets/img/projects/deeplearning_abstract_en.svg
+abstract_alt: "Visual summary: a camera image of a driver with a phone passes a custom neural network, which recognises 'distracted'; 95% of images correct, first model 79%"
 course: Deep Learning, spring 2025
 team: Six students (group 6) · I built the best model
 tools: [Python, TensorFlow/Keras, CNN, Optuna, Transfer learning, DenseNet121]

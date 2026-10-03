@@ -51,6 +51,9 @@ layout: default
     <div class="abstract">
       <p class="eyebrow">{{ t.abstract }}</p>
       <p>{{ page.abstract }}</p>
+      {%- if page.abstract_image %}
+      <a class="abstract__figure" href="{{ page.abstract_image | relative_url }}"><img src="{{ page.abstract_image | relative_url }}" alt="{{ page.abstract_alt }}"></a>
+      {%- endif %}
     </div>
   </div>
   {%- endif %}

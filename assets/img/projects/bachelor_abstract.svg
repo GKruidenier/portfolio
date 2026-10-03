@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 400" width="970" height="400" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="970" height="400" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c9783d"/></marker></defs>
+<text x="30" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Tumor draait op glutamine</text>
+<text x="30" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >de brandstof voor groei</text>
+<ellipse cx="216" cy="222" rx="80" ry="72" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
+<circle cx="216" cy="222" r="26" fill="#f4d3d9"/>
+<path d="M220,204 L206,225 L215,225 L211,241 L226,219 L217,219 Z" fill="#e9a400"/>
+<path d="M30,222 H126 C160,222 156,222 186,222" fill="none" stroke="#2a6fd6" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
+<text x="30" y="213" font-size="13.5" fill="#2a6fd6" font-weight="700" text-anchor="start" >glutamine</text>
+<text x="216" y="336" font-size="15" fill="#4a5163" font-weight="700" text-anchor="middle" >groei</text>
+<line x1="308" y1="222" x2="340" y2="222" stroke="#6f7686" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="350" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Eén remmer</text>
+<text x="350" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >de cel neemt een omweg</text>
+<ellipse cx="536" cy="222" rx="80" ry="72" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
+<circle cx="536" cy="222" r="26" fill="#f4d3d9"/>
+<path d="M540,204 L526,225 L535,225 L531,241 L546,219 L537,219 Z" fill="#e9a400"/>
+<path d="M350,160 H446 C480,160 476,208 506,208" fill="none" stroke="#c9783d" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
+<text x="350" y="151" font-size="13.5" fill="#c9783d" font-weight="700" text-anchor="start" >glucose</text>
+<path d="M350,222 H446 C480,222 476,222 506,222" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="350" y="213" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="start" >glutamine</text>
+<line x1="438" y1="209" x2="438" y2="235" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<path d="M350,284 H446 C480,284 476,236 506,236" fill="none" stroke="#c9783d" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
+<text x="350" y="275" font-size="13.5" fill="#c9783d" font-weight="700" text-anchor="start" >vetzuren</text>
+<text x="536" y="336" font-size="15" fill="#c9783d" font-weight="700" text-anchor="middle" >resistentie</text>
+<line x1="628" y1="222" x2="660" y2="222" stroke="#6f7686" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="670" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Combinatie van remmers</text>
+<text x="670" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >ook de omwegen dicht</text>
+<ellipse cx="856" cy="222" rx="80" ry="72" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
+<circle cx="856" cy="222" r="26" fill="#f4d3d9"/>
+<path d="M860,204 L846,225 L855,225 L851,241 L866,219 L857,219 Z" fill="#c7c7c7"/>
+<path d="M670,160 H766 C800,160 796,208 826,208" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="670" y="151" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="start" >glucose</text>
+<line x1="758" y1="147" x2="758" y2="173" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<path d="M670,222 H766 C800,222 796,222 826,222" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="670" y="213" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="start" >glutamine</text>
+<line x1="758" y1="209" x2="758" y2="235" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<path d="M670,284 H766 C800,284 796,236 826,236" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="670" y="275" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="start" >vetzuren</text>
+<line x1="758" y1="271" x2="758" y2="297" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<text x="856" y="336" font-size="15" fill="#1f56a8" font-weight="700" text-anchor="middle" >kansrijke aanpak</text>
+</svg>

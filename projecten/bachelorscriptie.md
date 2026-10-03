@@ -8,6 +8,8 @@ title: "Bachelorscriptie: combinatietherapieën met glutaminemetabolismeremmers"
 lead: "Welke medicijncombinaties doorbreken de resistentie van kankercellen tegen glutaminemetabolismeremmers?"
 description: Literatuurstudie naar combinatietherapieën die de resistentie van kankercellen tegen glutaminemetabolismeremmers kunnen doorbreken.
 abstract: "Veel tumoren draaien op glutamine, maar remmers daarvan verliezen hun werking zodra kankercellen een omweg vinden. In deze literatuurstudie bracht ik die omwegen in kaart en welke combinaties van medicijnen ze kunnen afsluiten."
+abstract_image: /assets/img/projects/bachelor_abstract.svg
+abstract_alt: "Visuele samenvatting in drie stappen: een tumorcel draait op glutamine; met één remmer neemt de cel een omweg via glucose en vetzuren; een combinatie van remmers sluit ook de omwegen af"
 image: /assets/img/projects/bachelor_combinatietherapie.png
 course: BSc Biomedische Wetenschappen, Universiteit Utrecht, 2023
 team: Individuele literatuurstudie

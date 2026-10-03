@@ -9,6 +9,8 @@ lead: "Can you tell after the first few days whether a new player will stay or q
 description: Churn defined from raw play logs and predicted with logistic regression, Random Forest and XGBoost. Highest grade of all groups.
 image: /assets/img/projects/churn_modelvergelijking_prauc_en.png
 abstract: "From 150,000 games of a mobile game we defined ourselves when a player has quit. Using eight behavioural features, our models predict after five days who will return, almost five times better than guessing. Highest grade of all groups."
+abstract_image: /assets/img/projects/churn_abstract_en.svg
+abstract_alt: "Visual summary: one in twelve new players returns; the model reads play time, games and breaks and is right two times out of three when it predicts a return"
 course: Analysis of Customer Data, autumn 2025
 team: Four students (group 5) · highest grade of all groups
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]

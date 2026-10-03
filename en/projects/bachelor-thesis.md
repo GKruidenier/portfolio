@@ -8,6 +8,8 @@ title: "Bachelor's thesis: combination therapies with glutamine metabolism inhib
 lead: "Which drug combinations break cancer cells' resistance to glutamine metabolism inhibitors?"
 description: Literature review of combination therapies that can break cancer cells' resistance to glutamine metabolism inhibitors.
 abstract: "Many tumours run on glutamine, but inhibitors lose their effect as soon as cancer cells find a detour. In this literature review I mapped those detours and the drug combinations that can close them."
+abstract_image: /assets/img/projects/bachelor_abstract_en.svg
+abstract_alt: "Visual summary in three steps: a tumour cell runs on glutamine; with one inhibitor it detours via glucose and fatty acids; a combination of inhibitors closes the detours too"
 image: /assets/img/projects/bachelor_combinatietherapie.png
 course: BSc Biomedical Sciences, Utrecht University, 2023
 team: Individual literature review

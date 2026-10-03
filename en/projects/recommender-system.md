@@ -9,6 +9,8 @@ lead: "How well can you predict the rating someone will give a film they haven't
 description: A recommender system on the MovieLens data with KNNBaseline and SVD, tuned and validated. RMSE 0.803.
 image: /assets/img/projects/recommender_rmse_vergelijking_en.png
 abstract: "On 27 million MovieLens ratings we compared two recommender techniques. After smart downsizing and tuning, the best one (SVD) is on average 0.8 stars off the real rating, versus 1.4 for guessing."
+abstract_image: /assets/img/projects/recommender_abstract_en.svg
+abstract_alt: "Visual summary: a mostly empty grid of viewers and films; SVD matches taste profiles and fills the empty cell with 4.2 stars, on average 0.8 stars off"
 course: Analysis of Customer Data, May 2025
 team: Three students (group 9)
 tools: [Python, pandas, Surprise, Collaborative filtering, KNN, SVD, Hyperparameter tuning]
