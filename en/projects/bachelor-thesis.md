@@ -12,15 +12,37 @@ image: /assets/img/projects/bachelor_combinatietherapie.png
 course: BSc Biomedical Sciences, Utrecht University, 2023
 team: Individual literature review
 tools: [Literature research, Cancer metabolism, Immunotherapy, Scientific writing]
+models:
+  - name: "Glutaminase inhibitors"
+    tag: "basis"
+    text: "Block the first step in glutamine breakdown, for example CB-839."
+  - name: "Metabolic inhibitors"
+    tag: "combination"
+    own: true
+    text: "Inhibit glucose uptake, mTOR or fatty acid oxidation, so the cell cannot switch routes."
+  - name: "Radiotherapy"
+    tag: "combination"
+    own: true
+    text: "Raises the oxidative stress that glutamine inhibitors exploit."
+  - name: "Immunotherapy"
+    tag: "combination"
+    own: true
+    text: "Checkpoint inhibitors; glutamine inhibitors can strengthen the immune response against cancer."
 ---
 
-{% include slide.html title="A cancer cell's detours" text="Inhibitors block the breakdown of glutamine, but the cell switches to glucose, fatty acids and other routes to glutamate." src="/assets/img/projects/bachelor_glutamineroutes.png" alt="Diagram of a cancer cell with the routes from glutamine, glucose, fatty acids and aspartate into the TCA cycle, and the inhibitors per route" %}
+{% include slide.html kicker="Problem" title="Cancer cells find a detour" text="Many cancer cells depend on the amino acid glutamine to grow. Drugs that block it are promising, but cancer cells switch to other routes and become resistant. Which drug combinations close those detours?" %}
 
-{% include slide.html title="Oxidative stress as a weak spot" text="High oxidative stress predicts sensitivity better than glutamine use. Therapies that raise it, such as radiotherapy, are therefore promising." src="/assets/img/projects/bachelor_oxidatieve_stress.png" alt="Diagram of glutathione production via cystine transport and the factors that raise or lower reactive oxygen species (ROS)" %}
+{% include slide.html kicker="Background" title="A cancer cell's routes" text="Glutamine is broken down into fuel for the cell. Inhibitors block that route, but the cell can switch to glucose, fatty acids and other sources of glutamate." src="/assets/img/projects/bachelor_glutamineroutes.png" alt="Diagram of a cancer cell with the routes from glutamine, glucose, fatty acids and aspartate into the TCA cycle, and the inhibitors per route" %}
 
-{% include slide.html title="Closing the exits" text="Combinations with inhibitors of glucose uptake, mTOR and fatty acid oxidation block the routes the cell uses to escape." src="/assets/img/projects/bachelor_combinatietherapie.png" alt="Diagram of a cancer cell showing the targets of combination therapies alongside glutaminase inhibitors" %}
+{% include models.html kicker="Models" title="Treatments I compared" text="A glutaminase inhibitor as the basis, combined with treatments that close the exits or exploit the cell's weak spots." %}
 
-{% include slide.html title="Not one brake, but several" text="These inhibitors can also strengthen the immune response against cancer, which makes combining them with immunotherapy interesting." statement=true %}
+{% include slide.html kicker="Method" title="A literature review in six steps" text="A 35-page literature review: from the role of glutamine to the combinations tested in preclinical and clinical research." src="/assets/img/projects/bachelor_methode_en.svg" alt="Six-step method diagram: question, background, inhibitors, resistance, combinations and conclusion" full=true %}
+
+{% include slide.html kicker="Findings" title="Oxidative stress as a weak spot" text="High oxidative stress predicts sensitivity to glutaminase inhibitors better than how much glutamine a tumour uses. Therapies that raise stress, such as radiotherapy, are therefore promising partners." src="/assets/img/projects/bachelor_oxidatieve_stress.png" alt="Diagram of glutathione production via cystine transport and the factors that raise or lower reactive oxygen species (ROS)" %}
+
+{% include slide.html kicker="Findings" title="Closing the exits" text="Combinations with inhibitors of glucose uptake, mTOR and fatty acid oxidation block the routes the cell uses to escape." src="/assets/img/projects/bachelor_combinatietherapie.png" alt="Diagram of a cancer cell showing the targets of combination therapies alongside glutaminase inhibitors" %}
+
+{% include slide.html kicker="Conclusion" title="Not one brake, but several" text="Blocking glutamine metabolism alone is not enough. The future lies in combinations that target several routes at once, possibly together with immunotherapy." statement=true %}
 
 <div class="role" markdown="1">
 ## What I take into data science

@@ -364,3 +364,19 @@ p { margin: 0 0 1em; }
 .tiles { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
 .prose .tiles li { margin: 0; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink-2); font-size: .95rem; line-height: 1.5; }
 .tiles strong { display: block; color: var(--ink); font-size: 1.02rem; margin-bottom: 4px; }
+
+/* Label naast het slidenummer en de modellen-slide */
+.slide__num { display: flex; align-items: baseline; gap: 14px; }
+.slide__kicker { font-family: var(--font); font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); opacity: 1; }
+.slide--statement .slide__kicker { color: #fff; }
+.slide__num, .slide--statement .slide__num { opacity: 1; }
+.slide__num::before { opacity: .45; }
+.slide--statement .slide__num::before { opacity: .3; }
+.models { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.prose .models li { margin: 0; }
+.model { padding: 18px 20px; border-radius: var(--radius); background: var(--bg); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 4px; }
+.model strong { font-size: 1.05rem; color: var(--ink); }
+.model span:last-child { color: var(--ink-2); font-size: .94rem; line-height: 1.5; }
+.model__tag { align-self: flex-start; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); background: var(--surface-2); padding: 2px 8px; border-radius: 999px; margin-bottom: 4px; }
+.model--own { background: var(--accent-soft); border-color: transparent; }
+.model--own .model__tag { background: var(--accent); color: #fff; }

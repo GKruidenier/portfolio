@@ -19,17 +19,34 @@ stats:
     label: gemiddelde recall (baseline 0,65)
   - value: "6"
     label: toestanden van de bestuurder herkend
+models:
+  - name: "Baseline-CNN"
+    tag: "startpunt"
+    text: "Een klein netwerk met drie lagen van elk 8 filters. Haalde 79%, maar leerde de trainingsdata te veel uit het hoofd."
+  - name: "Eigen CNN"
+    tag: "beste model"
+    own: true
+    text: "Vier lagen waarbij het aantal filters per laag verdubbelt (32 tot 256), met batchnormalisatie en dropout tegen overfitting."
+  - name: "DenseNet121"
+    tag: "transfer learning"
+    text: "Een netwerk dat al op miljoenen foto's is getraind, met eigen lagen erop voor deze zes klassen."
 ---
 
-{% include slide.html title="Zes toestanden achter het stuur" text="Grijswaardenbeelden van 72 × 128 pixels: veilig, gevaarlijk, afgeleid, drinken, slaperig en gapen." src="/assets/img/projects/deeplearning_voorbeeldbeelden.png" alt="Raster met voorbeeldbeelden van bestuurders, elk met hun label" photo=true %}
+{% include slide.html kicker="Probleem" title="Kan een camera zien hoe de bestuurder erbij zit?" text="Afleiding en vermoeidheid achter het stuur veroorzaken veel ongelukken. Systemen in de auto kunnen waarschuwen, maar dan moet een model uit één camerabeeld herkennen of iemand veilig rijdt, afgeleid is, drinkt, slaperig is of gaapt." src="/assets/img/projects/deeplearning_voorbeeldbeelden.png" alt="Raster met voorbeeldbeelden van bestuurders, elk met hun label" photo=true %}
 
-{% include slide.html title="Ongelijk verdeeld" text="Drinken en gapen komen veel minder voor dan veilig rijden. Klassengewichten en augmentatie hielpen niet." src="/assets/img/projects/deeplearning_klassenverdeling.png" alt="Staafdiagram van het aantal beelden per klasse" %}
+{% include slide.html kicker="Data" title="Zes klassen, ongelijk verdeeld" text="Grijswaardenbeelden van 72 × 128 pixels uit de Kaggle-dataset *Driver Inattention Detection*. Drinken en gapen komen veel minder voor dan veilig rijden." src="/assets/img/projects/deeplearning_klassenverdeling.png" alt="Staafdiagram van het aantal beelden per klasse" %}
 
-{% include slide.html title="Van 79% naar 95%" text="Mijn eigen CNN verslaat de baseline en het voorgetrainde DenseNet121 (84%). De gemiddelde recall steeg van 0,65 naar 0,92." src="/assets/img/projects/deeplearning_nauwkeurigheid_vergelijking.png" alt="Staafdiagram van de testnauwkeurigheid: baseline 79%, DenseNet121 84%, eigen CNN 95%" %}
+{% include models.html kicker="Modellen" title="Zelf bouwen of hergebruiken?" text="Een convolutioneel neuraal netwerk (CNN) leert zelf patronen in beelden herkennen, van randen tot houdingen. We vergeleken een eigen CNN met een voorgetraind netwerk." %}
 
-{% include slide.html title="Leert zonder te overfitten" text="Training en validatie blijven dicht bij elkaar. Per klasse ligt de AUC tussen 0,97 en 1,00." src="/assets/img/projects/deeplearning_leercurve_beste_model.png" alt="Lijngrafiek van training- en validatienauwkeurigheid per epoch" src2="/assets/img/projects/deeplearning_roc_beste_model.png" alt2="ROC-curves per klasse met AUC tussen 0,97 en 1,00" full=true %}
+{% include slide.html kicker="Methode" title="Stap voor stap van 79% naar 95%" text="Elke wijziging is apart getest op een validatieset; alleen wat hielp bleef. De testset is pas aan het eind gebruikt." src="/assets/img/projects/deeplearning_methode.svg" alt="Methodeschema in zes stappen: data, baseline, voorbewerking, tunen, architectuur en evaluatie" full=true %}
+
+{% include slide.html kicker="Resultaten" title="Het eigen CNN wint ruim" text="95% nauwkeurigheid op de testset, tegen 79% voor de baseline en 84% voor DenseNet121. De gemiddelde recall steeg van 0,65 naar 0,92." src="/assets/img/projects/deeplearning_nauwkeurigheid_vergelijking.png" alt="Staafdiagram van de testnauwkeurigheid: baseline 79%, DenseNet121 84%, eigen CNN 95%" %}
+
+{% include slide.html kicker="Resultaten" title="Leert zonder te overfitten" text="Training en validatie blijven dicht bij elkaar. Per klasse ligt de AUC tussen 0,97 en 1,00." src="/assets/img/projects/deeplearning_leercurve_beste_model.png" alt="Lijngrafiek van training- en validatienauwkeurigheid per epoch" src2="/assets/img/projects/deeplearning_roc_beste_model.png" alt2="ROC-curves per klasse met AUC tussen 0,97 en 1,00" full=true %}
+
+{% include slide.html kicker="Evaluatie" title="Sterk, maar niet klaar voor de weg" text="'Afgeleid' en 'veilig rijden' blijven het lastigste paar. Kleurenbeelden en hogere resolutie zouden kunnen helpen. Voor echt gebruik tellen ook bias tussen groepen bestuurders, privacy en beveiliging mee." statement=true %}
 
 <div class="role" markdown="1">
 ## Mijn rol
-Ik bouwde het beste model: de tweede Optuna-ronde, de keuze voor dropout en de architectuur met verdubbelende filters. Ook deed ik de DenseNet121-experimenten.
+Ik bouwde het beste model: de tweede Optuna-ronde, de keuze voor dropout en de architectuur met verdubbelende filters. Ook bereidde ik de beelden voor en deed ik de DenseNet121-experimenten.
 </div>

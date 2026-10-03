@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="960" height="540" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<line x1="304" y1="147.0" x2="330" y2="147.0" stroke="#6f7686" stroke-width="2" marker-end="url(#a)"/>
+<line x1="616" y1="147.0" x2="642" y2="147.0" stroke="#6f7686" stroke-width="2" marker-end="url(#a)"/>
+<line x1="304" y1="419.0" x2="330" y2="419.0" stroke="#6f7686" stroke-width="2" marker-end="url(#a)"/>
+<line x1="616" y1="419.0" x2="642" y2="419.0" stroke="#6f7686" stroke-width="2" marker-end="url(#a)"/>
+<path d="M786.0,258 V283 H162.0 V306" fill="none" stroke="#6f7686" stroke-width="2" stroke-linejoin="round" marker-end="url(#a)"/>
+<rect x="24" y="40" width="276" height="214" rx="16" fill="#f6e7da" stroke="#c9783d" stroke-width="1.5"/>
+<circle cx="54" cy="74" r="15" fill="none" stroke="#c9783d" stroke-width="2"/>
+<text x="54" y="79.5" font-size="15" font-weight="700" fill="#c9783d" text-anchor="middle">1</text>
+<text x="80" y="80" font-size="21" font-weight="700" fill="#1d2230">Data</text>
+<text x="46" y="118" font-size="17" fill="#4a5163">Driver camera images, 72 ×</text>
+<text x="46" y="142" font-size="17" fill="#4a5163">128 greyscale, 6 classes</text>
+<rect x="336" y="40" width="276" height="214" rx="16" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<circle cx="366" cy="74" r="15" fill="none" stroke="#2a6fd6" stroke-width="2"/>
+<text x="366" y="79.5" font-size="15" font-weight="700" fill="#2a6fd6" text-anchor="middle">2</text>
+<text x="392" y="80" font-size="21" font-weight="700" fill="#1d2230">Baseline</text>
+<text x="358" y="118" font-size="17" fill="#4a5163">Simple 3-layer CNN: 79%,</text>
+<text x="358" y="142" font-size="17" fill="#4a5163">but overfitting</text>
+<rect x="648" y="40" width="276" height="214" rx="16" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<circle cx="678" cy="74" r="15" fill="none" stroke="#6f7686" stroke-width="2"/>
+<text x="678" y="79.5" font-size="15" font-weight="700" fill="#6f7686" text-anchor="middle">3</text>
+<text x="704" y="80" font-size="21" font-weight="700" fill="#1d2230">Preprocessing</text>
+<text x="670" y="118" font-size="17" fill="#4a5163">Class weights and</text>
+<text x="670" y="142" font-size="17" fill="#4a5163">augmentation tested: made</text>
+<text x="670" y="166" font-size="17" fill="#4a5163">it worse</text>
+<rect x="24" y="312" width="276" height="214" rx="16" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<circle cx="54" cy="346" r="15" fill="none" stroke="#2a6fd6" stroke-width="2"/>
+<text x="54" y="351.5" font-size="15" font-weight="700" fill="#2a6fd6" text-anchor="middle">4</text>
+<text x="80" y="352" font-size="21" font-weight="700" fill="#1d2230">Tuning</text>
+<text x="46" y="390" font-size="17" fill="#4a5163">Two Optuna rounds:</text>
+<text x="46" y="414" font-size="17" fill="#4a5163">filters, kernel, learning</text>
+<text x="46" y="438" font-size="17" fill="#4a5163">rate, optimiser</text>
+<rect x="336" y="312" width="276" height="214" rx="16" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<circle cx="366" cy="346" r="15" fill="none" stroke="#2a6fd6" stroke-width="2"/>
+<text x="366" y="351.5" font-size="15" font-weight="700" fill="#2a6fd6" text-anchor="middle">5</text>
+<text x="392" y="352" font-size="21" font-weight="700" fill="#1d2230">Architecture</text>
+<text x="358" y="390" font-size="17" fill="#4a5163">4 layers, filters double</text>
+<text x="358" y="414" font-size="17" fill="#4a5163">per layer, more dropout</text>
+<text x="358" y="444" font-size="17" fill="#4a5163">vs. DenseNet121</text>
+<rect x="648" y="312" width="276" height="214" rx="16" fill="#1d2230" stroke="#1d2230" stroke-width="1.5"/>
+<circle cx="678" cy="346" r="15" fill="none" stroke="#ffffff" stroke-width="2"/>
+<text x="678" y="351.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<text x="704" y="352" font-size="21" font-weight="700" fill="#ffffff">Evaluation</text>
+<text x="670" y="390" font-size="17" fill="#c9cdd8">Accuracy, recall and ROC</text>
+<text x="670" y="414" font-size="17" fill="#c9cdd8">on a separate test set</text>
+</svg>

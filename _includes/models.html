@@ -1,0 +1,22 @@
+{%- comment -%}
+Slide met een korte uitleg per model. De modellen staan in de front matter onder `models:`
+(name, tag, text). Gebruik: {% include models.html kicker="Modellen" title="..." text="..." %}
+{%- endcomment -%}
+<section class="slide slide--full slide--models">
+  <div class="slide__text">
+    <p class="slide__num">{% if include.kicker %}<span class="slide__kicker">{{ include.kicker }}</span>{% endif %}</p>
+    <h2>{{ include.title }}</h2>
+    {%- if include.text %}
+    <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    {%- endif %}
+  </div>
+  <ul class="models">
+    {%- for m in page.models %}
+    <li class="model{% if m.own %} model--own{% endif %}">
+      {%- if m.tag %}<span class="model__tag">{{ m.tag }}</span>{% endif %}
+      <strong>{{ m.name }}</strong>
+      <span>{{ m.text }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
