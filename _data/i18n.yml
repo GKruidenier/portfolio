@@ -1,0 +1,42 @@
+nl:
+  home: Home
+  master: Masterprojecten
+  bachelor: Bachelor
+  personal: Persoonlijk
+  contact: Contact
+  switch_label: English
+  skip: Naar de inhoud
+  read_more: Bekijk project
+  back_master: Alle masterprojecten
+  back_bachelor: Bachelorprojecten
+  back_personal: Persoonlijke projecten
+  tools: Technieken
+  course: Vak
+  type: Soort
+  team: Team
+  code: Code
+  my_role: Mijn rol
+  next: Volgend project
+  coming_soon: Binnenkort
+  footer: Gebouwd met Jekyll en gehost op GitHub Pages.
+en:
+  home: Home
+  master: Master's projects
+  bachelor: Bachelor
+  personal: Personal
+  contact: Contact
+  switch_label: Nederlands
+  skip: Skip to content
+  read_more: View project
+  back_master: All master's projects
+  back_bachelor: Bachelor projects
+  back_personal: Personal projects
+  tools: Tools
+  course: Course
+  type: Type
+  team: Team
+  code: Code
+  my_role: My role
+  next: Next project
+  coming_soon: Coming soon
+  footer: Built with Jekyll and hosted on GitHub Pages.

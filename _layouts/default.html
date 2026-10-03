@@ -1,0 +1,89 @@
+{%- assign lang = page.lang | default: "nl" -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- if lang == "en" -%}{%- assign root = "/en/" -%}{%- else -%}{%- assign root = "/" -%}{%- endif -%}
+{%- assign alt = site.pages | where: "ref", page.ref | where_exp: "pg", "pg.lang != lang" | first -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <meta property="og:type" content="website">
+  {%- if page.image %}
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  {%- endif %}
+  {%- if alt %}
+  <link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url | absolute_url }}">
+  {%- endif %}
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body class="page-{{ page.section | default: 'page' }}">
+  <a class="skip-link" href="#main">{{ t.skip }}</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="{{ root | relative_url }}">
+        <span class="brand__mark" aria-hidden="true">GK</span>
+        <span class="brand__name">{{ site.author.name }}</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span><span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Menu">
+        <ul>
+          {%- if lang == "en" %}
+          <li><a href="{{ '/en/master/' | relative_url }}"{% if page.section == 'master' %} aria-current="page"{% endif %}>{{ t.master }}</a></li>
+          <li><a href="{{ '/en/bachelor/' | relative_url }}"{% if page.section == 'bachelor' %} aria-current="page"{% endif %}>{{ t.bachelor }}</a></li>
+          <li><a href="{{ '/en/personal/' | relative_url }}"{% if page.section == 'personal' %} aria-current="page"{% endif %}>{{ t.personal }}</a></li>
+          <li><a href="{{ '/en/#contact' | relative_url }}">{{ t.contact }}</a></li>
+          {%- else %}
+          <li><a href="{{ '/master/' | relative_url }}"{% if page.section == 'master' %} aria-current="page"{% endif %}>{{ t.master }}</a></li>
+          <li><a href="{{ '/bachelor/' | relative_url }}"{% if page.section == 'bachelor' %} aria-current="page"{% endif %}>{{ t.bachelor }}</a></li>
+          <li><a href="{{ '/persoonlijk/' | relative_url }}"{% if page.section == 'personal' %} aria-current="page"{% endif %}>{{ t.personal }}</a></li>
+          <li><a href="{{ '/#contact' | relative_url }}">{{ t.contact }}</a></li>
+          {%- endif %}
+          {%- if alt %}
+          <li><a class="lang-switch" href="{{ alt.url | relative_url }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}">{{ t.switch_label }}</a></li>
+          {%- endif %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
+      <ul class="footer-links">
+        <li><a href="mailto:{{ site.author.email }}">E-mail</a></li>
+        <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+        {%- if site.author.linkedin != "" %}
+        <li><a href="{{ site.author.linkedin }}">LinkedIn</a></li>
+        {%- endif %}
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('is-open', !open);
+      });
+    })();
+  </script>
+</body>
+</html>

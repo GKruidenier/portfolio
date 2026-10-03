@@ -1,0 +1,7 @@
+<div class="hero__photo">
+  {%- if site.author.photo != "" %}
+  <img src="{{ site.author.photo | relative_url }}" alt="{{ include.alt }}" width="340" height="340">
+  {%- else %}
+  <div class="avatar-fallback" role="img" aria-label="{{ include.alt }}">GK</div>
+  {%- endif %}
+</div>

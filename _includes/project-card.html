@@ -1,0 +1,41 @@
+{%- assign proj = include.project -%}
+{%- assign lang = include.lang -%}
+{%- assign info = proj[lang] -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- if lang == "en" and proj.image_en -%}{%- assign img = proj.image_en -%}{%- else -%}{%- assign img = proj.image -%}{%- endif -%}
+{%- if proj.status == "coming-soon" -%}
+<article class="card card--soon">
+  <div class="card__media card__media--placeholder" aria-hidden="true"><span>{{ t.coming_soon }}</span></div>
+  <div class="card__body">
+    <p class="eyebrow">{{ info.label }}</p>
+    <h3 class="card__title">{{ info.title }}</h3>
+    <p class="card__text">{{ info.summary }}</p>
+  </div>
+</article>
+{%- else -%}
+<article class="card{% if include.large %} card--large{% endif %}">
+  <a class="card__link" href="{{ info.url | relative_url }}">
+    {%- if img != "" %}
+    <div class="card__media{% if proj.category == 'personal' %} card__media--photo{% endif %}">
+      <img src="{{ img | relative_url }}" alt="" loading="lazy">
+    </div>
+    {%- else %}
+    <div class="card__media card__media--placeholder card__media--{{ proj.id }}" aria-hidden="true">
+      {%- if info.metric %}<span class="card__big">{{ info.metric }}</span>{% else %}<span class="card__icon">{{ proj.icon | default: "✦" }}</span>{% endif %}
+    </div>
+    {%- endif %}
+    <div class="card__body">
+      <p class="eyebrow">{{ info.label }} · {{ proj.year }}</p>
+      <h3 class="card__title">{{ info.title }}</h3>
+      <p class="card__text">{{ info.summary }}</p>
+      {%- if info.metric %}
+      <p class="card__metric"><strong>{{ info.metric }}</strong> {{ info.metric_label }}</p>
+      {%- endif %}
+      <ul class="tags tags--small">
+        {%- for tag in proj.tags %}<li>{{ tag }}</li>{% endfor %}
+      </ul>
+      <span class="card__cta">{{ t.read_more }} →</span>
+    </div>
+  </a>
+</article>
+{%- endif -%}

@@ -1,0 +1,155 @@
+# Alle projecten op de site. De volgorde hier is de volgorde op de overzichtspagina's.
+# category: master, bachelor of personal
+# status: coming-soon toont het project als "binnenkort" zonder link.
+
+- id: thesis
+  category: master
+  featured: true
+  year: "2026"
+  image: /assets/img/projects/scriptie_rmse_vergelijking.png
+  image_en: /assets/img/projects/scriptie_rmse_vergelijking_en.png
+  tags: [PyTorch, LSTM/GRU, Time series]
+  nl:
+    title: "Masterscriptie: economische groei in real time voorspellen"
+    label: Masterscriptie · individueel
+    summary: Drie eigen deep-learningarchitecturen die maand- en kwartaaldata direct combineren, getoetst tegen de modellen van centrale banken.
+    metric: "−11%"
+    metric_label: voorspelfout t.o.v. het model van centrale banken
+    url: /projecten/masterscriptie-bbp-nowcasting/
+  en:
+    title: "Master's thesis: nowcasting economic growth in real time"
+    label: Master's thesis · individual
+    summary: Three custom deep-learning architectures that combine monthly and quarterly data directly, tested against the models central banks use.
+    metric: "−11%"
+    metric_label: forecast error vs. the central-bank model
+    url: /en/projects/master-thesis-gdp-nowcasting/
+
+- id: churn
+  category: master
+  year: "2025"
+  image: /assets/img/projects/churn_modelvergelijking_prauc.png
+  image_en: /assets/img/projects/churn_modelvergelijking_prauc_en.png
+  tags: [XGBoost, scikit-learn, Feature engineering]
+  nl:
+    title: Welke spelers haken af? Churn voorspellen in een mobiele game
+    label: Analysis of Customer Data · groep 5
+    summary: Churn zelf gedefinieerd uit 150.000 gespeelde potjes en voorspeld na de eerste vijf speeldagen. Hoogste cijfer van alle groepen.
+    metric: "5×"
+    metric_label: beter dan gokken (PR-AUC 0,38)
+    url: /projecten/churn-voorspelling/
+  en:
+    title: Which players will quit? Predicting churn in a mobile game
+    label: Analysis of Customer Data · group 5
+    summary: Defined churn from 150,000 games played and predicted it after a player's first five days. Highest grade of all groups.
+    metric: "5×"
+    metric_label: better than guessing (PR-AUC 0.38)
+    url: /en/projects/churn-prediction/
+
+- id: recommender
+  category: master
+  year: "2025"
+  image: /assets/img/projects/recommender_rmse_vergelijking.png
+  image_en: /assets/img/projects/recommender_rmse_vergelijking_en.png
+  tags: [Surprise, SVD, KNN]
+  nl:
+    title: Filmaanbevelingen op basis van 27 miljoen beoordelingen
+    label: Analysis of Customer Data · groep 9
+    summary: Een aanbevelingssysteem op de MovieLens-data, met KNN en matrixfactorisatie (SVD) vergeleken en getuned.
+    metric: "0,80"
+    metric_label: RMSE, minder dan één ster ernaast
+    url: /projecten/aanbevelingssysteem/
+  en:
+    title: Film recommendations from 27 million ratings
+    label: Analysis of Customer Data · group 9
+    summary: A recommender system on the MovieLens data, comparing and tuning KNN and matrix factorisation (SVD).
+    metric: "0.80"
+    metric_label: RMSE, less than one star off
+    url: /en/projects/recommender-system/
+
+- id: deeplearning
+  category: master
+  year: "2025"
+  image: /assets/img/projects/deeplearning_nauwkeurigheid_vergelijking.png
+  image_en: /assets/img/projects/deeplearning_nauwkeurigheid_vergelijking_en.png
+  tags: [TensorFlow/Keras, CNN, Optuna]
+  nl:
+    title: Afgeleide bestuurders herkennen met deep learning
+    label: Deep Learning · groep 6
+    summary: Een eigen convolutioneel neuraal netwerk dat uit camerabeelden zes toestanden van een bestuurder herkent.
+    metric: "95%"
+    metric_label: nauwkeurigheid op de testset
+    url: /projecten/deep-learning-bestuurders/
+  en:
+    title: Detecting distracted drivers with deep learning
+    label: Deep Learning · group 6
+    summary: A custom convolutional neural network that recognises six driver states from in-car camera images.
+    metric: "95%"
+    metric_label: accuracy on the test set
+    url: /en/projects/deep-learning-drivers/
+
+- id: citations
+  category: master
+  year: "2025"
+  image: ""
+  tags: [NLP, Sentence-BERT, Ridge]
+  nl:
+    title: Voorspellen hoe vaak een wetenschappelijk artikel wordt geciteerd
+    label: Machine Learning · individueel
+    summary: Tekst, auteurs en tijdschrift omgezet in features voor een regressiemodel, als één reproduceerbare pipeline.
+    metric: "Top 5"
+    metric_label: van alle modellen in het vak
+    url: /projecten/citaties-voorspellen/
+  en:
+    title: Predicting how often a scientific paper will be cited
+    label: Machine Learning · individual
+    summary: Text, authors and venue turned into features for a regression model, as one reproducible pipeline.
+    metric: "Top 5"
+    metric_label: of all models in the course
+    url: /en/projects/citation-prediction/
+
+- id: bachelor-thesis
+  category: bachelor
+  year: "2023"
+  image: ""
+  tags: [Literature review, Cancer metabolism]
+  nl:
+    title: "Bachelorscriptie: combinatietherapieën met glutaminemetabolismeremmers"
+    label: BSc Biomedische Wetenschappen · Universiteit Utrecht
+    summary: Een literatuurstudie naar combinaties van medicijnen die de resistentie van kankercellen tegen glutaminemetabolismeremmers kunnen doorbreken.
+    url: /projecten/bachelorscriptie/
+  en:
+    title: "Bachelor's thesis: combination therapies with glutamine metabolism inhibitors"
+    label: BSc Biomedical Sciences · Utrecht University
+    summary: A literature review of drug combinations that can break cancer cells' resistance to glutamine metabolism inhibitors.
+    url: /en/projects/bachelor-thesis/
+
+- id: oosterslicht
+  category: personal
+  year: "2026"
+  image: /assets/img/projects/oosterslicht_poster.jpg
+  tags: [HTML/CSS, JavaScript, Product photography]
+  nl:
+    title: "Oosterslicht: webshop voor ambachtelijke lampen"
+    label: Persoonlijk project · familiebedrijf
+    summary: Een eigen website voor een familiebedrijf in Japanse lampen van hout en papier, van ontwerp en teksten tot productfotografie.
+    url: /projecten/oosterslicht/
+  en:
+    title: "Oosterslicht: web shop for handmade lamps"
+    label: Personal project · family business
+    summary: A website for a family business in Japanese lamps made of wood and paper, from design and copy to product photography.
+    url: /en/projects/oosterslicht/
+
+- id: jobscout
+  category: personal
+  status: coming-soon
+  year: "2026"
+  image: ""
+  tags: [Python, AI]
+  nl:
+    title: jobscout-ai
+    label: Persoonlijk project
+    summary: Een nieuw project waar ik nu aan werk. Binnenkort lees je hier meer.
+  en:
+    title: jobscout-ai
+    label: Personal project
+    summary: A new project I am working on right now. More about it here soon.

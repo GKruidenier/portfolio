@@ -1,0 +1,127 @@
+---
+layout: default
+lang: nl
+ref: home
+section: home
+description: Portfolio van Giada Kruidenier, data scientist met een biomedische achtergrond. Projecten in machine learning, deep learning, forecasting en klantdata.
+---
+{%- assign featured = site.data.projects | where: "featured", true | first -%}
+
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <p class="available">Op zoek naar een startersfunctie in data science</p>
+      <h1>Hoi, ik ben Giada. Ik maak van data <em>een besluit</em>.</h1>
+      <p class="hero__lead">Data scientist (MSc Data Science and Society, Tilburg University) met een biomedische achtergrond. Ik bouw voorspellende modellen, van tijdreeksen tot deep learning, en ben helder over wanneer een model wél en niet werkt.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="{{ '/master/' | relative_url }}">Bekijk mijn projecten →</a>
+        <a class="btn btn--ghost" href="#contact">Neem contact op</a>
+      </div>
+    </div>
+    {% include avatar.html alt="Foto van Giada Kruidenier" %}
+  </div>
+</section>
+
+<div class="wrap">
+  <ul class="facts">
+    <li><strong>8,2</strong><span>gemiddeld cijfer MSc Data Science and Society</span></li>
+    <li><strong>−11%</strong><span>voorspelfout in mijn scriptie t.o.v. het model van centrale banken</span></li>
+    <li><strong>95%</strong><span>nauwkeurigheid van mijn CNN voor afgeleide bestuurders</span></li>
+    <li><strong>Top 5</strong><span>van het vak Machine Learning, individueel</span></li>
+  </ul>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Uitgelicht</p>
+        <h2>Masterprojecten</h2>
+        <p>Van een scriptie over economische voorspellingen tot klantdata en beeldherkenning. Per project lees je de vraag, mijn aanpak en wat het opleverde.</p>
+      </div>
+      <a class="btn btn--ghost" href="{{ '/master/' | relative_url }}">Alle masterprojecten</a>
+    </div>
+    <div class="featured">
+      {% include project-card.html project=featured lang="nl" large=true %}
+    </div>
+    {% include project-grid.html category="master" lang="nl" skip_featured=true columns=2 %}
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Wat ik meebreng</p>
+        <h2>Vaardigheden</h2>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="skill">
+        <div class="skill__icon">{% include icons/model.svg %}</div>
+        <h3>Machine learning en deep learning</h3>
+        <p>Python, PyTorch, TensorFlow/Keras, scikit-learn en XGBoost. Van baseline tot getuned model, met eerlijke validatie.</p>
+      </div>
+      <div class="skill">
+        <div class="skill__icon">{% include icons/trend.svg %}</div>
+        <h3>Tijdreeksen en forecasting</h3>
+        <p>LSTM- en GRU-netwerken, Dynamic Factor Models en ARMA, getoetst tegen de standaard van centrale banken.</p>
+      </div>
+      <div class="skill">
+        <div class="skill__icon">{% include icons/users.svg %}</div>
+        <h3>Klantdata</h3>
+        <p>Churn voorspellen uit gedrag en aanbevelingen doen met collaborative filtering, op datasets tot 27 miljoen rijen.</p>
+      </div>
+      <div class="skill">
+        <div class="skill__icon">{% include icons/chat.svg %}</div>
+        <h3>Van analyse naar advies</h3>
+        <p>Resultaten helder uitleggen aan wie geen data scientist is, inclusief de beperkingen van een model.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div>
+      <p class="eyebrow">Achtergrond</p>
+      <h2>Opleiding</h2>
+      <ol class="timeline">
+        <li>
+          <span class="timeline__when">2024 – 2026</span>
+          <h3>MSc Data Science and Society</h3>
+          <p>Tilburg University · gemiddeld cijfer 8,2. Scriptie over het real-time voorspellen van economische groei met deep learning.</p>
+        </li>
+        <li>
+          <span class="timeline__when">2019 – 2023</span>
+          <h3>BSc Biomedische Wetenschappen</h3>
+          <p>Universiteit Utrecht. Scriptie over combinatietherapieën bij kankerbehandeling. <a href="{{ '/bachelor/' | relative_url }}">Bekijk mijn bachelorwerk</a></p>
+        </li>
+      </ol>
+    </div>
+    <div>
+      <p class="eyebrow">Naast de studie</p>
+      <h2>Persoonlijke projecten</h2>
+      <p>Voor ons familiebedrijf in Japanse lampen heb ik de webshop Oosterslicht gebouwd, van ontwerp en teksten tot productfotografie. Daarnaast werk ik aan nieuwe eigen projecten.</p>
+      <a class="btn btn--ghost" href="{{ '/persoonlijk/' | relative_url }}">Bekijk persoonlijke projecten</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Zullen we kennismaken?</h2>
+        <p>Ik zoek een startersfunctie waarin analyse leidt tot echte beslissingen. Stuur me gerust een bericht.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        <a class="btn btn--ghost" href="https://github.com/{{ site.author.github }}">GitHub</a>
+        {%- if site.author.linkedin != "" %}
+        <a class="btn btn--ghost" href="{{ site.author.linkedin }}">LinkedIn</a>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</section>

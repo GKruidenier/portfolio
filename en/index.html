@@ -1,0 +1,127 @@
+---
+layout: default
+lang: en
+ref: home
+section: home
+description: Portfolio of Giada Kruidenier, data scientist with a biomedical background. Projects in machine learning, deep learning, forecasting and customer data.
+---
+{%- assign featured = site.data.projects | where: "featured", true | first -%}
+
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <p class="available">Looking for an entry-level role in data science</p>
+      <h1>Hi, I'm Giada. I turn data into <em>decisions</em>.</h1>
+      <p class="hero__lead">Data scientist (MSc Data Science and Society, Tilburg University) with a biomedical background. I build predictive models, from time series to deep learning, and I am clear about when a model does and doesn't work.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="{{ '/en/master/' | relative_url }}">See my projects →</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    {% include avatar.html alt="Photo of Giada Kruidenier" %}
+  </div>
+</section>
+
+<div class="wrap">
+  <ul class="facts">
+    <li><strong>8.2</strong><span>average grade, MSc Data Science and Society</span></li>
+    <li><strong>−11%</strong><span>forecast error in my thesis vs. the central-bank model</span></li>
+    <li><strong>95%</strong><span>accuracy of my CNN for distracted drivers</span></li>
+    <li><strong>Top 5</strong><span>of the Machine Learning course, individual</span></li>
+  </ul>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Featured</p>
+        <h2>Master's projects</h2>
+        <p>From a thesis on economic forecasting to customer data and image recognition. Each project shows the question, my approach and what it delivered.</p>
+      </div>
+      <a class="btn btn--ghost" href="{{ '/en/master/' | relative_url }}">All master's projects</a>
+    </div>
+    <div class="featured">
+      {% include project-card.html project=featured lang="en" large=true %}
+    </div>
+    {% include project-grid.html category="master" lang="en" skip_featured=true columns=2 %}
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">What I bring</p>
+        <h2>Skills</h2>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="skill">
+        <div class="skill__icon">{% include icons/model.svg %}</div>
+        <h3>Machine learning and deep learning</h3>
+        <p>Python, PyTorch, TensorFlow/Keras, scikit-learn and XGBoost. From baseline to tuned model, with honest validation.</p>
+      </div>
+      <div class="skill">
+        <div class="skill__icon">{% include icons/trend.svg %}</div>
+        <h3>Time series and forecasting</h3>
+        <p>LSTM and GRU networks, Dynamic Factor Models and ARMA, tested against the central-bank standard.</p>
+      </div>
+      <div class="skill">
+        <div class="skill__icon">{% include icons/users.svg %}</div>
+        <h3>Customer data</h3>
+        <p>Predicting churn from behaviour and making recommendations with collaborative filtering, on datasets of up to 27 million rows.</p>
+      </div>
+      <div class="skill">
+        <div class="skill__icon">{% include icons/chat.svg %}</div>
+        <h3>From analysis to advice</h3>
+        <p>Explaining results clearly to people who aren't data scientists, including a model's limitations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div>
+      <p class="eyebrow">Background</p>
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="timeline__when">2024 – 2026</span>
+          <h3>MSc Data Science and Society</h3>
+          <p>Tilburg University · average grade 8.2. Thesis on nowcasting economic growth with deep learning.</p>
+        </li>
+        <li>
+          <span class="timeline__when">2019 – 2023</span>
+          <h3>BSc Biomedical Sciences</h3>
+          <p>Utrecht University. Thesis on combination therapies in cancer treatment. <a href="{{ '/en/bachelor/' | relative_url }}">See my bachelor work</a></p>
+        </li>
+      </ol>
+    </div>
+    <div>
+      <p class="eyebrow">Beyond my studies</p>
+      <h2>Personal projects</h2>
+      <p>For our family business in Japanese lamps I built the Oosterslicht web shop, from design and copy to product photography. I am also working on new projects of my own.</p>
+      <a class="btn btn--ghost" href="{{ '/en/personal/' | relative_url }}">See personal projects</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Shall we talk?</h2>
+        <p>I am looking for an entry-level role where analysis leads to real decisions. Feel free to send me a message.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        <a class="btn btn--ghost" href="https://github.com/{{ site.author.github }}">GitHub</a>
+        {%- if site.author.linkedin != "" %}
+        <a class="btn btn--ghost" href="{{ site.author.linkedin }}">LinkedIn</a>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</section>

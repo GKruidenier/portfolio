@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: "nl" -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign p = site.data.projects | where: "id", page.project | first -%}
+{%- assign info = p[lang] -%}
+{%- if p.category == "bachelor" -%}{%- assign back_label = t.back_bachelor -%}{%- assign back = "bachelor/" -%}
+{%- elsif p.category == "personal" -%}{%- assign back_label = t.back_personal -%}{%- if lang == "en" -%}{%- assign back = "personal/" -%}{%- else -%}{%- assign back = "persoonlijk/" -%}{%- endif -%}
+{%- else -%}{%- assign back_label = t.back_master -%}{%- assign back = "master/" -%}{%- endif -%}
+{%- if lang == "en" -%}{%- assign back = back | prepend: "/en/" -%}{%- else -%}{%- assign back = back | prepend: "/" -%}{%- endif -%}
+
+<article class="project">
+  <header class="project-hero">
+    <div class="wrap wrap--narrow">
+      <a class="back-link" href="{{ back | relative_url }}">← {{ back_label }}</a>
+      <p class="eyebrow">{{ info.label }} · {{ p.year }}</p>
+      <h1>{{ page.title }}</h1>
+      {%- if page.lead %}
+      <p class="lead">{{ page.lead }}</p>
+      {%- endif %}
+
+      <dl class="meta">
+        {%- if page.course %}<div><dt>{% if p.category == "personal" %}{{ t.type }}{% else %}{{ t.course }}{% endif %}</dt><dd>{{ page.course }}</dd></div>{% endif %}
+        {%- if page.team %}<div><dt>{{ t.team }}</dt><dd>{{ page.team }}</dd></div>{% endif %}
+        {%- if page.code %}<div><dt>{{ t.code }}</dt><dd><a href="{{ page.code }}">{{ page.code | remove: "https://" }}</a></dd></div>{% endif %}
+      </dl>
+      {%- if page.tools %}
+      <ul class="tags" aria-label="{{ t.tools }}">
+        {%- for tool in page.tools %}<li>{{ tool }}</li>{% endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </header>
+
+  {%- if page.stats %}
+  <div class="wrap wrap--narrow">
+    <ul class="stats">
+      {%- for s in page.stats %}
+      <li class="stat{% if forloop.first %} stat--accent{% endif %}">
+        <span class="stat__value">{{ s.value }}</span>
+        <span class="stat__label">{{ s.label }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endif %}
+
+  <div class="wrap wrap--narrow prose">
+    {{ content }}
+  </div>
+
+  {%- assign group = site.data.projects | where: "category", p.category | where_exp: "x", "x.status != 'coming-soon'" -%}
+  {%- for x in group -%}
+    {%- if x.id == p.id -%}{%- assign idx = forloop.index0 | plus: 1 -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if group.size > 1 -%}
+    {%- assign nidx = idx | modulo: group.size -%}
+    {%- assign nxt = group[nidx] -%}
+  <nav class="wrap wrap--narrow next-project" aria-label="{{ t.next }}">
+    <a href="{{ nxt[lang].url | relative_url }}">
+      <span class="eyebrow">{{ t.next }} →</span>
+      <span class="next-project__title">{{ nxt[lang].title }}</span>
+    </a>
+  </nav>
+  {%- endif %}
+</article>

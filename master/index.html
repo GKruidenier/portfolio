@@ -1,0 +1,26 @@
+---
+layout: default
+lang: nl
+ref: master
+section: master
+title: "Masterprojecten"
+description: "Vijf projecten uit mijn master, van groepsopdrachten tot mijn scriptie. Bij elk project staat wat ik zelf heb gedaan."
+---
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">MSc Data Science and Society · Tilburg University</p>
+    <h1>Masterprojecten</h1>
+    <p class="lead">Vijf projecten uit mijn master, van groepsopdrachten tot mijn scriptie. Bij elk project staat wat ik zelf heb gedaan.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 8px">
+  <div class="wrap">
+    {%- assign featured = site.data.projects | where: "featured", true | first -%}
+    <div class="featured">
+      {% include project-card.html project=featured lang="nl" large=true %}
+    </div>
+    {% include project-grid.html category="master" lang="nl" skip_featured=true columns=2 %}
+
+  </div>
+</section>

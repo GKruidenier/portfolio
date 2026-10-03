@@ -1,0 +1,31 @@
+# Instellingen van de portfoliosite van Giada Kruidenier.
+# Na een wijziging hier: commit en push, GitHub Pages bouwt de site opnieuw.
+
+title: Giada Kruidenier
+description: Portfolio van Giada Kruidenier, data scientist (MSc Data Science and Society).
+url: "https://gkruidenier.github.io"
+baseurl: "/portfolio"
+
+author:
+  name: Giada Kruidenier
+  email: giadakruidenier@gmail.com
+  github: GKruidenier
+  # Vul hier je LinkedIn-profiel in, bijvoorbeeld "https://www.linkedin.com/in/giada-kruidenier".
+  # Leeg laten verbergt de LinkedIn-knop.
+  linkedin: ""
+  # Pad naar je profielfoto, bijvoorbeeld "/assets/img/profiel.jpg".
+  # Leeg laten toont je initialen.
+  photo: ""
+
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

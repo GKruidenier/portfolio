@@ -1,0 +1,11 @@
+{%- comment -%}
+Gebruik: {% include figure.html src="/assets/img/projects/x.png" alt="..." caption="..." wide=true %}
+{%- endcomment -%}
+<figure class="figure{% if include.wide %} figure--wide{% endif %}{% if include.photo %} figure--photo{% endif %}{% if include.narrow %} figure--narrow{% endif %}">
+  <a href="{{ include.src | relative_url }}" class="figure__link">
+    <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy">
+  </a>
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>
