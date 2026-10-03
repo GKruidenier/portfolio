@@ -16,11 +16,11 @@ team: Six students (group 6) · I built the best model
 tools: [Python, TensorFlow/Keras, CNN, Optuna, Transfer learning, DenseNet121]
 stats:
   - value: "95%"
-    label: of test images recognised correctly (first network: 79%)
+    label: "of test images recognised correctly (first network: 79%)"
   - value: "92%"
-    label: of each state found, on average (first: 65%)
+    label: "of each state found, on average (first: 65%)"
   - value: "6"
-    label: driver states recognised
+    label: "driver states recognised"
 models:
   - name: "Simple network"
     tag: "starting point"

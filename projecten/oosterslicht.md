@@ -15,9 +15,9 @@ code: https://github.com/GKruidenier/oosterslicht
 tools: [HTML, CSS, JavaScript, PHP, Python, SEO, Productfotografie]
 stats:
   - value: "16"
-    label: pagina's, van homepagina tot bestelformulier
+    label: "pagina's, van homepagina tot bestelformulier"
   - value: "8"
-    label: productpagina's met eigen foto's en maatopties
+    label: "productpagina's met eigen foto's en maatopties"
 ---
 
 <div class="video-frame">

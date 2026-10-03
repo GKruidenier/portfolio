@@ -15,11 +15,11 @@ team: Individueel project
 tools: [Python, scikit-learn, NLTK, TF-IDF, Sentence-BERT, Ridge, LightGBM, Random Forest]
 stats:
   - value: "Top 5"
-    label: van alle modellen in het vak, op het klassement
+    label: "van alle modellen in het vak, op het klassement"
   - value: "> 2 GB"
-    label: aan trainingsdata met wetenschappelijke artikelen
+    label: "aan trainingsdata met wetenschappelijke artikelen"
   - value: "1"
-    label: script draait de hele pipeline, van installatie tot voorspelling
+    label: "script draait de hele pipeline, van installatie tot voorspelling"
 models:
   - name: "Rechte-lijnmodellen"
     tag: "lineair, Lasso, Ridge"

@@ -15,9 +15,9 @@ code: https://github.com/GKruidenier/oosterslicht
 tools: [HTML, CSS, JavaScript, PHP, Python, SEO, Product photography]
 stats:
   - value: "16"
-    label: pages, from home page to order form
+    label: "pages, from home page to order form"
   - value: "8"
-    label: product pages with their own photos and size options
+    label: "product pages with their own photos and size options"
 ---
 
 <div class="video-frame">

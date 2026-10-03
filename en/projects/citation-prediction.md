@@ -15,11 +15,11 @@ team: Individual project
 tools: [Python, scikit-learn, NLTK, TF-IDF, Sentence-BERT, Ridge, LightGBM, Random Forest]
 stats:
   - value: "Top 5"
-    label: of all models in the course, on the leaderboard
+    label: "of all models in the course, on the leaderboard"
   - value: "> 2 GB"
-    label: of training data on scientific papers
+    label: "of training data on scientific papers"
   - value: "1"
-    label: script runs the whole pipeline, from installation to prediction
+    label: "script runs the whole pipeline, from installation to prediction"
 models:
   - name: "Straight-line models"
     tag: "linear, Lasso, Ridge"

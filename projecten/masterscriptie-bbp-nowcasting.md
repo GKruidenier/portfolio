@@ -17,11 +17,11 @@ code: https://github.com/GKruidenier/GDP-nowcasting-thesis
 tools: [Python, PyTorch, LSTM, GRU, statsmodels, Dynamic Factor Models, ARMA]
 stats:
   - value: "−11%"
-    label: minder voorspelfout dan het model van centrale banken (2000–2019)
+    label: "minder voorspelfout dan het model van centrale banken (2000–2019)"
   - value: "−23%"
-    label: minder voorspelfout dan een eenvoudige benchmark
+    label: "minder voorspelfout dan een eenvoudige benchmark"
   - value: "3"
-    label: eigen netwerkontwerpen
+    label: "eigen netwerkontwerpen"
 models:
   - name: "Eenvoudige benchmark"
     tag: "ARMA"

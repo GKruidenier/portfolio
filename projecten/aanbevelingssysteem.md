@@ -16,11 +16,11 @@ team: Drie studenten (groep 9)
 tools: [Python, pandas, Surprise, Collaborative filtering, KNN, SVD, Hyperparameter-tuning]
 stats:
   - value: "0,8 ★"
-    label: gemiddeld ernaast bij een voorspeld cijfer (gokken: 1,4)
+    label: "gemiddeld ernaast bij een voorspeld cijfer (gokken: 1,4)"
   - value: "27 mln"
-    label: beoordelingen in de volledige dataset
+    label: "beoordelingen in de volledige dataset"
   - value: "99%"
-    label: dezelfde verdeling na slim verkleinen
+    label: "dezelfde verdeling na slim verkleinen"
 models:
   - name: "Gokken"
     tag: "NormalPredictor"

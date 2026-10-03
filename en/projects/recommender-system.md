@@ -16,11 +16,11 @@ team: Three students (group 9)
 tools: [Python, pandas, Surprise, Collaborative filtering, KNN, SVD, Hyperparameter tuning]
 stats:
   - value: "0.8 ★"
-    label: off on average for a predicted rating (guessing: 1.4)
+    label: "off on average for a predicted rating (guessing: 1.4)"
   - value: "27M"
-    label: ratings in the full dataset
+    label: "ratings in the full dataset"
   - value: "99%"
-    label: same distribution after smart downsizing
+    label: "same distribution after smart downsizing"
 models:
   - name: "Guessing"
     tag: "NormalPredictor"

@@ -16,11 +16,11 @@ team: Zes studenten (groep 6) · ik bouwde het beste model
 tools: [Python, TensorFlow/Keras, CNN, Optuna, Transfer learning, DenseNet121]
 stats:
   - value: "95%"
-    label: van de testbeelden goed herkend (eerste netwerk: 79%)
+    label: "van de testbeelden goed herkend (eerste netwerk: 79%)"
   - value: "92%"
-    label: van elke toestand gevonden, gemiddeld (eerst 65%)
+    label: "van elke toestand gevonden, gemiddeld (eerst 65%)"
   - value: "6"
-    label: toestanden van de bestuurder herkend
+    label: "toestanden van de bestuurder herkend"
 models:
   - name: "Eenvoudig netwerk"
     tag: "startpunt"
