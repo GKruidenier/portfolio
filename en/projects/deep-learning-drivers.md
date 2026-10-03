@@ -48,5 +48,5 @@ models:
 
 <div class="role" markdown="1">
 ## My role
-I built the best model: the second round of automatic tuning, the choice for dropout and the design with more features per layer. I also ran the experiments with the pretrained network.
+I built the best model: the second round of automatic tuning, the measures against memorising and the design with more features per layer. I also ran the experiments with the pretrained network.
 </div>

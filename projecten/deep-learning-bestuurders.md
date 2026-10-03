@@ -48,5 +48,5 @@ models:
 
 <div class="role" markdown="1">
 ## Mijn rol
-Ik bouwde het beste model: de tweede ronde automatische afstemming, de keuze voor dropout en de opbouw met steeds meer kenmerken per laag. Ook deed ik de experimenten met het voorgetrainde netwerk.
+Ik bouwde het beste model: de tweede ronde automatische afstemming, de maatregelen tegen uit het hoofd leren en de opbouw met steeds meer kenmerken per laag. Ook deed ik de experimenten met het voorgetrainde netwerk.
 </div>
