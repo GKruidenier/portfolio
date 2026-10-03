@@ -35,14 +35,14 @@
     label: Analysis of Customer Data · groep 5
     summary: Churn zelf gedefinieerd uit 150.000 gespeelde potjes en voorspeld na de eerste vijf speeldagen. Hoogste cijfer van alle groepen.
     metric: "5×"
-    metric_label: beter dan gokken (PR-AUC 0,38)
+    metric_label: beter dan gokken in het vinden van terugkeerders
     url: /projecten/churn-voorspelling/
   en:
     title: Which players will quit? Predicting churn in a mobile game
     label: Analysis of Customer Data · group 5
     summary: Defined churn from 150,000 games played and predicted it after a player's first five days. Highest grade of all groups.
     metric: "5×"
-    metric_label: better than guessing (PR-AUC 0.38)
+    metric_label: better than guessing at finding returners
     url: /en/projects/churn-prediction/
 
 - id: recommender
@@ -55,15 +55,15 @@
     title: Filmaanbevelingen op basis van 27 miljoen beoordelingen
     label: Analysis of Customer Data · groep 9
     summary: Een aanbevelingssysteem op de MovieLens-data, met KNN en matrixfactorisatie (SVD) vergeleken en getuned.
-    metric: "0,80"
-    metric_label: RMSE, minder dan één ster ernaast
+    metric: "0,8 ★"
+    metric_label: gemiddeld ernaast bij een voorspeld cijfer
     url: /projecten/aanbevelingssysteem/
   en:
     title: Film recommendations from 27 million ratings
     label: Analysis of Customer Data · group 9
     summary: A recommender system on the MovieLens data, comparing and tuning KNN and matrix factorisation (SVD).
-    metric: "0.80"
-    metric_label: RMSE, less than one star off
+    metric: "0.8 ★"
+    metric_label: off on average for a predicted rating
     url: /en/projects/recommender-system/
 
 - id: deeplearning
@@ -77,14 +77,14 @@
     label: Deep Learning · groep 6
     summary: Een eigen convolutioneel neuraal netwerk dat uit camerabeelden zes toestanden van een bestuurder herkent.
     metric: "95%"
-    metric_label: nauwkeurigheid op de testset
+    metric_label: van de testbeelden goed herkend
     url: /projecten/deep-learning-bestuurders/
   en:
     title: Detecting distracted drivers with deep learning
     label: Deep Learning · group 6
     summary: A custom convolutional neural network that recognises six driver states from in-car camera images.
     metric: "95%"
-    metric_label: accuracy on the test set
+    metric_label: of test images recognised correctly
     url: /en/projects/deep-learning-drivers/
 
 - id: citations

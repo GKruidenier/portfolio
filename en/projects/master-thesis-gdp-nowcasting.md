@@ -17,11 +17,11 @@ code: https://github.com/GKruidenier/GDP-nowcasting-thesis
 tools: [Python, PyTorch, LSTM, GRU, statsmodels, Dynamic Factor Models, ARMA]
 stats:
   - value: "−11%"
-    label: lower error than the Dynamic Factor Model (2000–2019)
+    label: less forecast error than the central-bank model (2000–2019)
   - value: "−23%"
-    label: lower error than ARMA
+    label: less forecast error than a simple benchmark
   - value: "3"
-    label: custom network architectures designed
+    label: own network designs
 models:
   - name: "Simple benchmark"
     tag: "ARMA"

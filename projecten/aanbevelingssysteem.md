@@ -8,19 +8,19 @@ title: Filmaanbevelingen op basis van 27 miljoen beoordelingen
 lead: "Hoe goed kun je voorspellen welk cijfer iemand geeft aan een film die hij nog niet heeft gezien?"
 description: Een aanbevelingssysteem op de MovieLens-data met KNNBaseline en SVD, getuned en gevalideerd. RMSE 0,803.
 image: /assets/img/projects/recommender_rmse_vergelijking.png
-abstract: "Op 27 miljoen MovieLens-beoordelingen vergeleken we twee technieken voor aanbevelingen. Na slim verkleinen en tunen zit de beste (SVD) gemiddeld 0,8 ster naast het echte cijfer, tegen 1,4 bij gokken."
+abstract: "Op 27 miljoen MovieLens-beoordelingen vergeleken we twee technieken voor aanbevelingen. Na slim verkleinen en afstemmen zit de beste, op basis van smaakprofielen, gemiddeld 0,8 ster naast het echte cijfer, tegen 1,4 bij gokken."
 abstract_image: /assets/img/projects/recommender_abstract.svg
 abstract_alt: "Visuele samenvatting: een grotendeels leeg raster van kijkers en films; SVD koppelt smaakprofielen en vult het lege vakje in met 4,2 sterren, gemiddeld 0,8 ster naast het echte cijfer"
 course: Analysis of Customer Data, mei 2025
 team: Drie studenten (groep 9)
 tools: [Python, pandas, Surprise, Collaborative filtering, KNN, SVD, Hyperparameter-tuning]
 stats:
-  - value: "0,803"
-    label: RMSE van de getunede SVD
+  - value: "0,8 ★"
+    label: gemiddeld ernaast bij een voorspeld cijfer (gokken: 1,4)
   - value: "27 mln"
     label: beoordelingen in de volledige dataset
   - value: "99%"
-    label: gelijke verdeling na slim verkleinen
+    label: dezelfde verdeling na slim verkleinen
 models:
   - name: "Gokken"
     tag: "NormalPredictor"

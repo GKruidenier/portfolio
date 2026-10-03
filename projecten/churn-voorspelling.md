@@ -16,11 +16,11 @@ team: Vier studenten (groep 5) · hoogste cijfer van alle groepen
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validatie]
 stats:
   - value: "5×"
-    label: beter dan gokken (PR-AUC 0,38 tegen 0,08)
+    label: beter dan gokken in het vinden van terugkeerders
   - value: "2 op 3"
-    label: voorspelde terugkeerders keert echt terug
-  - value: "0,79"
-    label: ROC-AUC van het beste model
+    label: voorspelde terugkeerders komt echt terug (gokken: 8%)
+  - value: "25.956"
+    label: nieuwe spelers geanalyseerd
 models:
   - name: "Gokken"
     tag: "ondergrens"

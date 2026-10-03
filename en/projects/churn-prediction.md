@@ -16,11 +16,11 @@ team: Four students (group 5) · highest grade of all groups
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]
 stats:
   - value: "5×"
-    label: better than guessing (PR-AUC 0.38 vs 0.08)
+    label: better than guessing at finding returners
   - value: "2 in 3"
-    label: predicted returners actually return
-  - value: "0.79"
-    label: ROC-AUC of the best model
+    label: predicted returners actually return (guessing: 8%)
+  - value: "25,956"
+    label: new players analysed
 models:
   - name: "Guessing"
     tag: "lower bound"

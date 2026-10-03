@@ -50,7 +50,7 @@ sample:
 
 {% include slide.html kicker="Method" title="From text to numbers" text="A model works with numbers, so I converted the text: which words are distinctive, and what the title means (using a language model). The model predicts the square root of the citation count, so the few extremely cited papers do not dominate." src="/assets/img/projects/citaties_pipeline_en.svg" alt="Pipeline: title, abstract, authors, venue and year become distinctive words, the meaning of the title and details on authors and venue, with which a simple model predicts the citation count" full=true %}
 
-{% include slide.html kicker="Results" title="Among the best five of the course" text="The teachers held back the real citation counts and ranked all predictions. My model finished among the five best of all students." big="Top 5" %}
+{% include slide.html kicker="Results" title="Among the best five of the course" text="The teachers held back the real citation counts and ranked all predictions. My model finished among the five best of all students." src="/assets/img/projects/citaties_ranglijst_en.svg" alt="Illustration of the leaderboard: the top five places are highlighted, my model was in that group" big="Top 5" %}
 
 {% include slide.html kicker="Evaluation" title="Simple wins" text="A simple model on well-chosen features beat the heavier tree models. Extra features, such as an author's influence (h-index), added nothing." statement=true %}
 

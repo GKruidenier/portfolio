@@ -50,7 +50,7 @@ sample:
 
 {% include slide.html kicker="Methode" title="Van tekst naar getallen" text="Een model rekent met getallen. Daarom zette ik de tekst om: welke woorden kenmerkend zijn, en wat de titel betekent (met een taalmodel). Het model voorspelt de wortel van het aantal citaties, zodat de paar extreem vaak geciteerde artikelen niet alles bepalen." src="/assets/img/projects/citaties_pipeline.svg" alt="Pipeline: titel, samenvatting, auteurs, tijdschrift en jaar worden kenmerkende woorden, de betekenis van de titel en gegevens over auteurs en tijdschrift, waarmee een eenvoudig model het aantal citaties voorspelt" full=true %}
 
-{% include slide.html kicker="Resultaten" title="Bij de beste vijf van het vak" text="De docenten hielden de echte aantallen citaties achter de hand en zetten alle voorspellingen op een ranglijst. Mijn model eindigde bij de vijf beste van alle studenten." big="Top 5" %}
+{% include slide.html kicker="Resultaten" title="Bij de beste vijf van het vak" text="De docenten hielden de echte aantallen citaties achter de hand en zetten alle voorspellingen op een ranglijst. Mijn model eindigde bij de vijf beste van alle studenten." src="/assets/img/projects/citaties_ranglijst.svg" alt="Illustratie van de ranglijst: de bovenste vijf plaatsen zijn gemarkeerd, mijn model zat in die groep" big="Top 5" %}
 
 {% include slide.html kicker="Evaluatie" title="Simpel wint" text="Een eenvoudig model op goed gekozen kenmerken versloeg de zwaardere boommodellen. Extra kenmerken, zoals de invloed van een auteur (h-index), voegden niets toe." statement=true %}
 
