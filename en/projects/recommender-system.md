@@ -22,16 +22,16 @@ stats:
   - value: "99%"
     label: same distribution after smart downsizing
 models:
-  - name: "NormalPredictor"
-    tag: "baseline"
-    text: "Guesses a rating from the overall distribution."
-  - name: "KNNBaseline"
-    tag: "model"
-    text: "Looks at films the same people rated similarly."
-  - name: "SVD"
-    tag: "model"
+  - name: "Guessing"
+    tag: "NormalPredictor"
+    text: "Picks a random rating from the overall distribution."
+  - name: "Similar films"
+    tag: "KNN"
+    text: "Looks at films the same people also liked or disliked. Easy to explain, but heavy on memory."
+  - name: "Taste profiles"
+    tag: "SVD"
     own: true
-    text: "Summarises viewers and films as hidden taste factors."
+    text: "Summarises viewers and films in a few hidden taste traits and checks how well they match."
 sample:
   caption: "What the data looks like"
   columns: ["Viewer", "Film", "Rating", "Date"]
@@ -49,13 +49,13 @@ sample:
 
 {% include models.html kicker="Models" title="Three ways to predict a rating" %}
 
-{% include slide.html kicker="Method" title="From 27 million to 3.1 million rows" text="We kept the most popular films and most active viewers and took a sample with 99% the same distribution. Then tuning with 5-fold cross-validation." src="/assets/img/projects/recommender_pipeline_en.svg" alt="Pipeline: viewer, film and rating are downsized and sampled, then SVD predicts the rating for an unseen film" full=true %}
+{% include slide.html kicker="Method" title="From 27 million to 3.1 million rows" text="We kept the most popular films and most active viewers and drew a sample with 99% the same distribution. Then we tuned the settings and tested on ratings the model had not seen." src="/assets/img/projects/recommender_pipeline_en.svg" alt="Pipeline: viewer, film and rating are downsized and sampled, then taste profiles predict the rating for an unseen film" full=true %}
 
-{% include slide.html kicker="Results" title="SVD wins: 0.80 stars off" text="Guessing is 1.43 stars off, KNN 0.81. With another seed the error changed by only 0.0002." src="/assets/img/projects/recommender_rmse_vergelijking_en.png" alt="Bar chart of the error (RMSE) per model, before and after tuning" %}
+{% include slide.html kicker="Results" title="On average 0.8 stars off" text="Taste profiles (SVD) come closest to the real rating, just ahead of similar films (KNN). Guessing is 1.4 stars off. With a different random split the result stayed practically the same." src="/assets/img/projects/recommender_resultaat_en.svg" alt="Bar chart: guessing 1.43 stars off, similar films 0.81, taste profiles 0.80" full=true %}
 
-{% include slide.html kicker="Evaluation" title="Explainability or scale?" text="KNN is easier to explain, but ran out of memory. SVD is more accurate and scales better, but is less transparent." statement=true %}
+{% include slide.html kicker="Evaluation" title="Explainability or scale?" text="Similar films are easier to explain, but ran out of memory. Taste profiles are more accurate and scale better, but are less transparent." statement=true %}
 
 <div class="role" markdown="1">
 ## My role
-I did most of the work: data exploration, downsizing the data, tuning and validation.
+I did most of the work: data exploration, downsizing the data, tuning the models and validation.
 </div>

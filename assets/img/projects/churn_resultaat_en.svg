@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 264" width="820" height="264" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="820" height="264" fill="#ffffff"/>
+<text x="20" y="36" font-size="21" fill="#1d2230" font-weight="700" text-anchor="start">When the model says 'will return', it is right 2 times out of 3</text>
+<text x="20" y="62" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start">Share of predicted returners that actually return</text>
+<text x="284" y="120" font-size="16" fill="#4a5163" font-weight="500" text-anchor="end">Guessing</text>
+<text x="284" y="139" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">no model</text>
+<rect x="300" y="106" width="42.5" height="34" rx="6" fill="#d9d8d3"/>
+<text x="352.4625" y="129" font-size="17" fill="#4a5163" font-weight="700" text-anchor="start">8%</text>
+<text x="284" y="184" font-size="16" fill="#1d2230" font-weight="700" text-anchor="end">Our best model</text>
+<text x="284" y="203" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">XGBoost</text>
+<rect x="300" y="170" width="353.2" height="34" rx="6" fill="#2a6fd6"/>
+<text x="663.2454361054768" y="193" font-size="17" fill="#1f56a8" font-weight="700" text-anchor="start">66%</text>
+</svg>

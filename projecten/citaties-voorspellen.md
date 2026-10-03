@@ -7,7 +7,7 @@ section: master
 title: Voorspellen hoe vaak een wetenschappelijk artikel wordt geciteerd
 lead: "Kun je uit titel, samenvatting, auteurs, tijdschrift en jaar voorspellen hoe vaak een artikel geciteerd wordt?"
 description: Een NLP- en regressiepipeline (TF-IDF, Sentence-BERT, Ridge) die het aantal citaties voorspelt. Top 5 van het vak Machine Learning.
-abstract: "Een reproduceerbare pipeline die uit titel, samenvatting, auteurs, tijdschrift en jaar voorspelt hoe vaak een artikel wordt geciteerd. Een eenvoudige Ridge-regressie op goed gekozen features eindigde in de top 5 van het vak."
+abstract: "Een pipeline die uit titel, samenvatting, auteurs, tijdschrift en jaar voorspelt hoe vaak een wetenschappelijk artikel wordt geciteerd. Een eenvoudig model op goed gekozen kenmerken eindigde in de top 5 van het vak."
 abstract_image: /assets/img/projects/citaties_abstract.svg
 abstract_alt: "Visuele samenvatting: een artikel wordt omgezet in getallen en een eenvoudige Ridge-regressie voorspelt het aantal citaties; top 5 van het vak"
 course: Machine Learning, MSc Data Science and Society
@@ -21,16 +21,16 @@ stats:
   - value: "1"
     label: script draait de hele pipeline, van installatie tot voorspelling
 models:
-  - name: "Lineaire modellen"
-    tag: "vergeleken"
-    text: "Lineaire regressie, Lasso en Ridge: features met een gewicht."
+  - name: "Rechte-lijnmodellen"
+    tag: "lineair, Lasso, Ridge"
+    text: "Tellen de kenmerken op, elk met een gewicht. Ridge remt te grote gewichten af."
   - name: "Boommodellen"
-    tag: "vergeleken"
-    text: "Random Forest en LightGBM: veel beslisbomen samen."
-  - name: "Ridge"
-    tag: "gekozen"
+    tag: "Random Forest, LightGBM"
+    text: "Veel beslisbomen samen. Krachtiger, maar ook gevoeliger voor ruis."
+  - name: "Gekozen: Ridge"
+    tag: "eenvoudig model"
     own: true
-    text: "Lineair, met een rem op te grote gewichten."
+    text: "Won van alle andere combinaties op artikelen die het model nog niet had gezien."
 sample:
   caption: "Zo ziet de data eruit"
   columns: ["Titel", "Tijdschrift", "Jaar", "Citaties"]
@@ -42,19 +42,19 @@ sample:
   note: "Plus samenvatting, auteurs en referenties per artikel; ruim 2 GB in totaal."
 ---
 
-{% include slide.html kicker="Probleem" title="Hoeveel impact krijgt dit artikel?" text="Citaties stapelen zich pas na jaren op. Kun je het aantal al bij publicatie voorspellen?" src="/assets/img/projects/citaties_probleem.svg" alt="Schets: een artikel met titel, auteurs, tijdschrift en samenvatting gaat een model in dat het aantal citaties voorspelt" full=true %}
+{% include slide.html kicker="Probleem" title="Hoeveel impact krijgt dit artikel?" text="Citaties stapelen zich pas na jaren op. Kun je bij publicatie al inschatten hoe vaak een artikel geciteerd gaat worden?" src="/assets/img/projects/citaties_probleem.svg" alt="Grafiek: na publicatie stapelt het aantal citaties zich jaar na jaar op; op het moment van publicatie is het nog een vraagteken" full=true %}
 
-{% include data.html kicker="Data" title="Tekst en metadata per artikel" text="Het aantal citaties is extreem scheef verdeeld: de meeste artikelen worden weinig geciteerd, een paar heel vaak." %}
+{% include data.html kicker="Data" title="Tekst en gegevens per artikel" text="Het aantal citaties is extreem scheef verdeeld: de meeste artikelen worden weinig geciteerd, een paar heel vaak." %}
 
-{% include models.html kicker="Modellen" title="Eenvoudig tegen complex" text="Tientallen combinaties van features en modellen vergeleken op een aparte validatieset." %}
+{% include models.html kicker="Modellen" title="Eenvoudig tegen complex" text="Tientallen combinaties van kenmerken en modellen vergeleken op artikelen die het model nog niet had gezien." %}
 
-{% include slide.html kicker="Methode" title="Van tekst naar getallen" text="TF-IDF vindt kenmerkende woorden, Sentence-BERT vat de betekenis van de titel samen. Het model voorspelt de wortel van het aantal citaties." src="/assets/img/projects/citaties_pipeline.svg" alt="Pipeline: titel, samenvatting, auteurs, tijdschrift en jaar worden via TF-IDF, Sentence-BERT en metadata features voor een Ridge-regressie" full=true %}
+{% include slide.html kicker="Methode" title="Van tekst naar getallen" text="Een model rekent met getallen. Daarom zette ik de tekst om: welke woorden kenmerkend zijn, en wat de titel betekent (met een taalmodel). Het model voorspelt de wortel van het aantal citaties, zodat de paar extreem vaak geciteerde artikelen niet alles bepalen." src="/assets/img/projects/citaties_pipeline.svg" alt="Pipeline: titel, samenvatting, auteurs, tijdschrift en jaar worden kenmerkende woorden, de betekenis van de titel en gegevens over auteurs en tijdschrift, waarmee een eenvoudig model het aantal citaties voorspelt" full=true %}
 
-{% include slide.html kicker="Resultaten" title="Bij de beste vijf van het vak" text="Op het klassement van de docenten, die de echte citaties beheerden, eindigde mijn model bij de vijf beste van alle studenten." big="Top 5" %}
+{% include slide.html kicker="Resultaten" title="Bij de beste vijf van het vak" text="De docenten hielden de echte aantallen citaties achter de hand en zetten alle voorspellingen op een ranglijst. Mijn model eindigde bij de vijf beste van alle studenten." big="Top 5" %}
 
-{% include slide.html kicker="Evaluatie" title="Simpel wint" text="Een lineair model versloeg de zwaardere boommodellen. Extra features zoals de h-index van auteurs voegden niets toe." statement=true %}
+{% include slide.html kicker="Evaluatie" title="Simpel wint" text="Een eenvoudig model op goed gekozen kenmerken versloeg de zwaardere boommodellen. Extra kenmerken, zoals de invloed van een auteur (h-index), voegden niets toe." statement=true %}
 
 <div class="role" markdown="1">
 ## Mijn rol
-Individueel project: alle stappen, van tekstverwerking tot de pipeline, heb ik zelf uitgevoerd.
+Individueel project: alle stappen, van tekstverwerking tot de complete pipeline, heb ik zelf uitgevoerd.
 </div>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 328" width="820" height="328" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="820" height="328" fill="#ffffff"/>
+<text x="20" y="36" font-size="21" fill="#1d2230" font-weight="700" text-anchor="start">Mijn netwerk herkent 95% van de beelden goed</text>
+<text x="20" y="62" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start">Juist herkende beelden in de testset (985 beelden)</text>
+<text x="284" y="120" font-size="16" fill="#4a5163" font-weight="500" text-anchor="end">Eerste eenvoudige netwerk</text>
+<text x="284" y="139" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">startpunt</text>
+<rect x="300" y="106" width="308.8" height="34" rx="6" fill="#d9d8d3"/>
+<text x="618.8181818181818" y="129" font-size="17" fill="#4a5163" font-weight="700" text-anchor="start">79%</text>
+<text x="284" y="184" font-size="16" fill="#4a5163" font-weight="500" text-anchor="end">Voorgetraind netwerk</text>
+<text x="284" y="203" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">DenseNet121</text>
+<rect x="300" y="170" width="328.4" height="34" rx="6" fill="#d9d8d3"/>
+<text x="638.3636363636364" y="193" font-size="17" fill="#4a5163" font-weight="700" text-anchor="start">84%</text>
+<text x="284" y="248" font-size="16" fill="#1d2230" font-weight="700" text-anchor="end">Mijn netwerk</text>
+<text x="284" y="267" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">eigen ontwerp</text>
+<rect x="300" y="234" width="371.4" height="34" rx="6" fill="#2a6fd6"/>
+<text x="681.3636363636364" y="257" font-size="17" fill="#1f56a8" font-weight="700" text-anchor="start">95%</text>
+</svg>

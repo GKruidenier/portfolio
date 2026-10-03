@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 328" width="820" height="328" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="820" height="328" fill="#ffffff"/>
+<text x="20" y="36" font-size="21" fill="#1d2230" font-weight="700" text-anchor="start">Gemiddeld minder dan één ster ernaast</text>
+<text x="20" y="62" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start">Gemiddelde afwijking van het echte cijfer, in sterren · lager is beter</text>
+<text x="284" y="120" font-size="16" fill="#4a5163" font-weight="500" text-anchor="end">Gokken</text>
+<text x="284" y="139" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">willekeurig cijfer</text>
+<rect x="300" y="106" width="360.4" height="34" rx="6" fill="#d9d8d3"/>
+<text x="670.4411764705883" y="129" font-size="17" fill="#4a5163" font-weight="700" text-anchor="start">1,43 ★</text>
+<text x="284" y="184" font-size="16" fill="#4a5163" font-weight="500" text-anchor="end">Vergelijkbare films</text>
+<text x="284" y="203" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">KNN</text>
+<rect x="300" y="170" width="205.9" height="34" rx="6" fill="#d9d8d3"/>
+<text x="515.8941176470588" y="193" font-size="17" fill="#4a5163" font-weight="700" text-anchor="start">0,81 ★</text>
+<text x="284" y="248" font-size="16" fill="#1d2230" font-weight="700" text-anchor="end">Smaakprofielen</text>
+<text x="284" y="267" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">SVD</text>
+<rect x="300" y="234" width="203.1" height="34" rx="6" fill="#2a6fd6"/>
+<text x="513.1117647058824" y="257" font-size="17" fill="#1f56a8" font-weight="700" text-anchor="start">0,80 ★</text>
+</svg>

@@ -22,16 +22,16 @@ stats:
   - value: "99%"
     label: gelijke verdeling na slim verkleinen
 models:
-  - name: "NormalPredictor"
-    tag: "baseline"
-    text: "Gokt een cijfer uit de algemene verdeling."
-  - name: "KNNBaseline"
-    tag: "model"
-    text: "Kijkt naar films die dezelfde mensen vergelijkbaar beoordeelden."
-  - name: "SVD"
-    tag: "model"
+  - name: "Gokken"
+    tag: "NormalPredictor"
+    text: "Kiest een willekeurig cijfer uit de algemene verdeling."
+  - name: "Vergelijkbare films"
+    tag: "KNN"
+    text: "Kijkt naar films die dezelfde mensen ook goed of slecht vonden. Goed uit te leggen, maar zwaar voor het geheugen."
+  - name: "Smaakprofielen"
+    tag: "SVD"
     own: true
-    text: "Vat kijkers en films samen in verborgen smaakfactoren."
+    text: "Vat kijkers en films samen in een paar verborgen smaakkenmerken en kijkt hoe goed die bij elkaar passen."
 sample:
   caption: "Zo ziet de data eruit"
   columns: ["Kijker", "Film", "Cijfer", "Datum"]
@@ -49,13 +49,13 @@ sample:
 
 {% include models.html kicker="Modellen" title="Drie manieren om een cijfer te voorspellen" %}
 
-{% include slide.html kicker="Methode" title="Van 27 miljoen naar 3,1 miljoen rijen" text="We hielden de populairste films en actiefste kijkers en namen een steekproef met 99% dezelfde verdeling. Daarna tunen met 5-voudige cross-validatie." src="/assets/img/projects/recommender_pipeline.svg" alt="Pipeline: kijker, film en cijfer worden verkleind en gesampled, daarna voorspelt SVD het cijfer voor een nieuwe film" full=true %}
+{% include slide.html kicker="Methode" title="Van 27 miljoen naar 3,1 miljoen rijen" text="We hielden de populairste films en actiefste kijkers en trokken een steekproef met 99% dezelfde verdeling. Daarna stemden we de instellingen af en testten we op beoordelingen die het model nog niet had gezien." src="/assets/img/projects/recommender_pipeline.svg" alt="Pipeline: kijker, film en cijfer worden verkleind en gesampled, daarna voorspellen smaakprofielen het cijfer voor een nieuwe film" full=true %}
 
-{% include slide.html kicker="Resultaten" title="SVD wint: 0,80 ster ernaast" text="Gokken zit er 1,43 ster naast, KNN 0,81. Met een andere seed veranderde de fout maar 0,0002." src="/assets/img/projects/recommender_rmse_vergelijking.png" alt="Staafdiagram van de fout (RMSE) per model, voor en na tuning" %}
+{% include slide.html kicker="Resultaten" title="Gemiddeld 0,8 ster ernaast" text="Smaakprofielen (SVD) zitten het dichtst bij het echte cijfer, net voor vergelijkbare films (KNN). Gokken zit er 1,4 ster naast. Met een andere willekeurige verdeling bleef het resultaat vrijwel gelijk." src="/assets/img/projects/recommender_resultaat.svg" alt="Staafdiagram: gokken 1,43 ster ernaast, vergelijkbare films 0,81, smaakprofielen 0,80" full=true %}
 
-{% include slide.html kicker="Evaluatie" title="Uitleg of schaal?" text="KNN is beter uit te leggen, maar liep vast op geheugen. SVD is nauwkeuriger en schaalt beter, maar is minder transparant." statement=true %}
+{% include slide.html kicker="Evaluatie" title="Uitleg of schaal?" text="Vergelijkbare films zijn makkelijker uit te leggen, maar liepen vast op het geheugen. Smaakprofielen zijn nauwkeuriger en schalen beter, maar zijn minder transparant." statement=true %}
 
 <div class="role" markdown="1">
 ## Mijn rol
-Ik deed het grootste deel: data-exploratie, het verkleinen van de data, het tunen en de validatie.
+Ik deed het grootste deel: data-exploratie, het verkleinen van de data, het afstemmen van de modellen en de validatie.
 </div>

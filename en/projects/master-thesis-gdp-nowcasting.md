@@ -23,27 +23,27 @@ stats:
   - value: "3"
     label: custom network architectures designed
 models:
-  - name: "ARMA"
-    tag: "benchmark"
+  - name: "Simple benchmark"
+    tag: "ARMA"
     text: "Predicts GDP from its own past only."
-  - name: "Dynamic Factor Model"
-    tag: "benchmark"
-    text: "The central-bank standard: summarises all indicators into a few factors."
-  - name: "Quarterly-RNN"
+  - name: "Central-bank model"
+    tag: "Dynamic Factor Model"
+    text: "Summarises all indicators into a few underlying trends. The standard to beat."
+  - name: "Network with quarterly figures only"
     tag: "comparison"
-    text: "The same kind of network, but with quarterly averages only."
-  - name: "Repeat-RNN"
-    tag: "own design"
+    text: "The same kind of network, but with monthly figures averaged per quarter first."
+  - name: "My network 1: repeat"
+    tag: "Repeat-RNN"
     own: true
-    text: "Reads every month and repeats the latest quarterly figure."
-  - name: "Multilayer-RNN"
-    tag: "own design"
+    text: "Reads every month and remembers the latest quarterly figure."
+  - name: "My network 2: two layers"
+    tag: "Multilayer-RNN"
     own: true
-    text: "A quarterly layer with a monthly layer on top."
-  - name: "Alternate-RNN"
-    tag: "own design"
+    text: "One layer for the quarters, with a layer on top that reads along every month."
+  - name: "My network 3: alternate"
+    tag: "Alternate-RNN"
     own: true
-    text: "Monthly and quarterly networks take turns and share their memory."
+    text: "A monthly and a quarterly network take turns and share their memory."
 sample:
   caption: "What the data looks like"
   columns: ["Month", "Industry", "Unemployment", "GDP growth"]
@@ -55,14 +55,14 @@ sample:
   note: "Two of the 238 indicators. GDP arrives once a quarter; the question mark is what the model estimates."
 ---
 
-{% include slide.html kicker="Problem" title="How is the economy doing right now?" text="The GDP figure arrives weeks after a quarter ends. Can a model use the monthly figures already in to estimate this quarter's growth?" src="/assets/img/projects/scriptie_probleem_en.svg" alt="Timeline: monthly figures arrive every month, but first-quarter GDP is only known weeks after the quarter ends" full=true %}
+{% include slide.html kicker="Problem" title="How is the economy doing right now?" text="The GDP figure arrives weeks after a quarter ends. Can a model use the monthly figures already in to estimate this quarter's growth? That is called nowcasting." src="/assets/img/projects/scriptie_probleem_en.svg" alt="Timeline: monthly figures arrive every month, but first-quarter GDP is only known weeks after the quarter ends" full=true %}
 
 {% include data.html kicker="Data" title="Monthly and quarterly figures mixed" text="121 monthly and 117 quarterly indicators of the US economy, 1960–2024." src="/assets/img/projects/scriptie_bbp_groei_en.png" alt="Line chart of quarterly US GDP growth 1960–2024, with sharp drops in recessions" %}
 
-{% include models.html kicker="Models" title="Two benchmarks, three own designs" text="LSTM and GRU are networks with a memory for time series. I adapted them to read monthly and quarterly data at the same time." %}
+{% include models.html kicker="Models" title="Two benchmarks, three own designs" text="My networks have a memory for sequences over time (LSTM or GRU). I adapted them to read monthly and quarterly figures at the same time." %}
 
-{% include slide.html kicker="Method" title="From raw series to nowcast" text="Retrained every year on all data so far and tested on the following year, as it would work in practice." src="/assets/img/projects/scriptie_pipeline_en.svg" alt="Pipeline: monthly and quarterly data, making stationary and feature selection, a mixed-frequency RNN and as output this quarter's GDP growth" full=true %}
+{% include slide.html kicker="Method" title="From raw figures to estimate" text="The model never sees figures from the future: every year it is retrained on all data so far and tested on the following year." src="/assets/img/projects/scriptie_pipeline_en.svg" alt="Pipeline: monthly and quarterly figures, removing trends and picking the best figures, an own network and as output this quarter's GDP growth" full=true %}
 
-{% include slide.html kicker="Results" title="11% more accurate than central banks" text="From 2000 to 2019 my networks (blue) beat every benchmark, including ARMA (−23%)." src="/assets/img/projects/scriptie_rmse_vergelijking_en.png" alt="Bar chart: Repeat-LSTM and Alternate-GRU have a lower error than Quarterly-GRU, the Dynamic Factor Model and ARMA" %}
+{% include slide.html kicker="Results" title="11% more accurate than central banks" text="From 2000 to 2019 my networks (blue) make a smaller error than every benchmark: 11% less than the central-bank model and 23% less than the simple benchmark." src="/assets/img/projects/scriptie_resultaat_en.svg" alt="Bar chart: with the central-bank model at 100, my networks score 89 and 90, the simple benchmark 115" full=true %}
 
 {% include slide.html kicker="Evaluation" title="More complex is not always better" text="In crises, exactly when it matters, the difference with the central-bank model was not significant. That contradicts earlier research." statement=true %}

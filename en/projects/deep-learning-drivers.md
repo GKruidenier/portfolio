@@ -22,31 +22,31 @@ stats:
   - value: "6"
     label: driver states recognised
 models:
-  - name: "Baseline CNN"
+  - name: "Simple network"
     tag: "starting point"
-    text: "Small three-layer network: 79%."
-  - name: "Custom CNN"
-    tag: "best model"
+    text: "Three layers. Reached 79%, but memorised the training images too much."
+  - name: "My network"
+    tag: "own design"
     own: true
-    text: "Four layers, filters double per layer, with dropout."
-  - name: "DenseNet121"
-    tag: "transfer learning"
-    text: "Already trained on millions of photos, adapted to this task."
+    text: "Four layers that learn more and more features, with measures against memorising."
+  - name: "Pretrained network"
+    tag: "DenseNet121"
+    text: "Already trained on millions of photos, then adapted to this task."
 ---
 
 {% include slide.html kicker="Problem" title="Is the driver distracted?" text="Distraction and fatigue cause many accidents. Can a model tell from a single camera image?" src="/assets/img/projects/deeplearning_voorbeeldbeelden.png" alt="Grid of example driver images, each with its label" photo=true %}
 
 {% include slide.html kicker="Data" title="Almost 15,000 images, unevenly spread" text="Greyscale images of 72 × 128 pixels in six classes. Drinking and yawning are rare." src="/assets/img/projects/deeplearning_klassen_en.png" alt="Bar chart: safe driving 6,180 images, dangerous driving 4,642, distracted 2,080, sleepy 979, yawning 546 and drinking 428" %}
 
-{% include models.html kicker="Models" title="Build or reuse?" text="A CNN learns to recognise patterns in images by itself, from edges to postures." %}
+{% include models.html kicker="Models" title="Build or reuse?" text="A neural network for images learns by itself what to look for, from edges to postures." %}
 
-{% include slide.html kicker="Method" title="How the network looks" text="Each layer summarises the image into more and more features. The last layer picks one of the six states." src="/assets/img/projects/deeplearning_pipeline_en.svg" alt="Pipeline: a camera image passes four layers with 32 to 256 filters and a dense layer, which picks one of six states" full=true %}
+{% include slide.html kicker="Method" title="How the network looks" text="Each layer summarises the image into more and more features. The last layer picks one of the six states." src="/assets/img/projects/deeplearning_pipeline_en.svg" alt="Pipeline: a camera image passes four layers with more and more features and a decision layer, which picks one of six states" full=true %}
 
-{% include slide.html kicker="Results" title="From 79% to 95%" text="The custom CNN beats the baseline and DenseNet121 (84%). Average recall rose from 0.65 to 0.92." src="/assets/img/projects/deeplearning_nauwkeurigheid_vergelijking_en.png" alt="Bar chart of test accuracy: baseline 79%, DenseNet121 84%, custom CNN 95%" %}
+{% include slide.html kicker="Results" title="From 79% to 95%" text="My network recognises 95% of the test images correctly, versus 79% for the first network and 84% for the pretrained network. The rare states are also found much more often (from 65% to 92%)." src="/assets/img/projects/deeplearning_resultaat_en.svg" alt="Bar chart: first network 79%, pretrained network 84%, my network 95% correct" full=true %}
 
-{% include slide.html kicker="Evaluation" title="Strong, but not ready for the road" text="'Distracted' and 'safe driving' remain the hardest to tell apart. Real use also requires attention to bias and privacy." statement=true %}
+{% include slide.html kicker="Evaluation" title="Strong, but not ready for the road" text="'Distracted' and 'safe driving' remain the hardest to tell apart. Real use also requires fairness between groups of drivers and privacy." statement=true %}
 
 <div class="role" markdown="1">
 ## My role
-I built the best model: the second Optuna round, the choice for dropout and the doubling filters. I also ran the DenseNet121 experiments.
+I built the best model: the second round of automatic tuning, the choice for dropout and the design with more features per layer. I also ran the experiments with the pretrained network.
 </div>

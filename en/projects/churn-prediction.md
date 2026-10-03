@@ -24,17 +24,17 @@ stats:
 models:
   - name: "Guessing"
     tag: "lower bound"
-    text: "Without a model you catch 7.9% of returners."
-  - name: "Logistic regression"
-    tag: "model"
-    text: "Adds up the features with a fixed weight."
-  - name: "Random Forest"
-    tag: "model"
-    text: "Hundreds of decision trees that vote together."
-  - name: "XGBoost"
-    tag: "model"
+    text: "Without a model you are right for only 8% of players."
+  - name: "Formula"
+    tag: "logistic regression"
+    text: "Adds up the features, each with a fixed weight. Simple and easy to explain."
+  - name: "Voting decision trees"
+    tag: "Random Forest"
+    text: "Hundreds of yes/no trees that each cast a vote."
+  - name: "Learning decision trees"
+    tag: "XGBoost"
     own: true
-    text: "Trees that correct each other's mistakes step by step."
+    text: "Trees built one after another, each fixing the mistakes of the previous one."
 sample:
   caption: "What the data looks like"
   columns: ["Player", "Timestamp", "Score"]
@@ -52,13 +52,13 @@ sample:
 
 {% include models.html kicker="Models" title="Three models versus guessing" text="From simple and explainable to powerful." %}
 
-{% include slide.html kicker="Method" title="From raw logs to prediction" text="From the logs we built 13 behavioural features and kept the 8 strongest. All models were tuned and then tested again." src="/assets/img/projects/churn_pipeline_en.svg" alt="Pipeline: timestamp, score and device ID become a churn label and eight features for XGBoost, which gives each new player's chance of returning" full=true %}
+{% include slide.html kicker="Method" title="From raw logs to prediction" text="From the logs we built 13 features of early play and kept the 8 that say the most. Then we tested each model on players it had not seen." src="/assets/img/projects/churn_pipeline_en.svg" alt="Pipeline: timestamp, score and player ID become a 'returns' label and eight behaviour features for decision trees, which give each new player's chance of returning" full=true %}
 
-{% include slide.html kicker="Results" title="Five times better than guessing" text="All models reach a PR-AUC of 0.37–0.38 (guessing: 0.08). When the model says 'will return', it is right two times out of three." src="/assets/img/projects/churn_modelvergelijking_prauc_en.png" alt="Bar chart: logistic regression, Random Forest and XGBoost reach a PR-AUC of 0.37 to 0.38 versus 0.08 for guessing" %}
+{% include slide.html kicker="Results" title="2 in 3 predictions are right" text="All three models do about equally well and almost five times better than guessing. When our best model says a player will return, it is right 66% of the time; without a model that is 8%." src="/assets/img/projects/churn_resultaat_en.svg" alt="Bar chart: guessing 8%, our best model 66% of predicted returners actually return" full=true %}
 
-{% include slide.html kicker="Evaluation" title="Good at churners, weaker at stayers" text="The models still miss many returners (recall 12–16%). A next step is tuning for recall or trying other time windows." statement=true %}
+{% include slide.html kicker="Evaluation" title="Good at churners, weaker at stayers" text="The models still find only a small share of all players who return (12–16%). A next step is tuning the model specifically for that, or trying other time windows." statement=true %}
 
 <div class="role" markdown="1">
 ## My role
-Together with one teammate I did the methodology and analysis: churn definition, features, models and evaluation.
+Together with one teammate I did the methodology and analysis: the definition of quitting, the features, the models and the evaluation.
 </div>

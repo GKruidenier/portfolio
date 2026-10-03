@@ -24,17 +24,17 @@ stats:
 models:
   - name: "Gokken"
     tag: "ondergrens"
-    text: "Zonder model raak je 7,9% van de terugkeerders."
-  - name: "Logistische regressie"
-    tag: "model"
-    text: "Telt de kenmerken op met een vast gewicht."
-  - name: "Random Forest"
-    tag: "model"
-    text: "Honderden beslisbomen die samen stemmen."
-  - name: "XGBoost"
-    tag: "model"
+    text: "Zonder model zit je maar bij 8% van de spelers goed."
+  - name: "Rekenformule"
+    tag: "logistische regressie"
+    text: "Telt de kenmerken op, elk met een vast gewicht. Eenvoudig en goed uit te leggen."
+  - name: "Stemmende beslisbomen"
+    tag: "Random Forest"
+    text: "Honderden ja/nee-bomen die elk een stem uitbrengen."
+  - name: "Lerende beslisbomen"
+    tag: "XGBoost"
     own: true
-    text: "Bomen die elkaars fouten stap voor stap verbeteren."
+    text: "Bomen die na elkaar worden gebouwd en elk de fouten van de vorige verbeteren."
 sample:
   caption: "Zo ziet de data eruit"
   columns: ["Speler", "Tijdstip", "Score"]
@@ -52,13 +52,13 @@ sample:
 
 {% include models.html kicker="Modellen" title="Drie modellen tegen gokken" text="Van eenvoudig en uitlegbaar tot krachtig." %}
 
-{% include slide.html kicker="Methode" title="Van ruwe logs tot voorspelling" text="Uit de logs maakten we 13 gedragskenmerken en hielden de 8 sterkste. Alle modellen zijn getuned en daarna opnieuw getoetst." src="/assets/img/projects/churn_pipeline.svg" alt="Pipeline: tijdstip, score en apparaat-ID worden een churn-label en acht kenmerken voor XGBoost, dat per nieuwe speler de kans op terugkeer geeft" full=true %}
+{% include slide.html kicker="Methode" title="Van ruwe logs tot voorspelling" text="Uit de logs maakten we 13 kenmerken van vroeg speelgedrag en hielden de 8 die het meest zeggen. Daarna testten we elk model op spelers die het nog niet had gezien." src="/assets/img/projects/churn_pipeline.svg" alt="Pipeline: tijdstip, score en speler-ID worden een label 'komt terug' en acht gedragskenmerken voor beslisbomen, die per nieuwe speler de kans op terugkeer geven" full=true %}
 
-{% include slide.html kicker="Resultaten" title="Vijf keer beter dan gokken" text="Alle modellen halen een PR-AUC van 0,37–0,38 (gokken: 0,08). Zegt het model 'komt terug', dan klopt dat in twee op de drie gevallen." src="/assets/img/projects/churn_modelvergelijking_prauc.png" alt="Staafdiagram: logistische regressie, Random Forest en XGBoost halen een PR-AUC van 0,37 tot 0,38, tegen 0,08 bij gokken" %}
+{% include slide.html kicker="Resultaten" title="2 op de 3 voorspellingen klopt" text="Alle drie de modellen doen het ongeveer even goed en bijna vijf keer beter dan gokken. Zegt ons beste model dat een speler terugkomt, dan klopt dat in 66% van de gevallen; zonder model is dat 8%." src="/assets/img/projects/churn_resultaat.svg" alt="Staafdiagram: gokken 8%, ons beste model 66% van de voorspelde terugkeerders komt echt terug" full=true %}
 
-{% include slide.html kicker="Evaluatie" title="Goed in afhakers, zwakker in blijvers" text="De modellen missen nog veel terugkeerders (recall 12–16%). Een volgende stap is tunen op recall of andere tijdvensters proberen." statement=true %}
+{% include slide.html kicker="Evaluatie" title="Goed in afhakers, zwakker in blijvers" text="De modellen vinden nog maar een klein deel van alle spelers die terugkomen (12–16%). Een volgende stap is het model daar gericht op afstemmen, of andere tijdvensters proberen." statement=true %}
 
 <div class="role" markdown="1">
 ## Mijn rol
-Samen met één teamgenoot deed ik de methodologie en analyse: churndefinitie, kenmerken, modellen en evaluatie.
+Samen met één teamgenoot deed ik de methodologie en analyse: de definitie van afhaken, de kenmerken, de modellen en de evaluatie.
 </div>

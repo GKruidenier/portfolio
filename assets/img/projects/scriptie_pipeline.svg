@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
-<rect width="960" height="470" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 960 306" width="960" height="306" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect y="100" width="960" height="306" fill="#ffffff"/>
 <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
-<text x="30" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">INVOER</text>
-<text x="262" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">BEWERKING</text>
-<text x="548" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">MODEL</text>
-<text x="862" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5">UITKOMST</text>
+<text x="30" y="130" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">INVOER</text>
+<text x="262" y="130" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">BEWERKING</text>
+<text x="548" y="130" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">MODEL</text>
+<text x="862" y="130" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5">UITKOMST</text>
 <rect x="30" y="180.0" width="178" height="46" rx="23.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
-<text x="119.0" y="210.0" font-size="17" fill="#4a5163" font-weight="600" text-anchor="middle" >Maanddata</text>
+<text x="119.0" y="210.0" font-size="17" fill="#4a5163" font-weight="600" text-anchor="middle" >Maandcijfers</text>
 <rect x="30" y="254.0" width="178" height="46" rx="23.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
-<text x="119.0" y="284.0" font-size="17" fill="#4a5163" font-weight="600" text-anchor="middle" >Kwartaaldata</text>
+<text x="119.0" y="284.0" font-size="17" fill="#4a5163" font-weight="600" text-anchor="middle" >Kwartaalcijfers</text>
 <rect x="262" y="154.0" width="236" height="76" rx="12" fill="#f6e7da" stroke="#c9783d" stroke-width="1.5"/>
-<text x="280" y="186.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Stationair maken</text>
-<text x="280" y="212.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >groei i.p.v. niveaus</text>
+<text x="280" y="186.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Trends eruit</text>
+<text x="280" y="212.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >groei in plaats van niveaus</text>
 <rect x="262" y="250.0" width="236" height="76" rx="12" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
-<text x="280" y="282.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Featureselectie</text>
-<text x="280" y="308.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >LARS: 10–20 indicatoren</text>
+<text x="280" y="282.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Beste cijfers kiezen</text>
+<text x="280" y="308.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >10–20 van de 238 indicatoren</text>
 <path d="M210,203.0 C236.0,203.0 236.0,192.0 256,192.0" fill="none" stroke="#e4e1d8" stroke-width="1.8" marker-end="url(#a)"/>
 <path d="M210,277.0 C236.0,277.0 236.0,192.0 256,192.0" fill="none" stroke="#e4e1d8" stroke-width="1.8" marker-end="url(#a)"/>
 <path d="M500,192.0 C524.0,192.0 524.0,240 542,240" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
 <path d="M500,288.0 C524.0,288.0 524.0,240 542,240" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="548" y="180.0" width="196" height="120" rx="14" fill="#1d2230"/>
-<text x="646.0" y="236" font-size="19" fill="#ffffff" font-weight="700" text-anchor="middle" >Mixed-freq RNN</text>
-<text x="646.0" y="264" font-size="14.5" fill="#c9cdd8" font-weight="400" text-anchor="middle" >eigen LSTM / GRU</text>
+<text x="646.0" y="236" font-size="19" fill="#ffffff" font-weight="700" text-anchor="middle" >Eigen netwerk</text>
+<text x="646.0" y="264" font-size="14.5" fill="#c9cdd8" font-weight="400" text-anchor="middle" >leest maand + kwartaal</text>
 <line x1="746" y1="240" x2="782" y2="240" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
 <circle cx="862" cy="240" r="72" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
 <text x="862" y="232" font-size="18" fill="#1f56a8" font-weight="700" text-anchor="middle" >bbp-groei</text>
 <text x="862" y="256" font-size="13.5" fill="#1f56a8" font-weight="500" text-anchor="middle" >dit kwartaal</text>
-<line x1="30" y1="420" x2="930" y2="420" stroke="#e4e1d8"/>
-<text x="30" y="450" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Getoetst tegen ARMA en het Dynamic Factor Model · elk jaar opnieuw getraind, 2000–2024</text>
+<line x1="30" y1="356" x2="930" y2="356" stroke="#e4e1d8"/>
+<text x="30" y="386" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Elk jaar opnieuw getraind en getest op het jaar erna (2000–2024) · vergeleken met het model van centrale banken</text>
 </svg>

@@ -2,9 +2,9 @@
 <rect width="970" height="400" fill="#ffffff"/>
 <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
 <text x="50" y="52" font-size="15" fill="#1f56a8" font-weight="600" text-anchor="start" >Maanddata</text>
-<text x="50" y="72" font-size="13" fill="#6f7686" font-weight="400" text-anchor="start" >134 reeksen (FRED-MD)</text>
+<text x="50" y="72" font-size="13" fill="#6f7686" font-weight="400" text-anchor="start" >121 reeksen (FRED-MD)</text>
 <text x="50" y="232" font-size="15" fill="#c9783d" font-weight="600" text-anchor="start" >Kwartaaldata</text>
-<text x="50" y="252" font-size="13" fill="#6f7686" font-weight="400" text-anchor="start" >248 reeksen (FRED-QD), o.a. bbp</text>
+<text x="50" y="252" font-size="13" fill="#6f7686" font-weight="400" text-anchor="start" >117 reeksen (FRED-QD), o.a. bbp</text>
 <rect x="50" y="137" width="22" height="53" rx="4" fill="#2a6fd6" opacity="0.55"/>
 <rect x="78" y="133" width="22" height="57" rx="4" fill="#2a6fd6" opacity="0.7000000000000001"/>
 <rect x="106" y="146" width="22" height="44" rx="4" fill="#2a6fd6" opacity="0.8500000000000001"/>

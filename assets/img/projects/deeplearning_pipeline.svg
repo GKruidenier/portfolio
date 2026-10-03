@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
-<rect width="960" height="470" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 60 960 386" width="960" height="386" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect y="60" width="960" height="386" fill="#ffffff"/>
 <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
-<text x="30" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">INVOER</text>
-<text x="250" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">EIGEN CNN</text>
-<text x="560" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5"></text>
-<text x="830" y="44" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5">UITKOMST</text>
+<text x="30" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">INVOER</text>
+<text x="250" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">EIGEN NEURAAL NETWERK</text>
+<text x="560" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5"></text>
+<text x="830" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5">UITKOMST</text>
 <rect x="30" y="174" width="176" height="132" rx="8" fill="#e8e8e8" stroke="#bdbdbd" stroke-width="1.5"/>
 <circle cx="126" cy="226" r="22" fill="#9a9a9a"/>
 <path d="M82,306 C86,258 166,258 170,306 Z" fill="#9a9a9a"/>
 <path d="M48,292 A44,44 0 0 1 100,256" fill="none" stroke="#6f6f6f" stroke-width="6" stroke-linecap="round"/>
-<text x="118.0" y="338" font-size="15" fill="#4a5163" font-weight="600" text-anchor="middle" >72 × 128, grijs</text>
+<text x="118.0" y="338" font-size="15" fill="#4a5163" font-weight="600" text-anchor="middle" >camerabeeld, 72 × 128</text>
 <line x1="210" y1="240" x2="252" y2="240" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
 <path d="M258,165.0 l10,-10 h16 v150 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
 <rect x="258" y="165.0" width="16" height="150" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
@@ -26,10 +26,10 @@
 <path d="M434,210.0 l10,-10 h46 v60 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
 <rect x="434" y="210.0" width="46" height="60" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
 <text x="457.0" y="338" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >256</text>
-<text x="369.0" y="360" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >filters per laag</text>
+<text x="369.0" y="360" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >steeds meer kenmerken per laag</text>
 <line x1="494" y1="240" x2="524" y2="240" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="530" y="160" width="22" height="160" rx="6" fill="#1d2230"/>
-<text x="541" y="352" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >dense</text>
+<text x="541" y="352" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >besluit</text>
 <line x1="554" y1="240" x2="722" y2="140.0" stroke="#e4e1d8" stroke-width="1.2"/>
 <rect x="730" y="126.0" width="200" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
 <text x="740" y="147.0" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Veilig</text>
@@ -49,6 +49,6 @@
 <line x1="554" y1="240" x2="722" y2="340.0" stroke="#e4e1d8" stroke-width="1.2"/>
 <rect x="730" y="326.0" width="200" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
 <text x="740" y="347.0" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Gapen</text>
-<line x1="30" y1="420" x2="930" y2="420" stroke="#e4e1d8"/>
-<text x="30" y="450" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Getuned met Optuna · vergeleken met een baseline-CNN en DenseNet121</text>
+<line x1="30" y1="396" x2="930" y2="396" stroke="#e4e1d8"/>
+<text x="30" y="426" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Instellingen automatisch afgestemd · vergeleken met een eenvoudig en een voorgetraind netwerk</text>
 </svg>
