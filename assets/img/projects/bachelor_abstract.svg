@@ -1,57 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 400" width="970" height="400" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
 <rect width="970" height="400" fill="#ffffff"/>
 <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c9783d"/></marker></defs>
-<text x="20" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Tumor draait op glutamine</text>
-<text x="20" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >de brandstof voor groei</text>
-<ellipse cx="190" cy="222" rx="70" ry="64" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
-<circle cx="190" cy="222" r="24" fill="#f4d3d9"/>
-<path d="M194,205 L181,225 L189,225 L185,240 L199,219 L191,219 Z" fill="#e9a400"/>
-<path d="M20,222 H104 C132,222 136,222 162,222" fill="none" stroke="#2a6fd6" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
-<text x="20" y="213" font-size="13.5" fill="#2a6fd6" font-weight="700" text-anchor="start" >glutamine</text>
-<text x="190" y="330" font-size="15" fill="#4a5163" font-weight="700" text-anchor="middle" >groei</text>
-<line x1="270" y1="222" x2="300" y2="222" stroke="#6f7686" stroke-width="2.2" marker-end="url(#a)"/>
-<text x="300" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Eén remmer</text>
-<text x="300" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >de cel neemt een omweg</text>
-<ellipse cx="470" cy="222" rx="70" ry="64" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
-<circle cx="470" cy="222" r="24" fill="#f4d3d9"/>
-<path d="M474,205 L461,225 L469,225 L465,240 L479,219 L471,219 Z" fill="#e9a400"/>
-<path d="M300,164 H384 C412,164 416,209 442,209" fill="none" stroke="#c9783d" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
-<text x="300" y="155" font-size="13.5" fill="#c9783d" font-weight="700" text-anchor="start" >glucose</text>
-<path d="M300,222 H384 C412,222 416,222 442,222" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
-<text x="300" y="213" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="start" >glutamine</text>
-<line x1="376" y1="210" x2="376" y2="234" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
-<path d="M300,280 H384 C412,280 416,235 442,235" fill="none" stroke="#c9783d" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
-<text x="300" y="271" font-size="13.5" fill="#c9783d" font-weight="700" text-anchor="start" >vetzuren</text>
-<text x="470" y="330" font-size="15" fill="#c9783d" font-weight="700" text-anchor="middle" >resistentie</text>
-<line x1="550" y1="222" x2="580" y2="222" stroke="#6f7686" stroke-width="2.2" marker-end="url(#a)"/>
-<text x="585" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Combinatietherapie</text>
-<text x="585" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >remmen, bestralen, afweer inzetten</text>
-<ellipse cx="785" cy="222" rx="70" ry="64" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
-<circle cx="785" cy="222" r="24" fill="#f4d3d9"/>
-<path d="M789,205 L776,225 L784,225 L780,240 L794,219 L786,219 Z" fill="#c7c7c7"/>
-<path d="M585,164 H713 C741,164 731,209 757,209" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
-<text x="585" y="155" font-size="13" fill="#c0392b" font-weight="700" text-anchor="start" >metabole remmer</text>
-<line x1="705" y1="152" x2="705" y2="176" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
-<path d="M585,222 H713 C741,222 731,222 757,222" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
-<text x="585" y="213" font-size="13" fill="#c0392b" font-weight="700" text-anchor="start" >GLS-remmer</text>
-<line x1="705" y1="210" x2="705" y2="234" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
-<path d="M585,280 H713 C741,280 731,235 757,235" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
-<text x="585" y="271" font-size="13" fill="#c0392b" font-weight="700" text-anchor="start" >metabole remmer</text>
-<line x1="705" y1="268" x2="705" y2="292" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
-<path d="M913,126 q-8,8 -16,6 t-16,6 t-16,6 t-14,8" fill="none" stroke="#7b5cc4" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M929,134 q-8,8 -16,6 t-16,6 t-16,6 t-14,8" fill="none" stroke="#7b5cc4" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M945,142 q-8,8 -16,6 t-16,6 t-16,6 t-14,8" fill="none" stroke="#7b5cc4" stroke-width="2.5" stroke-linecap="round"/>
-<text x="851" y="118" font-size="13.5" fill="#7b5cc4" font-weight="700" text-anchor="start" >radiotherapie</text>
-<line x1="911.0" y1="292.0" x2="918.0" y2="292.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="904.6" y1="307.6" x2="909.5" y2="312.5" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="889.0" y1="314.0" x2="889.0" y2="321.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="873.4" y1="307.6" x2="868.5" y2="312.5" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="867.0" y1="292.0" x2="860.0" y2="292.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="873.4" y1="276.4" x2="868.5" y2="271.5" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="889.0" y1="270.0" x2="889.0" y2="263.0" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<line x1="904.6" y1="276.4" x2="909.5" y2="271.5" stroke="#2a6fd6" stroke-width="2.5" stroke-linecap="round"/>
-<circle cx="889" cy="292" r="22" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
-<text x="889" y="297" font-size="12" fill="#1f56a8" font-weight="700" text-anchor="middle" >T-cel</text>
-<text x="889" y="342" font-size="13.5" fill="#1f56a8" font-weight="700" text-anchor="middle" >immuuntherapie</text>
-<text x="785" y="380" font-size="15" fill="#1d2230" font-weight="700" text-anchor="middle" >kansrijke aanpak</text>
+<text x="16" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Tumor draait op glutamine</text>
+<text x="16" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >de brandstof voor groei</text>
+<ellipse cx="160" cy="220" rx="58" ry="54" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
+<circle cx="160" cy="220" r="21" fill="#f4d3d9"/>
+<path d="M163.4,205.7 L152.4,222.5 L159.2,222.5 L155.8,235.2 L167.6,217.5 L160.8,217.5 Z" fill="#e9a400"/>
+<path d="M16,220 H76 C100,220 92,220 137,220" fill="none" stroke="#2a6fd6" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
+<text x="16" y="212" font-size="13.5" fill="#2a6fd6" font-weight="700" text-anchor="start" >glutamine</text>
+<text x="160" y="330" font-size="15" fill="#4a5163" font-weight="700" text-anchor="middle" >groei</text>
+<line x1="228" y1="220" x2="254" y2="220" stroke="#6f7686" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="262" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Eén remmer</text>
+<text x="262" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >de cel neemt een omweg</text>
+<ellipse cx="414" cy="220" rx="58" ry="54" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
+<circle cx="414" cy="220" r="21" fill="#f4d3d9"/>
+<path d="M417.4,205.7 L406.4,222.5 L413.2,222.5 L409.8,235.2 L421.6,217.5 L414.8,217.5 Z" fill="#e9a400"/>
+<path d="M262,170 H322 C346,170 346,208 391,208" fill="none" stroke="#c9783d" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
+<text x="262" y="162" font-size="13.5" fill="#c9783d" font-weight="700" text-anchor="start" >glucose</text>
+<path d="M262,220 H322 C346,220 346,220 391,220" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="262" y="212" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="start" >glutamine</text>
+<line x1="342" y1="209" x2="342" y2="231" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<path d="M262,270 H322 C346,270 346,232 391,232" fill="none" stroke="#c9783d" stroke-width="4" stroke-dasharray="" stroke-linecap="round"/>
+<text x="262" y="262" font-size="13.5" fill="#c9783d" font-weight="700" text-anchor="start" >vetzuren</text>
+<text x="414" y="330" font-size="15" fill="#c9783d" font-weight="700" text-anchor="middle" >resistentie</text>
+<line x1="480" y1="220" x2="506" y2="220" stroke="#6f7686" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="512" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Combinatietherapie: drie opties</text>
+<text x="512" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >glutamine remmen, plus één partner</text>
+<ellipse cx="612" cy="220" rx="40" ry="38" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
+<circle cx="612" cy="220" r="14" fill="#f4d3d9"/>
+<path d="M614.4,209.9 L606.7,221.8 L611.4,221.8 L609.0,230.7 L617.3,218.2 L612.6,218.2 Z" fill="#c7c7c7"/>
+<path d="M512,180 H558 C582,180 562,212 596,212" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="512" y="172" font-size="11" fill="#6f7686" font-weight="500" text-anchor="start" >glucose</text>
+<line x1="570" y1="169" x2="570" y2="191" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<path d="M512,220 H558 C582,220 562,220 596,220" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="512" y="212" font-size="11" fill="#6f7686" font-weight="500" text-anchor="start" >glutamine</text>
+<line x1="570" y1="209" x2="570" y2="231" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<path d="M512,260 H558 C582,260 562,228 596,228" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="512" y="252" font-size="11" fill="#6f7686" font-weight="500" text-anchor="start" >vetzuren</text>
+<line x1="570" y1="249" x2="570" y2="271" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<text x="592" y="300" font-size="13.5" fill="#c0392b" font-weight="700" text-anchor="middle" >+ glucose en</text>
+<text x="592" y="318" font-size="13.5" fill="#c0392b" font-weight="700" text-anchor="middle" >vetzuren remmen</text>
+<line x1="662" y1="150" x2="662" y2="290" stroke="#e4e1d8" stroke-width="1.5" stroke-dasharray="3 4"/>
+<rect x="648" y="294" width="28" height="22" rx="11" fill="#ffffff" stroke="#e4e1d8"/>
+<text x="662" y="310" font-size="13" fill="#4a5163" font-weight="700" text-anchor="middle" >of</text>
+<ellipse cx="764" cy="220" rx="40" ry="38" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
+<circle cx="764" cy="220" r="14" fill="#f4d3d9"/>
+<path d="M766.4,209.9 L758.7,221.8 L763.4,221.8 L761.0,230.7 L769.3,218.2 L764.6,218.2 Z" fill="#c7c7c7"/>
+<path d="M664,220 H710 C734,220 714,220 748,220" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="664" y="212" font-size="11" fill="#6f7686" font-weight="500" text-anchor="start" >glutamine</text>
+<line x1="722" y1="209" x2="722" y2="231" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<path d="M808,148 q-6,6 -12,4 t-12,4 t-12,5" fill="none" stroke="#7b5cc4" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M817,155 q-6,6 -12,4 t-12,4 t-12,5" fill="none" stroke="#7b5cc4" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M826,162 q-6,6 -12,4 t-12,4 t-12,5" fill="none" stroke="#7b5cc4" stroke-width="2.5" stroke-linecap="round"/>
+<text x="744" y="300" font-size="13.5" fill="#7b5cc4" font-weight="700" text-anchor="middle" >+ radiotherapie</text>
+<line x1="814" y1="150" x2="814" y2="290" stroke="#e4e1d8" stroke-width="1.5" stroke-dasharray="3 4"/>
+<rect x="800" y="294" width="28" height="22" rx="11" fill="#ffffff" stroke="#e4e1d8"/>
+<text x="814" y="310" font-size="13" fill="#4a5163" font-weight="700" text-anchor="middle" >of</text>
+<ellipse cx="916" cy="220" rx="40" ry="38" fill="#fbe9ec" stroke="#d98a98" stroke-width="2.5"/>
+<circle cx="916" cy="220" r="14" fill="#f4d3d9"/>
+<path d="M918.4,209.9 L910.7,221.8 L915.4,221.8 L913.0,230.7 L921.3,218.2 L916.6,218.2 Z" fill="#c7c7c7"/>
+<path d="M816,220 H862 C886,220 866,220 900,220" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+<text x="816" y="212" font-size="11" fill="#6f7686" font-weight="500" text-anchor="start" >glutamine</text>
+<line x1="874" y1="209" x2="874" y2="231" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+<line x1="960.0" y1="264.0" x2="965.0" y2="264.0" stroke="#2a6fd6" stroke-width="2" stroke-linecap="round"/>
+<line x1="955.9" y1="273.9" x2="959.4" y2="277.4" stroke="#2a6fd6" stroke-width="2" stroke-linecap="round"/>
+<line x1="946.0" y1="278.0" x2="946.0" y2="283.0" stroke="#2a6fd6" stroke-width="2" stroke-linecap="round"/>
+<line x1="936.1" y1="273.9" x2="932.6" y2="277.4" stroke="#2a6fd6" stroke-width="2" stroke-linecap="round"/>
+<line x1="932.0" y1="264.0" x2="927.0" y2="264.0" stroke="#2a6fd6" stroke-width="2" stroke-linecap="round"/>
+<line x1="936.1" y1="254.1" x2="932.6" y2="250.6" stroke="#2a6fd6" stroke-width="2" stroke-linecap="round"/>
+<line x1="946.0" y1="250.0" x2="946.0" y2="245.0" stroke="#2a6fd6" stroke-width="2" stroke-linecap="round"/>
+<line x1="955.9" y1="254.1" x2="959.4" y2="250.6" stroke="#2a6fd6" stroke-width="2" stroke-linecap="round"/>
+<circle cx="946" cy="264" r="14" fill="#e7effb" stroke="#2a6fd6" stroke-width="2"/>
+<text x="896" y="300" font-size="13.5" fill="#1f56a8" font-weight="700" text-anchor="middle" >+ immuuntherapie</text>
+<text x="734" y="372" font-size="15" fill="#1d2230" font-weight="700" text-anchor="middle" >kansrijke aanpak</text>
 </svg>

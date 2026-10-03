@@ -447,3 +447,31 @@ p { margin: 0 0 1em; }
 }
 .prose .routes { padding-left: 0; }
 .chapter.slide { gap: 18px; }
+
+/* Interactieve keuze van combinatietherapie (bachelorscriptie) */
+.therapy__intro { margin: 0; }
+.prose .therapy__intro span { color: var(--ink-3); font-size: .95rem; }
+.therapy__tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+.therapy__tab { display: flex; gap: 12px; align-items: center; text-align: left; font: inherit; cursor: pointer; padding: 14px 16px; border-radius: var(--radius); background: var(--bg); border: 2px solid var(--line); color: var(--ink); transition: border-color .15s, background .15s, transform .15s; }
+.therapy__tab strong { display: block; font-size: 1.02rem; }
+.therapy__tab small { display: block; color: var(--ink-3); font-size: .85rem; margin-top: 2px; }
+.therapy__plus { flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; font-weight: 700; color: #fff; }
+.therapy__tab--red .therapy__plus { background: #c0392b; }
+.therapy__tab--purple .therapy__plus { background: #7b5cc4; }
+.therapy__tab--blue .therapy__plus { background: #2a6fd6; }
+.therapy__tab:hover { transform: translateY(-1px); }
+.therapy__tab--red.is-active { border-color: #c0392b; background: #fbeceb; }
+.therapy__tab--purple.is-active { border-color: #7b5cc4; background: #f1edfa; }
+.therapy__tab--blue.is-active { border-color: #2a6fd6; background: var(--accent-soft); }
+.therapy__pane { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 24px; align-items: start; padding: 20px; border-radius: var(--radius); background: var(--bg); border: 1px solid var(--line); border-top-width: 4px; margin-bottom: 12px; }
+.therapy__pane--red { border-top-color: #c0392b; }
+.therapy__pane--purple { border-top-color: #7b5cc4; }
+.therapy__pane--blue { border-top-color: #2a6fd6; }
+.therapy.is-ready .therapy__pane { display: none; }
+.therapy.is-ready .therapy__pane.is-active { display: grid; }
+.prose .therapy__text p { margin: 0 0 .8em; }
+.prose .therapy__note { font-size: .9rem; color: var(--ink-3); }
+@media (max-width: 820px) {
+  .therapy__tabs, .therapy__pane { grid-template-columns: 1fr; }
+}
+.prose .chapter .therapy__note { font-size: .9rem; color: var(--ink-3); }

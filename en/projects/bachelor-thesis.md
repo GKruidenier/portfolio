@@ -68,26 +68,57 @@ tools: [Literature research, Cancer metabolism, Immunotherapy, Scientific writin
     <h2>Closing the detours</h2>
   </div>
   <div class="chapter__body">
-<p class="chapter__lead">Because a cancer cell has so many ways out, the answer lies in combinations: a glutaminase inhibitor together with a partner that closes exactly that exit or exploits a weak spot. I compared three kinds of partners.</p>
-<figure class="chapter__figure chapter__figure--wide">
-  <a href="{{ '/assets/img/projects/bachelor_combinaties_en.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_combinaties_en.svg' | relative_url }}" alt="Overview: a glutaminase inhibitor in the centre, combined with metabolic inhibitors, radiotherapy or immunotherapy" loading="lazy"></a>
-  <figcaption>The three kinds of combinations I compared. Own figure.</figcaption>
-</figure>
-<div class="partners">
-<div class="partner partner--red"><h3>Metabolic inhibitors</h3><p>Block the detours themselves: metformin or Glutor reduce glucose use, MLN128 and everolimus inhibit mTOR, etomoxir blocks fatty acid burning and 2-PMPA the production of glutamate from NAAG. In animal models such combinations slowed tumour growth more than either drug alone.</p><p class="partner__note">Caveat: cabozantinib worked in the lab, but added nothing in a first clinical trial in kidney cancer.</p></div>
-<div class="partner partner--purple"><h3>Radiotherapy</h3><p>High oxidative stress predicts sensitivity better than glutamine use. Tumours with an overactive NRF2 protection pathway, for example through KEAP1, KRAS or IDH mutations, are therefore good candidates. A glutaminase inhibitor lowers glutathione, so radiation hits harder: lung cancer cells became more sensitive to radiotherapy and in head and neck cancer CB-839 plus radiation gave a stronger response.</p></div>
-<div class="partner partner--blue"><h3>Immunotherapy</h3><p>Glutamine inhibitors can strengthen the immune response against cancer: L-DON and its variant JHU083 activate T cells, and L-DON makes pancreatic cancer easier for T cells to reach. At the same time, blocking glutamine can raise the inhibitory protein PD-L1 on the tumour. That is exactly why combining it with a checkpoint inhibitor (anti-PD-L1) works better than either alone.</p></div>
+<p class="chapter__lead">Because a cancer cell has so many ways out, the answer lies in combinations: a glutaminase inhibitor together with one partner that closes exactly that exit or exploits a weak spot. I compared three such combinations. They are alternatives, not one treatment with all three at once.</p>
+<p class="therapy__intro"><strong>Glutaminase inhibitor + one partner.</strong> <span>Hover over a therapy or tap it for the explanation and figure.</span></p>
+<div class="therapy" data-therapy>
+<div class="therapy__tabs" role="tablist">
+<button type="button" class="therapy__tab therapy__tab--red is-active" role="tab" id="tab-met" aria-controls="pane-met" aria-selected="true"><span class="therapy__plus">+</span><span><strong>Metabolic inhibitors</strong><small>close glucose, mTOR and fatty acids</small></span></button>
+<button type="button" class="therapy__tab therapy__tab--purple" role="tab" id="tab-rad" aria-controls="pane-rad" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Radiotherapy</strong><small>more oxidative stress</small></span></button>
+<button type="button" class="therapy__tab therapy__tab--blue" role="tab" id="tab-imm" aria-controls="pane-imm" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Immunotherapy</strong><small>puts T cells back to work</small></span></button>
 </div>
-<div class="chapter__cols chapter__cols--figs">
+<div class="therapy__pane therapy__pane--red is-active" role="tabpanel" id="pane-met" aria-labelledby="tab-met">
+<div class="therapy__text"><p>Block the detours themselves: metformin or Glutor reduce glucose use, MLN128 and everolimus inhibit mTOR, etomoxir blocks fatty acid burning and 2-PMPA the production of glutamate from NAAG. In animal models such combinations slowed tumour growth more than either drug alone.</p><p class="therapy__note">Caveat: cabozantinib worked in the lab, but added nothing in a first clinical trial in kidney cancer.</p></div>
 <figure class="chapter__figure">
   <a href="{{ '/assets/img/projects/bachelor_combinatietherapie.png' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_combinatietherapie.png' | relative_url }}" alt="Diagram of a cancer cell showing where metabolic inhibitors act alongside glutaminase inhibitors" loading="lazy"></a>
-  <figcaption>Metabolic inhibitors that worked in combination with glutaminase inhibitors. Figure from my thesis.</figcaption>
-</figure>
-<figure class="chapter__figure">
-  <a href="{{ '/assets/img/projects/bachelor_oxidatieve_stress.png' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_oxidatieve_stress.png' | relative_url }}" alt="Diagram of the factors that raise oxidative stress, such as radiotherapy, KRAS and IDH mutations, and the NRF2 pathway that protects the cell" loading="lazy"></a>
-  <figcaption>High NRF2 activity as a sign of glutamine dependence; radiotherapy raises oxidative stress. Figure from my thesis, made with BioRender.</figcaption>
+  <figcaption>In red, the inhibitors that worked together with a glutaminase inhibitor: on glucose uptake, mTOR, fatty acid burning and the glutamate routes. Figure from my thesis.</figcaption>
 </figure>
 </div>
+<div class="therapy__pane therapy__pane--purple" role="tabpanel" id="pane-rad" aria-labelledby="tab-rad">
+<div class="therapy__text"><p>High oxidative stress predicts sensitivity better than glutamine use. Tumours with an overactive NRF2 protection pathway, for example through KEAP1, KRAS or IDH mutations, are therefore good candidates.</p><p>A glutaminase inhibitor lowers glutathione, so radiation hits harder: lung cancer cells became more sensitive to radiotherapy and in head and neck cancer CB-839 plus radiation gave a stronger response.</p></div>
+<figure class="chapter__figure">
+  <a href="{{ '/assets/img/projects/bachelor_oxidatieve_stress.png' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_oxidatieve_stress.png' | relative_url }}" alt="Diagram of the factors that raise oxidative stress, such as radiotherapy, KRAS and IDH mutations, and the NRF2 pathway that protects the cell" loading="lazy"></a>
+  <figcaption>Radiotherapy and certain mutations raise oxidative stress (ROS); glutathione (GSH) made from glutamate absorbs it. Figure from my thesis, made with BioRender.</figcaption>
+</figure>
+</div>
+<div class="therapy__pane therapy__pane--blue" role="tabpanel" id="pane-imm" aria-labelledby="tab-imm">
+<div class="therapy__text"><p>Glutamine inhibitors can strengthen the immune response against cancer: L-DON and its variant JHU083 activate T cells, and L-DON makes pancreatic cancer easier for T cells to reach.</p><p>But blocking glutamine can also raise the protein PD-L1 on the tumour, which holds T cells back. A checkpoint inhibitor (anti-PD-L1) shields that protein. Together they worked better than either alone.</p></div>
+<figure class="chapter__figure">
+  <a href="{{ '/assets/img/projects/bachelor_immuuntherapie_en.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_immuuntherapie_en.svg' | relative_url }}" alt="Two panels: on the left PD-L1 on the tumour cell inhibits the T cell; on the right an antibody shields PD-L1 and the T cell attacks the tumour cell" loading="lazy"></a>
+  <figcaption>Left: after blocking glutamine, PD-L1 holds the T cell back. Right: with anti-PD-L1 the T cell attacks the tumour cell. Own figure.</figcaption>
+</figure>
+</div>
+</div>
+<script>
+(function () {
+  document.querySelectorAll('[data-therapy]').forEach(function (box) {
+    var tabs = box.querySelectorAll('.therapy__tab');
+    function show(tab) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        box.querySelector('#' + t.getAttribute('aria-controls')).classList.toggle('is-active', on);
+      });
+    }
+    tabs.forEach(function (t) {
+      t.addEventListener('mouseenter', function () { show(t); });
+      t.addEventListener('focus', function () { show(t); });
+      t.addEventListener('click', function () { show(t); });
+    });
+    box.classList.add('is-ready');
+  });
+})();
+</script>
 <p class="chapter__conclusion"><strong>Conclusion:</strong> blocking glutamine metabolism alone is not enough. The future lies in combinations that target several routes at once, so the cancer cell has no way out.</p>
   </div>
 </section>

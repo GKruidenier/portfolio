@@ -68,26 +68,57 @@ tools: [Literatuuronderzoek, Kankermetabolisme, Immunotherapie, Wetenschappelijk
     <h2>De omwegen afsluiten</h2>
   </div>
   <div class="chapter__body">
-<p class="chapter__lead">Omdat een kankercel zoveel uitwegen heeft, ligt de oplossing in combinaties: een glutaminaseremmer samen met een partner die precies die uitweg dichtzet of een zwakke plek benut. Ik vergeleek drie soorten partners.</p>
-<figure class="chapter__figure chapter__figure--wide">
-  <a href="{{ '/assets/img/projects/bachelor_combinaties.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_combinaties.svg' | relative_url }}" alt="Overzicht: een glutaminaseremmer in het midden, gecombineerd met metabole remmers, radiotherapie of immuuntherapie" loading="lazy"></a>
-  <figcaption>De drie soorten combinaties die ik vergeleek. Eigen figuur.</figcaption>
-</figure>
-<div class="partners">
-<div class="partner partner--red"><h3>Metabole remmers</h3><p>Blokkeren de omwegen zelf: metformine of Glutor remmen het glucosegebruik, MLN128 en everolimus remmen mTOR, etomoxir remt de vetzuurverbranding en 2-PMPA de aanmaak van glutamaat uit NAAG. In diermodellen remden zulke combinaties de tumorgroei sterker dan elk middel apart.</p><p class="partner__note">Kanttekening: cabozantinib werkte in het lab, maar voegde in een eerste klinische studie bij nierkanker niets toe.</p></div>
-<div class="partner partner--purple"><h3>Radiotherapie</h3><p>Hoge oxidatieve stress voorspelt beter dan het glutaminegebruik of een tumor gevoelig is. Tumoren met een overactieve NRF2-beschermingsroute, bijvoorbeeld door KEAP1-, KRAS- of IDH-mutaties, zijn daarom goede kandidaten. Een glutaminaseremmer verlaagt het glutathion, zodat bestraling harder aankomt: longkankercellen werden gevoeliger voor radiotherapie en bij hoofd-halskanker gaf CB-839 plus bestraling een sterkere respons.</p></div>
-<div class="partner partner--blue"><h3>Immuuntherapie</h3><p>Glutamineremmers kunnen de afweer tegen kanker versterken: L-DON en de variant JHU083 activeren T-cellen, en L-DON maakt alvleesklierkanker beter bereikbaar voor T-cellen. Tegelijk kan glutamineremming het remmende eiwit PD-L1 op de tumor verhogen. Juist daarom werkt de combinatie met een checkpointremmer (anti-PD-L1) sterker dan elk middel apart.</p></div>
+<p class="chapter__lead">Omdat een kankercel zoveel uitwegen heeft, ligt de oplossing in combinaties: een glutaminaseremmer samen met één partner die precies die uitweg dichtzet of een zwakke plek benut. Ik vergeleek drie van zulke combinaties. Het zijn alternatieven, geen behandeling met alle drie tegelijk.</p>
+<p class="therapy__intro"><strong>Glutaminaseremmer + één partner.</strong> <span>Beweeg over een therapie of tik erop voor de uitleg en het plaatje.</span></p>
+<div class="therapy" data-therapy>
+<div class="therapy__tabs" role="tablist">
+<button type="button" class="therapy__tab therapy__tab--red is-active" role="tab" id="tab-met" aria-controls="pane-met" aria-selected="true"><span class="therapy__plus">+</span><span><strong>Metabole remmers</strong><small>glucose, mTOR en vetzuren dicht</small></span></button>
+<button type="button" class="therapy__tab therapy__tab--purple" role="tab" id="tab-rad" aria-controls="pane-rad" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Radiotherapie</strong><small>meer oxidatieve stress</small></span></button>
+<button type="button" class="therapy__tab therapy__tab--blue" role="tab" id="tab-imm" aria-controls="pane-imm" aria-selected="false"><span class="therapy__plus">+</span><span><strong>Immuuntherapie</strong><small>T-cellen weer aan het werk</small></span></button>
 </div>
-<div class="chapter__cols chapter__cols--figs">
+<div class="therapy__pane therapy__pane--red is-active" role="tabpanel" id="pane-met" aria-labelledby="tab-met">
+<div class="therapy__text"><p>Blokkeren de omwegen zelf: metformine of Glutor remmen het glucosegebruik, MLN128 en everolimus remmen mTOR, etomoxir remt de vetzuurverbranding en 2-PMPA de aanmaak van glutamaat uit NAAG. In diermodellen remden zulke combinaties de tumorgroei sterker dan elk middel apart.</p><p class="therapy__note">Kanttekening: cabozantinib werkte in het lab, maar voegde in een eerste klinische studie bij nierkanker niets toe.</p></div>
 <figure class="chapter__figure">
   <a href="{{ '/assets/img/projects/bachelor_combinatietherapie.png' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_combinatietherapie.png' | relative_url }}" alt="Schema van een kankercel met de aangrijpingspunten van metabole remmers naast glutaminaseremmers" loading="lazy"></a>
-  <figcaption>Metabole remmers die in combinatie met glutaminaseremmers werkten. Figuur uit mijn scriptie.</figcaption>
-</figure>
-<figure class="chapter__figure">
-  <a href="{{ '/assets/img/projects/bachelor_oxidatieve_stress.png' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_oxidatieve_stress.png' | relative_url }}" alt="Schema van de factoren die oxidatieve stress verhogen, zoals radiotherapie, KRAS- en IDH-mutaties, en de NRF2-route die de cel beschermt" loading="lazy"></a>
-  <figcaption>Hoge NRF2-activiteit als teken van glutamine-afhankelijkheid; radiotherapie verhoogt de oxidatieve stress. Figuur uit mijn scriptie, gemaakt met BioRender.</figcaption>
+  <figcaption>In rood de remmers die samen met een glutaminaseremmer werkten: op glucoseopname, mTOR, vetzuurverbranding en de glutamaatroutes. Figuur uit mijn scriptie.</figcaption>
 </figure>
 </div>
+<div class="therapy__pane therapy__pane--purple" role="tabpanel" id="pane-rad" aria-labelledby="tab-rad">
+<div class="therapy__text"><p>Hoge oxidatieve stress voorspelt beter dan het glutaminegebruik of een tumor gevoelig is. Tumoren met een overactieve NRF2-beschermingsroute, bijvoorbeeld door KEAP1-, KRAS- of IDH-mutaties, zijn daarom goede kandidaten.</p><p>Een glutaminaseremmer verlaagt het glutathion, zodat bestraling harder aankomt: longkankercellen werden gevoeliger voor radiotherapie en bij hoofd-halskanker gaf CB-839 plus bestraling een sterkere respons.</p></div>
+<figure class="chapter__figure">
+  <a href="{{ '/assets/img/projects/bachelor_oxidatieve_stress.png' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_oxidatieve_stress.png' | relative_url }}" alt="Schema van de factoren die oxidatieve stress verhogen, zoals radiotherapie, KRAS- en IDH-mutaties, en de NRF2-route die de cel beschermt" loading="lazy"></a>
+  <figcaption>Radiotherapie en bepaalde mutaties verhogen de oxidatieve stress (ROS); glutathion (GSH) uit glutamaat vangt die op. Figuur uit mijn scriptie, gemaakt met BioRender.</figcaption>
+</figure>
+</div>
+<div class="therapy__pane therapy__pane--blue" role="tabpanel" id="pane-imm" aria-labelledby="tab-imm">
+<div class="therapy__text"><p>Glutamineremmers kunnen de afweer tegen kanker versterken: L-DON en de variant JHU083 activeren T-cellen, en L-DON maakt alvleesklierkanker beter bereikbaar voor T-cellen.</p><p>Maar glutamineremming kan ook het eiwit PD-L1 op de tumor verhogen, dat T-cellen afremt. Een checkpointremmer (anti-PD-L1) schermt dat eiwit af. Samen werkten ze sterker dan elk middel apart.</p></div>
+<figure class="chapter__figure">
+  <a href="{{ '/assets/img/projects/bachelor_immuuntherapie.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_immuuntherapie.svg' | relative_url }}" alt="Twee panelen: links remt PD-L1 op de tumorcel de T-cel; rechts schermt een antilichaam PD-L1 af en valt de T-cel de tumorcel aan" loading="lazy"></a>
+  <figcaption>Links: na glutamineremming remt PD-L1 de T-cel. Rechts: met anti-PD-L1 valt de T-cel de tumorcel aan. Eigen figuur.</figcaption>
+</figure>
+</div>
+</div>
+<script>
+(function () {
+  document.querySelectorAll('[data-therapy]').forEach(function (box) {
+    var tabs = box.querySelectorAll('.therapy__tab');
+    function show(tab) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        box.querySelector('#' + t.getAttribute('aria-controls')).classList.toggle('is-active', on);
+      });
+    }
+    tabs.forEach(function (t) {
+      t.addEventListener('mouseenter', function () { show(t); });
+      t.addEventListener('focus', function () { show(t); });
+      t.addEventListener('click', function () { show(t); });
+    });
+    box.classList.add('is-ready');
+  });
+})();
+</script>
 <p class="chapter__conclusion"><strong>Conclusie:</strong> alleen het glutaminemetabolisme remmen is niet genoeg. De toekomst ligt in combinaties die meerdere routes tegelijk aanpakken, zodat de kankercel geen uitweg meer heeft.</p>
   </div>
 </section>
