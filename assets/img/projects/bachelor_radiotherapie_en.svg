@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="960" height="400" fill="#ffffff"/>
+<defs><marker id="mg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="mb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2a6fd6"/></marker><marker id="mp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d6588a"/></marker><marker id="mgr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a5b"/></marker><marker id="mpu" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7b5cc4"/></marker><marker id="mgy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#bdbdbd"/></marker><marker id="my" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f9c"/></marker></defs>
+<text x="30" y="40" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">The tumour protects itself</text>
+<text x="30" y="62" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start">glutamine supplies the protective shield</text>
+<ellipse cx="250" cy="225" rx="150" ry="115" fill="none" stroke="#7b5cc4" stroke-width="7" opacity=".85"/>
+<ellipse cx="250" cy="225" rx="130" ry="98" fill="#fdf1f3" stroke="#d98a98" stroke-width="3"/>
+<text x="100" y="99" font-size="13.5" fill="#7b5cc4" font-weight="700" text-anchor="start">shield (antioxidant)</text>
+<path d="M30,225 Q72.5,225.0 115,225" fill="none" stroke="#2a6fd6" stroke-width="4" stroke-linecap="round" marker-end="url(#mb)"/>
+<text x="30" y="211" font-size="14" fill="#1f56a8" font-weight="700" text-anchor="start">glutamine</text>
+<polygon points="436.0,185.0 429.6,186.9 432.8,192.8 426.9,189.6 425.0,196.0 423.1,189.6 417.2,192.8 420.4,186.9 414.0,185.0 420.4,183.1 417.2,177.2 423.1,180.4 425.0,174.0 426.9,180.4 432.8,177.2 429.6,183.1" fill="#d94b3b"/>
+<polygon points="441.0,255.0 434.6,256.9 437.8,262.8 431.9,259.6 430.0,266.0 428.1,259.6 422.2,262.8 425.4,256.9 419.0,255.0 425.4,253.1 422.2,247.2 428.1,250.4 430.0,244.0 431.9,250.4 437.8,247.2 434.6,253.1" fill="#d94b3b"/>
+<polygon points="421.0,315.0 414.6,316.9 417.8,322.8 411.9,319.6 410.0,326.0 408.1,319.6 402.2,322.8 405.4,316.9 399.0,315.0 405.4,313.1 402.2,307.2 408.1,310.4 410.0,304.0 411.9,310.4 417.8,307.2 414.6,313.1" fill="#d94b3b"/>
+<text x="370" y="365" font-size="13" fill="#b03a2e" font-weight="600" text-anchor="middle">harmful substances bounce off</text>
+<circle cx="250" cy="225" r="30" fill="#fff6e0" stroke="#e0a83a" stroke-width="2.5"/>
+<path d="M254.4,207.4 L240.3,228.5 L249.1,228.5 L244.7,243.5 L259.7,221.5 L250.9,221.5 Z" fill="#e9a400"/>
+<text x="250" y="287" font-size="14" fill="#4a5163" font-weight="700" text-anchor="middle">cell survives</text>
+<text x="490" y="40" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">Inhibitor + radiation</text>
+<text x="490" y="62" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start">no shield, and radiation causes extra damage</text>
+<ellipse cx="710" cy="225" rx="150" ry="115" fill="none" stroke="#7b5cc4" stroke-width="4" stroke-dasharray="4 14" opacity=".5"/>
+<ellipse cx="710" cy="225" rx="130" ry="98" fill="#fdf1f3" stroke="#d98a98" stroke-width="3"/>
+<text x="560" y="99" font-size="13.5" fill="#7b5cc4" font-weight="700" text-anchor="start">shield falls away</text>
+<path d="M490,225 Q532.5,225.0 575,225" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round" marker-end="url(#gy)"/>
+<text x="490" y="211" font-size="14" fill="#6f7686" font-weight="700" text-anchor="start">glutamine</text>
+<line x1="553.8" y1="212.0" x2="553.8" y2="238.0" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+<path d="M878,115 q-10,10 -20,6 t-20,6 t-20,6 t-18,8" fill="none" stroke="#7b5cc4" stroke-width="3" stroke-linecap="round"/>
+<path d="M890,125 q-10,10 -20,6 t-20,6 t-20,6 t-18,8" fill="none" stroke="#7b5cc4" stroke-width="3" stroke-linecap="round"/>
+<path d="M902,135 q-10,10 -20,6 t-20,6 t-20,6 t-18,8" fill="none" stroke="#7b5cc4" stroke-width="3" stroke-linecap="round"/>
+<text x="848" y="105" font-size="13.5" fill="#7b5cc4" font-weight="700" text-anchor="start">radiation</text>
+<polygon points="662.1,185.0 655.1,187.1 658.6,193.6 652.1,190.1 650.0,197.1 647.9,190.1 641.4,193.6 644.9,187.1 637.9,185.0 644.9,182.9 641.4,176.4 647.9,179.9 650.0,172.9 652.1,179.9 658.6,176.4 655.1,182.9" fill="#d94b3b"/>
+<polygon points="772.1,175.0 765.1,177.1 768.6,183.6 762.1,180.1 760.0,187.1 757.9,180.1 751.4,183.6 754.9,177.1 747.9,175.0 754.9,172.9 751.4,166.4 757.9,169.9 760.0,162.9 762.1,169.9 768.6,166.4 765.1,172.9" fill="#d94b3b"/>
+<polygon points="702.1,265.0 695.1,267.1 698.6,273.6 692.1,270.1 690.0,277.1 687.9,270.1 681.4,273.6 684.9,267.1 677.9,265.0 684.9,262.9 681.4,256.4 687.9,259.9 690.0,252.9 692.1,259.9 698.6,256.4 695.1,262.9" fill="#d94b3b"/>
+<polygon points="792.1,255.0 785.1,257.1 788.6,263.6 782.1,260.1 780.0,267.1 777.9,260.1 771.4,263.6 774.9,257.1 767.9,255.0 774.9,252.9 771.4,246.4 777.9,249.9 780.0,242.9 782.1,249.9 788.6,246.4 785.1,252.9" fill="#d94b3b"/>
+<polygon points="642.1,250.0 635.1,252.1 638.6,258.6 632.1,255.1 630.0,262.1 627.9,255.1 621.4,258.6 624.9,252.1 617.9,250.0 624.9,247.9 621.4,241.4 627.9,244.9 630.0,237.9 632.1,244.9 638.6,241.4 635.1,247.9" fill="#d94b3b"/>
+<path d="M700,127 l14,30 l-12,20 l16,26" fill="none" stroke="#d98a98" stroke-width="3"/>
+<text x="710" y="365" font-size="14" fill="#c0392b" font-weight="700" text-anchor="middle">cell gets damaged</text>
+<line x1="470" y1="30" x2="470" y2="390" stroke="#e4e1d8" stroke-width="1.5"/>
+</svg>
