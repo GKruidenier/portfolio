@@ -23,8 +23,8 @@ tools: [Literatuuronderzoek, Kankermetabolisme, Immunotherapie, Wetenschappelijk
   </div>
   <div class="chapter__body">
 <div class="chapter__text">
-<p>Kankercellen delen snel en hebben daarvoor veel energie en bouwstoffen nodig. Lang dacht men vooral aan suiker (glucose), maar veel tumoren blijken minstens zo afhankelijk van het aminozuur <strong>glutamine</strong>, dat ze in grote hoeveelheden uit het bloed halen.</p>
-<p>In de cel zet een enzym glutamine om in <strong>brandstof</strong> voor de energiecentrale van de cel. Daarnaast levert glutamine:</p>
+<p>Kankercellen delen snel en hebben daarvoor veel energie en bouwstoffen nodig. Lang dacht men vooral aan suiker (glucose), maar veel tumoren blijken minstens zo afhankelijk van het aminozuur <strong>glutamine</strong>, dat ze in grote hoeveelheden uit het bloed opnemen via de transporter SLC1A5.</p>
+<p>In de cel zet het enzym <strong>glutaminase (GLS)</strong> glutamine om in glutamaat. Dat is de brandstof voor de energiecentrale van de cel, en ook de grondstof voor:</p>
 <ul class="chapter__list">
 <li><strong>Bouwstoffen</strong> voor het DNA, de eiwitten en de celwand van nieuwe cellen.</li>
 <li><strong>Bescherming:</strong> een antioxidant die schadelijke stoffen in de cel wegvangt.</li>
@@ -33,9 +33,9 @@ tools: [Literatuuronderzoek, Kankermetabolisme, Immunotherapie, Wetenschappelijk
 </div>
 <figure class="chapter__figure chapter__figure--wide">
   <a href="{{ '/assets/img/projects/bachelor_glutamine_rollen.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_glutamine_rollen.svg' | relative_url }}" alt="Schema van een kankercel: glutamine uit het bloed wordt door een enzym omgezet in brandstof voor energie, en levert ook bouwstoffen, bescherming en een groeisignaal" loading="lazy"></a>
-  <figcaption>Wat glutamine doet in een kankercel. Het enzym is het doelwit van de remmers. Eigen figuur.</figcaption>
+  <figcaption>Wat glutamine doet in een kankercel. Alles loopt via glutaminase, de stap die de remmer CB-839 blokkeert. Eigen figuur.</figcaption>
 </figure>
-<p class="chapter__note">Bekende kankergenen voeren dit gebruik nog verder op. Daarom zijn er medicijnen ontwikkeld die het enzym blokkeren. De bekendste is als enige al bij patiënten getest, maar werkte als losse behandeling teleurstellend.</p>
+<p class="chapter__note">Bekende kankergenen voeren dit gebruik nog verder op. Daarom zijn er remmers van glutaminase ontwikkeld. <strong>CB-839</strong> is als enige al bij patiënten getest, maar werkte als losse behandeling teleurstellend.</p>
   </div>
 </section>
 
@@ -48,11 +48,11 @@ tools: [Literatuuronderzoek, Kankermetabolisme, Immunotherapie, Wetenschappelijk
 <p class="chapter__lead">Glutamine remmen remt de groei, maar doodt de kankercel vaak niet. De cel schakelt over op andere bronnen en houdt zo zijn energie en bouwstoffen op peil. In de literatuur vond ik vijf van zulke omwegen.</p>
 <div class="chapter__cols">
 <ol class="routes">
-<li class="routes__item routes__item--pink"><strong>Suiker in plaats van glutamine.</strong> De cel stookt meer glucose. In muizen bleef de cel draaien zonder glutamine; pas toen ook het suikergebruik werd geblokkeerd, kreeg bijna 40% van de muizen geen tumor.</li>
-<li class="routes__item routes__item--green"><strong>Vet verbranden.</strong> Tumoren die ongevoelig werden voor de remmer, verbrandden meer vetzuren.</li>
-<li class="routes__item routes__item--purple"><strong>Een andere weg naar glutamaat.</strong> De cel maakt de volgende stap uit glutamine (glutamaat) via een andere route of uit een andere stof.</li>
-<li class="routes__item routes__item--grey"><strong>Eigen onderdelen recyclen.</strong> De cel breekt eigen onderdelen af om bouwstoffen terug te winnen. Glutamine remmen kan dat juist aanzetten.</li>
-<li class="routes__item routes__item--blue"><strong>Andere aminozuren opnemen.</strong> Extra deuren in de celwand halen andere aminozuren binnen.</li>
+<li class="routes__item routes__item--pink"><strong>Suiker in plaats van glutamine.</strong> Via de glycolyse stookt de cel meer glucose. In muizen bleef de cel draaien zonder glutamine; pas toen ook het suikergebruik werd geblokkeerd, kreeg bijna 40% van de muizen geen tumor.</li>
+<li class="routes__item routes__item--green"><strong>Vet verbranden.</strong> Tumoren die ongevoelig werden voor CB-839, verbrandden meer vetzuren via het enzym CPT1.</li>
+<li class="routes__item routes__item--purple"><strong>Een andere weg naar glutamaat.</strong> De cel maakt de volgende stap uit glutamine (glutamaat) via de glutaminase II-route of uit de stof NAAG.</li>
+<li class="routes__item routes__item--grey"><strong>Eigen onderdelen recyclen (autofagie).</strong> De cel breekt eigen onderdelen af om bouwstoffen terug te winnen. Glutamine remmen kan dat juist aanzetten.</li>
+<li class="routes__item routes__item--blue"><strong>Andere aminozuren opnemen.</strong> Extra transporters halen de aminozuren aspartaat en arginine binnen.</li>
 </ol>
 <figure class="chapter__figure">
   <a href="{{ '/assets/img/projects/bachelor_omwegen.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_omwegen.svg' | relative_url }}" alt="Schema van een kankercel waarin glutamine is geblokkeerd, terwijl glucose, vetzuren, een andere weg naar glutamaat, recyclen en andere aminozuren de energie op peil houden" loading="lazy"></a>

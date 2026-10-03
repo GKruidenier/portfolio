@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" width="940" height="420" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
-<rect width="940" height="420" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 480" width="940" height="480" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="940" height="480" fill="#ffffff"/>
 <defs><marker id="mg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="mb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2a6fd6"/></marker><marker id="mp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d6588a"/></marker><marker id="mgr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a5b"/></marker><marker id="mpu" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7b5cc4"/></marker><marker id="mgy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#bdbdbd"/></marker><marker id="my" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f9c"/></marker></defs>
+<g transform="translate(0,30)">
 <ellipse cx="470" cy="210" rx="250" ry="170" fill="#fdf1f3" stroke="#d98a98" stroke-width="3"/>
 <circle cx="470" cy="210" r="40" fill="#f1f1f1" stroke="#c7c7c7" stroke-width="2.5"/>
 <path d="M475.9,186.5 L457.1,214.7 L468.8,214.7 L462.9,234.7 L482.9,205.3 L471.2,205.3 Z" fill="#c7c7c7"/>
@@ -17,4 +18,5 @@
 <path d="M110,390 Q284.0,309.0 398.0,246.0" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round" marker-end="url(#gy)"/>
 <line x1="225.1" y1="317.9" x2="236.8" y2="341.1" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
 <text x="110" y="412" font-size="15" fill="#6f7686" font-weight="600" text-anchor="start">glutamate via another route</text>
+</g>
 </svg>

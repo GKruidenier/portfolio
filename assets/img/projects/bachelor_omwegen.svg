@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" width="940" height="420" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
-<rect width="940" height="420" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 480" width="940" height="480" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="940" height="480" fill="#ffffff"/>
 <defs><marker id="mg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="mb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2a6fd6"/></marker><marker id="mp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d6588a"/></marker><marker id="mgr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3a9a5b"/></marker><marker id="mpu" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7b5cc4"/></marker><marker id="mgy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#bdbdbd"/></marker><marker id="my" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f9c"/></marker></defs>
+<g transform="translate(0,30)">
 <ellipse cx="470" cy="210" rx="250" ry="170" fill="#fdf1f3" stroke="#d98a98" stroke-width="3"/>
 <circle cx="470" cy="210" r="40" fill="#fff6e0" stroke="#e0a83a" stroke-width="2.5"/>
 <path d="M475.9,186.5 L457.1,214.7 L468.8,214.7 L462.9,234.7 L482.9,205.3 L471.2,205.3 Z" fill="#e9a400"/>
@@ -8,24 +9,31 @@
 <path d="M40,210 Q242.0,201.0 384.0,210.0" fill="none" stroke="#bdbdbd" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round" marker-end="url(#gy)"/>
 <line x1="184.5" y1="197.0" x2="184.5" y2="223.0" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
 <text x="40" y="194" font-size="15" fill="#6f7686" font-weight="600" text-anchor="start">glutamine</text>
+<text x="40" y="228" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="start">geremd door CB-839</text>
 <path d="M120,40 Q290.0,99.0 400.0,176.0" fill="none" stroke="#d6588a" stroke-width="4" stroke-linecap="round" marker-end="url(#mp)"/>
 <text x="120" y="28" font-size="15" fill="#d6588a" font-weight="700" text-anchor="start">glucose</text>
+<text x="120" y="11" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="start">glycolyse</text>
 <circle cx="102" cy="23" r="12" fill="#d6588a"/>
 <text x="102" y="27.5" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="middle">1</text>
 <path d="M820,40 Q650.0,99.0 540.0,176.0" fill="none" stroke="#3a9a5b" stroke-width="4" stroke-linecap="round" marker-end="url(#mgr)"/>
 <text x="820" y="28" font-size="15" fill="#3a9a5b" font-weight="700" text-anchor="end">vetzuren</text>
+<text x="820" y="11" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">vetzuurverbranding (CPT1)</text>
 <circle cx="838" cy="23" r="12" fill="#3a9a5b"/>
 <text x="838" y="27.5" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="middle">2</text>
 <path d="M110,390 Q284.0,309.0 398.0,246.0" fill="none" stroke="#7b5cc4" stroke-width="4" stroke-linecap="round" marker-end="url(#mpu)"/>
 <text x="110" y="412" font-size="15" fill="#7b5cc4" font-weight="700" text-anchor="start">glutamaat via een andere weg</text>
+<text x="110" y="429" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="start">glutaminase II-route of uit NAAG</text>
 <circle cx="92" cy="407" r="12" fill="#7b5cc4"/>
 <text x="92" y="411.5" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="middle">3</text>
 <path d="M830,390 Q656.0,309.0 542.0,246.0" fill="none" stroke="#2a6fd6" stroke-width="4" stroke-linecap="round" marker-end="url(#mb)"/>
 <text x="830" y="412" font-size="15" fill="#2a6fd6" font-weight="700" text-anchor="end">andere aminozuren</text>
+<text x="830" y="429" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">aspartaat en arginine</text>
 <circle cx="848" cy="407" r="12" fill="#2a6fd6"/>
 <text x="848" y="411.5" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="middle">5</text>
 <path d="M452,318 A18,18 0 1 1 482,331" fill="none" stroke="#8a8f9c" stroke-width="3" marker-end="url(#my)"/>
 <circle cx="434" cy="304" r="12" fill="#8a8f9c"/>
 <text x="434" y="308.5" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="middle">4</text>
 <text x="470" y="358" font-size="13.5" fill="#8a8f9c" font-weight="700" text-anchor="middle">eigen onderdelen recyclen</text>
+<text x="470" y="374" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">autofagie</text>
+</g>
 </svg>
