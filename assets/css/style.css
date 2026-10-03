@@ -475,3 +475,25 @@ p { margin: 0 0 1em; }
   .therapy__tabs, .therapy__pane { grid-template-columns: 1fr; }
 }
 .prose .chapter .therapy__note { font-size: .9rem; color: var(--ink-3); }
+
+/* Figuur met aanwijsbare routes (bachelorscriptie, resistentie) */
+.chapter__note--problem { border-left: 4px solid #c0392b; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.hotfig__stage { position: relative; }
+.hotfig__stage .chapter__figure { margin: 0; }
+.hotfig__spot { position: absolute; display: none; padding: 0; border: 2px solid transparent; border-radius: 12px; background: transparent; cursor: pointer; transition: border-color .15s, background .15s; }
+.hotfig.is-ready .hotfig__spot { display: block; }
+.hotfig__spot:hover, .hotfig__spot.is-active { border-color: var(--accent); background: rgba(42, 111, 214, .06); }
+.hotfig__spot:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.hotfig__info { display: none; margin: 14px 0 0; padding: 14px 18px; border-radius: var(--radius-sm); background: var(--surface-2); color: var(--ink-3); min-height: 3.2em; }
+.hotfig.is-ready .hotfig__info { display: block; }
+.hotfig.is-ready .hotfig__list { display: none; }
+.prose .chapter .hotfig__info.is-filled { color: var(--ink-2); background: var(--bg); border: 1px solid var(--line); border-left-width: 4px; }
+.hotfig__info--pink { border-left-color: #d6588a !important; }
+.hotfig__info--green { border-left-color: #3a9a5b !important; }
+.hotfig__info--purple { border-left-color: #7b5cc4 !important; }
+.hotfig__info--grey { border-left-color: #8a8f9c !important; }
+.hotfig__info--blue { border-left-color: #2a6fd6 !important; }
+.hotfig__list { margin-top: 16px !important; }
+.hotfig .chapter__figure figcaption { display: none; }
+.hotfig .chapter__figure a { padding: 0; overflow: hidden; }
+.hotfig .chapter__figure img { display: block; }
