@@ -44,39 +44,14 @@ tools: [Literatuuronderzoek, Kankermetabolisme, Immunotherapie, Wetenschappelijk
     <h2>De kankercel neemt een omweg</h2>
   </div>
   <div class="chapter__body">
-<p class="chapter__note chapter__note--problem">Bekende kankergenen voeren het glutaminegebruik nog verder op. Daarom zijn er remmers van glutaminase ontwikkeld. <strong>CB-839</strong> is als enige al bij patiënten getest, maar werkte als losse behandeling teleurstellend.</p>
-<p class="chapter__lead">Hoe kan dat? Glutamine remmen remt de groei, maar doodt de kankercel vaak niet. De cel schakelt over op andere bronnen en houdt zo zijn energie en bouwstoffen op peil. In de literatuur vond ik vijf van zulke omwegen.</p>
-<div class="hotfig" data-hotfig>
-<div class="hotfig__stage">
+<p class="chapter__lead">Bekende kankergenen voeren het glutaminegebruik nog verder op. Daarom zijn er remmers van glutaminase ontwikkeld, zoals <strong>CB-839</strong>, de enige die al bij patiënten is getest. Als losse behandeling werkte die echter teleurstellend. Hoe kan dat? Glutamine remmen remt de groei, maar doodt de kankercel vaak niet: de cel schakelt over op andere bronnen en houdt zo zijn energie en bouwstoffen op peil. In de literatuur vond ik vijf van zulke omwegen.</p>
+<div class="chapter__cols">
+<ol class="routes"><li class="routes__item routes__item--pink"><strong>Suiker in plaats van glutamine.</strong> Via de glycolyse stookt de cel meer glucose. In muizen bleef de cel draaien zonder glutamine; pas toen ook het suikergebruik werd geblokkeerd, kreeg bijna 40% van de muizen geen tumor.</li><li class="routes__item routes__item--green"><strong>Vet verbranden.</strong> Tumoren die ongevoelig werden voor CB-839, verbrandden meer vetzuren via het enzym CPT1.</li><li class="routes__item routes__item--purple"><strong>Een andere weg naar glutamaat.</strong> De cel maakt de volgende stap uit glutamine (glutamaat) via de glutaminase II-route of uit de stof NAAG.</li><li class="routes__item routes__item--grey"><strong>Eigen onderdelen recyclen (autofagie).</strong> De cel breekt eigen onderdelen af om bouwstoffen terug te winnen. Glutamine remmen kan dat juist aanzetten.</li><li class="routes__item routes__item--blue"><strong>Andere aminozuren opnemen.</strong> Extra transporters halen de aminozuren aspartaat en arginine binnen.</li></ol>
 <figure class="chapter__figure">
-  <a href="{{ '/assets/img/projects/bachelor_omwegen.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_omwegen.svg' | relative_url }}" alt="Schema van een kankercel waarin glutamine is geblokkeerd, terwijl glucose, vetzuren, een andere weg naar glutamaat, recyclen en andere aminozuren de energie op peil houden" loading="lazy"></a>
-  <figcaption>Glutamine is geblokkeerd, maar via vijf omwegen blijft de cel energie houden. Eigen figuur.</figcaption>
+  <a href="{{ '/assets/img/projects/bachelor_omwegen.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_omwegen.svg' | relative_url }}" alt="Schema van een kankercel waarin glutamine is geblokkeerd door CB-839, terwijl glucose, vetzuren, een andere weg naar glutamaat, recyclen en andere aminozuren de energie op peil houden" loading="lazy"></a>
+  <figcaption>Glutamine is geblokkeerd, maar via vijf omwegen blijft de cel energie houden. De nummers horen bij de lijst. Eigen figuur.</figcaption>
 </figure>
-<button type="button" class="hotfig__spot" data-target="r0-nl" style="left:2%;top:38%;width:20%;height:19%" aria-label="Glutamine, geremd"></button><button type="button" class="hotfig__spot" data-target="r1-nl" style="left:8%;top:5%;width:21%;height:18%" aria-label="Omweg 1: suiker"></button><button type="button" class="hotfig__spot" data-target="r2-nl" style="left:69%;top:5%;width:23%;height:18%" aria-label="Omweg 2: vet"></button><button type="button" class="hotfig__spot" data-target="r3-nl" style="left:7%;top:82%;width:30%;height:16%" aria-label="Omweg 3: glutamaat"></button><button type="button" class="hotfig__spot" data-target="r4-nl" style="left:39%;top:64%;width:22%;height:23%" aria-label="Omweg 4: recyclen"></button><button type="button" class="hotfig__spot" data-target="r5-nl" style="left:71%;top:82%;width:23%;height:16%" aria-label="Omweg 5: aminozuren"></button>
 </div>
-<p class="hotfig__info" aria-live="polite" data-default="Beweeg over een route in de figuur, of tik erop, voor de uitleg.">Beweeg over een route in de figuur, of tik erop, voor de uitleg.</p>
-<ol class="routes hotfig__list"><li id="r0-nl" class="routes__item routes__item--grey"><strong>Glutamine is geremd.</strong> CB-839 blokkeert glutaminase, dus glutamine levert geen brandstof meer. Toch blijft de cel energie houden, via de omwegen hieronder.</li><li id="r1-nl" class="routes__item routes__item--pink"><strong>1. Suiker in plaats van glutamine.</strong> Via de glycolyse stookt de cel meer glucose. In muizen bleef de cel draaien zonder glutamine; pas toen ook het suikergebruik werd geblokkeerd, kreeg bijna 40% van de muizen geen tumor.</li><li id="r2-nl" class="routes__item routes__item--green"><strong>2. Vet verbranden.</strong> Tumoren die ongevoelig werden voor CB-839, verbrandden meer vetzuren via het enzym CPT1.</li><li id="r3-nl" class="routes__item routes__item--purple"><strong>3. Een andere weg naar glutamaat.</strong> De cel maakt de volgende stap uit glutamine (glutamaat) via de glutaminase II-route of uit de stof NAAG.</li><li id="r4-nl" class="routes__item routes__item--grey"><strong>4. Eigen onderdelen recyclen (autofagie).</strong> De cel breekt eigen onderdelen af om bouwstoffen terug te winnen. Glutamine remmen kan dat juist aanzetten.</li><li id="r5-nl" class="routes__item routes__item--blue"><strong>5. Andere aminozuren opnemen.</strong> Extra transporters halen de aminozuren aspartaat en arginine binnen.</li></ol>
-</div>
-<script>
-(function () {
-  document.querySelectorAll('[data-hotfig]').forEach(function (box) {
-    var info = box.querySelector('.hotfig__info');
-    var spots = box.querySelectorAll('.hotfig__spot');
-    function show(spot) {
-      spots.forEach(function (s) { s.classList.toggle('is-active', s === spot); });
-      var item = document.getElementById(spot.getAttribute('data-target'));
-      info.innerHTML = item ? item.innerHTML : info.getAttribute('data-default');
-      info.className = 'hotfig__info is-filled ' + (item ? item.className.replace('routes__item', 'hotfig__info') : '');
-    }
-    spots.forEach(function (s) {
-      s.addEventListener('mouseenter', function () { show(s); });
-      s.addEventListener('focus', function () { show(s); });
-      s.addEventListener('click', function () { show(s); });
-    });
-    box.classList.add('is-ready');
-  });
-})();
-</script>
   </div>
 </section>
 

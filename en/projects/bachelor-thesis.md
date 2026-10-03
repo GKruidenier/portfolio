@@ -44,39 +44,14 @@ tools: [Literature research, Cancer metabolism, Immunotherapy, Scientific writin
     <h2>The cancer cell takes a detour</h2>
   </div>
   <div class="chapter__body">
-<p class="chapter__note chapter__note--problem">Well-known cancer genes push glutamine use even further. That is why glutaminase inhibitors were developed. <strong>CB-839</strong> is the only one tested in patients so far, but on its own it was disappointing.</p>
-<p class="chapter__lead">Why? Blocking glutamine slows growth, but often does not kill the cancer cell. The cell switches to other sources and keeps its energy and building blocks up. In the literature I found five such detours.</p>
-<div class="hotfig" data-hotfig>
-<div class="hotfig__stage">
+<p class="chapter__lead">Well-known cancer genes push glutamine use even further. That is why glutaminase inhibitors were developed, such as <strong>CB-839</strong>, the only one tested in patients so far. On its own, however, it was disappointing. Why? Blocking glutamine slows growth, but often does not kill the cancer cell: the cell switches to other sources and keeps its energy and building blocks up. In the literature I found five such detours.</p>
+<div class="chapter__cols">
+<ol class="routes"><li class="routes__item routes__item--pink"><strong>Sugar instead of glutamine.</strong> Through glycolysis the cell burns more glucose. In mice the cell kept running without glutamine; only when sugar use was blocked as well did almost 40% of the mice develop no tumour.</li><li class="routes__item routes__item--green"><strong>Burning fat.</strong> Tumours that stopped responding to CB-839 burned more fatty acids via the enzyme CPT1.</li><li class="routes__item routes__item--purple"><strong>Another route to glutamate.</strong> The cell makes the next step after glutamine (glutamate) through the glutaminase II pathway or from the molecule NAAG.</li><li class="routes__item routes__item--grey"><strong>Recycling its own parts (autophagy).</strong> The cell breaks down its own parts to recover building blocks. Blocking glutamine can actually switch this on.</li><li class="routes__item routes__item--blue"><strong>Taking up other amino acids.</strong> Extra transporters bring in the amino acids aspartate and arginine.</li></ol>
 <figure class="chapter__figure">
-  <a href="{{ '/assets/img/projects/bachelor_omwegen_en.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_omwegen_en.svg' | relative_url }}" alt="Diagram of a cancer cell in which glutamine is blocked, while glucose, fatty acids, another route to glutamate, recycling and other amino acids keep the energy going" loading="lazy"></a>
-  <figcaption>Glutamine is blocked, but five detours keep the cell's energy going. Own figure.</figcaption>
+  <a href="{{ '/assets/img/projects/bachelor_omwegen_en.svg' | relative_url }}"><img src="{{ '/assets/img/projects/bachelor_omwegen_en.svg' | relative_url }}" alt="Diagram of a cancer cell in which glutamine is blocked by CB-839, while glucose, fatty acids, another route to glutamate, recycling and other amino acids keep the energy going" loading="lazy"></a>
+  <figcaption>Glutamine is blocked, but five detours keep the cell's energy going. The numbers match the list. Own figure.</figcaption>
 </figure>
-<button type="button" class="hotfig__spot" data-target="r0-en" style="left:2%;top:38%;width:20%;height:19%" aria-label="Glutamine, blocked"></button><button type="button" class="hotfig__spot" data-target="r1-en" style="left:8%;top:5%;width:21%;height:18%" aria-label="Detour 1: sugar"></button><button type="button" class="hotfig__spot" data-target="r2-en" style="left:69%;top:5%;width:23%;height:18%" aria-label="Detour 2: fat"></button><button type="button" class="hotfig__spot" data-target="r3-en" style="left:7%;top:82%;width:30%;height:16%" aria-label="Detour 3: glutamate"></button><button type="button" class="hotfig__spot" data-target="r4-en" style="left:39%;top:64%;width:22%;height:23%" aria-label="Detour 4: recycling"></button><button type="button" class="hotfig__spot" data-target="r5-en" style="left:71%;top:82%;width:23%;height:16%" aria-label="Detour 5: amino acids"></button>
 </div>
-<p class="hotfig__info" aria-live="polite" data-default="Hover over a route in the figure, or tap it, for the explanation.">Hover over a route in the figure, or tap it, for the explanation.</p>
-<ol class="routes hotfig__list"><li id="r0-en" class="routes__item routes__item--grey"><strong>Glutamine is blocked.</strong> CB-839 blocks glutaminase, so glutamine no longer supplies fuel. Yet the cell keeps its energy, through the detours below.</li><li id="r1-en" class="routes__item routes__item--pink"><strong>1. Sugar instead of glutamine.</strong> Through glycolysis the cell burns more glucose. In mice the cell kept running without glutamine; only when sugar use was blocked as well did almost 40% of the mice develop no tumour.</li><li id="r2-en" class="routes__item routes__item--green"><strong>2. Burning fat.</strong> Tumours that stopped responding to CB-839 burned more fatty acids via the enzyme CPT1.</li><li id="r3-en" class="routes__item routes__item--purple"><strong>3. Another route to glutamate.</strong> The cell makes the next step after glutamine (glutamate) through the glutaminase II pathway or from the molecule NAAG.</li><li id="r4-en" class="routes__item routes__item--grey"><strong>4. Recycling its own parts (autophagy).</strong> The cell breaks down its own parts to recover building blocks. Blocking glutamine can actually switch this on.</li><li id="r5-en" class="routes__item routes__item--blue"><strong>5. Taking up other amino acids.</strong> Extra transporters bring in the amino acids aspartate and arginine.</li></ol>
-</div>
-<script>
-(function () {
-  document.querySelectorAll('[data-hotfig]').forEach(function (box) {
-    var info = box.querySelector('.hotfig__info');
-    var spots = box.querySelectorAll('.hotfig__spot');
-    function show(spot) {
-      spots.forEach(function (s) { s.classList.toggle('is-active', s === spot); });
-      var item = document.getElementById(spot.getAttribute('data-target'));
-      info.innerHTML = item ? item.innerHTML : info.getAttribute('data-default');
-      info.className = 'hotfig__info is-filled ' + (item ? item.className.replace('routes__item', 'hotfig__info') : '');
-    }
-    spots.forEach(function (s) {
-      s.addEventListener('mouseenter', function () { show(s); });
-      s.addEventListener('focus', function () { show(s); });
-      s.addEventListener('click', function () { show(s); });
-    });
-    box.classList.add('is-ready');
-  });
-})();
-</script>
   </div>
 </section>
 
