@@ -22,24 +22,13 @@ stats:
     label: "minder voorspelfout als het netwerk ook de maandcijfers leest"
   - value: "3"
     label: "eigen netwerkontwerpen"
-sample:
-  caption: "Zo ziet de data eruit"
-  columns: ["Maand", "Industrie", "Werkloosheid", "Bbp-groei"]
-  rows:
-    - ["jan 2024", "101,5", "3,7%", "–"]
-    - ["feb 2024", "102,7", "3,9%", "–"]
-    - ["mrt 2024", "102,5", "3,9%", "+0,4%"]
-    - ["apr 2024", "102,4", "3,9%", "?"]
-  note: "Twee van de 238 indicatoren. Het bbp komt eens per kwartaal; het vraagteken is wat het model schat."
 ---
 
 {% include slide.html kicker="Probleem" title="Hoe gaat het nú met de economie?" text="Het bbp-cijfer komt pas weken na afloop van een kwartaal. Kan een model met de maandcijfers die al binnen zijn de groei van dit kwartaal schatten? Dat heet nowcasting." src="/assets/img/projects/scriptie_probleem.svg" alt="Tijdlijn: maandcijfers komen elke maand binnen, maar het bbp van het eerste kwartaal is pas weken na afloop van het kwartaal bekend" full=true %}
 
 {% include slide.html kicker="Aanleiding" title="Bestaande modellen, twee nieuwe vragen" text="Bijna elke grote centrale bank heeft een nowcastmodel, vaak een Dynamic Factor Model. Machine learning wordt vooral nog onderzocht en soms naast het Dynamic Factor Model gebruikt, zoals bij het IMF. Voor deep learning bestaan voor het bbp nog maar een handvol studies. Bovendien middelen die studies de maandcijfers meestal eerst tot kwartalen of vullen ze kunstmatig aan, waardoor informatie verloren gaat. Om de maandcijfers wél mee te nemen, moest ik de architectuur van de netwerken aanpassen." src="/assets/img/projects/scriptie_aanleiding.svg" alt="Van klassieke modellen (Dynamic Factor Model, bij bijna elke centrale bank) via machine learning (maandcijfers eerst gemiddeld) naar deep learning dat maand- en kwartaalcijfers direct leest. Onderzoeksvraag 1: kan deep learning het bbp nowcasten en hoe doet het dat ten opzichte van de klassieke modellen? Onderzoeksvraag 2: wordt de schatting van het huidige kwartaal beter als het model ook de maandcijfers meeleest?" full=true %}
 
-{% include data.html kicker="Data" title="Maand- en kwartaalcijfers door elkaar" text="121 maand- en 117 kwartaalindicatoren van de Amerikaanse economie, 1960–2024." src="/assets/img/projects/scriptie_bbp_groei_nl.png" alt="Lijngrafiek van de kwartaalgroei van het Amerikaanse bbp 1960–2024, met scherpe dalen in de recessies" %}
-
-{% include slide.html kicker="Modellen" title="Drie manieren om maand en kwartaal te combineren" text="Op ARMA na werken alle modellen met een selectie uit dezelfde 238 indicatoren. Mijn netwerken (LSTM en GRU) hebben een geheugen en zetten stap voor stap door de tijd. Het verschil zit in hoe maand- en kwartaalcijfers samenkomen." src="/assets/img/projects/scriptie_modellen.svg" alt="Zes modellen. Benchmarks: het klassieke tijdreeksmodel ARMA gebruikt alleen het eigen verleden van het bbp, een eenvoudige versie van het Dynamic Factor Model van centrale banken vat de cijfers samen in een paar trends, en een netwerk op kwartaalcijfers middelt de maandcijfers eerst. Mijn ontwerpen: herhalen (elke maand een stap, het kwartaalcijfer leest mee), twee lagen (een kwartaallaag voedt een maandlaag) en afwisselen (kwartaal- en maandnetwerk delen om de beurt één geheugen)" full=true %}
+{% include slide.html kicker="Modellen" title="Drie manieren om maand en kwartaal te combineren" text="Op ARMA na werken alle modellen met een selectie uit dezelfde 238 maand- en kwartaalindicatoren van de Amerikaanse economie (1960–2024). Mijn netwerken (LSTM en GRU) hebben een geheugen en zetten stap voor stap door de tijd. Het verschil zit in hoe maand- en kwartaalcijfers samenkomen." src="/assets/img/projects/scriptie_modellen.svg" alt="Zes modellen. Benchmarks: het klassieke tijdreeksmodel ARMA gebruikt alleen het eigen verleden van het bbp, een eenvoudige versie van het Dynamic Factor Model van centrale banken vat de cijfers samen in een paar trends, en een netwerk op kwartaalcijfers middelt de maandcijfers eerst. Mijn ontwerpen: herhalen (elke maand een stap, het kwartaalcijfer leest mee), twee lagen (een kwartaallaag voedt een maandlaag) en afwisselen (kwartaal- en maandnetwerk delen om de beurt één geheugen)" full=true %}
 
 {% include slide.html kicker="Resultaat vraag 1" title="Deep learning voorspelt beter dan de klassieke modellen" text="Van 2000 tot 2019 was de voorspelfout van vijf van mijn zes netwerken die maand- en kwartaalcijfers combineren ongeveer 10% kleiner dan die van het Dynamic Factor Model, en ruim 20% kleiner dan die van het tijdreeksmodel ARMA." src="/assets/img/projects/scriptie_echt_vs_voorspeld.svg" alt="Lijngrafiek van de echte en geschatte bbp-groei per kwartaal, 2000–2019. Beide modellen volgen de grote bewegingen; deep learning zit gemiddeld het dichtst bij de echte groei, maar dempt pieken en dalen wat af. Gemiddelde afwijking: ARMA 0,58, Dynamic Factor Model 0,50, deep learning 0,45 procentpunt." full=true %}
 

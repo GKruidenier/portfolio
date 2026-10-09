@@ -22,24 +22,13 @@ stats:
     label: "less forecast error when the network also reads the monthly figures"
   - value: "3"
     label: "own network designs"
-sample:
-  caption: "What the data looks like"
-  columns: ["Month", "Industry", "Unemployment", "GDP growth"]
-  rows:
-    - ["Jan 2024", "101.5", "3.7%", "–"]
-    - ["Feb 2024", "102.7", "3.9%", "–"]
-    - ["Mar 2024", "102.5", "3.9%", "+0.4%"]
-    - ["Apr 2024", "102.4", "3.9%", "?"]
-  note: "Two of the 238 indicators. GDP arrives once a quarter; the question mark is what the model estimates."
 ---
 
 {% include slide.html kicker="Problem" title="How is the economy doing right now?" text="The GDP figure arrives weeks after a quarter ends. Can a model use the monthly figures already in to estimate this quarter's growth? That is called nowcasting." src="/assets/img/projects/scriptie_probleem_en.svg" alt="Timeline: monthly figures arrive every month, but first-quarter GDP is only known weeks after the quarter ends" full=true %}
 
 {% include slide.html kicker="Background" title="Existing models, two new questions" text="Almost every major central bank has a nowcasting model, often a Dynamic Factor Model. Machine learning is mostly still being researched and sometimes used alongside the Dynamic Factor Model, for example at the IMF. For deep learning there are only a handful of GDP studies. Moreover, those studies usually first average the monthly figures into quarters or fill them in artificially, which loses information. To keep the monthly figures, I had to adapt the architecture of the networks." src="/assets/img/projects/scriptie_aanleiding_en.svg" alt="From classic models (Dynamic Factor Model, used by almost every central bank) via machine learning (monthly figures averaged first) to deep learning that reads monthly and quarterly figures directly. Research question 1: can deep learning nowcast GDP and how does it perform against the classic models? Research question 2: does the estimate for the current quarter improve when the model also reads the monthly figures?" full=true %}
 
-{% include data.html kicker="Data" title="Monthly and quarterly figures mixed" text="121 monthly and 117 quarterly indicators of the US economy, 1960–2024." src="/assets/img/projects/scriptie_bbp_groei_en.png" alt="Line chart of quarterly US GDP growth 1960–2024, with sharp drops in recessions" %}
-
-{% include slide.html kicker="Models" title="Three ways to combine month and quarter" text="Apart from ARMA, all models work with a selection of the same 238 indicators. My networks (LSTM and GRU) have a memory and step through time. The difference is how monthly and quarterly figures come together." src="/assets/img/projects/scriptie_modellen_en.svg" alt="Six models. Benchmarks: the classic time-series model ARMA uses only the past of GDP, a simple version of the central banks' Dynamic Factor Model sums up the figures in a few trends, and a network on quarterly data averages the monthly figures first. My designs: repeat (one step per month, the quarterly figure is read along), two layers (a quarterly layer feeds a monthly layer) and alternate (quarterly and monthly network take turns with one shared memory)" full=true %}
+{% include slide.html kicker="Models" title="Three ways to combine month and quarter" text="Apart from ARMA, all models work with a selection of the same 238 monthly and quarterly indicators of the US economy (1960–2024). My networks (LSTM and GRU) have a memory and step through time. The difference is how monthly and quarterly figures come together." src="/assets/img/projects/scriptie_modellen_en.svg" alt="Six models. Benchmarks: the classic time-series model ARMA uses only the past of GDP, a simple version of the central banks' Dynamic Factor Model sums up the figures in a few trends, and a network on quarterly data averages the monthly figures first. My designs: repeat (one step per month, the quarterly figure is read along), two layers (a quarterly layer feeds a monthly layer) and alternate (quarterly and monthly network take turns with one shared memory)" full=true %}
 
 {% include slide.html kicker="Result question 1" title="Deep learning forecasts better than the classic models" text="From 2000 to 2019, five of my six networks that combine monthly and quarterly figures made a forecast error about 10% smaller than the Dynamic Factor Model, and over 20% smaller than the time-series model ARMA." src="/assets/img/projects/scriptie_echt_vs_voorspeld_en.svg" alt="Line chart of actual and estimated GDP growth per quarter, 2000–2019. Both models follow the big movements; deep learning is closest to actual growth on average, but dampens peaks and troughs somewhat. Average deviation: ARMA 0.58, Dynamic Factor Model 0.50, deep learning 0.45 percentage points." full=true %}
 
