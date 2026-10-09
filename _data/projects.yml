@@ -12,16 +12,16 @@
   nl:
     title: "Masterscriptie: economische groei in real time voorspellen"
     label: Masterscriptie · individueel
-    summary: Drie eigen deep-learningarchitecturen die maand- en kwartaaldata direct combineren, getoetst tegen de modellen van centrale banken.
+    summary: Drie eigen deep-learningarchitecturen die maand- en kwartaaldata direct combineren, getoetst tegen een Dynamic Factor Model, het klassieke nowcastmodel.
     metric: "−11%"
-    metric_label: voorspelfout t.o.v. het model van centrale banken
+    metric_label: voorspelfout t.o.v. een Dynamic Factor Model op dezelfde data
     url: /projecten/masterscriptie-bbp-nowcasting/
   en:
     title: "Master's thesis: nowcasting economic growth in real time"
     label: Master's thesis · individual
-    summary: Three custom deep-learning architectures that combine monthly and quarterly data directly, tested against the models central banks use.
+    summary: Three custom deep-learning architectures that combine monthly and quarterly data directly, tested against a Dynamic Factor Model, the classic nowcasting model.
     metric: "−11%"
-    metric_label: forecast error vs. the central-bank model
+    metric_label: forecast error vs. a Dynamic Factor Model on the same data
     url: /en/projects/master-thesis-gdp-nowcasting/
 
 - id: churn

@@ -27,5 +27,5 @@
 <text x="862" y="232" font-size="18" fill="#1f56a8" font-weight="700" text-anchor="middle" >bbp-groei</text>
 <text x="862" y="256" font-size="13.5" fill="#1f56a8" font-weight="500" text-anchor="middle" >dit kwartaal</text>
 <line x1="30" y1="356" x2="930" y2="356" stroke="#e4e1d8"/>
-<text x="30" y="386" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Elk jaar opnieuw getraind en getest op het jaar erna (2000–2024) · vergeleken met het model van centrale banken</text>
+<text x="30" y="386" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Elk jaar opnieuw getraind en getest op het jaar erna (2000–2024) · vergeleken met een Dynamic Factor Model</text>
 </svg>
