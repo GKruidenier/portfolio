@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 282" width="860" height="282" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
 <rect width="860" height="282" fill="#ffffff"/>
-<text x="20" y="34" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">Voorspelfout per kwartaal, 2000–2019</text>
-<text x="20" y="58" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start">in procentpunt bbp-groei · lager is beter</text>
+<text x="20" y="34" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">Hoe ver zit de schatting naast de echte bbp-groei?</text>
+<text x="20" y="58" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start">gemiddelde afwijking per kwartaal in procentpunt (RMSE), 2000–2019 · kleiner is beter</text>
 <line x1="330.0" y1="92" x2="330.0" y2="244" stroke="#ebe9e3" stroke-width="1"/>
 <text x="330.0" y="266" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">0</text>
 <line x1="381.7" y1="92" x2="381.7" y2="244" stroke="#ebe9e3" stroke-width="1"/>
