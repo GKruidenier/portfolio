@@ -11,10 +11,10 @@
 <text x="32" y="204.9" font-size="14" fill="#c9783d" font-weight="700" text-anchor="start" >relationships</text>
 <line x1="314" y1="120.0" x2="344" y2="120.0" stroke="#6f7686" stroke-width="2" marker-end="url(#a)"/>
 <rect x="352" y="20" width="296" height="200" rx="14" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
-<text x="374" y="54" font-size="12.5" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.2">EMERGING</text>
+<text x="374" y="54" font-size="12.5" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.2">IN RESEARCH</text>
 <text x="374" y="84" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Machine learning</text>
 <text x="374" y="106" font-size="13.5" fill="#6f7686" font-weight="600" text-anchor="start" >e.g. Random Forest</text>
-<text x="374" y="138.0" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >First studies, with</text>
+<text x="374" y="138.0" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Only tested in studies,</text>
 <text x="374" y="158.25" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >promising results</text>
 <text x="374" y="186.0" font-size="14" fill="#c9783d" font-weight="700" text-anchor="start" >Monthly figures averaged or</text>
 <text x="374" y="204.9" font-size="14" fill="#c9783d" font-weight="700" text-anchor="start" >filled in first: info is lost</text>
@@ -23,7 +23,7 @@
 <text x="716" y="54" font-size="12.5" fill="#1f56a8" font-weight="700" text-anchor="start" letter-spacing="1.2">THIS THESIS</text>
 <text x="716" y="84" font-size="19" fill="#1f56a8" font-weight="700" text-anchor="start" >Deep learning</text>
 <text x="716" y="106" font-size="13.5" fill="#6f7686" font-weight="600" text-anchor="start" >LSTM and GRU</text>
-<text x="716" y="138.0" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Still little studied</text>
+<text x="716" y="138.0" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Only a handful of studies</text>
 <text x="716" y="158.25" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >for GDP</text>
 <text x="716" y="186.0" font-size="14" fill="#1f56a8" font-weight="700" text-anchor="start" >New: adapted to read monthly</text>
 <text x="716" y="204.9" font-size="14" fill="#1f56a8" font-weight="700" text-anchor="start" >and quarterly figures directly</text>
