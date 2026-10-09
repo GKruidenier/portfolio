@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 296" width="860" height="296" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="860" height="296" fill="#ffffff"/>
+<text x="20" y="34" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">Voorspelfout per kwartaal, 2000–2019</text>
+<text x="20" y="58" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start">in procentpunt bbp-groei · lager is beter</text>
+<line x1="330.0" y1="92" x2="330.0" y2="258" stroke="#ebe9e3" stroke-width="1"/>
+<text x="330.0" y="280" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">0</text>
+<line x1="381.7" y1="92" x2="381.7" y2="258" stroke="#ebe9e3" stroke-width="1"/>
+<text x="381.7" y="280" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">0,1</text>
+<line x1="433.3" y1="92" x2="433.3" y2="258" stroke="#ebe9e3" stroke-width="1"/>
+<text x="433.3" y="280" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">0,2</text>
+<line x1="485.0" y1="92" x2="485.0" y2="258" stroke="#ebe9e3" stroke-width="1"/>
+<text x="485.0" y="280" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">0,3</text>
+<line x1="536.7" y1="92" x2="536.7" y2="258" stroke="#ebe9e3" stroke-width="1"/>
+<text x="536.7" y="280" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">0,4</text>
+<line x1="588.3" y1="92" x2="588.3" y2="258" stroke="#ebe9e3" stroke-width="1"/>
+<text x="588.3" y="280" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">0,5</text>
+<line x1="640.0" y1="92" x2="640.0" y2="258" stroke="#ebe9e3" stroke-width="1"/>
+<text x="640.0" y="280" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">0,6</text>
+<text x="314" y="130" font-size="15.5" fill="#4a5163" font-weight="600" text-anchor="end">Deep learning, alleen kwartaal</text>
+<text x="314" y="150" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">Quarterly-GRU</text>
+<rect x="330" y="112" width="244.4" height="44" rx="3" fill="#a9c4ee"/>
+<text x="584.4" y="140" font-size="16" fill="#6f7686" font-weight="700" text-anchor="start">0,47</text>
+<text x="314" y="206" font-size="15.5" fill="#1d2230" font-weight="700" text-anchor="end">Deep learning, maand + kwartaal</text>
+<text x="314" y="226" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">Alternate-GRU</text>
+<rect x="330" y="188" width="234.6" height="44" rx="3" fill="#2a6fd6"/>
+<text x="574.6" y="216" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="start">0,45</text>
+<line x1="330" y1="92" x2="330" y2="258" stroke="#4a5163" stroke-width="1.2"/>
+<rect x="680" y="128" width="160" height="104" rx="12" fill="#e7effb"/>
+<text x="760" y="182" font-size="38" fill="#1f56a8" font-weight="700" text-anchor="middle">−4%</text>
+<text x="760" y="210" font-size="14" fill="#1f56a8" font-weight="600" text-anchor="middle">kleinere fout</text>
+</svg>
