@@ -9,11 +9,24 @@
 <text x="745.6" y="26" font-size="13" fill="#6f7686" font-weight="600" text-anchor="end" >monthly figures</text>
 <rect x="615.6" y="11" width="20" height="20" rx="6" fill="#2a6fd6"/>
 <text x="625.6" y="26.0" font-size="13" fill="#fff" font-weight="700" text-anchor="middle" >M</text>
-<text x="180" y="26" font-size="13" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">BENCHMARKS</text>
+<text x="20" y="26" font-size="13" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">BENCHMARKS</text>
 <text x="20" y="330" font-size="13" fill="#1f56a8" font-weight="700" text-anchor="start" letter-spacing="1.5">MY THREE DESIGNS</text>
-<g transform="translate(-180,0)">
+<rect x="20" y="44" width="310" height="240" rx="14" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="40" y="76" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Classic time-series model</text>
+<text x="40" y="96" font-size="13" fill="#6f7686" font-weight="600" text-anchor="start" >ARMA</text>
+<text x="40" y="250" font-size="14" fill="#4a5163" font-weight="500" text-anchor="start" >Predicts GDP only from</text>
+<text x="40" y="270" font-size="14" fill="#4a5163" font-weight="500" text-anchor="start" >its own past</text>
+<rect x="44" y="178" width="24" height="34" rx="3" fill="#b9bcc4"/>
+<rect x="80" y="160" width="24" height="52" rx="3" fill="#b9bcc4"/>
+<rect x="116" y="190" width="24" height="22" rx="3" fill="#b9bcc4"/>
+<rect x="152" y="166" width="24" height="46" rx="3" fill="#b9bcc4"/>
+<rect x="188" y="174" width="24" height="38" rx="3" fill="#b9bcc4"/>
+<rect x="224" y="170" width="24" height="42" rx="3" fill="none" stroke="#c9783d" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="236" y="162" font-size="18" fill="#c9783d" font-weight="700" text-anchor="middle" >?</text>
+<line x1="38" y1="212" x2="258" y2="212" stroke="#6f7686"/>
+<text x="44" y="130" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="start" >GDP growth, past quarters</text>
 <rect x="360" y="44" width="310" height="240" rx="14" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
-<text x="380" y="76" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Classic model</text>
+<text x="380" y="76" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Central-bank model</text>
 <text x="380" y="96" font-size="13" fill="#6f7686" font-weight="600" text-anchor="start" >Dynamic Factor Model, own version</text>
 <text x="380" y="250" font-size="14" fill="#4a5163" font-weight="500" text-anchor="start" >The type of model central banks use,</text>
 <text x="380" y="270" font-size="14" fill="#4a5163" font-weight="500" text-anchor="start" >here rebuilt in a simple form</text>
@@ -73,7 +86,6 @@
 <line x1="927" y1="151" x2="958" y2="151" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
 <circle cx="978" cy="151" r="17" fill="#fff" stroke="#1f56a8" stroke-width="2"/>
 <text x="978" y="155" font-size="11" fill="#1f56a8" font-weight="700" text-anchor="middle" >GDP</text>
-</g>
 <rect x="20" y="348" width="310" height="240" rx="14" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
 <text x="40" y="380" font-size="17" fill="#1f56a8" font-weight="700" text-anchor="start" >1 · Repeat</text>
 <text x="40" y="400" font-size="13" fill="#6f7686" font-weight="600" text-anchor="start" >Repeat</text>

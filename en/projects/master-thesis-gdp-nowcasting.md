@@ -6,7 +6,7 @@ project: thesis
 section: master
 title: "Master's thesis: nowcasting economic growth with deep learning"
 lead: "Can a neural network that combines monthly and quarterly data directly 'nowcast' the economy better than the classic nowcasting model?"
-description: Three custom LSTM and GRU architectures for nowcasting GDP growth in real time, tested against a Dynamic Factor Model.
+description: Three custom LSTM and GRU architectures for nowcasting GDP growth in real time, tested against a Dynamic Factor Model and ARMA.
 image: /assets/img/projects/scriptie_rmse_vergelijking_en.png
 abstract: "GDP is published quarterly and with a delay, while monthly figures arrive much sooner. I designed three neural networks that combine both directly. From 2000 to 2019 their forecast error is about 10% lower than that of a Dynamic Factor Model: the type of model central banks use, which I applied in a simple form to the same data."
 abstract_image: /assets/img/projects/scriptie_concept_en.svg
@@ -14,7 +14,7 @@ abstract_alt: "Visual summary: monthly and quarterly data feed a custom network 
 course: MSc Data Science and Society, Tilburg University
 team: Individual research
 code: https://github.com/GKruidenier/GDP-nowcasting-thesis
-tools: [Python, PyTorch, LSTM, GRU, statsmodels, Dynamic Factor Models]
+tools: [Python, PyTorch, LSTM, GRU, statsmodels, Dynamic Factor Models, ARMA]
 stats:
   - value: "−10%"
     label: "less forecast error than a Dynamic Factor Model on the same data (2000–2019)"
@@ -39,9 +39,9 @@ sample:
 
 {% include data.html kicker="Data" title="Monthly and quarterly figures mixed" text="121 monthly and 117 quarterly indicators of the US economy, 1960–2024." src="/assets/img/projects/scriptie_bbp_groei_en.png" alt="Line chart of quarterly US GDP growth 1960–2024, with sharp drops in recessions" %}
 
-{% include slide.html kicker="Models" title="Three ways to combine month and quarter" text="All models get the same figures. My networks (LSTM and GRU) have a memory and step through time. The difference is how monthly and quarterly figures come together." src="/assets/img/projects/scriptie_modellen_en.svg" alt="Five models. Benchmarks: a simple version of the central banks' Dynamic Factor Model sums up the figures in a few trends, and a network on quarterly data averages the monthly figures first. My designs: repeat (one step per month, the quarterly figure is read along), two layers (a quarterly layer feeds a monthly layer) and alternate (quarterly and monthly network take turns with one shared memory)" full=true %}
+{% include slide.html kicker="Models" title="Three ways to combine month and quarter" text="All models get the same figures. My networks (LSTM and GRU) have a memory and step through time. The difference is how monthly and quarterly figures come together." src="/assets/img/projects/scriptie_modellen_en.svg" alt="Six models. Benchmarks: the classic time-series model ARMA uses only the past of GDP, a simple version of the central banks' Dynamic Factor Model sums up the figures in a few trends, and a network on quarterly data averages the monthly figures first. My designs: repeat (one step per month, the quarterly figure is read along), two layers (a quarterly layer feeds a monthly layer) and alternate (quarterly and monthly network take turns with one shared memory)" full=true %}
 
-{% include slide.html kicker="Result question 1" title="Deep learning forecasts better than the classic model" text="From 2000 to 2019, my deep learning models that combine monthly and quarterly figures made a forecast error about 10% smaller than the Dynamic Factor Model, on the same data." src="/assets/img/projects/scriptie_resultaat_vraag1_en.svg" alt="Bar chart of the forecast error per quarter: the classic Dynamic Factor Model is off by 0.50 percentage points on average, deep learning with monthly and quarterly figures by 0.45. That is 10% less." full=true %}
+{% include slide.html kicker="Result question 1" title="Deep learning forecasts better than the classic models" text="From 2000 to 2019, my deep learning models that combine monthly and quarterly figures made a forecast error about 10% smaller than the Dynamic Factor Model, and over 20% smaller than the time-series model ARMA." src="/assets/img/projects/scriptie_resultaat_vraag1_en.svg" alt="Bar chart of the forecast error per quarter: the time-series model ARMA is off by 0.58 percentage points on average, the central banks' Dynamic Factor Model by 0.50, deep learning with monthly and quarterly figures by 0.45. That is 10% less than the Dynamic Factor Model." full=true %}
 
 {% include slide.html kicker="Result question 2" title="Reading the monthly figures improves the estimate" text="The same type of network makes a 4% smaller error when it reads the monthly figures as well as the quarterly ones." src="/assets/img/projects/scriptie_resultaat_vraag2_en.svg" alt="Bar chart of the forecast error per quarter: deep learning on quarterly figures only is off by 0.47 percentage points on average, deep learning with monthly and quarterly figures by 0.45. That is 4% less." full=true %}
 
