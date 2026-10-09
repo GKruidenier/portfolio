@@ -8,6 +8,7 @@ Opties:
   photo=true    afbeelding vult het vak (foto's)
   statement=true  donkere slide zonder afbeelding, voor een conclusie
   big="Top 5"     groot kerngetal boven de kop (voor een resultaat zonder grafiek)
+  points="a | b"  opsomming, punten gescheiden door |
   kicker="Data"   label naast het nummer (Probleem, Data, Modellen, Methode, Resultaten, Evaluatie)
 {%- endcomment -%}
 <section class="slide{% if include.full %} slide--full{% endif %}{% if include.statement %} slide--statement{% endif %}{% unless include.src %} slide--text{% endunless %}">
@@ -19,6 +20,14 @@ Opties:
     <h2>{{ include.title }}</h2>
     {%- if include.text %}
     <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    {%- endif %}
+    {%- if include.points %}
+    {%- assign pts = include.points | split: "|" %}
+    <ul class="slide__points">
+      {%- for pt in pts %}
+      <li>{{ pt | strip | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
+      {%- endfor %}
+    </ul>
     {%- endif %}
   </div>
   {%- if include.src %}

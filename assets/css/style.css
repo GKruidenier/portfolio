@@ -353,6 +353,13 @@ p { margin: 0 0 1em; }
 .slide--statement .slide__num { color: #fff; opacity: .3; }
 .prose .slide--statement h2 { color: #fff; font-size: clamp(1.6rem, 3.2vw, 2.4rem); }
 .slide--statement .slide__text p:last-child { color: #c9cdd8; font-size: 1.1rem; }
+.slide__points { list-style: none; padding: 0; margin: .4em 0 0; display: grid; gap: 14px; }
+.prose .slide__points li { position: relative; margin: 0; padding-left: 22px; color: var(--ink-2); font-size: 1.04rem; line-height: 1.55; }
+.slide__points li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.slide__points strong { color: var(--ink); }
+.prose .slide--statement .slide__points li { color: #c9cdd8; }
+.slide--statement .slide__points strong { color: #fff; }
+.slide--statement .slide__points li::before { background: #8fb3ea; }
 @media (max-width: 820px) {
   .slide, .slide:nth-of-type(even):not(.slide--full):not(.slide--text) { grid-template-columns: 1fr; min-height: 0; }
   .slide:nth-of-type(even):not(.slide--full) .slide__text { order: 0; }
