@@ -29,5 +29,5 @@
 <text x="612.5833333333333" y="176" font-size="14" fill="#c9783d" font-weight="700" text-anchor="middle" >Q1 GDP known</text>
 <path d="M495.0,232 H612.5833333333333" stroke="#c9783d" stroke-width="2" marker-end="url(#r)"/>
 <text x="553.7916666666666" y="226" font-size="13" fill="#c9783d" font-weight="600" text-anchor="middle" >weeks of waiting</text>
-<text x="70" y="356" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >A nowcast estimates GDP for the current quarter from the monthly figures already in.</text>
+<text x="70" y="356" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >A nowcast estimates GDP for the current quarter from the data already in.</text>
 </svg>
