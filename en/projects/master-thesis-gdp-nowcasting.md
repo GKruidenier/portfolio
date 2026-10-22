@@ -16,13 +16,6 @@ course: MSc Data Science and Society, Tilburg University
 team: Individual research
 code: https://github.com/GKruidenier/GDP-nowcasting-thesis
 tools: [Python, PyTorch, LSTM, GRU, statsmodels, Dynamic Factor Models, ARMA]
-stats:
-  - value: "−10%"
-    label: "less forecast error than a Dynamic Factor Model on the same data (2000–2019)"
-  - value: "−4%"
-    label: "less forecast error when the network also reads the monthly figures"
-  - value: "3"
-    label: "own network designs"
 ---
 
 {% include slide.html kicker="Problem" title="How is the economy doing right now?" text="The GDP figure arrives weeks after a quarter ends. Can a model use the monthly figures already in to estimate this quarter's growth? That is called nowcasting." src="/assets/img/projects/scriptie_probleem_en.svg" alt="Timeline: monthly figures arrive every month, but first-quarter GDP is only known weeks after the quarter ends" full=true %}

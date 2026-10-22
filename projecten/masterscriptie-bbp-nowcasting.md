@@ -16,13 +16,6 @@ course: MSc Data Science and Society, Tilburg University
 team: Individueel onderzoek
 code: https://github.com/GKruidenier/GDP-nowcasting-thesis
 tools: [Python, PyTorch, LSTM, GRU, statsmodels, Dynamic Factor Models, ARMA]
-stats:
-  - value: "−10%"
-    label: "minder voorspelfout dan een Dynamic Factor Model op dezelfde data (2000–2019)"
-  - value: "−4%"
-    label: "minder voorspelfout als het netwerk ook de maandcijfers leest"
-  - value: "3"
-    label: "eigen netwerkontwerpen"
 ---
 
 {% include slide.html kicker="Probleem" title="Hoe gaat het nú met de economie?" text="Het bbp-cijfer komt pas weken na afloop van een kwartaal. Kan een model met de maandcijfers die al binnen zijn de groei van dit kwartaal schatten? Dat heet nowcasting." src="/assets/img/projects/scriptie_probleem.svg" alt="Tijdlijn: maandcijfers komen elke maand binnen, maar het bbp van het eerste kwartaal is pas weken na afloop van het kwartaal bekend" full=true %}
