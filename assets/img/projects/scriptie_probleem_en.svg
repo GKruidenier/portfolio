@@ -24,7 +24,7 @@
 <text x="76.0" y="240" font-size="14" fill="#1f56a8" font-weight="600" text-anchor="start" >monthly figures</text>
 <line x1="424.1666666666667" y1="100" x2="424.1666666666667" y2="290" stroke="#1d2230" stroke-width="1.6" stroke-dasharray="3 4"/>
 <text x="414.1666666666667" y="122" font-size="15" fill="#1d2230" font-weight="700" text-anchor="end" >now</text>
-<text x="414.1666666666667" y="142" font-size="13.5" fill="#4a5163" font-weight="500" text-anchor="end" >Q1 still unknown</text>
+<text x="414.1666666666667" y="142" font-size="13.5" fill="#4a5163" font-weight="500" text-anchor="end" >GDP Q1 still unknown</text>
 <path d="M612.5833333333333,186 l14,14 l-14,14 l-14,-14 z" fill="#c9783d"/>
 <text x="612.5833333333333" y="176" font-size="14" fill="#c9783d" font-weight="700" text-anchor="middle" >Q1 GDP known</text>
 <path d="M495.0,232 H612.5833333333333" stroke="#c9783d" stroke-width="2" marker-end="url(#r)"/>
