@@ -32,9 +32,9 @@ Opties:
   </div>
   {%- if include.src %}
   <div class="slide__media{% if include.src2 %} slide__media--pair{% endif %}{% if include.photo %} slide__media--photo{% endif %}">
-    <a href="{{ include.src | relative_url }}"><img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy"></a>
+    <a href="{{ include.src | relative_url }}"><img src="{{ include.src | relative_url }}?v={{ site.time | date: "%s" }}" alt="{{ include.alt }}" loading="lazy"></a>
     {%- if include.src2 %}
-    <a href="{{ include.src2 | relative_url }}"><img src="{{ include.src2 | relative_url }}" alt="{{ include.alt2 }}" loading="lazy"></a>
+    <a href="{{ include.src2 | relative_url }}"><img src="{{ include.src2 | relative_url }}?v={{ site.time | date: "%s" }}" alt="{{ include.alt2 }}" loading="lazy"></a>
     {%- endif %}
   </div>
   {%- endif %}
