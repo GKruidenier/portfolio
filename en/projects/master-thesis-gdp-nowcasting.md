@@ -8,7 +8,7 @@ title: "Master's thesis: nowcasting economic growth with deep learning"
 lead: "Can a neural network that combines monthly and quarterly data directly 'nowcast' the economy better than the classic nowcasting model?"
 description: Three custom LSTM and GRU architectures for nowcasting GDP growth in real time, tested against a Dynamic Factor Model and ARMA.
 image: /assets/img/projects/scriptie_rmse_vergelijking_en.png
-abstract: "GDP is published quarterly and with a delay, while monthly figures arrive much sooner. I designed three neural networks that combine both directly, each in an LSTM and a GRU version. From 2000 to 2019 the forecast error of five of those six is about 10% lower than that of a Dynamic Factor Model: the type of model central banks use, which I applied in a simple form to the same data."
+abstract: "GDP is published quarterly and with a delay. Monthly figures such as unemployment and inflation, which say something about the economy, arrive much sooner. To improve the predictive power of neural networks, I built a new model that integrates monthly figures to predict GDP growth. From 2000 to 2019 the forecast error of almost all variants is about 10% lower than that of a Dynamic Factor Model: the type of model central banks use, which I applied in a simple form to the same data."
 # eerder: abstract_image: /assets/img/projects/scriptie_concept_en.svg  (concept-figuur, bestand blijft bewaard)
 abstract_image: /assets/img/projects/scriptie_echt_vs_voorspeld_en.svg
 abstract_alt: "Line chart of actual and estimated GDP growth per quarter, 2000–2019, for deep learning with monthly and quarterly figures and the Dynamic Factor Model"
