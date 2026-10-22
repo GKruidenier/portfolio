@@ -6,8 +6,8 @@
   category: master
   featured: true
   year: "2026"
-  image: /assets/img/projects/scriptie_concept.svg
-  image_en: /assets/img/projects/scriptie_concept_en.svg
+  image: /assets/img/projects/scriptie_echt_vs_voorspeld.svg
+  image_en: /assets/img/projects/scriptie_echt_vs_voorspeld_en.svg
   tags: [PyTorch, LSTM/GRU, Time series]
   nl:
     title: "Masterscriptie: economische groei in real time voorspellen"
