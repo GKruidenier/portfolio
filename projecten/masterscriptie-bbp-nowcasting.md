@@ -9,8 +9,9 @@ lead: "Kan een neuraal netwerk dat maand- en kwartaaldata direct combineert de e
 description: Drie eigen LSTM- en GRU-architecturen voor het real-time voorspellen van bbp-groei, getoetst tegen een Dynamic Factor Model en ARMA.
 image: /assets/img/projects/scriptie_rmse_vergelijking.png
 abstract: "Het bbp verschijnt per kwartaal en met vertraging, maandcijfers komen veel sneller. Ik ontwierp drie neurale netwerken die beide direct combineren, elk in een LSTM- en een GRU-versie. Van 2000 tot 2019 is de voorspelfout van vijf van die zes ongeveer 10% lager dan die van een Dynamic Factor Model: het type model dat centrale banken gebruiken, door mij in een eenvoudige vorm toegepast op dezelfde data."
-abstract_image: /assets/img/projects/scriptie_concept.svg
-abstract_alt: "Visuele samenvatting: maand- en kwartaaldata gaan samen een eigen netwerk in dat de bbp-groei van het lopende kwartaal schat"
+# eerder: abstract_image: /assets/img/projects/scriptie_concept.svg  (concept-figuur, bestand blijft bewaard)
+abstract_image: /assets/img/projects/scriptie_echt_vs_voorspeld.svg
+abstract_alt: "Lijngrafiek van de echte en geschatte bbp-groei per kwartaal, 2000–2019, voor deep learning met maand- en kwartaalcijfers en het Dynamic Factor Model"
 course: MSc Data Science and Society, Tilburg University
 team: Individueel onderzoek
 code: https://github.com/GKruidenier/GDP-nowcasting-thesis
