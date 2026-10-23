@@ -62,6 +62,30 @@ sample:
 
 {% include slide.html kicker="Results" title="XGBoost recognises slightly more stayers" text="At the default threshold of 50% probability, the difference lies in the stayers. XGBoost recognises 16% of stayers, Random Forest 14% and logistic regression 12%. The confusion matrices come from the notebook: 'Non-Churned' means stays, 'Churned' means quits. XGBoost (C) finds 23,745 of the 23,914 quitters and recognises 324 of the 2,042 stayers." src="/assets/img/projects/churn_nb_confusion.png" alt="Confusion matrices from the notebook for logistic regression, Random Forest and XGBoost. XGBoost correctly predicts 23,745 of the 23,914 quitters and 324 of the 2,042 stayers." full=true %}
 
+<section class="slide slide--full slide--text">
+  <div class="slide__text">
+    <p class="slide__num"><span class="slide__kicker">Results</span></p>
+    <h2>The results in numbers</h2>
+    <p>Stratified 5-fold cross-validation on 25,956 players, with quitter = 1 and stayer = 0. All three models beat guessing; the differences between them are small.</p>
+  </div>
+  <figure class="sample">
+    <div class="sample__scroll">
+      <table>
+        <thead><tr><th>Model</th><th>ROC-AUC</th><th>Quitters found</th><th>Stayers recognised</th><th>Right when it says “stays”</th></tr></thead>
+        <tbody>
+          <tr><td>Guessing</td><td>0.50</td><td>92%</td><td>8%</td><td>8%</td></tr>
+          <tr><td>Logistic regression</td><td>0.793</td><td>99.4%</td><td>12.4%</td><td>64%</td></tr>
+          <tr><td>Random Forest</td><td>0.791</td><td>99.4%</td><td>14.1%</td><td>67%</td></tr>
+          <tr><td><strong>XGBoost</strong></td><td>0.791</td><td>99.3%</td><td><strong>15.9%</strong></td><td>66%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sample__note">Quitters found = recall for quitters. Stayers recognised = share of stayers the model predicts as stayers. Right when it says “stays” = precision for stayers. Guessing: labelling players at random in the same proportions (92% quit, 8% stay).</p>
+  </figure>
+</section>
+
+{% include slide.html kicker="Results" title="Play time matters most" text="Which features did the models lean on? For all three, play time in the first five days (total_duration_hours) is by far the most important. After that they differ: logistic regression leans on the total score, Random Forest on the average break between games and XGBoost on the number of games. Importance is normalised per model so that it adds up to 1." src="/assets/img/projects/churn_nb_feature_importance.png" alt="Bar chart from the notebook comparing normalised feature importance of logistic regression, Random Forest and XGBoost. total_duration_hours is the most important for all three (about 0.40, 0.34 and 0.60); then total_score for logistic regression, mean_inter_event_hours for Random Forest and total_events for XGBoost." full=true %}
+
 {% include slide.html kicker="Evaluation" title="Finding quitters is easy, recognising stayers is not" text="The model finds 99% of quitters, but recognises only 12–16% of stayers. That is due to the skewed distribution. There are far fewer stayers to learn from, and during training each model makes the average error over all players as small as possible. Because 92% quit, 'quits' almost always gives the smallest error, so at the default threshold of 50% probability the model mostly predicts that. When it does say someone will stay, it is right 2 times out of 3 (without a model 8%). A next step is choosing other time windows, so stayers are less rare, giving stayers more weight or shifting the threshold." statement=true %}
 
 <div class="role" markdown="1">
