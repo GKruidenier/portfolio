@@ -9,8 +9,9 @@ lead: "Can you tell after the first few days whether a new player will stay or q
 description: Churn defined from raw play logs and predicted with logistic regression, Random Forest and XGBoost. Highest grade of all groups.
 image: /assets/img/projects/churn_abstract.png
 abstract: "From 150,000 games of a mobile game we defined ourselves when a player has quit: 92% of new players. Using eight behavioural features from the first five days, our models rank a quitter as riskier than a stayer 8 times out of 10. Highest grade of all groups."
-abstract_image: /assets/img/projects/churn_abstract_en.svg
-abstract_alt: "Visual summary: eleven in twelve new players quit; the model reads play time, games and breaks and ranks the quitter as riskier than a stayer 8 times out of 10"
+# eerder: abstract_image: /assets/img/projects/churn_abstract_en.svg  (concept-figuur, bestand blijft bewaard)
+abstract_image: /assets/img/projects/churn_resultaten_en.svg
+abstract_alt: "Results from the report. Left: ROC-AUC and PR-AUC of logistic regression, Random Forest and XGBoost (0.79 and 0.37–0.38) against guessing (0.50 and 0.08). Right: what XGBoost predicts; 99% of quitters found, 16% of stayers recognised, and when it says 'stays' it is right 2 in 3 times"
 course: Analysis of Customer Data, autumn 2025
 team: Four students (group 5) · highest grade of all groups
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]

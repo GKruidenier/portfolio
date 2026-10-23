@@ -9,8 +9,9 @@ lead: "Kun je na de eerste dagen al zien of een nieuwe speler blijft of afhaakt?
 description: Churn gedefinieerd uit ruwe speeldata en voorspeld met logistische regressie, Random Forest en XGBoost. Hoogste cijfer van alle groepen.
 image: /assets/img/projects/churn_abstract.png
 abstract: "Uit 150.000 gespeelde potjes van een mobiele game bepaalden we zelf wanneer een speler is afgehaakt: dat geldt voor 92% van de nieuwe spelers. Met acht gedragskenmerken uit de eerste vijf dagen schatten onze modellen een afhaker in 8 van de 10 gevallen riskanter in dan een blijver. Hoogste cijfer van alle groepen."
-abstract_image: /assets/img/projects/churn_abstract.svg
-abstract_alt: "Visuele samenvatting: van twaalf nieuwe spelers haken er elf af; het model leest speelduur, aantal potjes en pauzes en schat in 8 van de 10 gevallen de afhaker riskanter in dan een blijver"
+# eerder: abstract_image: /assets/img/projects/churn_abstract.svg  (concept-figuur, bestand blijft bewaard)
+abstract_image: /assets/img/projects/churn_resultaten.svg
+abstract_alt: "Resultaten uit het verslag. Links: ROC-AUC en PR-AUC van logistische regressie, Random Forest en XGBoost (0,79 en 0,37–0,38) tegen gokken (0,50 en 0,08). Rechts: wat XGBoost voorspelt; 99% van de afhakers gevonden, 16% van de blijvers herkend, en zegt het model 'blijft' dan klopt dat 2 op 3 keer"
 course: Analysis of Customer Data, najaar 2025
 team: Vier studenten (groep 5) · hoogste cijfer van alle groepen
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validatie]
