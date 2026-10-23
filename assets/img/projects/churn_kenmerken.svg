@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="1000" height="500" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<text x="20.0" y="34.0" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">13 kenmerken uit tijdstip en score, 8 gekozen</text>
+<text x="20.0" y="58.0" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start">effectgrootte: hoe sterk een kenmerk blijvers en afhakers uit elkaar haalt</text>
+<line x1="400.0" y1="90" x2="400.0" y2="447" stroke="#4a5163" stroke-width="1"/>
+<text x="400.0" y="465.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="middle">0,0</text>
+<line x1="563.6" y1="90" x2="563.6" y2="447" stroke="#ebe9e3" stroke-width="1"/>
+<text x="563.6" y="465.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="middle">0,5</text>
+<line x1="727.3" y1="90" x2="727.3" y2="447" stroke="#ebe9e3" stroke-width="1"/>
+<text x="727.3" y="465.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="middle">1,0</text>
+<text x="330.0" y="111.0" font-size="13" fill="#1d2230" font-weight="600" text-anchor="end">Speelduur (eerste tot laatste potje)</text>
+<rect x="340" y="99" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#c9783d" stroke-width="1.2"/>
+<text x="365.0" y="111.5" font-size="10.5" fill="#c9783d" font-weight="600" text-anchor="middle">tijd</text>
+<rect x="400" y="100" width="341.9" height="16" rx="3" fill="#2a6fd6"/>
+<text x="748.9" y="112.0" font-size="12" fill="#1f56a8" font-weight="600" text-anchor="start">1,04</text>
+<text x="330.0" y="138.0" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">Aantal speeldagen</text>
+<rect x="340" y="126" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#c9783d" stroke-width="1.2"/>
+<text x="365.0" y="138.5" font-size="10.5" fill="#c9783d" font-weight="600" text-anchor="middle">tijd</text>
+<rect x="400" y="127" width="325.4" height="16" rx="3" fill="#cfcbc2"/>
+<text x="732.4" y="139.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="start">0,99</text>
+<text x="773.4" y="139.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="start">lijkt op speelduur</text>
+<text x="330.0" y="165.0" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">Langste pauze</text>
+<rect x="340" y="153" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#c9783d" stroke-width="1.2"/>
+<text x="365.0" y="165.5" font-size="10.5" fill="#c9783d" font-weight="600" text-anchor="middle">tijd</text>
+<rect x="400" y="154" width="291.9" height="16" rx="3" fill="#cfcbc2"/>
+<text x="698.9" y="166.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="start">0,89</text>
+<text x="739.9" y="166.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="start">lijkt op speelduur</text>
+<text x="330.0" y="192.0" font-size="13" fill="#1d2230" font-weight="600" text-anchor="end">Beste score t.o.v. gemiddelde</text>
+<rect x="340" y="180" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#7d8698" stroke-width="1.2"/>
+<text x="365.0" y="192.5" font-size="10.5" fill="#7d8698" font-weight="600" text-anchor="middle">score</text>
+<rect x="400" y="181" width="245.1" height="16" rx="3" fill="#2a6fd6"/>
+<text x="652.1" y="193.0" font-size="12" fill="#1f56a8" font-weight="600" text-anchor="start">0,75</text>
+<text x="330.0" y="219.0" font-size="13" fill="#1d2230" font-weight="600" text-anchor="end">Moment van de beste score</text>
+<rect x="340" y="207" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#7d8698" stroke-width="1.2"/>
+<text x="365.0" y="219.5" font-size="10.5" fill="#7d8698" font-weight="600" text-anchor="middle">score</text>
+<rect x="400" y="208" width="206.9" height="16" rx="3" fill="#2a6fd6"/>
+<text x="613.9" y="220.0" font-size="12" fill="#1f56a8" font-weight="600" text-anchor="start">0,63</text>
+<text x="330.0" y="246.0" font-size="13" fill="#1d2230" font-weight="600" text-anchor="end">Potjes kort na elkaar (&lt; 15 min)</text>
+<rect x="340" y="234" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#c9783d" stroke-width="1.2"/>
+<text x="365.0" y="246.5" font-size="10.5" fill="#c9783d" font-weight="600" text-anchor="middle">tijd</text>
+<rect x="400" y="235" width="199.2" height="16" rx="3" fill="#2a6fd6"/>
+<text x="606.2" y="247.0" font-size="12" fill="#1f56a8" font-weight="600" text-anchor="start">0,61</text>
+<text x="330.0" y="273.0" font-size="13" fill="#1d2230" font-weight="600" text-anchor="end">Aantal potjes</text>
+<rect x="340" y="261" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#c9783d" stroke-width="1.2"/>
+<text x="365.0" y="273.5" font-size="10.5" fill="#c9783d" font-weight="600" text-anchor="middle">tijd</text>
+<rect x="400" y="262" width="177.8" height="16" rx="3" fill="#2a6fd6"/>
+<text x="584.8" y="274.0" font-size="12" fill="#1f56a8" font-weight="600" text-anchor="start">0,54</text>
+<text x="330.0" y="300.0" font-size="13" fill="#1d2230" font-weight="600" text-anchor="end">Totale score</text>
+<rect x="340" y="288" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#7d8698" stroke-width="1.2"/>
+<text x="365.0" y="300.5" font-size="10.5" fill="#7d8698" font-weight="600" text-anchor="middle">score</text>
+<rect x="400" y="289" width="144.0" height="16" rx="3" fill="#2a6fd6"/>
+<text x="551.0" y="301.0" font-size="12" fill="#1f56a8" font-weight="600" text-anchor="start">0,44</text>
+<text x="330.0" y="327.0" font-size="13" fill="#1d2230" font-weight="600" text-anchor="end">Gemiddelde pauze</text>
+<rect x="340" y="315" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#c9783d" stroke-width="1.2"/>
+<text x="365.0" y="327.5" font-size="10.5" fill="#c9783d" font-weight="600" text-anchor="middle">tijd</text>
+<rect x="400" y="316" width="134.7" height="16" rx="3" fill="#2a6fd6"/>
+<text x="541.7" y="328.0" font-size="12" fill="#1f56a8" font-weight="600" text-anchor="start">0,41</text>
+<text x="330.0" y="354.0" font-size="13" fill="#1d2230" font-weight="600" text-anchor="end">Hoogste score</text>
+<rect x="340" y="342" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#7d8698" stroke-width="1.2"/>
+<text x="365.0" y="354.5" font-size="10.5" fill="#7d8698" font-weight="600" text-anchor="middle">score</text>
+<rect x="400" y="343" width="100.3" height="16" rx="3" fill="#2a6fd6"/>
+<text x="507.3" y="355.0" font-size="12" fill="#1f56a8" font-weight="600" text-anchor="start">0,31</text>
+<text x="330.0" y="381.0" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">Spreiding van de score</text>
+<rect x="340" y="369" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#7d8698" stroke-width="1.2"/>
+<text x="365.0" y="381.5" font-size="10.5" fill="#7d8698" font-weight="600" text-anchor="middle">score</text>
+<rect x="400" y="370" width="98.9" height="16" rx="3" fill="#cfcbc2"/>
+<text x="505.9" y="382.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="start">0,30</text>
+<text x="546.9" y="382.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="start">lijkt op hoogste score</text>
+<text x="330.0" y="408.0" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">Laagste score</text>
+<rect x="340" y="396" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#7d8698" stroke-width="1.2"/>
+<text x="365.0" y="408.5" font-size="10.5" fill="#7d8698" font-weight="600" text-anchor="middle">score</text>
+<rect x="400" y="397" width="52.2" height="16" rx="3" fill="#cfcbc2"/>
+<text x="459.2" y="409.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="start">0,16</text>
+<text x="500.2" y="409.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="start">lijkt op hoogste score</text>
+<text x="330.0" y="435.0" font-size="13" fill="#6f7686" font-weight="500" text-anchor="end">Gemiddelde score</text>
+<rect x="340" y="423" width="50" height="17" rx="8.5" fill="#ffffff" stroke="#7d8698" stroke-width="1.2"/>
+<text x="365.0" y="435.5" font-size="10.5" fill="#7d8698" font-weight="600" text-anchor="middle">score</text>
+<rect x="400" y="424" width="25.3" height="16" rx="3" fill="#cfcbc2"/>
+<text x="432.3" y="436.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="start">0,08</text>
+<text x="473.3" y="436.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="start">lijkt op hoogste score</text>
+<rect x="400" y="467" width="12" height="12" rx="2" fill="#2a6fd6"/>
+<text x="418.0" y="478.0" font-size="12.5" fill="#4a5163" font-weight="600" text-anchor="start">gekozen</text>
+<rect x="500" y="467" width="12" height="12" rx="2" fill="#cfcbc2"/>
+<text x="518.0" y="478.0" font-size="12.5" fill="#4a5163" font-weight="500" text-anchor="start">weggelaten: lijkt sterk op een beter kenmerk</text>
+</svg>

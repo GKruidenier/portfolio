@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="1000" height="470" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<text x="20.0" y="34.0" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">Hoe lang blijven spelers spelen?</text>
+<text x="20.0" y="58.0" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start">14.531 spelers met meer dan één potje · tijd tussen eerste en laatste potje</text>
+<line x1="64" y1="400.0" x2="600" y2="400.0" stroke="#4a5163" stroke-width="1.2"/>
+<text x="56.0" y="404.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end">0</text>
+<line x1="64" y1="316.7" x2="600" y2="316.7" stroke="#ebe9e3" stroke-width="1"/>
+<text x="56.0" y="320.7" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end">300</text>
+<line x1="64" y1="233.3" x2="600" y2="233.3" stroke="#ebe9e3" stroke-width="1"/>
+<text x="56.0" y="237.3" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end">600</text>
+<line x1="64" y1="150.0" x2="600" y2="150.0" stroke="#ebe9e3" stroke-width="1"/>
+<text x="56.0" y="154.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end">900</text>
+<text x="56.0" y="134.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="end">spelers</text>
+<rect x="64.6" y="398.1" width="8.2" height="1.9" fill="#c9783d"/>
+<rect x="74.0" y="397.5" width="8.2" height="2.5" fill="#c9783d"/>
+<rect x="83.4" y="385.6" width="8.2" height="14.4" fill="#c9783d"/>
+<rect x="92.8" y="374.2" width="8.2" height="25.8" fill="#c9783d"/>
+<rect x="102.2" y="356.9" width="8.2" height="43.1" fill="#c9783d"/>
+<rect x="111.6" y="315.8" width="8.2" height="84.2" fill="#c9783d"/>
+<rect x="121.0" y="278.6" width="8.2" height="121.4" fill="#c9783d"/>
+<rect x="130.4" y="228.1" width="8.2" height="171.9" fill="#c9783d"/>
+<rect x="139.8" y="198.6" width="8.2" height="201.4" fill="#c9783d"/>
+<rect x="149.2" y="165.8" width="8.2" height="234.2" fill="#c9783d"/>
+<rect x="158.6" y="176.7" width="8.2" height="223.3" fill="#c9783d"/>
+<rect x="168.0" y="204.2" width="8.2" height="195.8" fill="#c9783d"/>
+<rect x="177.4" y="240.6" width="8.2" height="159.4" fill="#c9783d"/>
+<rect x="186.8" y="251.7" width="8.2" height="148.3" fill="#c9783d"/>
+<rect x="196.2" y="293.1" width="8.2" height="106.9" fill="#c9783d"/>
+<rect x="205.7" y="316.7" width="8.2" height="83.3" fill="#c9783d"/>
+<rect x="215.1" y="330.6" width="8.2" height="69.4" fill="#c9783d"/>
+<rect x="224.5" y="350.6" width="8.2" height="49.4" fill="#c9783d"/>
+<rect x="233.9" y="364.7" width="8.2" height="35.3" fill="#c9783d"/>
+<rect x="243.3" y="371.4" width="8.2" height="28.6" fill="#c9783d"/>
+<rect x="252.7" y="374.4" width="8.2" height="25.6" fill="#c9783d"/>
+<rect x="262.1" y="375.0" width="8.2" height="25.0" fill="#cfcbc2"/>
+<rect x="271.5" y="380.6" width="8.2" height="19.4" fill="#cfcbc2"/>
+<rect x="280.9" y="374.2" width="8.2" height="25.8" fill="#cfcbc2"/>
+<rect x="290.3" y="379.2" width="8.2" height="20.8" fill="#cfcbc2"/>
+<rect x="299.7" y="369.2" width="8.2" height="30.8" fill="#cfcbc2"/>
+<rect x="309.1" y="373.6" width="8.2" height="26.4" fill="#cfcbc2"/>
+<rect x="318.5" y="370.3" width="8.2" height="29.7" fill="#cfcbc2"/>
+<rect x="327.9" y="375.3" width="8.2" height="24.7" fill="#cfcbc2"/>
+<rect x="337.3" y="366.4" width="8.2" height="33.6" fill="#cfcbc2"/>
+<rect x="346.7" y="358.6" width="8.2" height="41.4" fill="#cfcbc2"/>
+<rect x="356.1" y="351.9" width="8.2" height="48.1" fill="#2a6fd6"/>
+<rect x="365.5" y="331.7" width="8.2" height="68.3" fill="#2a6fd6"/>
+<rect x="374.9" y="272.8" width="8.2" height="127.2" fill="#2a6fd6"/>
+<rect x="384.3" y="293.1" width="8.2" height="106.9" fill="#2a6fd6"/>
+<rect x="393.7" y="336.4" width="8.2" height="63.6" fill="#2a6fd6"/>
+<rect x="403.1" y="283.1" width="8.2" height="116.9" fill="#2a6fd6"/>
+<rect x="412.5" y="297.2" width="8.2" height="102.8" fill="#2a6fd6"/>
+<rect x="421.9" y="311.4" width="8.2" height="88.6" fill="#2a6fd6"/>
+<rect x="431.3" y="320.3" width="8.2" height="79.7" fill="#2a6fd6"/>
+<rect x="440.7" y="302.5" width="8.2" height="97.5" fill="#2a6fd6"/>
+<rect x="450.1" y="320.3" width="8.2" height="79.7" fill="#2a6fd6"/>
+<rect x="459.5" y="314.7" width="8.2" height="85.3" fill="#2a6fd6"/>
+<rect x="469.0" y="320.3" width="8.2" height="79.7" fill="#2a6fd6"/>
+<rect x="478.4" y="313.9" width="8.2" height="86.1" fill="#2a6fd6"/>
+<rect x="487.8" y="336.4" width="8.2" height="63.6" fill="#2a6fd6"/>
+<rect x="497.2" y="341.1" width="8.2" height="58.9" fill="#2a6fd6"/>
+<rect x="506.6" y="341.9" width="8.2" height="58.1" fill="#2a6fd6"/>
+<rect x="516.0" y="346.7" width="8.2" height="53.3" fill="#2a6fd6"/>
+<rect x="525.4" y="341.1" width="8.2" height="58.9" fill="#2a6fd6"/>
+<rect x="534.8" y="350.0" width="8.2" height="50.0" fill="#2a6fd6"/>
+<rect x="544.2" y="356.7" width="8.2" height="43.3" fill="#2a6fd6"/>
+<rect x="553.6" y="355.6" width="8.2" height="44.4" fill="#2a6fd6"/>
+<rect x="563.0" y="364.4" width="8.2" height="35.6" fill="#2a6fd6"/>
+<rect x="572.4" y="370.3" width="8.2" height="29.7" fill="#2a6fd6"/>
+<rect x="581.8" y="395.8" width="8.2" height="4.2" fill="#2a6fd6"/>
+<rect x="591.2" y="400.0" width="8.2" height="0.0" fill="#2a6fd6"/>
+<line x1="146.1" y1="400" x2="146.1" y2="405" stroke="#4a5163"/>
+<text x="146.1" y="421.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">1 min</text>
+<line x1="279.9" y1="400" x2="279.9" y2="405" stroke="#4a5163"/>
+<text x="279.9" y="421.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">1 uur</text>
+<line x1="383.7" y1="400" x2="383.7" y2="405" stroke="#4a5163"/>
+<text x="383.7" y="421.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">1 dag</text>
+<line x1="494.8" y1="400" x2="494.8" y2="405" stroke="#4a5163"/>
+<text x="494.8" y="421.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">1 maand</text>
+<line x1="576.5" y1="400" x2="576.5" y2="405" stroke="#4a5163"/>
+<text x="576.5" y="421.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">1 jaar</text>
+<line x1="436.3" y1="128" x2="436.3" y2="400" stroke="#1d2230" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="436.3" y="122.0" font-size="13" fill="#1d2230" font-weight="700" text-anchor="middle">5 dagen</text>
+<text x="165.6" y="143.1" font-size="13" fill="#c9783d" font-weight="700" text-anchor="middle">korte proberders</text>
+<text x="165.6" y="159.1" font-size="12" fill="#6f7686" font-weight="500" text-anchor="middle">stoppen na een paar minuten</text>
+<text x="515.4" y="237.6" font-size="13" fill="#1f56a8" font-weight="700" text-anchor="middle">tweede groep</text>
+<text x="515.4" y="253.6" font-size="12" fill="#6f7686" font-weight="500" text-anchor="middle">speelt dagen tot weken</text>
+<text x="660.0" y="100.0" font-size="15" fill="#1d2230" font-weight="700" text-anchor="start">Van rijen naar spelers</text>
+<rect x="660" y="116" width="320" height="104" rx="10" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="674.0" y="138.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="start">Eén rij per potje</text>
+<text x="674.0" y="158.0" font-size="11.5" fill="#6f7686" font-weight="600" text-anchor="start">speler</text>
+<text x="780.0" y="158.0" font-size="11.5" fill="#6f7686" font-weight="600" text-anchor="start">tijdstip</text>
+<text x="922.0" y="158.0" font-size="11.5" fill="#6f7686" font-weight="600" text-anchor="start">score</text>
+<text x="674.0" y="178.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">3526…9119</text>
+<text x="780.0" y="178.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">13-01 13:54</text>
+<text x="922.0" y="178.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">0</text>
+<text x="674.0" y="195.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">3526…9119</text>
+<text x="780.0" y="195.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">13-01 13:55</text>
+<text x="922.0" y="195.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">7</text>
+<text x="674.0" y="212.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">3526…9119</text>
+<text x="780.0" y="212.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">14-01 00:38</text>
+<text x="922.0" y="212.0" font-size="12" fill="#4a5163" font-weight="500" text-anchor="start">252</text>
+<line x1="820" y1="224" x2="820" y2="250" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="832.0" y="241.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="start">groepeer per speler</text>
+<rect x="660" y="256" width="130" height="40" rx="8" fill="#1d2230"/>
+<text x="725.0" y="281.0" font-size="12.5" fill="#ffffff" font-weight="600" text-anchor="middle">5 dagen volgen</text>
+<rect x="796" y="256" width="184" height="40" rx="8" fill="#ffffff" stroke="#4a5163" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="888.0" y="281.0" font-size="12.5" fill="#4a5163" font-weight="600" text-anchor="middle">12 dagen: speelt nog?</text>
+<path d="M888,300 C888,318 740,312 740,330" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M888,300 C888,318 900,312 900,330" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="660" y="336" width="155" height="60" rx="10" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="737.0" y="361.0" font-size="13.5" fill="#1f56a8" font-weight="700" text-anchor="middle">Ja: blijver</text>
+<text x="737.0" y="383.0" font-size="13" fill="#1f56a8" font-weight="600" text-anchor="middle">8%</text>
+<rect x="825" y="336" width="155" height="60" rx="10" fill="#f7ebe0" stroke="#c9783d" stroke-width="1.5"/>
+<text x="902.0" y="361.0" font-size="13.5" fill="#c9783d" font-weight="700" text-anchor="middle">Nee: afhaker</text>
+<text x="902.0" y="383.0" font-size="13" fill="#c9783d" font-weight="600" text-anchor="middle">92%</text>
+<text x="820.0" y="422.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">één rij per speler, met kenmerken en label</text>
+</svg>
