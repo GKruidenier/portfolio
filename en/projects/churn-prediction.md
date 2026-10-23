@@ -11,8 +11,8 @@ image: /assets/img/projects/churn_abstract.png
 abstract: "Using the bare play data of the mobile game Dodge the Mud (for each game only a player, a timestamp and a score) we predicted which new players quit. Because players do not cancel a subscription, we defined ourselves when someone has quit: whoever stays away for twelve days after five days of play. That applies to 92% of new players. From the raw data we built 13 behavioural features, used 8 of them, and compared three models: logistic regression, Random Forest and XGBoost. They perform roughly equally well, with XGBoost slightly ahead. Put a quitter and a stayer side by side, and the model gives the quitter the higher risk 8 times out of 10 (guessing: 5 out of 10). It finds 99% of quitters, but recognises only 16% of stayers, because stayers are so rare. When the model does say someone will stay, it is right 2 times out of 3. Highest grade of all groups."
 # eerder: abstract_image: /assets/img/projects/churn_abstract_en.svg  (concept-figuur, bestand blijft bewaard)
 # eerder: abstract_image: /assets/img/projects/churn_resultaten_en.svg  (eigen figuur; terug via git tag churn-eigen-figuren)
-abstract_image: /assets/img/projects/churn_nb_confusion.png
-abstract_alt: "Confusion matrices from the notebook for logistic regression, Random Forest and XGBoost. XGBoost correctly predicts 23,745 of the 23,914 quitters and 324 of the 2,042 stayers."
+abstract_image: /assets/img/projects/churn_abstract_resultaten.png
+abstract_alt: "Results table and feature importance chart. ROC-AUC: logistic regression 0.793, Random Forest 0.791, XGBoost 0.791 (guessing 0.50). Quitters found: 99.3–99.4%. Stayers recognised: 12.4%, 14.1% and 15.9% (guessing 8%). Right when it says stays: 64–67% (guessing 8%). Play time (total_duration_hours) is the most important feature for all three models."
 course: Analysis of Customer Data, autumn 2025
 team: Four students (group 5) · highest grade of all groups
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]
@@ -58,15 +58,19 @@ sample:
 {% include slide.html kicker="Feature engineering" title="From raw data to 13 features" text="Loose timestamps and scores tell a model little. So from each player's first five days we built 13 features, such as play time, number of games, breaks and best score. For each feature we measured how strongly stayers and quitters differ. When two features closely resembled each other (correlation above 0.7), we kept only the stronger one. That left 8. With these we trained three models: logistic regression, Random Forest and XGBoost." src="/assets/img/projects/churn_nb_effectgrootte.png" alt="Chart from the notebook: effect size (Cohen's d) of the 13 features between quitters and stayers. Play time has the largest effect (−1.05), average score the smallest (−0.08)." full=true %}
 
 {% comment %} eerder: src="/assets/img/projects/churn_resultaten_en.svg" (eigen figuur) {% endcomment %}
+{% comment %} verwijderd op verzoek (ROC-curves / confusion matrices); terugzetten = comment weghalen
 {% include slide.html kicker="Results" title="ROC-AUC: all three 0.79" text="We tested each model with 5-fold cross-validation, so always on players the model had not seen. The ROC-AUC says how well a model orders players by risk: take a random quitter and a random stayer, and every model gives the quitter the higher risk in 79% of such pairs. Guessing gets 50% (the dashed line). The three curves almost overlap: the models are roughly equally good. This is about the ordering, not about how many players are classified correctly; that is on the next slide." src="/assets/img/projects/churn_nb_roc.png" alt="ROC curves of logistic regression, Random Forest and XGBoost with quitter = 1. The three curves almost overlap, all with an AUC of 0.79, well above the diagonal of guessing (0.50)." %}
+{% endcomment %}
 
+{% comment %} verwijderd op verzoek (ROC-curves / confusion matrices); terugzetten = comment weghalen
 {% include slide.html kicker="Results" title="XGBoost recognises slightly more stayers" text="At the default threshold of 50% probability, the difference lies in the stayers. XGBoost recognises 16% of stayers, Random Forest 14% and logistic regression 12%. The confusion matrices come from the notebook: 'Non-Churned' means stays, 'Churned' means quits. XGBoost (C) finds 23,745 of the 23,914 quitters and recognises 324 of the 2,042 stayers." src="/assets/img/projects/churn_nb_confusion.png" alt="Confusion matrices from the notebook for logistic regression, Random Forest and XGBoost. XGBoost correctly predicts 23,745 of the 23,914 quitters and 324 of the 2,042 stayers." full=true %}
+{% endcomment %}
 
 <section class="slide slide--full slide--text">
   <div class="slide__text">
     <p class="slide__num"><span class="slide__kicker">Results</span></p>
     <h2>The results in numbers</h2>
-    <p>Stratified 5-fold cross-validation on 25,956 players, with quitter = 1 and stayer = 0. All three models beat guessing; the differences between them are small.</p>
+    <p>We tested each model with stratified 5-fold cross-validation on 25,956 players, so always on players it had not seen (quitter = 1, stayer = 0). <strong>ROC-AUC</strong> says how well a model orders players by risk: take a random quitter and a random stayer, and every model gives the quitter the higher risk in 79% of such pairs (guessing: 50%). The three models are roughly equally good; the difference lies in the stayers, where XGBoost recognises slightly more.</p>
   </div>
   <figure class="sample">
     <div class="sample__scroll">
