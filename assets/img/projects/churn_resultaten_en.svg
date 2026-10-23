@@ -64,5 +64,5 @@
 <circle cx="650" cy="410" r="3.5" fill="#2a6fd6"/>
 <text x="660.0" y="414.0" font-size="13" fill="#4a5163" font-weight="500" text-anchor="start">16% of stayers recognised</text>
 <circle cx="650" cy="432" r="3.5" fill="#2a6fd6"/>
-<text x="660.0" y="436.0" font-size="13" fill="#4a5163" font-weight="500" text-anchor="start">when it says ‘stays’: right 2 in 3 times</text>
+<text x="660.0" y="436.0" font-size="13" fill="#4a5163" font-weight="500" text-anchor="start">says ‘stays’: right 2 in 3 times (guessing: 8%)</text>
 </svg>
