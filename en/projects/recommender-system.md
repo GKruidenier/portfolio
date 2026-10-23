@@ -8,9 +8,9 @@ title: Film recommendations from 27 million ratings
 lead: "How well can you predict the rating someone will give a film they haven't seen yet?"
 description: A recommender system on the MovieLens data with KNNBaseline and SVD, tuned and validated. RMSE 0.803.
 image: /assets/img/projects/recommender_rmse_vergelijking_en.png
-abstract: "The assignment: build two recommender systems on the MovieLens data (27.7 million film ratings from 283,228 viewers, 1995 to 2018) and compare them with guessing. One had to be a neighbourhood method (similar films, KNN), the other a matrix factorisation (taste profiles, SVD), each tuned and tested with 5-fold cross-validation. We downsized the data to 3.1 million ratings with the same distribution and tuned both techniques in two search rounds. The best one, taste profiles, is on average 0.8 stars off the real rating; guessing is 1.4 stars off. On a second random split of the data the result stayed the same."
+abstract: "The assignment: build two recommender systems on the MovieLens data (27.7 million film ratings from 283,228 viewers, 1995 to 2018) and compare them with guessing. One had to be a neighbourhood method, which we did with k-nearest neighbours (KNN), the other a matrix factorisation, which we did with singular value decomposition (SVD), each tuned and tested with 5-fold cross-validation. We downsized the data to 3.1 million ratings with the same distribution and tuned both techniques in two search rounds. The best one, SVD, is on average 0.8 stars off the real rating; guessing is 1.4 stars off. On a second random split of the data the result stayed the same."
 abstract_image: /assets/img/projects/recommender_abstract_en.svg
-abstract_alt: "Visual summary: a mostly empty grid of viewers and films; SVD matches taste profiles and fills the empty cell with 4.2 stars, on average 0.8 stars off"
+abstract_alt: "Visual summary: a mostly empty grid of viewers and films; SVD matches hidden preferences of viewers and films and fills the empty cell with 4.2 stars, on average 0.8 stars off"
 course: Analysis of Customer Data, May 2025
 team: Three students (group 9)
 tools: [Python, pandas, Surprise, Collaborative filtering, KNN, SVD, Hyperparameter tuning]
@@ -25,10 +25,10 @@ models:
   - name: "Guessing"
     tag: "NormalPredictor"
     text: "Picks a random rating from the overall distribution."
-  - name: "Similar films"
+  - name: "k-nearest neighbours"
     tag: "KNN"
     text: "Looks at films the same people also liked or disliked. Easy to explain, but heavy on memory."
-  - name: "Taste profiles"
+  - name: "Singular value decomposition"
     tag: "SVD"
     own: true
     text: "Summarises viewers and films in a few hidden taste traits and checks how well they match."
@@ -43,7 +43,7 @@ sample:
   note: "One row per rating: 27 million rows from 283,228 viewers."
 ---
 
-{% include slide.html kicker="Problem" title="What would you rate this film?" text="That is the core of every recommender system: filling in the empty cells, so you can recommend what someone will probably like. **The assignment:** on the MovieLens data (27.7 million ratings of 58,098 films by 283,228 viewers, half stars from 0.5 to 5) build two recommender systems with the Python library Surprise: one that looks at similar films (a neighbourhood method) and one that learns taste profiles (matrix factorisation). Tune both and compare them with a model that guesses, using 5-fold cross-validation and the average error in stars (RMSE)." src="/assets/img/projects/recommender_probleem_en.svg" alt="Grid of viewers and films with filled-in ratings and empty cells; one empty cell is predicted as 4.2 stars" full=true %}
+{% include slide.html kicker="Problem" title="What would you rate this film?" text="That is the core of every recommender system: filling in the empty cells, so you can recommend what someone will probably like. **The assignment:** on the MovieLens data (27.7 million ratings of 58,098 films by 283,228 viewers, half stars from 0.5 to 5) build two recommender systems with the Python library Surprise: a KNN model, which looks at films that the same viewers rated alike, and an SVD model, which learns hidden preferences of viewers and films. Tune both and compare them with a model that guesses, using 5-fold cross-validation and the root mean squared error (RMSE): roughly how many stars a prediction is off on average." src="/assets/img/projects/recommender_probleem_en.svg" alt="Grid of viewers and films with filled-in ratings and empty cells; one empty cell is predicted as 4.2 stars" full=true %}
 
 {% comment %} eerder: src="/assets/img/projects/recommender_cijfers_en.png" (eigen figuur) {% endcomment %}
 {% include data.html kicker="Data" title="27 million ratings" text="Viewers mostly give high ratings: 4 stars is the most common, and half stars are given less often than whole stars." src="/assets/img/projects/recommender_nb_ratings.png" alt="Bar chart from the notebook: number of ratings per score from 0.5 to 5 stars. 4 stars is the most common (7.4 million), then 3 stars (5.5 million)." %}
@@ -59,9 +59,9 @@ sample:
 {% comment %} eerder: zelfgemaakte grafiek recommender_resultaat_en.svg, daarna recommender_nb_rmse.png
 {% include slide.html kicker="Results" title="On average 0.8 stars off" text="The error (RMSE) shows how many stars a prediction is off on average; lower is better. Guessing is 1.4 stars off. Both techniques are about 0.8 off, and tuning the settings (orange) made both a bit better. Taste profiles (SVD) end up closest, just ahead of similar films (KNN). With a different random split the result stayed practically the same." src="/assets/img/projects/recommender_nb_rmse.png" alt="Bar chart in the notebook style of the test RMSE per model with 5-fold cross-validation. Guessing (NormalPredictor) 1.425. KNNBaseline 0.830 with default settings and 0.814 tuned. SVD 0.838 with default settings and 0.803 tuned." full=true %}
 {% endcomment %}
-{% include slide.html kicker="Results" title="On average 0.8 stars off" text="The error (RMSE) shows how many stars a prediction is off on average; lower is better. Guessing is 1.4 stars off. Both techniques are about 0.8 off, and tuning made both a bit better. Taste profiles (SVD) end up closest, just ahead of similar films (KNN). **Why a second random split?** The tuned settings were chosen on one particular way of dividing the data into 5 parts (random seed 42). If a result only holds for that one division, it is luck rather than a good model. So we tested the tuned models again on a completely new random division (seed 101), and for SVD also with a new random start of the model itself. The error barely moved: KNN 0.8143 → 0.8142 and SVD 0.8032 → 0.8034. The tuned settings work on any split of the data, not just the one they were chosen on." src="/assets/img/projects/recommender_nb_resultaten.png" alt="Table of the test RMSE per model with 5-fold cross-validation. Guessing (NormalPredictor) 1.425. KNNBaseline 0.830 default, 0.814 tuned, 0.814 with another random split. SVD 0.838 default, 0.803 tuned, 0.803 with another random split." full=true %}
+{% include slide.html kicker="Results" title="On average 0.8 stars off" text="The error (RMSE) shows how many stars a prediction is off on average; lower is better. Guessing is 1.4 stars off. Both techniques are about 0.8 off, and tuning made both a bit better. SVD ends up closest, just ahead of KNN. **Why a second random split?** The tuned settings were chosen on one particular way of dividing the data into 5 parts (random seed 42). If a result only holds for that one division, it is luck rather than a good model. So we tested the tuned models again on a completely new random division (seed 101), and for SVD also with a new random start of the model itself. The error barely moved: KNN 0.8143 → 0.8142 and SVD 0.8032 → 0.8034. The tuned settings work on any split of the data, not just the one they were chosen on." src="/assets/img/projects/recommender_nb_resultaten.png" alt="Table of the test RMSE per model with 5-fold cross-validation. Guessing (NormalPredictor) 1.425. KNNBaseline 0.830 default, 0.814 tuned, 0.814 with another random split. SVD 0.838 default, 0.803 tuned, 0.803 with another random split." full=true %}
 
-{% include slide.html kicker="Evaluation" title="Explainability or scale?" text="Similar films are easier to explain, but ran out of memory. Taste profiles are more accurate and scale better, but are less transparent." statement=true %}
+{% include slide.html kicker="Evaluation" title="Explainability or scale?" text="KNN is easier to explain, but ran out of memory. SVD is more accurate and scales better, but is less transparent." statement=true %}
 
 <div class="role" markdown="1">
 ## My role
