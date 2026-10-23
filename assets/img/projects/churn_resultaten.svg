@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
 <rect width="1000" height="470" fill="#ffffff"/>
 <text x="20.0" y="34.0" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start">Resultaten van de drie modellen</text>
-<text x="20.0" y="58.0" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start">gestratificeerde 5-voudige kruisvalidatie op 25.956 nieuwe spelers</text>
-<text x="20.0" y="100.0" font-size="15" fill="#1d2230" font-weight="700" text-anchor="start">Scheiden van blijvers en afhakers</text>
+<text x="20.0" y="58.0" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start">gestratificeerde 5-voudige kruisvalidatie op 25.956 nieuwe spelers · afhaker = 1, blijver = 0</text>
+<text x="20.0" y="100.0" font-size="15" fill="#1d2230" font-weight="700" text-anchor="start">Drie modellen, ongeveer even goed</text>
 <line x1="64" y1="380.0" x2="520" y2="380.0" stroke="#4a5163" stroke-width="1.2"/>
 <text x="54.0" y="384.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">0,00</text>
 <line x1="64" y1="317.5" x2="520" y2="317.5" stroke="#ebe9e3" stroke-width="1"/>
@@ -23,14 +23,14 @@
 <text x="257.0" y="175.2" font-size="12" fill="#1f56a8" font-weight="700" text-anchor="middle">0,79</text>
 <text x="188.0" y="404.0" font-size="14" fill="#1d2230" font-weight="700" text-anchor="middle">ROC-AUC</text>
 <rect x="328.0" y="360.3" width="38" height="19.7" fill="#d6d3cc"/>
-<text x="347.0" y="353.3" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">0,08</text>
-<rect x="374.0" y="287.2" width="38" height="92.8" fill="#b6bcc9"/>
-<text x="393.0" y="280.2" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">0,37</text>
-<rect x="420.0" y="285.2" width="38" height="94.8" fill="#7d8698"/>
-<text x="439.0" y="278.2" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">0,38</text>
-<rect x="466.0" y="285.0" width="38" height="95.0" fill="#2a6fd6"/>
-<text x="485.0" y="278.0" font-size="12" fill="#1f56a8" font-weight="700" text-anchor="middle">0,38</text>
-<text x="416.0" y="404.0" font-size="14" fill="#1d2230" font-weight="700" text-anchor="middle">PR-AUC</text>
+<text x="347.0" y="353.3" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">8%</text>
+<rect x="374.0" y="348.9" width="38" height="31.1" fill="#b6bcc9"/>
+<text x="393.0" y="341.9" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">12%</text>
+<rect x="420.0" y="344.9" width="38" height="35.1" fill="#7d8698"/>
+<text x="439.0" y="337.9" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">14%</text>
+<rect x="466.0" y="340.3" width="38" height="39.7" fill="#2a6fd6"/>
+<text x="485.0" y="333.3" font-size="12" fill="#1f56a8" font-weight="700" text-anchor="middle">16%</text>
+<text x="416.0" y="404.0" font-size="14" fill="#1d2230" font-weight="700" text-anchor="middle">Herkende blijvers</text>
 <rect x="64" y="430" width="12" height="12" fill="#d6d3cc"/>
 <text x="82.0" y="440.0" font-size="12.5" fill="#4a5163" font-weight="500" text-anchor="start">Gokken</text>
 <rect x="143.6" y="430" width="12" height="12" fill="#b6bcc9"/>
@@ -41,23 +41,23 @@
 <text x="466.0" y="440.0" font-size="12.5" fill="#4a5163" font-weight="600" text-anchor="start">XGBoost</text>
 <text x="600.0" y="100.0" font-size="15" fill="#1d2230" font-weight="700" text-anchor="start">Wat XGBoost voorspelt</text>
 <text x="820.0" y="136.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">voorspeld</text>
-<text x="755.0" y="356.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="middle">Blijft</text>
-<text x="678.0" y="201.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="end">Blijft</text>
-<text x="885.0" y="356.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="middle">Haakt af</text>
-<text x="678.0" y="293.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="end">Haakt af</text>
+<text x="755.0" y="356.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="middle">Haakt af (1)</text>
+<text x="678.0" y="201.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="end">Haakt af (1)</text>
+<text x="885.0" y="356.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="middle">Blijft (0)</text>
+<text x="678.0" y="293.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="end">Blijft (0)</text>
 <text x="0" y="0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle" transform="translate(612 242.0) rotate(-90)">werkelijk</text>
 <rect x="693" y="153" width="124" height="86" rx="10" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
-<text x="755.0" y="198.0" font-size="22" fill="#1f56a8" font-weight="700" text-anchor="middle">324</text>
-<text x="755.0" y="220.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="middle">16%</text>
+<text x="755.0" y="198.0" font-size="22" fill="#1f56a8" font-weight="700" text-anchor="middle">23.745</text>
+<text x="755.0" y="220.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="middle">99%</text>
 <rect x="823" y="153" width="124" height="86" rx="10" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
-<text x="885.0" y="198.0" font-size="22" fill="#c9783d" font-weight="700" text-anchor="middle">1.718</text>
-<text x="885.0" y="220.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="middle">84%</text>
+<text x="885.0" y="198.0" font-size="22" fill="#c9783d" font-weight="700" text-anchor="middle">169</text>
+<text x="885.0" y="220.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="middle">1%</text>
 <rect x="693" y="245" width="124" height="86" rx="10" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
-<text x="755.0" y="290.0" font-size="22" fill="#c9783d" font-weight="700" text-anchor="middle">169</text>
-<text x="755.0" y="312.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="middle">1%</text>
+<text x="755.0" y="290.0" font-size="22" fill="#c9783d" font-weight="700" text-anchor="middle">1.718</text>
+<text x="755.0" y="312.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="middle">84%</text>
 <rect x="823" y="245" width="124" height="86" rx="10" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
-<text x="885.0" y="290.0" font-size="22" fill="#1f56a8" font-weight="700" text-anchor="middle">23.745</text>
-<text x="885.0" y="312.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="middle">99%</text>
+<text x="885.0" y="290.0" font-size="22" fill="#1f56a8" font-weight="700" text-anchor="middle">324</text>
+<text x="885.0" y="312.0" font-size="12.5" fill="#6f7686" font-weight="600" text-anchor="middle">16%</text>
 <circle cx="650" cy="388" r="3.5" fill="#2a6fd6"/>
 <text x="660.0" y="392.0" font-size="13" fill="#4a5163" font-weight="500" text-anchor="start">99% van de afhakers gevonden</text>
 <circle cx="650" cy="410" r="3.5" fill="#2a6fd6"/>
