@@ -16,13 +16,6 @@ abstract_alt: "Results table and feature importance chart. ROC-AUC: logistic reg
 course: Analysis of Customer Data, autumn 2025
 team: Four students (group 5) · highest grade of all groups
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]
-stats:
-  - value: "92%"
-    label: "of new players quit"
-  - value: "8 in 10"
-    label: "pairs of a quitter and a stayer: the quitter gets the higher risk (guessing: 5 in 10)"
-  - value: "25,956"
-    label: "new players analysed"
 models:
   - name: "Guessing"
     tag: "lower bound"
