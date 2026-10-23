@@ -52,10 +52,51 @@ sample:
 
 
 {% comment %} eerder: src="/assets/img/projects/recommender_pipeline_en.svg" (eigen figuur) {% endcomment %}
-{% include slide.html kicker="Method" title="From 27 million to 3.1 million rows" text="We kept the most popular films and most active viewers and drew a stratified sample of 20%. The ratings in that sample are spread almost exactly like in the full dataset (left versus right, correlation 0.99). Then we tuned the settings and tested on ratings the model had not seen." src="/assets/img/projects/recommender_nb_vergelijking.png" alt="Two bar charts from the notebook: the share of each rating in the full dataset (left) and in the downsized dataset of 3.1 million rows (right). The two look almost the same (correlation 0.99)." full=true %}
+{% include slide.html kicker="Method" title="From 27 million to 3.1 million rows" text="We kept the most popular films and most active viewers and drew a stratified sample of 20%. The ratings in that sample are spread almost exactly like in the full dataset (left versus right, correlation 0.99). On this sample we trained, tuned and tested the models." src="/assets/img/projects/recommender_nb_vergelijking.png" alt="Two bar charts from the notebook: the share of each rating in the full dataset (left) and in the downsized dataset of 3.1 million rows (right). The two look almost the same (correlation 0.99)." full=true %}
 
-{% comment %} eerder: src="/assets/img/projects/recommender_resultaat_en.svg" (eigen figuur) {% endcomment %}
+<section class="slide slide--full slide--text">
+  <div class="slide__text">
+    <p class="slide__num"><span class="slide__kicker">Method</span></p>
+    <h2>Tuning the settings in two rounds</h2>
+    <p>Each technique has settings you choose before training, such as how many similar films to look at. We searched for the best ones in two rounds (hyperparameter tuning). First a <strong>random search</strong>: 100 random combinations from a wide range. Then a <strong>grid search</strong>: every combination in a small range around the best one. Each combination was tested with 5-fold cross-validation, so always on ratings the model had not seen. The combination with the smallest error won.</p>
+  </div>
+  <figure class="sample">
+    <div class="sample__scroll">
+      <table>
+        <thead><tr><th>Technique</th><th>Settings we tuned</th><th>Best combination</th><th>Error before → after</th></tr></thead>
+        <tbody>
+          <tr><td>Similar films (KNN)</td><td>number of similar films, minimum number of similar films, how similarity is measured, shrinkage</td><td>38 films, at least 6, Pearson baseline, shrinkage 160</td><td>0.830 → 0.814</td></tr>
+          <tr><td>Taste profiles (SVD)</td><td>number of taste traits, training rounds, learning rate, regularisation</td><td>160 traits, 55 rounds, learning rate 0.016, regularisation 0.08</td><td>0.838 → <strong>0.803</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sample__note">Error = RMSE: how many stars a prediction is off on average. Before = the default settings of the Surprise library.</p>
+  </figure>
+</section>
+
+{% comment %} eerder: zelfgemaakte grafiek recommender_resultaat_en.svg, daarna recommender_nb_rmse.png
 {% include slide.html kicker="Results" title="On average 0.8 stars off" text="The error (RMSE) shows how many stars a prediction is off on average; lower is better. Guessing is 1.4 stars off. Both techniques are about 0.8 off, and tuning the settings (orange) made both a bit better. Taste profiles (SVD) end up closest, just ahead of similar films (KNN). With a different random split the result stayed practically the same." src="/assets/img/projects/recommender_nb_rmse.png" alt="Bar chart in the notebook style of the test RMSE per model with 5-fold cross-validation. Guessing (NormalPredictor) 1.425. KNNBaseline 0.830 with default settings and 0.814 tuned. SVD 0.838 with default settings and 0.803 tuned." full=true %}
+{% endcomment %}
+<section class="slide slide--full slide--text">
+  <div class="slide__text">
+    <p class="slide__num"><span class="slide__kicker">Results</span></p>
+    <h2>On average 0.8 stars off</h2>
+    <p>The error (RMSE) shows how many stars a prediction is off on average; lower is better. Guessing is 1.4 stars off. Both techniques are about 0.8 off, and tuning made both a bit better. Taste profiles (SVD) end up closest, just ahead of similar films (KNN). With a different random split of the data the result stayed practically the same.</p>
+  </div>
+  <figure class="sample">
+    <div class="sample__scroll">
+      <table>
+        <thead><tr><th>Technique</th><th>Default settings</th><th>Tuned</th><th>Tuned, other random split</th></tr></thead>
+        <tbody>
+          <tr><td>Guessing</td><td>1.425</td><td>–</td><td>–</td></tr>
+          <tr><td>Similar films (KNN)</td><td>0.830</td><td>0.814</td><td>0.814</td></tr>
+          <tr><td><strong>Taste profiles (SVD)</strong></td><td>0.838</td><td><strong>0.803</strong></td><td>0.803</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sample__note">Error in stars (RMSE), tested with 5-fold cross-validation on 3.1 million ratings. Guessing = a random rating drawn from the overall distribution of ratings.</p>
+  </figure>
+</section>
 
 {% include slide.html kicker="Evaluation" title="Explainability or scale?" text="Similar films are easier to explain, but ran out of memory. Taste profiles are more accurate and scale better, but are less transparent." statement=true %}
 
