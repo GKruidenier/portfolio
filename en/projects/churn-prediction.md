@@ -64,6 +64,7 @@ Together with one teammate I did the methodology and analysis: the definition of
 {% include slide.html kicker="Results" title="XGBoost recognises slightly more stayers" text="At the default threshold of 50% probability, the difference lies in the stayers. XGBoost recognises 16% of stayers, Random Forest 14% and logistic regression 12%. The confusion matrices come from the notebook: 'Non-Churned' means stays, 'Churned' means quits. XGBoost (C) finds 23,745 of the 23,914 quitters and recognises 324 of the 2,042 stayers." src="/assets/img/projects/churn_nb_confusion.png" alt="Confusion matrices from the notebook for logistic regression, Random Forest and XGBoost. XGBoost correctly predicts 23,745 of the 23,914 quitters and 324 of the 2,042 stayers." full=true %}
 {% endcomment %}
 
+{% comment %} eerdere HTML-tabel:
 <section class="slide slide--full slide--text">
   <div class="slide__text">
     <p class="slide__num"><span class="slide__kicker">Results</span></p>
@@ -85,6 +86,8 @@ Together with one teammate I did the methodology and analysis: the definition of
     <p class="sample__note">Quitters found = recall for quitters. Stayers recognised = share of stayers the model predicts as stayers. Right when it says “stays” = precision for stayers. Guessing: labelling players at random in the same proportions (92% quit, 8% stay).</p>
   </figure>
 </section>
+{% endcomment %}
+{% include slide.html kicker="Results" title="The results in numbers" text="We tested each model with stratified 5-fold cross-validation on 25,956 players, so always on players it had not seen (quitter = 1, stayer = 0). **ROC-AUC** says how well a model orders players by risk: take a random quitter and a random stayer, and every model gives the quitter the higher risk in 79% of such pairs (guessing: 50%). The three models are roughly equally good; the difference lies in the stayers, where XGBoost recognises slightly more." src="/assets/img/projects/churn_nb_tabel.png" alt="Table: ROC-AUC, quitters found, stayers recognised and how often a stays prediction is right. Guessing 0.50, 92%, 8%, 8%. Logistic regression 0.793, 99.4%, 12.4%, 64%. Random Forest 0.791, 99.4%, 14.1%, 67%. XGBoost 0.791, 99.3%, 15.9%, 66%." full=true %}
 
 {% include slide.html kicker="Results" title="Play time matters most" text="Which features did the models lean on? For all three, play time in the first five days (total_duration_hours) is by far the most important. After that they differ: logistic regression leans on the total score, Random Forest on the average break between games and XGBoost on the number of games. Importance is normalised per model so that it adds up to 1." src="/assets/img/projects/churn_nb_feature_importance.png" alt="Bar chart from the notebook comparing normalised feature importance of logistic regression, Random Forest and XGBoost. total_duration_hours is the most important for all three (about 0.40, 0.34 and 0.60); then total_score for logistic regression, mean_inter_event_hours for Random Forest and total_events for XGBoost." full=true %}
 
