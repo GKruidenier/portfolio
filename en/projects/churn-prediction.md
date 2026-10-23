@@ -14,7 +14,7 @@ abstract: "Using the bare play data of the mobile game Dodge the Mud (for each g
 abstract_image: /assets/img/projects/churn_abstract_resultaten.png
 abstract_alt: "Results table and feature importance chart. ROC-AUC: logistic regression 0.793, Random Forest 0.791, XGBoost 0.791 (guessing 0.50). Churners found: 99.3–99.4%. Non-churners recognised: 12.4%, 14.1% and 15.9% (guessing 8%). Right when it says non-churner: 64–67% (guessing 8%). Play time (total_duration_hours) is the most important feature for all three models."
 course: Analysis of Customer Data, autumn 2025
-team: Four students (group 5) · highest grade of all groups
+team: "Four students (group 5) · highest grade of all groups. My role: with one teammate I did the methodology and analysis (churn definition, features, models and evaluation)."
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]
 models:
   - name: "Guessing"
@@ -40,11 +40,6 @@ sample:
     - ["3526…9119", "14 Jan 2015 00:38", "252"]
   note: "One row per game played: 153,929 rows, nothing else."
 ---
-
-<div class="role" markdown="1">
-## My role
-Together with one teammate I did the methodology and analysis: the definition of quitting, the features, the models and the evaluation.
-</div>
 
 {% comment %} eerder: src="/assets/img/projects/churn_speelduur_en.png" (eigen figuur) {% endcomment %}
 {% include data.html kicker="Context and data" title="Only a timestamp, a score and an ID" text="*Dodge the Mud* is a free casual game for phones. If you see early which players are about to quit, you can still adjust the game. The data is bare: for each game played only a player ID, a timestamp and a score. The data is also skewed: a large share of players (almost 80%) stops within one day." src="/assets/img/projects/churn_nb_speelduur_taart.png" alt="Pie chart from the notebook: 44% of players play one game, 35.4% stop within a day, 7.4% within one to five days and 13.3% play longer than five days." %}
