@@ -15,7 +15,7 @@
     summary: Drie eigen deep-learningarchitecturen die maand- en kwartaaldata direct combineren, getoetst tegen een Dynamic Factor Model, het klassieke nowcastmodel.
     metric: "−10%"
     metric_label: voorspelfout t.o.v. een Dynamic Factor Model op dezelfde data
-    url: /projecten/masterscriptie-bbp-nowcasting/
+    url: /en/projects/master-thesis-gdp-nowcasting/
   en:
     title: "Master's thesis: nowcasting economic growth in real time"
     label: Master's thesis · individual
@@ -36,7 +36,7 @@
     summary: Churn zelf gedefinieerd uit 150.000 gespeelde potjes en voorspeld na de eerste vijf speeldagen. Hoogste cijfer van alle groepen.
     metric: "8 op 10"
     metric_label: keer de afhaker riskanter ingeschat dan een blijver
-    url: /projecten/churn-voorspelling/
+    url: /en/projects/churn-prediction/
   en:
     title: Which players will quit? Predicting churn in a mobile game
     label: Analysis of Customer Data · group 5
@@ -57,7 +57,7 @@
     summary: Een aanbevelingssysteem op de MovieLens-data, met KNN en matrixfactorisatie (SVD) vergeleken en getuned.
     metric: "0,8 ★"
     metric_label: gemiddeld ernaast bij een voorspeld cijfer
-    url: /projecten/aanbevelingssysteem/
+    url: /en/projects/recommender-system/
   en:
     title: Film recommendations from 27 million ratings
     label: Analysis of Customer Data · group 9
@@ -78,7 +78,7 @@
     summary: Een eigen convolutioneel neuraal netwerk dat uit camerabeelden zes toestanden van een bestuurder herkent.
     metric: "95%"
     metric_label: van de testbeelden goed herkend
-    url: /projecten/deep-learning-bestuurders/
+    url: /en/projects/deep-learning-drivers/
   en:
     title: Detecting distracted drivers with deep learning
     label: Deep Learning · group 6
@@ -99,7 +99,7 @@
     summary: Tekst, auteurs en tijdschrift omgezet in features voor een regressiemodel, als één reproduceerbare pipeline.
     metric: "Top 5"
     metric_label: van alle modellen in het vak
-    url: /projecten/citaties-voorspellen/
+    url: /en/projects/citation-prediction/
   en:
     title: Predicting how often a scientific paper will be cited
     label: Machine Learning · individual
@@ -118,7 +118,7 @@
     title: "Bachelorscriptie: combinatietherapieën met glutaminemetabolismeremmers"
     label: BSc Biomedische Wetenschappen · Universiteit Utrecht
     summary: Een literatuurstudie naar combinaties van medicijnen die de resistentie van kankercellen tegen glutaminemetabolismeremmers kunnen doorbreken.
-    url: /projecten/bachelorscriptie/
+    url: /en/projects/bachelor-thesis/
   en:
     title: "Bachelor's thesis: combination therapies with glutamine metabolism inhibitors"
     label: BSc Biomedical Sciences · Utrecht University

@@ -34,7 +34,7 @@
       <ul class="tags tags--small">
         {%- for tag in proj.tags %}<li>{{ tag }}</li>{% endfor %}
       </ul>
-      <span class="card__cta">{{ t.read_more }} →</span>
+      <span class="card__cta">{{ t.read_more }}{% if lang != "en" and info.url contains "/en/" %} ({{ t.in_english }}){% endif %} →</span>
     </div>
   </a>
 </article>
