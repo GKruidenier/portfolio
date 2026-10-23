@@ -4,24 +4,25 @@
 <text x="20.0" y="58.0" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start">stratified 5-fold cross-validation on 25,956 new players · quitter = 1, stayer = 0</text>
 <text x="20.0" y="100.0" font-size="15" fill="#1d2230" font-weight="700" text-anchor="start">Three models, roughly equally good</text>
 <line x1="64" y1="380.0" x2="520" y2="380.0" stroke="#4a5163" stroke-width="1.2"/>
-<text x="54.0" y="384.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">0.00</text>
+<text x="54.0" y="384.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">0%</text>
 <line x1="64" y1="317.5" x2="520" y2="317.5" stroke="#ebe9e3" stroke-width="1"/>
-<text x="54.0" y="321.5" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">0.25</text>
+<text x="54.0" y="321.5" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">25%</text>
 <line x1="64" y1="255.0" x2="520" y2="255.0" stroke="#ebe9e3" stroke-width="1"/>
-<text x="54.0" y="259.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">0.50</text>
+<text x="54.0" y="259.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">50%</text>
 <line x1="64" y1="192.5" x2="520" y2="192.5" stroke="#ebe9e3" stroke-width="1"/>
-<text x="54.0" y="196.5" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">0.75</text>
+<text x="54.0" y="196.5" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">75%</text>
 <line x1="64" y1="130.0" x2="520" y2="130.0" stroke="#ebe9e3" stroke-width="1"/>
-<text x="54.0" y="134.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">1.00</text>
+<text x="54.0" y="134.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="end">100%</text>
 <rect x="100.0" y="255.0" width="38" height="125.0" fill="#d6d3cc"/>
-<text x="119.0" y="248.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">0.50</text>
+<text x="119.0" y="248.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">50%</text>
 <rect x="146.0" y="181.8" width="38" height="198.2" fill="#b6bcc9"/>
-<text x="165.0" y="174.8" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">0.79</text>
+<text x="165.0" y="174.8" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">79%</text>
 <rect x="192.0" y="182.2" width="38" height="197.8" fill="#7d8698"/>
-<text x="211.0" y="175.2" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">0.79</text>
+<text x="211.0" y="175.2" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">79%</text>
 <rect x="238.0" y="182.2" width="38" height="197.8" fill="#2a6fd6"/>
-<text x="257.0" y="175.2" font-size="12" fill="#1f56a8" font-weight="700" text-anchor="middle">0.79</text>
-<text x="188.0" y="404.0" font-size="14" fill="#1d2230" font-weight="700" text-anchor="middle">ROC-AUC</text>
+<text x="257.0" y="175.2" font-size="12" fill="#1f56a8" font-weight="700" text-anchor="middle">79%</text>
+<text x="188.0" y="404.0" font-size="14" fill="#1d2230" font-weight="700" text-anchor="middle">Quitter ranked riskier</text>
+<text x="188.0" y="421.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="middle">(ROC-AUC)</text>
 <rect x="328.0" y="360.3" width="38" height="19.7" fill="#d6d3cc"/>
 <text x="347.0" y="353.3" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">8%</text>
 <rect x="374.0" y="348.9" width="38" height="31.1" fill="#b6bcc9"/>
@@ -31,14 +32,14 @@
 <rect x="466.0" y="340.3" width="38" height="39.7" fill="#2a6fd6"/>
 <text x="485.0" y="333.3" font-size="12" fill="#1f56a8" font-weight="700" text-anchor="middle">16%</text>
 <text x="416.0" y="404.0" font-size="14" fill="#1d2230" font-weight="700" text-anchor="middle">Stayers recognised</text>
-<rect x="64" y="430" width="12" height="12" fill="#d6d3cc"/>
-<text x="82.0" y="440.0" font-size="12.5" fill="#4a5163" font-weight="500" text-anchor="start">Guessing</text>
-<rect x="156.8" y="430" width="12" height="12" fill="#b6bcc9"/>
-<text x="174.8" y="440.0" font-size="12.5" fill="#4a5163" font-weight="500" text-anchor="start">Logistic regression</text>
-<rect x="322.2" y="430" width="12" height="12" fill="#7d8698"/>
-<text x="340.2" y="440.0" font-size="12.5" fill="#4a5163" font-weight="500" text-anchor="start">Random Forest</text>
-<rect x="448.0" y="430" width="12" height="12" fill="#2a6fd6"/>
-<text x="466.0" y="440.0" font-size="12.5" fill="#4a5163" font-weight="600" text-anchor="start">XGBoost</text>
+<rect x="64" y="446" width="12" height="12" fill="#d6d3cc"/>
+<text x="82.0" y="456.0" font-size="12.5" fill="#4a5163" font-weight="500" text-anchor="start">Guessing</text>
+<rect x="156.8" y="446" width="12" height="12" fill="#b6bcc9"/>
+<text x="174.8" y="456.0" font-size="12.5" fill="#4a5163" font-weight="500" text-anchor="start">Logistic regression</text>
+<rect x="322.2" y="446" width="12" height="12" fill="#7d8698"/>
+<text x="340.2" y="456.0" font-size="12.5" fill="#4a5163" font-weight="500" text-anchor="start">Random Forest</text>
+<rect x="448.0" y="446" width="12" height="12" fill="#2a6fd6"/>
+<text x="466.0" y="456.0" font-size="12.5" fill="#4a5163" font-weight="600" text-anchor="start">XGBoost</text>
 <text x="600.0" y="100.0" font-size="15" fill="#1d2230" font-weight="700" text-anchor="start">What XGBoost predicts</text>
 <text x="820.0" y="136.0" font-size="12.5" fill="#6f7686" font-weight="500" text-anchor="middle">predicted</text>
 <text x="755.0" y="356.0" font-size="13" fill="#4a5163" font-weight="600" text-anchor="middle">Quits (1)</text>
