@@ -16,11 +16,11 @@
 <rect x="30" y="337.0" width="178" height="46" rx="23.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
 <text x="119.0" y="367.0" font-size="17" fill="#4a5163" font-weight="600" text-anchor="middle" >Year</text>
 <rect x="262" y="106.0" width="236" height="76" rx="12" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
-<text x="280" y="138.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Distinctive words</text>
-<text x="280" y="164.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >TF-IDF</text>
+<text x="280" y="138.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >TF-IDF</text>
+<text x="280" y="164.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >distinctive words</text>
 <rect x="262" y="202.0" width="236" height="76" rx="12" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
-<text x="280" y="234.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Meaning of the title</text>
-<text x="280" y="260.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >language model (Sentence-BERT)</text>
+<text x="280" y="234.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Sentence-BERT</text>
+<text x="280" y="260.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >embeddings of the title</text>
 <rect x="262" y="298.0" width="236" height="76" rx="12" fill="#f6e7da" stroke="#c9783d" stroke-width="1.5"/>
 <text x="280" y="330.0" font-size="19" fill="#1d2230" font-weight="700" text-anchor="start" >Who and where</text>
 <text x="280" y="356.0" font-size="14.5" fill="#4a5163" font-weight="400" text-anchor="start" >authors, venue, year</text>
@@ -34,8 +34,8 @@
 <path d="M500,240.0 C524.0,240.0 524.0,240 542,240" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
 <path d="M500,336.0 C524.0,336.0 524.0,240 542,240" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="548" y="180.0" width="196" height="120" rx="14" fill="#1d2230"/>
-<text x="646.0" y="236" font-size="19" fill="#ffffff" font-weight="700" text-anchor="middle" >Simple model</text>
-<text x="646.0" y="264" font-size="14.5" fill="#c9cdd8" font-weight="400" text-anchor="middle" >Ridge regression</text>
+<text x="646.0" y="236" font-size="19" fill="#ffffff" font-weight="700" text-anchor="middle" >Ridge regression</text>
+<text x="646.0" y="264" font-size="14.5" fill="#c9cdd8" font-weight="400" text-anchor="middle" >linear model</text>
 <line x1="746" y1="240" x2="782" y2="240" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
 <circle cx="862" cy="240" r="72" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
 <text x="862" y="221" font-size="18" fill="#1f56a8" font-weight="700" text-anchor="middle" >Number of</text>

@@ -3,7 +3,7 @@
 <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker><marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c9783d"/></marker></defs>
 <text x="40" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Camera image</text>
 <text x="40" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >driver in the car</text>
-<text x="330" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Custom neural network</text>
+<text x="330" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Custom CNN</text>
 <text x="330" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >learns what to look for</text>
 <text x="820" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="middle" >Finding</text>
 <text x="820" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="middle" >six states recognised</text>
@@ -25,7 +25,7 @@
 <line x1="492" y1="206" x2="510" y2="206" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
 <path d="M514,176.0 l10,-10 h48 v60 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
 <rect x="514" y="176.0" width="48" height="60" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
-<text x="447.0" y="318" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >more features per layer</text>
+<text x="447.0" y="318" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >more filters per layer</text>
 <line x1="574" y1="206" x2="640" y2="206" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
 <rect x="648" y="104" width="120" height="24" rx="12" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
 <text x="708" y="121" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >safe</text>
@@ -41,6 +41,6 @@
 <text x="708" y="271" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >yawning</text>
 <circle cx="870" cy="196" r="72" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
 <text x="870" y="202" font-size="34" fill="#1f56a8" font-weight="700" text-anchor="middle" >95%</text>
-<text x="870" y="228" font-size="14" fill="#1f56a8" font-weight="600" text-anchor="middle" >recognised</text>
-<text x="870" y="300" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >first model: 79%</text>
+<text x="870" y="228" font-size="14" fill="#1f56a8" font-weight="600" text-anchor="middle" >accuracy</text>
+<text x="870" y="300" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >baseline CNN: 79%</text>
 </svg>

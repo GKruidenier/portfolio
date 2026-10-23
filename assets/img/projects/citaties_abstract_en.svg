@@ -4,7 +4,7 @@
 <text x="40" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >A new paper</text>
 <text x="40" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >title, abstract, authors</text>
 <text x="380" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="start" >Text becomes numbers</text>
-<text x="380" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >words and meaning as features</text>
+<text x="380" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="start" >TF-IDF and Sentence-BERT features</text>
 <text x="850" y="52" font-size="17" fill="#1d2230" font-weight="700" text-anchor="middle" >Finding</text>
 <text x="850" y="74" font-size="14" fill="#6f7686" font-weight="400" text-anchor="middle" >how often cited?</text>
 <rect x="48" y="112" width="250" height="230" rx="10" fill="#e4e1d8"/>
@@ -40,10 +40,10 @@
 <line x1="572" y1="216" x2="606" y2="216" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
 <rect x="612" y="180" width="110" height="72" rx="12" fill="#1d2230"/>
 <text x="667" y="214" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle" >Ridge</text>
-<text x="667" y="236" font-size="12.5" fill="#c9cdd8" font-weight="500" text-anchor="middle" >simple model</text>
+<text x="667" y="236" font-size="12.5" fill="#c9cdd8" font-weight="500" text-anchor="middle" >regression</text>
 <line x1="726" y1="216" x2="768" y2="216" stroke="#6f7686" stroke-width="1.8" marker-end="url(#a)"/>
 <circle cx="850" cy="216" r="76" fill="#e7effb" stroke="#2a6fd6" stroke-width="2.5"/>
 <text x="850" y="222" font-size="32" fill="#1f56a8" font-weight="700" text-anchor="middle" >Top 5</text>
 <text x="850" y="248" font-size="14" fill="#1f56a8" font-weight="600" text-anchor="middle" >of the course</text>
-<text x="850" y="326" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >simple beat complex</text>
+<text x="850" y="326" font-size="14" fill="#6f7686" font-weight="500" text-anchor="middle" >linear beat tree-based</text>
 </svg>

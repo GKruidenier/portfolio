@@ -6,7 +6,7 @@ project: oosterslicht
 section: personal
 title: "Oosterslicht: a website for handmade lamps"
 lead: "A new website for our family business in Japanese lamps made of wood and paper."
-description: The website of Oosterslicht, a family business in handmade Japanese lamps. Design, build, copy, product photography and SEO.
+description: The website of Oosterslicht, a family business in handmade Japanese lamps. Design, build, copy, product photography and search engine optimisation (SEO).
 image: /assets/img/projects/oosterslicht_poster.jpg
 abstract: "The old site was outdated and hard to maintain. I built a fast, calm website the family can update themselves, and also did the copy, the product photos and search visibility."
 course: Personal project, 2026
@@ -26,7 +26,7 @@ stats:
 </div>
 
 <ul class="tiles">
-  <li><strong>Design and build</strong>Static site in HTML, CSS and JavaScript, with a filter by lamp type.</li>
+  <li><strong>Design and build</strong>Static site in HyperText Markup Language (HTML), Cascading Style Sheets (CSS) and JavaScript, with a filter by lamp type.</li>
   <li><strong>Photos and copy</strong>Product photos shot and edited myself.</li>
   <li><strong>Ordering</strong>A form to request a made-to-measure lamp.</li>
   <li><strong>Findable</strong>Own titles, descriptions and redirects for every page.</li>

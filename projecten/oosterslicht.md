@@ -6,7 +6,7 @@ project: oosterslicht
 section: personal
 title: "Oosterslicht: een website voor ambachtelijke lampen"
 lead: "Een nieuwe website voor ons familiebedrijf in Japanse lampen van hout en papier."
-description: De website van Oosterslicht, een familiebedrijf in handgemaakte Japanse lampen. Ontwerp, bouw, teksten, productfotografie en SEO.
+description: De website van Oosterslicht, een familiebedrijf in handgemaakte Japanse lampen. Ontwerp, bouw, teksten, productfotografie en zoekmachineoptimalisatie (SEO).
 image: /assets/img/projects/oosterslicht_poster.jpg
 abstract: "De oude site was verouderd en lastig te onderhouden. Ik bouwde een snelle, rustige website die de familie zelf kan bijhouden, en deed ook de teksten, de productfoto's en de vindbaarheid."
 course: Persoonlijk project, 2026
@@ -26,7 +26,7 @@ stats:
 </div>
 
 <ul class="tiles">
-  <li><strong>Ontwerp en bouw</strong>Statische site in HTML, CSS en JavaScript, met filter op type lamp.</li>
+  <li><strong>Ontwerp en bouw</strong>Statische site in HyperText Markup Language (HTML), Cascading Style Sheets (CSS) en JavaScript, met filter op type lamp.</li>
   <li><strong>Foto's en teksten</strong>Productfoto's zelf geschoten en nabewerkt.</li>
   <li><strong>Bestellen</strong>Formulier om een lamp op maat aan te vragen.</li>
   <li><strong>Vindbaar</strong>Eigen titels, beschrijvingen en doorverwijzingen per pagina.</li>

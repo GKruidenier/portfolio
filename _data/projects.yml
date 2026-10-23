@@ -12,16 +12,16 @@
   nl:
     title: "Masterscriptie: economische groei in real time voorspellen"
     label: Masterscriptie · individueel
-    summary: Drie eigen deep-learningarchitecturen die maand- en kwartaaldata direct combineren, getoetst tegen een Dynamic Factor Model, het klassieke nowcastmodel.
+    summary: Drie eigen deep-learningarchitecturen op basis van long short-term memory (LSTM) en gated recurrent units (GRU) die maand- en kwartaaldata direct combineren, getoetst tegen een Dynamic Factor Model (DFM).
     metric: "−10%"
-    metric_label: voorspelfout t.o.v. een Dynamic Factor Model op dezelfde data
+    metric_label: voorspelfout t.o.v. een DFM op dezelfde data
     url: /en/projects/master-thesis-gdp-nowcasting/
   en:
     title: "Master's thesis: nowcasting economic growth in real time"
     label: Master's thesis · individual
-    summary: Three custom deep-learning architectures that combine monthly and quarterly data directly, tested against a Dynamic Factor Model, the classic nowcasting model.
+    summary: Three custom deep-learning architectures based on long short-term memory (LSTM) and gated recurrent units (GRU) that combine monthly and quarterly data directly, tested against a Dynamic Factor Model (DFM).
     metric: "−10%"
-    metric_label: forecast error vs. a Dynamic Factor Model on the same data
+    metric_label: forecast error vs. a DFM on the same data
     url: /en/projects/master-thesis-gdp-nowcasting/
 
 - id: churn
@@ -54,14 +54,14 @@
   nl:
     title: Filmaanbevelingen op basis van 27 miljoen beoordelingen
     label: Analysis of Customer Data · groep 9
-    summary: Een aanbevelingssysteem op de MovieLens-data, met KNN en matrixfactorisatie (SVD) vergeleken en getuned.
+    summary: Een aanbevelingssysteem op de MovieLens-data, met k-nearest neighbours (KNN) en matrixfactorisatie met singular value decomposition (SVD) vergeleken en getuned.
     metric: "0,8 ★"
     metric_label: gemiddeld ernaast bij een voorspeld cijfer
     url: /en/projects/recommender-system/
   en:
     title: Film recommendations from 27 million ratings
     label: Analysis of Customer Data · group 9
-    summary: A recommender system on the MovieLens data, comparing and tuning KNN and matrix factorisation (SVD).
+    summary: A recommender system on the MovieLens data, comparing and tuning k-nearest neighbours (KNN) and matrix factorisation with singular value decomposition (SVD).
     metric: "0.8 ★"
     metric_label: off on average for a predicted rating
     url: /en/projects/recommender-system/
@@ -75,16 +75,16 @@
   nl:
     title: Afgeleide bestuurders herkennen met deep learning
     label: Deep Learning · groep 6
-    summary: Een eigen convolutioneel neuraal netwerk dat uit camerabeelden zes toestanden van een bestuurder herkent.
+    summary: Een eigen convolutional neural network (CNN) dat uit camerabeelden zes toestanden van een bestuurder herkent.
     metric: "95%"
-    metric_label: van de testbeelden goed herkend
+    metric_label: accuracy op de testbeelden
     url: /en/projects/deep-learning-drivers/
   en:
     title: Detecting distracted drivers with deep learning
     label: Deep Learning · group 6
-    summary: A custom convolutional neural network that recognises six driver states from in-car camera images.
+    summary: A custom convolutional neural network (CNN) that recognises six driver states from in-car camera images.
     metric: "95%"
-    metric_label: of test images recognised correctly
+    metric_label: accuracy on the test images
     url: /en/projects/deep-learning-drivers/
 
 - id: citations
@@ -96,14 +96,14 @@
   nl:
     title: Voorspellen hoe vaak een wetenschappelijk artikel wordt geciteerd
     label: Machine Learning · individueel
-    summary: Tekst, auteurs en tijdschrift omgezet in features voor een regressiemodel, als één reproduceerbare pipeline.
+    summary: Tekst, auteurs en tijdschrift omgezet in features met natural language processing (NLP) voor een Ridge-regressie, als één reproduceerbare pipeline.
     metric: "Top 5"
     metric_label: van alle modellen in het vak
     url: /en/projects/citation-prediction/
   en:
     title: Predicting how often a scientific paper will be cited
     label: Machine Learning · individual
-    summary: Text, authors and venue turned into features for a regression model, as one reproducible pipeline.
+    summary: Text, authors and venue turned into features with natural language processing (NLP) for a Ridge regression, as one reproducible pipeline.
     metric: "Top 5"
     metric_label: of all models in the course
     url: /en/projects/citation-prediction/

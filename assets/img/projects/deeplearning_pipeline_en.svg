@@ -2,7 +2,7 @@
 <rect y="60" width="960" height="386" fill="#ffffff"/>
 <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
 <text x="30" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">INPUT</text>
-<text x="250" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">CUSTOM NEURAL NETWORK</text>
+<text x="250" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.5">CONVOLUTIONAL NEURAL NETWORK (CNN)</text>
 <text x="560" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5"></text>
 <text x="830" y="90" font-size="15" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.5">OUTPUT</text>
 <rect x="30" y="174" width="176" height="132" rx="8" fill="#e8e8e8" stroke="#bdbdbd" stroke-width="1.5"/>
@@ -26,10 +26,10 @@
 <path d="M434,210.0 l10,-10 h46 v60 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
 <rect x="434" y="210.0" width="46" height="60" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
 <text x="457.0" y="338" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >256</text>
-<text x="369.0" y="360" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >more and more features per layer</text>
+<text x="369.0" y="360" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >filters per convolutional layer</text>
 <line x1="494" y1="240" x2="524" y2="240" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="530" y="160" width="22" height="160" rx="6" fill="#1d2230"/>
-<text x="541" y="352" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >decision</text>
+<text x="541" y="352" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >softmax</text>
 <line x1="554" y1="240" x2="722" y2="140.0" stroke="#e4e1d8" stroke-width="1.2"/>
 <rect x="730" y="126.0" width="200" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
 <text x="740" y="147.0" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Safe</text>
@@ -50,5 +50,5 @@
 <rect x="730" y="326.0" width="200" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
 <text x="740" y="347.0" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Yawning</text>
 <line x1="30" y1="396" x2="930" y2="396" stroke="#e4e1d8"/>
-<text x="30" y="426" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Settings tuned automatically · compared with a simple and a pretrained network</text>
+<text x="30" y="426" font-size="15" fill="#6f7686" font-weight="500" text-anchor="start" >Hyperparameters tuned with Optuna · compared with a baseline CNN and DenseNet121</text>
 </svg>

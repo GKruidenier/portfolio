@@ -6,8 +6,8 @@ project: citations
 section: master
 title: Predicting how often a scientific paper will be cited
 lead: "Can you predict how often a paper will be cited from its title, abstract, authors, venue and year?"
-description: An NLP and regression pipeline (TF-IDF, Sentence-BERT, Ridge) that predicts citation counts. Top 5 of the Machine Learning course.
-abstract: "A pipeline that predicts how often a scientific paper will be cited from its title, abstract, authors, venue and year. A simple model on well-chosen features finished in the top 5 of the course."
+description: A natural language processing (NLP) pipeline with TF-IDF, Sentence-BERT and Ridge regression that predicts citation counts. Top 5 of the Machine Learning course.
+abstract: "A natural language processing (NLP) pipeline that predicts how often a scientific paper will be cited from its title, abstract, authors, venue and year. A Ridge regression on term frequency–inverse document frequency (TF-IDF) and Sentence-BERT features finished in the top 5 of the course."
 abstract_image: /assets/img/projects/citaties_abstract_en.svg
 abstract_alt: "Visual summary: a paper is turned into numbers and a simple Ridge regression predicts its citation count; top 5 of the course"
 course: Machine Learning, MSc Data Science and Society
@@ -21,16 +21,16 @@ stats:
   - value: "1"
     label: "script runs the whole pipeline, from installation to prediction"
 models:
-  - name: "Straight-line models"
-    tag: "linear, Lasso, Ridge"
-    text: "Add up the features, each with a weight. Ridge holds back weights that grow too large."
-  - name: "Tree models"
+  - name: "Linear models"
+    tag: "linear regression, Lasso, Ridge"
+    text: "Add up the features, each with a weight. Ridge regression penalises weights that grow too large (L2 regularisation)."
+  - name: "Tree-based models"
     tag: "Random Forest, LightGBM"
-    text: "Many decision trees together. More powerful, but more sensitive to noise."
-  - name: "Chosen: Ridge"
-    tag: "simple model"
+    text: "Ensembles of many decision trees, including Light Gradient Boosting Machine (LightGBM). More powerful, but more sensitive to noise."
+  - name: "Ridge regression"
+    tag: "chosen model"
     own: true
-    text: "Beat every other combination on papers the model had not seen."
+    text: "Beat every other combination on the validation papers."
 sample:
   caption: "What the data looks like"
   columns: ["Title", "Venue", "Year", "Citations"]
@@ -48,11 +48,11 @@ sample:
 
 {% include models.html kicker="Models" title="Simple versus complex" text="Dozens of combinations of features and models compared on papers the model had not seen." %}
 
-{% include slide.html kicker="Method" title="From text to numbers" text="A model works with numbers, so I converted the text: which words are distinctive, and what the title means (using a language model). The model predicts the square root of the citation count, so the few extremely cited papers do not dominate." src="/assets/img/projects/citaties_pipeline_en.svg" alt="Pipeline: title, abstract, authors, venue and year become distinctive words, the meaning of the title and details on authors and venue, with which a simple model predicts the citation count" full=true %}
+{% include slide.html kicker="Method" title="From text to numbers" text="A model works with numbers, so I converted the text into features: TF-IDF scores for distinctive words, and Sentence-BERT embeddings for the meaning of the title. Sentence-BERT is a language model built on Bidirectional Encoder Representations from Transformers (BERT). The model predicts the square root of the citation count, so the few extremely cited papers do not dominate." src="/assets/img/projects/citaties_pipeline_en.svg" alt="Pipeline: title, abstract, authors, venue and year become TF-IDF features, Sentence-BERT embeddings and author and venue features, with which a Ridge regression predicts the citation count" full=true %}
 
 {% include slide.html kicker="Results" title="Among the best five of the course" text="The teachers held back the real citation counts and ranked all predictions. My model finished among the five best of all students." src="/assets/img/projects/citaties_ranglijst_en.svg" alt="Illustration of the leaderboard: the top five places are highlighted, my model was in that group" big="Top 5" %}
 
-{% include slide.html kicker="Evaluation" title="Simple wins" text="A simple model on well-chosen features beat the heavier tree models. Extra features, such as an author's influence (h-index), added nothing." statement=true %}
+{% include slide.html kicker="Evaluation" title="Simple wins" text="A Ridge regression on well-chosen features beat the heavier tree-based models. Extra features, such as an author's influence (h-index), added nothing." statement=true %}
 
 <div class="role" markdown="1">
 ## My role
