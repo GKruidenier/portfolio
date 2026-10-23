@@ -179,7 +179,8 @@ p { margin: 0 0 1em; }
 .card__link { display: flex; flex-direction: column; height: 100%; color: inherit; text-decoration: none; }
 .card__link:hover { color: inherit; }
 .card__media { aspect-ratio: 16 / 9; background: #fff; border-bottom: 1px solid var(--line); display: grid; place-items: center; overflow: hidden; }
-.card__media img { width: 100%; height: 100%; object-fit: contain; padding: 10px; }
+.card__media { position: relative; }
+.card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px; }
 .card__media--photo img { object-fit: cover; object-position: top; padding: 0; }
 .card__media--placeholder { background: linear-gradient(135deg, var(--accent-soft), #f6ecdf); }
 .card__media--citations { background: linear-gradient(135deg, #1d2230, #2a3c66); }

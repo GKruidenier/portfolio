@@ -3,6 +3,9 @@
 {%- assign info = proj[lang] -%}
 {%- assign t = site.data.i18n[lang] -%}
 {%- if lang == "en" and proj.image_en -%}{%- assign img = proj.image_en -%}{%- else -%}{%- assign img = proj.image -%}{%- endif -%}
+{%- comment -%} Thumbnail = het abstract-plaatje van de projectpagina zelf, zodat ze altijd gelijk lopen. {%- endcomment -%}
+{%- assign target = site.pages | where: "url", info.url | first -%}
+{%- if target.abstract_image -%}{%- assign img = target.abstract_image -%}{%- endif -%}
 {%- if proj.status == "coming-soon" -%}
 <article class="card card--soon">
   <div class="card__media card__media--placeholder" aria-hidden="true"><span>{{ t.coming_soon }}</span></div>
