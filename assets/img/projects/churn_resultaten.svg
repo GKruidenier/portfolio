@@ -21,8 +21,8 @@
 <text x="211.0" y="175.2" font-size="12" fill="#4a5163" font-weight="600" text-anchor="middle">79%</text>
 <rect x="238.0" y="182.2" width="38" height="197.8" fill="#2a6fd6"/>
 <text x="257.0" y="175.2" font-size="12" fill="#1f56a8" font-weight="700" text-anchor="middle">79%</text>
-<text x="188.0" y="404.0" font-size="14" fill="#1d2230" font-weight="700" text-anchor="middle">Afhaker riskanter ingeschat</text>
-<text x="188.0" y="421.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="middle">(ROC-AUC)</text>
+<text x="188.0" y="404.0" font-size="14" fill="#1d2230" font-weight="700" text-anchor="middle">Afhaker boven blijver</text>
+<text x="188.0" y="421.0" font-size="12" fill="#6f7686" font-weight="500" text-anchor="middle">per paar (ROC-AUC)</text>
 <rect x="328.0" y="360.3" width="38" height="19.7" fill="#d6d3cc"/>
 <text x="347.0" y="353.3" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">8%</text>
 <rect x="374.0" y="348.9" width="38" height="31.1" fill="#b6bcc9"/>
