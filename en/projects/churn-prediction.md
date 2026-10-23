@@ -41,6 +41,11 @@ sample:
   note: "One row per game played: 153,929 rows, nothing else."
 ---
 
+<div class="role" markdown="1">
+## My role
+Together with one teammate I did the methodology and analysis: the definition of quitting, the features, the models and the evaluation.
+</div>
+
 {% comment %} eerder: src="/assets/img/projects/churn_speelduur_en.png" (eigen figuur) {% endcomment %}
 {% include data.html kicker="Context and data" title="Only a timestamp, a score and an ID" text="*Dodge the Mud* is a free casual game for phones. If you see early which players are about to quit, you can still adjust the game. The data is bare: for each game played only a player ID, a timestamp and a score. The data is also skewed: a large share of players (almost 80%) stops within one day." src="/assets/img/projects/churn_nb_speelduur_taart.png" alt="Pie chart from the notebook: 44% of players play one game, 35.4% stop within a day, 7.4% within one to five days and 13.3% play longer than five days." %}
 
@@ -84,8 +89,3 @@ sample:
 {% include slide.html kicker="Results" title="Play time matters most" text="Which features did the models lean on? For all three, play time in the first five days (total_duration_hours) is by far the most important. After that they differ: logistic regression leans on the total score, Random Forest on the average break between games and XGBoost on the number of games. Importance is normalised per model so that it adds up to 1." src="/assets/img/projects/churn_nb_feature_importance.png" alt="Bar chart from the notebook comparing normalised feature importance of logistic regression, Random Forest and XGBoost. total_duration_hours is the most important for all three (about 0.40, 0.34 and 0.60); then total_score for logistic regression, mean_inter_event_hours for Random Forest and total_events for XGBoost." full=true %}
 
 {% include slide.html kicker="Evaluation" title="Finding quitters is easy, recognising stayers is not" text="The model finds 99% of quitters, but recognises only 12–16% of stayers. That is due to the skewed distribution. There are far fewer stayers to learn from, and during training each model makes the average error over all players as small as possible. Because 92% quit, 'quits' almost always gives the smallest error, so at the default threshold of 50% probability the model mostly predicts that. When it does say someone will stay, it is right 2 times out of 3 (without a model 8%). A next step is choosing other time windows, so stayers are less rare, giving stayers more weight or shifting the threshold." statement=true %}
-
-<div class="role" markdown="1">
-## My role
-Together with one teammate I did the methodology and analysis: the definition of quitting, the features, the models and the evaluation.
-</div>
