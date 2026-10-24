@@ -4,7 +4,7 @@ lang: en
 ref: churn
 project: churn
 section: master
-title: Which players will quit? Predicting churn in a mobile game
+title: Predicting customer churn in a mobile game
 lead: "Can you tell after the first few days whether a new player will stay or quit?"
 description: Churn defined from raw play logs and predicted with logistic regression, Random Forest and XGBoost. Highest grade of all groups.
 image: /assets/img/projects/churn_abstract.png

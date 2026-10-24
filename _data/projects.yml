@@ -31,18 +31,18 @@
   image_en: /assets/img/projects/churn_abstract_en.svg
   tags: [XGBoost, scikit-learn, Feature engineering]
   nl:
-    title: Welke spelers haken af? Churn voorspellen in een mobiele game
+    title: Predicting customer churn in a mobile game
     label: Analysis of Customer Data · groep 5
     summary: Churn zelf gedefinieerd uit 150.000 gespeelde potjes en voorspeld na de eerste vijf speeldagen. Hoogste cijfer van alle groepen.
     metric: "8 op 10"
-    metric_label: keer de afhaker riskanter ingeschat dan een blijver
+    metric_label: keer een churner riskanter ingeschat dan een non-churner
     url: /en/projects/churn-prediction/
   en:
-    title: Which players will quit? Predicting churn in a mobile game
+    title: Predicting customer churn in a mobile game
     label: Analysis of Customer Data · group 5
     summary: Defined churn from 150,000 games played and predicted it after a player's first five days. Highest grade of all groups.
     metric: "8 in 10"
-    metric_label: times the quitter ranked riskier than a stayer
+    metric_label: times a churner ranked riskier than a non-churner
     url: /en/projects/churn-prediction/
 
 - id: recommender
