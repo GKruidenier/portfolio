@@ -6,15 +6,15 @@ project: churn
 section: master
 title: Predicting customer churn in a mobile game
 lead: "Can you tell after the first few days whether a new player will stay or quit?"
-description: Churn defined from raw play logs and predicted with logistic regression, Random Forest and XGBoost. Highest grade of all groups.
+description: Churn defined from raw play logs and predicted with logistic regression, Random Forest and XGBoost.
 image: /assets/img/projects/churn_abstract.png
-abstract: "Using the bare play data of the mobile game Dodge the Mud (for each game only a player, a timestamp and a score) we predicted which new players quit. Because players do not cancel a subscription, we defined ourselves when someone has quit: whoever stays away for twelve days after five days of play. That applies to 92% of new players. From the raw data we built 13 behavioural features, used 8 of them, and compared three models: logistic regression, Random Forest and eXtreme Gradient Boosting (XGBoost). They perform roughly equally well, with XGBoost slightly ahead. The Receiver Operating Characteristic – Area Under the Curve (ROC-AUC) is 0.79 for all three (guessing: 0.50): put a churner and a non-churner side by side, and the model gives the churner the higher risk in 79% of cases. The recall for churners is 99%, but the specificity is only 16%: the model recognises few non-churners, because they are so rare. Its negative predictive value (NPV) is 66%: when it predicts that a player will not churn, it is right 2 times out of 3. Highest grade of all groups."
+abstract: "Using the bare play data of the mobile game Dodge the Mud (for each game only a player, a timestamp and a score) we predicted which new players quit. Because players do not cancel a subscription, we defined ourselves when someone has quit: whoever stays away for twelve days after five days of play. That applies to 92% of new players. From the raw data we built 13 behavioural features, used 8 of them, and compared three models: logistic regression, Random Forest and eXtreme Gradient Boosting (XGBoost). They perform roughly equally well, with XGBoost slightly ahead. The Receiver Operating Characteristic – Area Under the Curve (ROC-AUC) is 0.79 for all three (guessing: 0.50): put a churner and a non-churner side by side, and the model gives the churner the higher risk in 79% of cases. The recall for churners is 99%, but the specificity is only 16%: the model recognises few non-churners, because they are so rare. Its negative predictive value (NPV) is 66%: when it predicts that a player will not churn, it is right 2 times out of 3."
 # eerder: abstract_image: /assets/img/projects/churn_abstract_en.svg  (concept-figuur, bestand blijft bewaard)
 # eerder: abstract_image: /assets/img/projects/churn_resultaten_en.svg  (eigen figuur; terug via git tag churn-eigen-figuren)
 abstract_image: /assets/img/projects/churn_abstract_resultaten.png
 abstract_alt: "Results table and feature importance chart. ROC-AUC: logistic regression 0.793, Random Forest 0.791, XGBoost 0.791 (guessing 0.50). Recall: 99.3–99.4%. Specificity: 12.4%, 14.1% and 15.9% (guessing 8%). Negative predictive value: 64–67% (guessing 8%). Play time (total_duration_hours) is the most important feature for all three models."
 course: Analysis of Customer Data, autumn 2025
-team: "Four students (group 5) · highest grade of all groups. My role: with one teammate I did the methodology and analysis (churn definition, features, models and evaluation)."
+team: "Four students (group 5). My role: with one teammate I did the methodology and analysis (churn definition, features, models and evaluation)."
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]
 models:
   - name: "Guessing"

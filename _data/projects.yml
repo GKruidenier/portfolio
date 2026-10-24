@@ -33,14 +33,14 @@
   nl:
     title: Predicting customer churn in a mobile game
     label: Analysis of Customer Data · groep 5
-    summary: Churn zelf gedefinieerd uit 150.000 gespeelde potjes en voorspeld na de eerste vijf speeldagen. Hoogste cijfer van alle groepen.
+    summary: Churn zelf gedefinieerd uit 150.000 gespeelde potjes en voorspeld na de eerste vijf speeldagen.
     metric: "8 op 10"
     metric_label: keer een churner riskanter ingeschat dan een non-churner
     url: /en/projects/churn-prediction/
   en:
     title: Predicting customer churn in a mobile game
     label: Analysis of Customer Data · group 5
-    summary: Defined churn from 150,000 games played and predicted it after a player's first five days. Highest grade of all groups.
+    summary: Defined churn from 150,000 games played and predicted it after a player's first five days.
     metric: "8 in 10"
     metric_label: times a churner ranked riskier than a non-churner
     url: /en/projects/churn-prediction/
