@@ -35,6 +35,7 @@
     label: Analysis of Customer Data · groep 5
     summary: Churn zelf gedefinieerd uit 150.000 gespeelde potjes en voorspeld na de eerste vijf speeldagen.
     metric: "8 op 10"
+    award: Hoogste cijfer van het cohort
     metric_label: keer een churner riskanter ingeschat dan een non-churner
     url: /en/projects/churn-prediction/
   en:
@@ -42,6 +43,7 @@
     label: Analysis of Customer Data · group 5
     summary: Defined churn from 150,000 games played and predicted it after a player's first five days.
     metric: "8 in 10"
+    award: Highest grade of the cohort
     metric_label: times a churner ranked riskier than a non-churner
     url: /en/projects/churn-prediction/
 

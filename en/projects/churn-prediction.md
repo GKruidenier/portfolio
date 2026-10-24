@@ -14,7 +14,7 @@ abstract: "Using the bare play data of the mobile game Dodge the Mud (for each g
 abstract_image: /assets/img/projects/churn_abstract_resultaten.png
 abstract_alt: "Results table and feature importance chart. ROC-AUC: logistic regression 0.793, Random Forest 0.791, XGBoost 0.791 (guessing 0.50). Recall: 99.3–99.4%. Specificity: 12.4%, 14.1% and 15.9% (guessing 8%). Negative predictive value: 64–67% (guessing 8%). Play time (total_duration_hours) is the most important feature for all three models."
 course: Analysis of Customer Data, autumn 2025
-team: "Four students (group 5) · highest grade of the cohort. My role: with one teammate I did the methodology and analysis (churn definition, features, models and evaluation)."
+team: "Four students (group 5). My role: with one teammate I did the methodology and analysis (churn definition, features, models and evaluation)."
 tools: [Python, pandas, scikit-learn, XGBoost, Feature engineering, Cross-validation]
 models:
   - name: "Guessing"
