@@ -53,9 +53,12 @@ layout: default
   <div class="wrap wrap--narrow">
     <div class="abstract">
       <p class="eyebrow">{{ t.abstract }}</p>
-      <p>{{ page.abstract }}</p>
+      <div class="abstract__body">{{ page.abstract | markdownify }}</div>
       {%- if page.abstract_image %}
       <a class="abstract__figure" href="{{ page.abstract_image | relative_url }}"><img src="{{ page.abstract_image | relative_url }}" alt="{{ page.abstract_alt }}"></a>
+      {%- if page.abstract_image2 %}
+      <a class="abstract__figure abstract__figure--second" href="{{ page.abstract_image2 | relative_url }}"><img src="{{ page.abstract_image2 | relative_url }}" alt="{{ page.abstract_alt2 }}"></a>
+      {%- endif %}
       {%- endif %}
     </div>
   </div>

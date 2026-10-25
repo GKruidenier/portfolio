@@ -54,14 +54,14 @@
   image_en: /assets/img/projects/recommender_abstract_en.svg
   tags: [Surprise, SVD, KNN]
   nl:
-    title: Filmaanbevelingen op basis van 27 miljoen beoordelingen
+    title: Een filmaanbevelingssysteem bouwen op basis van filmbeoordelingen
     label: Analysis of Customer Data · groep 9
     summary: Een aanbevelingssysteem op de MovieLens-data, met k-nearest neighbours (KNN) en matrixfactorisatie met singular value decomposition (SVD) vergeleken en getuned.
     metric: "0,8 ★"
     metric_label: gemiddeld ernaast bij een voorspeld cijfer
     url: /en/projects/recommender-system/
   en:
-    title: Film recommendations from 27 million ratings
+    title: Building a film recommendation system from movie ratings
     label: Analysis of Customer Data · group 9
     summary: A recommender system on the MovieLens data, comparing and tuning k-nearest neighbours (KNN) and matrix factorisation with singular value decomposition (SVD).
     metric: "0.8 ★"
@@ -92,8 +92,8 @@
 - id: citations
   category: master
   year: "2025"
-  image: /assets/img/projects/citaties_abstract.svg
-  image_en: /assets/img/projects/citaties_abstract_en.svg
+  image: /assets/img/projects/citaties_mpl_abstract.png
+  image_en: /assets/img/projects/citaties_mpl_abstract.png
   tags: [NLP, Sentence-BERT, Ridge]
   nl:
     title: Voorspellen hoe vaak een wetenschappelijk artikel wordt geciteerd

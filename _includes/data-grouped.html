@@ -1,0 +1,51 @@
+{%- comment -%}
+Zoals data.html, maar met onder de ruwe rijen een pijl en een tweede tabel (front matter `sample_grouped:`),
+om te laten zien hoe de data eruitziet na het groeperen. Nu alleen gebruikt op de churnpagina.
+Gebruik: {% include data-grouped.html kicker="Data" title="..." text="..." src="/assets/img/projects/x.png" alt="..." %}
+{%- endcomment -%}
+<style>
+  .slide--data-grouped .data-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
+  .slide--data-grouped .sample { padding: 10px 12px; }
+  .slide--data-grouped .sample figcaption { font-size: .68rem; margin-bottom: 4px; }
+  .slide--data-grouped .sample th { font-size: .72rem; padding: 3px 8px; }
+  .slide--data-grouped .sample td { font-size: .8rem; padding: 4px 8px; }
+  .slide--data-grouped .sample__note { font-size: .74rem; margin-top: 6px; }
+  .slide--data-grouped .data-grouped__arrow { text-align: center; margin: 4px 0; font-size: .74rem; color: var(--ink-3); }
+  .slide--data-grouped .data-grid__chart img { max-height: 480px; }
+</style>
+<section class="slide slide--full slide--data slide--data-grouped">
+  <div class="slide__text">
+    <p class="slide__num">{% if include.kicker %}<span class="slide__kicker">{{ include.kicker }}</span>{% endif %}</p>
+    <h2>{{ include.title }}</h2>
+    {%- if include.text %}
+    <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    {%- endif %}
+  </div>
+  <div class="data-grid{% unless include.src %} data-grid--single{% endunless %}">
+    <div>
+      {%- for s in (1..2) %}
+      {%- if forloop.first %}{% assign sm = page.sample %}{% else %}{% assign sm = page.sample_grouped %}{% endif %}
+      {%- unless forloop.first %}
+      <p class="data-grouped__arrow"><span style="font-size:1.2rem; line-height:1;">↓</span> {{ sm.arrow }}</p>
+      {%- endunless %}
+      <figure class="sample">
+        <figcaption>{{ sm.caption }}</figcaption>
+        <div class="sample__scroll">
+          <table>
+            <thead><tr>{% for c in sm.columns %}<th>{{ c }}</th>{% endfor %}</tr></thead>
+            <tbody>
+              {%- for r in sm.rows %}
+              <tr>{% for v in r %}<td{% if v == "–" %} class="is-empty"{% endif %}>{{ v }}</td>{% endfor %}</tr>
+              {%- endfor %}
+            </tbody>
+          </table>
+        </div>
+        {%- if sm.note %}<p class="sample__note">{{ sm.note }}</p>{% endif %}
+      </figure>
+      {%- endfor %}
+    </div>
+    {%- if include.src %}
+    <a class="data-grid__chart" href="{{ include.src | relative_url }}"><img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy"></a>
+    {%- endif %}
+  </div>
+</section>

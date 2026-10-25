@@ -21,7 +21,7 @@
 <rect width="1000" height="770" fill="#ffffff"/>
 
 <!-- Panel A: quarterly RNN -->
-<text x="60" y="34" font-size="18" fill="#1d2230" font-weight="700">Quarterly RNN (comparison)</text>
+<text x="60" y="34" font-size="18" fill="#1d2230" font-weight="700">Quarterly-only RNN (comparison)</text>
 <text x="60" y="56" font-size="14" fill="#6f7686" font-weight="500">averages the three months and combines them with the quarterly figures into one input per quarter</text>
 <g font-size="13" fill="#6f7686" font-weight="600" text-anchor="middle">
 <text x="200" y="84">Q1</text><text x="480" y="84">Q2</text><text x="760" y="84">Q3 (in progress)</text>
@@ -60,7 +60,7 @@
 <line x1="60" y1="370" x2="940" y2="370" stroke="#e4e1d8"/>
 
 <!-- Panel B: mixed-frequency RNNs -->
-<text x="60" y="394" font-size="18" fill="#1f56a8" font-weight="700">My mixed-frequency RNNs</text>
+<text x="60" y="394" font-size="18" fill="#1f56a8" font-weight="700">My monthly + quarterly RNNs</text>
 <text x="60" y="416" font-size="14" fill="#6f7686" font-weight="500">read every month as its own input step, followed by the quarterly figures</text>
 <g font-size="13" fill="#6f7686" font-weight="600" text-anchor="middle">
 <text x="200" y="444">Q1</text><text x="480" y="444">Q2</text><text x="760" y="444">Q3 (in progress)</text>

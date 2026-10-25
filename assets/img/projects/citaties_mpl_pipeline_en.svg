@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 545" width="1180" height="545" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="1180" height="545" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<text x="30" y="40" font-size="14" fill="#6f7686" font-weight="700" text-anchor="start">INPUT PER PAPER</text>
+<text x="215" y="40" font-size="14" fill="#6f7686" font-weight="700" text-anchor="start">PREPROCESSING</text>
+<text x="480" y="40" font-size="14" fill="#6f7686" font-weight="700" text-anchor="start">FEATURES</text>
+<text x="800" y="40" font-size="14" fill="#6f7686" font-weight="700" text-anchor="start">MODEL</text>
+<text x="1030" y="40" font-size="14" fill="#6f7686" font-weight="700" text-anchor="start">OUTPUT</text>
+<rect x="30" y="66" width="140" height="44" rx="22.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="100.0" y="94.0" font-size="16" fill="#4a5163" font-weight="600" text-anchor="middle">Title</text>
+<rect x="215" y="62" width="220" height="52" rx="10" fill="#faf9f6" stroke="#c9c5ba" stroke-width="1.5"/>
+<text x="229" y="85.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Stop words removed</text>
+<text x="229" y="105.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">lemmatised (NLTK)</text>
+<path d="M170,88.0 C191.5,88.0 191.5,88.0 213,88.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M435,88.0 C456.5,88.0 456.5,88.0 478,88.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="480" y="62" width="240" height="52" rx="10" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="494" y="85.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">TF-IDF</text>
+<text x="494" y="105.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">title words</text>
+<rect x="30" y="132" width="140" height="44" rx="22.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="100.0" y="160.0" font-size="16" fill="#4a5163" font-weight="600" text-anchor="middle">Title</text>
+<rect x="215" y="128" width="220" height="52" rx="10" fill="#faf9f6" stroke="#c9c5ba" stroke-width="1.5"/>
+<text x="229" y="151.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Sentence-BERT</text>
+<text x="229" y="171.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">all-MiniLM-L6-v2</text>
+<path d="M170,154.0 C191.5,154.0 191.5,154.0 213,154.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M435,154.0 C456.5,154.0 456.5,154.0 478,154.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="480" y="128" width="240" height="52" rx="10" fill="#efe8fa" stroke="#7b4fc9" stroke-width="1.5"/>
+<text x="494" y="151.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Title embedding</text>
+<text x="494" y="171.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">384 numbers per title</text>
+<rect x="30" y="198" width="140" height="44" rx="22.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="100.0" y="226.0" font-size="16" fill="#4a5163" font-weight="600" text-anchor="middle">Abstract</text>
+<rect x="215" y="194" width="220" height="52" rx="10" fill="#faf9f6" stroke="#c9c5ba" stroke-width="1.5"/>
+<text x="229" y="217.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Stop words removed</text>
+<text x="229" y="237.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">lemmatised (NLTK)</text>
+<path d="M170,220.0 C191.5,220.0 191.5,220.0 213,220.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M435,220.0 C456.5,220.0 456.5,220.0 478,220.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="480" y="194" width="240" height="52" rx="10" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="494" y="217.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">TF-IDF</text>
+<text x="494" y="237.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">abstract words</text>
+<rect x="30" y="264" width="140" height="44" rx="22.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="100.0" y="292.0" font-size="16" fill="#4a5163" font-weight="600" text-anchor="middle">Authors</text>
+<rect x="215" y="260" width="220" height="52" rx="10" fill="#faf9f6" stroke="#c9c5ba" stroke-width="1.5"/>
+<text x="229" y="283.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Split on commas</text>
+<text x="229" y="303.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">one token per full name</text>
+<path d="M170,286.0 C191.5,286.0 191.5,286.0 213,286.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M435,286.0 C456.5,286.0 456.5,286.0 478,286.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="480" y="260" width="240" height="52" rx="10" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="494" y="283.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">TF-IDF</text>
+<text x="494" y="303.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">author names</text>
+<rect x="30" y="330" width="140" height="44" rx="22.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="100.0" y="358.0" font-size="16" fill="#4a5163" font-weight="600" text-anchor="middle">Venue</text>
+<path d="M170,352.0 C324.0,352.0 324.0,352.0 478,352.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="480" y="326" width="240" height="52" rx="10" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="494" y="349.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">TF-IDF</text>
+<text x="494" y="369.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">one token per venue</text>
+<rect x="30" y="396" width="140" height="44" rx="22.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="100.0" y="424.0" font-size="16" fill="#4a5163" font-weight="600" text-anchor="middle">Year</text>
+<rect x="215" y="392" width="220" height="52" rx="10" fill="#faf9f6" stroke="#c9c5ba" stroke-width="1.5"/>
+<text x="229" y="424.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Year → decade</text>
+<path d="M170,418.0 C191.5,418.0 191.5,418.0 213,418.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M435,418.0 C456.5,418.0 456.5,418.0 478,418.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="480" y="392" width="240" height="52" rx="10" fill="#f6e7da" stroke="#c9783d" stroke-width="1.5"/>
+<text x="494" y="415.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Year (standardised)</text>
+<text x="494" y="435.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">+ decade as TF-IDF</text>
+<rect x="30" y="462" width="140" height="44" rx="22.0" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.5"/>
+<text x="100.0" y="490.0" font-size="16" fill="#4a5163" font-weight="600" text-anchor="middle">References</text>
+<rect x="215" y="458" width="220" height="52" rx="10" fill="#faf9f6" stroke="#c9c5ba" stroke-width="1.5"/>
+<text x="229" y="481.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Look up cited papers</text>
+<text x="229" y="501.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">in the training data</text>
+<path d="M170,484.0 C191.5,484.0 191.5,484.0 213,484.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M435,484.0 C456.5,484.0 456.5,484.0 478,484.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="480" y="458" width="240" height="52" rx="10" fill="#f6e7da" stroke="#c9783d" stroke-width="1.5"/>
+<text x="494" y="481.0" font-size="16" fill="#1d2230" font-weight="700" text-anchor="start">Mean citations</text>
+<text x="494" y="501.0" font-size="13.5" fill="#4a5163" font-weight="400" text-anchor="start">of the cited papers</text>
+<rect x="800" y="230" width="190" height="170" rx="12" fill="#fff3e6" stroke="#e8820c" stroke-width="2"/>
+<text x="895" y="270" font-size="18" fill="#1d2230" font-weight="700" text-anchor="middle">Ridge regression</text>
+<text x="895" y="296" font-size="14" fill="#4a5163" font-weight="400" text-anchor="middle">L2 penalty, α = 11</text>
+<text x="895" y="328" font-size="14" fill="#4a5163" font-weight="400" text-anchor="middle">trained on</text>
+<text x="895" y="350" font-size="17" fill="#1d2230" font-weight="700" text-anchor="middle">√ citations</text>
+<text x="895" y="378" font-size="13" fill="#4a5163" font-weight="400" text-anchor="middle">one weight per feature</text>
+<path d="M720,88.0 C759.0,88.0 759.0,315.0 798,315.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M720,154.0 C759.0,154.0 759.0,315.0 798,315.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M720,220.0 C759.0,220.0 759.0,315.0 798,315.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M720,286.0 C759.0,286.0 759.0,315.0 798,315.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M720,352.0 C759.0,352.0 759.0,315.0 798,315.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M720,418.0 C759.0,418.0 759.0,315.0 798,315.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M720,484.0 C759.0,484.0 759.0,315.0 798,315.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="1030" y="275" width="125" height="80" rx="12" fill="#faf9f6" stroke="#c9c5ba" stroke-width="1.5"/>
+<text x="1092" y="307" font-size="15" fill="#1d2230" font-weight="700" text-anchor="middle">(prediction)²</text>
+<text x="1092" y="331" font-size="14" fill="#4a5163" font-weight="400" text-anchor="middle">= citations</text>
+<path d="M990,315.0 C1009.0,315.0 1009.0,315.0 1028,315.0" fill="none" stroke="#6f7686" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="30" y="527" font-size="13.5" fill="#6f7686" font-weight="400" text-anchor="start">All features are placed side by side in one sparse matrix (scikit-learn ColumnTransformer); about 2 million columns, mostly author names and words.</text>
+</svg>

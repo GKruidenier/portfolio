@@ -9,6 +9,7 @@ Opties:
   statement=true  donkere slide zonder afbeelding, voor een conclusie
   big="Top 5"     groot kerngetal boven de kop (voor een resultaat zonder grafiek)
   points="a | b"  opsomming, punten gescheiden door |
+  text met een lege regel erin geeft meerdere alinea's
   kicker="Data"   label naast het nummer (Probleem, Data, Modellen, Methode, Resultaten, Evaluatie)
 {%- endcomment -%}
 <section class="slide{% if include.full %} slide--full{% endif %}{% if include.statement %} slide--statement{% endif %}{% unless include.src %} slide--text{% endunless %}">
@@ -19,7 +20,13 @@ Opties:
     {%- endif %}
     <h2>{{ include.title }}</h2>
     {%- if include.text %}
-    <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    {%- assign paras = include.text | markdownify | remove: "<p>" | split: "</p>" %}
+    {%- for para in paras %}
+    {%- assign para = para | strip %}
+    {%- if para != "" %}
+    <p class="slide__para">{{ para }}</p>
+    {%- endif %}
+    {%- endfor %}
     {%- endif %}
     {%- if include.points %}
     {%- assign pts = include.points | split: "|" %}

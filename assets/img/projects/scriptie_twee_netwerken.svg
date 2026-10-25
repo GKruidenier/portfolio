@@ -44,7 +44,9 @@
 <text x="417.0" y="244" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">K2</text>
 <text x="499.0" y="244" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">K3</text>
 <text x="581.0" y="244" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">K4</text>
-<line x1="626" y1="168.0" x2="654" y2="168.0" stroke="#6f7686" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="292" y="180" width="332" height="52" rx="8" fill="none" stroke="#1f56a8" stroke-width="1.6"/>
+<text x="618" y="175" font-size="11" fill="#1f56a8" font-weight="700" text-anchor="end">invoer</text>
+<path d="M624,206 H638 V168 H654" fill="none" stroke="#6f7686" stroke-width="1.6" marker-end="url(#arr)"/>
 <rect x="660" y="136.0" width="142" height="64" rx="12" fill="#1d2230"/>
 <text x="731.0" y="173.0" font-size="15" fill="#ffffff" font-weight="700" text-anchor="middle">Deep learning</text>
 <text x="731.0" y="218.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">één stap per kwartaal</text>
@@ -79,7 +81,9 @@
 <text x="417.0" y="464" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">K2</text>
 <text x="499.0" y="464" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">K3</text>
 <text x="581.0" y="464" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">K4</text>
-<line x1="626" y1="388.0" x2="654" y2="388.0" stroke="#6f7686" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="292" y="304" width="332" height="148" rx="8" fill="none" stroke="#1f56a8" stroke-width="1.6"/>
+<text x="618" y="299" font-size="11" fill="#1f56a8" font-weight="700" text-anchor="end">invoer</text>
+<line x1="624" y1="388.0" x2="654" y2="388.0" stroke="#6f7686" stroke-width="1.6" marker-end="url(#arr)"/>
 <rect x="660" y="356.0" width="142" height="64" rx="12" fill="#2a6fd6"/>
 <text x="731.0" y="393.0" font-size="15" fill="#ffffff" font-weight="700" text-anchor="middle">Deep learning</text>
 <text x="731.0" y="438.0" font-size="12" fill="#6f7686" font-weight="600" text-anchor="middle">elke maand een stap</text>
