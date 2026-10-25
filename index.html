@@ -3,84 +3,40 @@ layout: default
 lang: nl
 ref: home
 section: home
-description: Portfolio van Giada Kruidenier, data scientist met een biomedische achtergrond. Projecten in machine learning, deep learning, forecasting en klantdata.
+description: "Portfolio van Giada Kruidenier: projecten uit de master Data Science and Society en de bachelor Biomedische Wetenschappen."
 ---
-{%- assign featured = site.data.projects | where: "featured", true | first -%}
-
-<section class="hero">
-  <div class="wrap hero__inner">
-    <div>
-      <p class="available">Op zoek naar een startersfunctie in data science</p>
-      <h1>Hoi, ik ben Giada. Ik maak van data <em>een besluit</em>.</h1>
-      <p class="hero__lead">Data scientist (MSc Data Science and Society, Tilburg University) met een biomedische achtergrond. Ik bouw voorspellende modellen, van tijdreeksen tot deep learning, en ben helder over wanneer een model wél en niet werkt.</p>
-      <div class="btn-row">
-        <a class="btn btn--primary" href="{{ '/master/' | relative_url }}">Bekijk mijn projecten →</a>
-        <a class="btn btn--ghost" href="#contact">Neem contact op</a>
-      </div>
-    </div>
-    {% include avatar.html alt="Foto van Giada Kruidenier" %}
-  </div>
-</section>
-
-
-<section class="section">
+<section class="intro">
   <div class="wrap">
-    <div class="section__head">
-      <div>
-        <p class="eyebrow">Uitgelicht</p>
-        <h2>Masterprojecten</h2>
-        <p>Van een scriptie over economische voorspellingen tot klantdata en beeldherkenning. Per project lees je de vraag, mijn aanpak en wat het opleverde.</p>
-      </div>
-      <a class="btn btn--ghost" href="{{ '/master/' | relative_url }}">Alle masterprojecten</a>
-    </div>
-    <div class="featured">
-      {% include project-card.html project=featured lang="nl" large=true %}
-    </div>
-    {% include project-grid.html category="master" lang="nl" skip_featured=true columns=2 %}
+    <h1 class="intro__name">{{ site.author.name }}</h1>
+    <p class="intro__study">MSc Data Science and Society, Tilburg University</p>
+    <p class="intro__line">Projecten uit mijn master en bachelor, met per project de vraag, de aanpak en de resultaten.</p>
+    <ul class="intro__links" id="contact">
+      <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+      <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+      {%- if site.author.linkedin != "" %}
+      <li><a href="{{ site.author.linkedin }}">LinkedIn</a></li>
+      {%- endif %}
+    </ul>
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap two-col">
-    <div>
-      <p class="eyebrow">Achtergrond</p>
-      <h2>Opleiding</h2>
-      <ol class="timeline">
-        <li>
-          <span class="timeline__when">2024 – 2026</span>
-          <h3>MSc Data Science and Society</h3>
-          <p>Tilburg University · gemiddeld cijfer 8,2. Scriptie over het real-time voorspellen van economische groei met deep learning.</p>
-        </li>
-        <li>
-          <span class="timeline__when">2019 – 2023</span>
-          <h3>BSc Biomedische Wetenschappen</h3>
-          <p>Universiteit Utrecht. Scriptie over combinatietherapieën bij kankerbehandeling. <a href="{{ '/bachelor/' | relative_url }}">Bekijk mijn bachelorwerk</a></p>
-        </li>
-      </ol>
-    </div>
-    <div>
-      <p class="eyebrow">Naast de studie</p>
-      <h2>Persoonlijke projecten</h2>
-      <p>Voor ons familiebedrijf in Japanse lampen heb ik de webshop Oosterslicht gebouwd, van ontwerp en teksten tot productfotografie. Daarnaast werk ik aan nieuwe eigen projecten.</p>
-      <a class="btn btn--ghost" href="{{ '/persoonlijk/' | relative_url }}">Bekijk persoonlijke projecten</a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="contact">
+<section class="group">
   <div class="wrap">
-    <div class="contact">
-      <div>
-        <h2>Zullen we kennismaken?</h2>
-        <p>Ik zoek een startersfunctie waarin analyse leidt tot echte beslissingen. Stuur me gerust een bericht.</p>
-      </div>
-      <div class="btn-row">
-        <a class="btn btn--primary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-        <a class="btn btn--ghost" href="https://github.com/{{ site.author.github }}">GitHub</a>
-        {%- if site.author.linkedin != "" %}
-        <a class="btn btn--ghost" href="{{ site.author.linkedin }}">LinkedIn</a>
-        {%- endif %}
-      </div>
-    </div>
+    <h2 class="group__title">Masterprojecten</h2>
+    {% include project-grid.html category="master" lang="nl" %}
+  </div>
+</section>
+
+<section class="group">
+  <div class="wrap">
+    <h2 class="group__title">Bachelor</h2>
+    {% include project-grid.html category="bachelor" lang="nl" %}
+  </div>
+</section>
+
+<section class="group">
+  <div class="wrap">
+    <h2 class="group__title">Persoonlijk</h2>
+    {% include project-grid.html category="personal" lang="nl" %}
   </div>
 </section>

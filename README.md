@@ -2,7 +2,7 @@
 
 Persoonlijke portfoliowebsite in het Nederlands en Engels, gebouwd met [Jekyll](https://jekyllrb.com/) zodat GitHub Pages hem zonder extra stappen kan publiceren.
 
-Na publicatie staat de site op **https://gkruidenier.github.io/portfolio/** (Nederlands) en **/portfolio/en/** (Engels).
+Na publicatie staat de site op **https://gkruidenier.github.io/portfolio/**. De site is Nederlands; de studieprojecten staan in het Engels onder **/portfolio/en/projects/**.
 
 ## Waar staat wat
 

@@ -6,15 +6,15 @@ layout: default
 {%- assign p = site.data.projects | where: "id", page.project | first -%}
 {%- assign info = p[lang] -%}
 {%- if p.category == "bachelor" -%}{%- assign back_label = t.back_bachelor -%}{%- assign back = "bachelor/" -%}
-{%- elsif p.category == "personal" -%}{%- assign back_label = t.back_personal -%}{%- if lang == "en" -%}{%- assign back = "personal/" -%}{%- else -%}{%- assign back = "persoonlijk/" -%}{%- endif -%}
+{%- elsif p.category == "personal" -%}{%- assign back_label = t.back_personal -%}{%- assign back = "persoonlijk/" -%}
 {%- else -%}{%- assign back_label = t.back_master -%}{%- assign back = "master/" -%}{%- endif -%}
-{%- if lang == "en" -%}{%- assign back = back | prepend: "/en/" -%}{%- else -%}{%- assign back = back | prepend: "/" -%}{%- endif -%}
+{%- assign back = back | prepend: "/" -%}
 
 <article class="project">
   <header class="project-hero">
     <div class="wrap wrap--narrow">
-      <a class="back-link" href="{{ back | relative_url }}">← {{ back_label }}</a>
-      <p class="eyebrow">{{ info.label }} · {{ p.year }}</p>
+      <a class="back-link" href="{{ back | relative_url }}">{{ back_label }}</a>
+      <p class="project-hero__context">{{ info.label | replace: " · ", ", " }}, {{ p.year }}</p>
       {%- if info.award %}
       <p class="award"><span class="award__icon" aria-hidden="true">★</span>{{ info.award }}</p>
       {%- endif %}
@@ -52,7 +52,7 @@ layout: default
   {%- if page.abstract %}
   <div class="wrap wrap--narrow">
     <div class="abstract">
-      <p class="eyebrow">{{ t.abstract }}</p>
+      <h2 class="abstract__title">{{ t.abstract }}</h2>
       <div class="abstract__body">{{ page.abstract | markdownify }}</div>
       {%- if page.abstract_image %}
       <a class="abstract__figure" href="{{ page.abstract_image | relative_url }}"><img src="{{ page.abstract_image | relative_url }}" alt="{{ page.abstract_alt }}"></a>
@@ -77,7 +77,7 @@ layout: default
     {%- assign nxt = group[nidx] -%}
   <nav class="wrap wrap--narrow next-project" aria-label="{{ t.next }}">
     <a href="{{ nxt[lang].url | relative_url }}">
-      <span class="eyebrow">{{ t.next }} →</span>
+      <span class="next-project__label">{{ t.next }}</span>
       <span class="next-project__title">{{ nxt[lang].title }}</span>
     </a>
   </nav>

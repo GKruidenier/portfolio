@@ -1,7 +1,11 @@
 {%- assign items = site.data.projects | where: "category", include.category -%}
-<div class="grid{% if include.columns == 2 %} grid--2{% endif %}">
-  {%- for p in items %}
-  {%- if include.skip_featured and p.featured %}{% continue %}{% endif %}
+{%- assign featured = items | where: "featured", true -%}
+{%- assign rest = items | where_exp: "p", "p.featured != true" -%}
+<div class="items">
+  {%- for p in featured %}
+  {% include project-card.html project=p lang=include.lang %}
+  {%- endfor %}
+  {%- for p in rest %}
   {% include project-card.html project=p lang=include.lang %}
   {%- endfor %}
 </div>

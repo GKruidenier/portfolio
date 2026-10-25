@@ -10,7 +10,7 @@ description: De website van Oosterslicht, een familiebedrijf in handgemaakte Jap
 image: /assets/img/projects/oosterslicht_poster.jpg
 abstract: "De oude site was verouderd en lastig te onderhouden. Ik bouwde een snelle, rustige website die de familie zelf kan bijhouden, en deed ook de teksten, de productfoto's en de vindbaarheid."
 course: Persoonlijk project, 2026
-team: Familiebedrijf · ontwerp en bouw door mij
+team: Familiebedrijf, ontwerp en bouw door mij
 code: https://github.com/GKruidenier/oosterslicht
 tools: [HTML, CSS, JavaScript, PHP, Python, SEO, Productfotografie]
 stats:

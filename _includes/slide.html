@@ -14,7 +14,7 @@ Opties:
 {%- endcomment -%}
 <section class="slide{% if include.full %} slide--full{% endif %}{% if include.statement %} slide--statement{% endif %}{% unless include.src %} slide--text{% endunless %}">
   <div class="slide__text">
-    <p class="slide__num">{% if include.kicker %}<span class="slide__kicker">{{ include.kicker }}</span>{% endif %}</p>
+    {% if include.kicker %}<p class="slide__step">{{ include.kicker | replace: " · ", ": " }}</p>{% endif %}
     {%- if include.big %}
     <p class="slide__big">{{ include.big }}</p>
     {%- endif %}

@@ -15,7 +15,7 @@ Gebruik: {% include data-grouped.html kicker="Data" title="..." text="..." src="
 </style>
 <section class="slide slide--full slide--data slide--data-grouped">
   <div class="slide__text">
-    <p class="slide__num">{% if include.kicker %}<span class="slide__kicker">{{ include.kicker }}</span>{% endif %}</p>
+    {% if include.kicker %}<p class="slide__step">{{ include.kicker | replace: " · ", ": " }}</p>{% endif %}
     <h2>{{ include.title }}</h2>
     {%- if include.text %}
     <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
