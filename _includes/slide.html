@@ -3,7 +3,7 @@ Eén slide op een projectpagina. De nummering gaat vanzelf.
 Gebruik:
   {% include slide.html title="Kop" text="Eén of twee korte zinnen." src="/assets/img/projects/x.png" alt="..." %}
 Opties:
-  src2 / alt2   tweede afbeelding naast de eerste
+  src2 / alt2   tweede afbeelding naast de eerste (stack=true: eronder; side=true: smal plaatje rechts naast een brede grafiek)
   full=true     tekst boven, afbeelding over de hele breedte (voor brede grafieken)
   photo=true    afbeelding vult het vak (foto's)
   statement=true  donkere slide zonder afbeelding, voor een conclusie
@@ -31,7 +31,7 @@ Opties:
     {%- endif %}
   </div>
   {%- if include.src %}
-  <div class="slide__media{% if include.src2 %} slide__media--pair{% endif %}{% if include.photo %} slide__media--photo{% endif %}">
+  <div class="slide__media{% if include.src2 %}{% if include.stack %} slide__media--stack{% elsif include.side %} slide__media--side{% else %} slide__media--pair{% endif %}{% endif %}{% if include.photo %} slide__media--photo{% endif %}">
     <a href="{{ include.src | relative_url }}"><img src="{{ include.src | relative_url }}?v={{ site.time | date: "%s" }}" alt="{{ include.alt }}" loading="lazy"></a>
     {%- if include.src2 %}
     <a href="{{ include.src2 | relative_url }}"><img src="{{ include.src2 | relative_url }}?v={{ site.time | date: "%s" }}" alt="{{ include.alt2 }}" loading="lazy"></a>

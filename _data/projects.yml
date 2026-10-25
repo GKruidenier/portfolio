@@ -7,19 +7,19 @@
   featured: true
   year: "2026"
   image: /assets/img/projects/scriptie_echt_vs_voorspeld.svg
-  image_en: /assets/img/projects/scriptie_echt_vs_voorspeld_en.svg
-  tags: [PyTorch, LSTM/GRU, Time series]
+  image_en: /assets/img/projects/thesis_mpl_actual_vs_nowcast.png
+  tags: [PyTorch, RNN, Time series]
   nl:
     title: "Masterscriptie: economische groei in real time voorspellen"
     label: Masterscriptie · individueel
-    summary: Drie eigen deep-learningarchitecturen op basis van long short-term memory (LSTM) en gated recurrent units (GRU) die maand- en kwartaaldata direct combineren, getoetst tegen een Dynamic Factor Model (DFM).
+    summary: Drie eigen recurrent neural networks (RNN) die maand- en kwartaaldata direct combineren, getoetst tegen een Dynamic Factor Model (DFM).
     metric: "−10%"
     metric_label: voorspelfout t.o.v. een DFM op dezelfde data
     url: /en/projects/master-thesis-gdp-nowcasting/
   en:
     title: "Master's thesis: nowcasting economic growth in real time"
     label: Master's thesis · individual
-    summary: Three custom deep-learning architectures based on long short-term memory (LSTM) and gated recurrent units (GRU) that combine monthly and quarterly data directly, tested against a Dynamic Factor Model (DFM).
+    summary: Three custom recurrent neural networks (RNN) that combine monthly and quarterly data directly, tested against a Dynamic Factor Model (DFM).
     metric: "−10%"
     metric_label: forecast error vs. a DFM on the same data
     url: /en/projects/master-thesis-gdp-nowcasting/
