@@ -71,18 +71,18 @@
 - id: deeplearning
   category: master
   year: "2025"
-  image: /assets/img/projects/deeplearning_abstract.svg
-  image_en: /assets/img/projects/deeplearning_abstract_en.svg
+  image: /assets/img/projects/deeplearning_mpl_abstract.png
+  image_en: /assets/img/projects/deeplearning_mpl_abstract.png
   tags: [TensorFlow/Keras, CNN, Optuna]
   nl:
-    title: Afgeleide bestuurders herkennen met deep learning
+    title: Rijgedrag classificeren met deep learning
     label: Deep Learning · groep 6
     summary: Een eigen convolutional neural network (CNN) dat uit camerabeelden zes toestanden van een bestuurder herkent.
     metric: "95%"
     metric_label: accuracy op de testbeelden
     url: /en/projects/deep-learning-drivers/
   en:
-    title: Detecting distracted drivers with deep learning
+    title: Classifying driver behaviour with deep learning
     label: Deep Learning · group 6
     summary: A custom convolutional neural network (CNN) that recognises six driver states from in-car camera images.
     metric: "95%"

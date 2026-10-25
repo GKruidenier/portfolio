@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 60 960 430" width="960" height="430" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect y="60" width="960" height="430" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f7686"/></marker></defs>
+<text x="30" y="90" font-size="13.5" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.2">INPUT</text>
+<text x="206" y="90" font-size="13.5" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.2">CONVOLUTIONAL LAYERS</text>
+<text x="520" y="90" font-size="13.5" fill="#6f7686" font-weight="700" text-anchor="start" letter-spacing="1.2">DENSE LAYERS</text>
+<text x="840" y="90" font-size="13.5" fill="#6f7686" font-weight="700" text-anchor="middle" letter-spacing="1.2">OUTPUT</text>
+<rect x="30" y="184" width="140" height="106" rx="8" fill="#e8e8e8" stroke="#bdbdbd" stroke-width="1.5"/>
+<circle cx="108" cy="226" r="18" fill="#9a9a9a"/><path d="M72,290 C76,251 140,251 144,290 Z" fill="#9a9a9a"/>
+<path d="M42,279 A36,36 0 0 1 86,249" fill="none" stroke="#6f6f6f" stroke-width="5" stroke-linecap="round"/>
+<text x="100" y="314" font-size="14" fill="#4a5163" font-weight="600" text-anchor="middle" >camera image,</text>
+<text x="100" y="332" font-size="14" fill="#4a5163" font-weight="600" text-anchor="middle" >72 × 128, greyscale</text>
+<line x1="174" y1="240" x2="204" y2="240" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M210,165.0 l10,-10 h16 v150 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="210" y="165.0" width="16" height="150" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="223.0" y="334" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >32</text>
+<rect x="183.0" y="347" width="80.0" height="18" rx="9" fill="#eef3e8" stroke="#6b8f3a" stroke-width="1"/>
+<text x="223.0" y="360" font-size="11.5" fill="#4d6b26" font-weight="600" text-anchor="middle" >batch norm</text>
+<rect x="190.2" y="371" width="65.6" height="18" rx="9" fill="#f1f1f1" stroke="#9a9a9a" stroke-width="1"/>
+<text x="223.0" y="384" font-size="11.5" fill="#555" font-weight="600" text-anchor="middle" >max pool</text>
+<rect x="193.8" y="395" width="58.4" height="18" rx="9" fill="#fbefe6" stroke="#d9822b" stroke-width="1"/>
+<text x="223.0" y="408" font-size="11.5" fill="#9a5414" font-weight="600" text-anchor="middle" >dropout</text>
+<line x1="240" y1="240" x2="286" y2="240" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M290,181.0 l10,-10 h24 v118 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="290" y="181.0" width="24" height="118" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="307.0" y="334" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >64</text>
+<rect x="267.0" y="347" width="80.0" height="18" rx="9" fill="#eef3e8" stroke="#6b8f3a" stroke-width="1"/>
+<text x="307.0" y="360" font-size="11.5" fill="#4d6b26" font-weight="600" text-anchor="middle" >batch norm</text>
+<rect x="277.8" y="371" width="58.4" height="18" rx="9" fill="#fbefe6" stroke="#d9822b" stroke-width="1"/>
+<text x="307.0" y="384" font-size="11.5" fill="#9a5414" font-weight="600" text-anchor="middle" >dropout</text>
+<line x1="328" y1="240" x2="366" y2="240" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M370,196.0 l10,-10 h34 v88 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="370" y="196.0" width="34" height="88" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="392.0" y="334" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >128</text>
+<rect x="352.0" y="347" width="80.0" height="18" rx="9" fill="#eef3e8" stroke="#6b8f3a" stroke-width="1"/>
+<text x="392.0" y="360" font-size="11.5" fill="#4d6b26" font-weight="600" text-anchor="middle" >batch norm</text>
+<rect x="359.2" y="371" width="65.6" height="18" rx="9" fill="#f1f1f1" stroke="#9a9a9a" stroke-width="1"/>
+<text x="392.0" y="384" font-size="11.5" fill="#555" font-weight="600" text-anchor="middle" >max pool</text>
+<rect x="362.8" y="395" width="58.4" height="18" rx="9" fill="#fbefe6" stroke="#d9822b" stroke-width="1"/>
+<text x="392.0" y="408" font-size="11.5" fill="#9a5414" font-weight="600" text-anchor="middle" >dropout</text>
+<line x1="418" y1="240" x2="448" y2="240" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M452,210.0 l10,-10 h46 v60 l-10,10 z" fill="#c9daf6" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="452" y="210.0" width="46" height="60" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="480.0" y="334" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >256</text>
+<rect x="440.0" y="347" width="80.0" height="18" rx="9" fill="#eef3e8" stroke="#6b8f3a" stroke-width="1"/>
+<text x="480.0" y="360" font-size="11.5" fill="#4d6b26" font-weight="600" text-anchor="middle" >batch norm</text>
+<text x="345" y="444" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >filters per convolutional layer (5 × 5 kernels)</text>
+<line x1="512" y1="240" x2="532" y2="240" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="523.8" y="347" width="58.4" height="18" rx="9" fill="#fbefe6" stroke="#d9822b" stroke-width="1"/>
+<text x="553" y="360" font-size="11.5" fill="#9a5414" font-weight="600" text-anchor="middle" >dropout</text>
+<rect x="540" y="180.0" width="22" height="120" rx="5" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="551" y="334" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >60</text>
+<rect x="580" y="195.0" width="22" height="90" rx="5" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.5"/>
+<text x="591" y="334" font-size="16" fill="#1f56a8" font-weight="700" text-anchor="middle" >30</text>
+<rect x="563.8" y="371" width="58.4" height="18" rx="9" fill="#fbefe6" stroke="#d9822b" stroke-width="1"/>
+<text x="593" y="384" font-size="11.5" fill="#9a5414" font-weight="600" text-anchor="middle" >dropout</text>
+<line x1="606" y1="240" x2="626" y2="240" stroke="#6f7686" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="632" y="170" width="18" height="140" rx="5" fill="#1d2230"/>
+<text x="641" y="334" font-size="13.5" fill="#6f7686" font-weight="500" text-anchor="middle" >softmax</text>
+<line x1="652" y1="240" x2="744" y2="140" stroke="#e4e1d8" stroke-width="1.2"/>
+<rect x="750" y="126" width="180" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="760" y="146" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Safe</text>
+<line x1="652" y1="240" x2="744" y2="180" stroke="#e4e1d8" stroke-width="1.2"/>
+<rect x="750" y="166" width="180" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="760" y="186" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Dangerous</text>
+<line x1="652" y1="240" x2="744" y2="220" stroke="#e4e1d8" stroke-width="1.2"/>
+<rect x="750" y="206" width="180" height="28" rx="6" fill="#e7effb" stroke="#2a6fd6" stroke-width="1.2"/>
+<rect x="750" y="206" width="132" height="28" rx="6" fill="#2a6fd6"/>
+<text x="760" y="226" font-size="15" fill="#ffffff" font-weight="700" text-anchor="start" >Distracted</text>
+<line x1="652" y1="240" x2="744" y2="260" stroke="#e4e1d8" stroke-width="1.2"/>
+<rect x="750" y="246" width="180" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="760" y="266" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Drinking</text>
+<line x1="652" y1="240" x2="744" y2="300" stroke="#e4e1d8" stroke-width="1.2"/>
+<rect x="750" y="286" width="180" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="760" y="306" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Sleepy</text>
+<line x1="652" y1="240" x2="744" y2="340" stroke="#e4e1d8" stroke-width="1.2"/>
+<rect x="750" y="326" width="180" height="28" rx="6" fill="#faf9f6" stroke="#e4e1d8" stroke-width="1.2"/>
+<text x="760" y="346" font-size="15" fill="#4a5163" font-weight="500" text-anchor="start" >Yawning</text>
+<text x="30" y="476" font-size="14" fill="#6f7686" font-weight="500" text-anchor="start" >Dropout 0.25 after the convolutional blocks and 0.3 before the output · Adam, learning rate 0.00032, batch size 64</text>
+</svg>
