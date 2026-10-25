@@ -145,15 +145,16 @@
 
 - id: jobscout
   category: personal
-  status: coming-soon
   year: "2026"
-  image: ""
-  tags: [Python, AI]
+  image: /assets/img/projects/jobscout_poster.png
+  tags: [Python, LangGraph, AI-agent]
   nl:
-    title: jobscout-ai
-    label: Persoonlijk project
-    summary: Een nieuw project waar ik nu aan werk. Binnenkort lees je hier meer.
+    title: "jobscout-ai: een AI-agent die vacatures zoekt"
+    label: Persoonlijk project · in ontwikkeling
+    summary: Je maakt een eigen profiel met een chat, en de app zoekt vacatures die bij jou passen en leert van je feedback.
+    url: /projecten/jobscout/
   en:
-    title: jobscout-ai
-    label: Personal project
-    summary: A new project I am working on right now. More about it here soon.
+    title: "jobscout-ai: an AI agent that finds job openings"
+    label: Personal project · in progress
+    summary: You build your own profile in a chat, and the app looks for openings that fit you and learns from your feedback.
+    url: /projecten/jobscout/
