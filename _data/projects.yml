@@ -113,8 +113,8 @@
 - id: bachelor-thesis
   category: bachelor
   year: "2023"
-  image: /assets/img/projects/bachelor_abstract.svg
-  image_en: /assets/img/projects/bachelor_abstract_en.svg
+  image: /assets/img/projects/bachelor_abstract_v2.svg
+  image_en: /assets/img/projects/bachelor_abstract_en_v2.svg
   tags: [Literature review, Cancer metabolism]
   nl:
     title: "Bachelorscriptie: combinatietherapieën met glutaminemetabolismeremmers"

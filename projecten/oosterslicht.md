@@ -12,7 +12,7 @@ abstract: "De oude site was verouderd en lastig te onderhouden. Ik bouwde een sn
 course: Persoonlijk project, 2026
 team: Familiebedrijf, ontwerp en bouw door mij
 code: https://github.com/GKruidenier/oosterslicht
-tools: [HTML, CSS, JavaScript, PHP, Python, SEO, Productfotografie]
+tools: [HTML, CSS, JavaScript, PHP, Python, SEO, Productfotografie, AI-codeertools]
 stats:
   - value: "16"
     label: "pagina's, van homepagina tot bestelformulier"
@@ -31,6 +31,7 @@ stats:
   <li><strong>Bestellen</strong>Formulier om een lamp op maat aan te vragen.</li>
   <li><strong>Vindbaar</strong>Eigen titels, beschrijvingen en doorverwijzingen per pagina.</li>
   <li><strong>Eigen script</strong>Python-tool die alle teksten via Excel bijwerkt en controleert.</li>
+  <li><strong>Werkwijze</strong>Bij het programmeren gebruikte ik AI-codeertools (agentic coding). Het ontwerp, de teksten, de foto's en de keuzes deed ik zelf, verspreid over een aantal weken.</li>
 </ul>
 
 <div class="role" markdown="1">

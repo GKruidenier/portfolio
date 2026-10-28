@@ -436,11 +436,8 @@ p { margin: 0 0 1em; }
 .routes { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; counter-reset: route; }
 .prose .routes li { margin: 0; padding: 12px 14px 12px 46px; position: relative; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: .97rem; }
 .routes__item::before { counter-increment: route; content: counter(route); position: absolute; left: 12px; top: 12px; width: 24px; height: 24px; border-radius: 50%; color: #fff; font-size: .8rem; font-weight: 700; display: grid; place-items: center; }
-.routes__item--pink::before { background: #d6588a; }
-.routes__item--green::before { background: #3a9a5b; }
-.routes__item--purple::before { background: #7b5cc4; }
-.routes__item--grey::before { background: #8a8f9c; }
-.routes__item--blue::before { background: #2a6fd6; }
+/* Zelfde oranje als de omwegen in de figuur erboven. */
+.routes__item::before { background: #e07b1a; }
 .partners { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .partner { padding: 18px 20px; border-radius: var(--radius); background: var(--bg); border: 1px solid var(--line); border-top-width: 4px; }
 .partner--red { border-top-color: #c0392b; }
@@ -519,8 +516,7 @@ p { margin: 0 0 1em; }
   .prose .routes--grid li, .prose .routes--grid li:nth-child(4) { grid-column: auto; }
 }
 @media (max-width: 600px) { .prose .routes--grid { grid-template-columns: 1fr; } }
-.therapy__pane--blue { grid-template-columns: 1fr; }
-.therapy__pane--blue .therapy__text { max-width: 46em; }
+.chapter__figure--cell { max-width: 860px; }
 
 /* ---------- Onderscheiding (bijv. hoogste cijfer) ---------- */
 .award { display: inline-flex; align-items: center; gap: 8px; margin: 2px 0 14px; padding: 6px 14px 6px 10px; border-radius: 999px; background: #fbf1e2; border: 1px solid #ecd3ad; color: #8a531a; font-weight: 600; font-size: .95rem; line-height: 1.2; }

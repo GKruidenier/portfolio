@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" width="720" height="470" role="img" aria-label="Two RNN set-ups over three quarters. The quarterly-only RNN gets one input step per quarter, with the monthly figures averaged, and can only nowcast once a quarter is complete. My monthly + quarterly RNNs get one step per month plus the quarterly figures, pass their memory from step to step, and make a nowcast after every month, also during the quarter that is still running." font-family="'Public Sans', 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+<rect width="720" height="470" fill="#ffffff"/>
+<defs><marker id="a-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b525c"/></marker><marker id="a-org" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e07b1a"/></marker><marker id="a-grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9aa0a8"/></marker></defs>
+<text x="48" y="40" font-size="16" fill="#222222" font-weight="700" text-anchor="start">Quarterly-only RNN (comparison)</text>
+<text x="48" y="60" font-size="13" fill="#5f6670" font-weight="400" text-anchor="start">one input step per quarter: the three months averaged, plus the quarterly figures</text>
+<rect x="58" y="92" width="178" height="40" rx="7" fill="#f4f5f7" stroke="#9aa0a8" stroke-width="1.2"/>
+<rect x="64" y="98" width="80.0" height="28" rx="5" fill="#1f77b4"/>
+<rect x="150.0" y="98" width="80.0" height="28" rx="5" fill="#e07b1a"/>
+<text x="104.0" y="117" font-size="12" fill="#ffffff" font-weight="700" text-anchor="middle">avg</text>
+<circle cx="226" cy="154" r="6.5" fill="#222222"/>
+<rect x="270" y="92" width="178" height="40" rx="7" fill="#f4f5f7" stroke="#9aa0a8" stroke-width="1.2"/>
+<rect x="276" y="98" width="80.0" height="28" rx="5" fill="#1f77b4"/>
+<rect x="362.0" y="98" width="80.0" height="28" rx="5" fill="#e07b1a"/>
+<text x="316.0" y="117" font-size="12" fill="#ffffff" font-weight="700" text-anchor="middle">avg</text>
+<line x1="238" y1="112" x2="267" y2="112" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<circle cx="438" cy="154" r="6.5" fill="#222222"/>
+<rect x="482" y="92" width="178" height="40" rx="7" fill="#f4f5f7" stroke="#9aa0a8" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="488" y="98" width="80.0" height="28" rx="5" fill="#ffffff" stroke="#1f77b4" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="574.0" y="98" width="80.0" height="28" rx="5" fill="#ffffff" stroke="#e07b1a" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="528.0" y="117" font-size="12" fill="#175a89" font-weight="700" text-anchor="middle">avg</text>
+<line x1="450" y1="112" x2="479" y2="112" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<text x="48" y="216" font-size="16" fill="#175a89" font-weight="700" text-anchor="start">My monthly + quarterly RNNs</text>
+<text x="48" y="236" font-size="13" fill="#5f6670" font-weight="400" text-anchor="start">one input step per month, then the quarterly figures; a nowcast after every month</text>
+<rect x="56.0" y="268" width="35.0" height="40" rx="5" fill="#1f77b4"/>
+<circle cx="73.5" cy="330" r="6.5" fill="#222222"/>
+<rect x="109.0" y="268" width="35.0" height="40" rx="5" fill="#1f77b4"/>
+<line x1="93.0" y1="288" x2="106.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<circle cx="126.5" cy="330" r="6.5" fill="#222222"/>
+<rect x="162.0" y="268" width="35.0" height="40" rx="5" fill="#1f77b4"/>
+<line x1="146.0" y1="288" x2="159.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<circle cx="179.5" cy="330" r="6.5" fill="#222222"/>
+<rect x="215.0" y="268" width="35.0" height="40" rx="5" fill="#e07b1a"/>
+<line x1="199.0" y1="288" x2="212.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<rect x="268.0" y="268" width="35.0" height="40" rx="5" fill="#1f77b4"/>
+<line x1="252.0" y1="288" x2="265.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<circle cx="285.5" cy="330" r="6.5" fill="#222222"/>
+<rect x="321.0" y="268" width="35.0" height="40" rx="5" fill="#1f77b4"/>
+<line x1="305.0" y1="288" x2="318.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<circle cx="338.5" cy="330" r="6.5" fill="#222222"/>
+<rect x="374.0" y="268" width="35.0" height="40" rx="5" fill="#1f77b4"/>
+<line x1="358.0" y1="288" x2="371.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<circle cx="391.5" cy="330" r="6.5" fill="#222222"/>
+<rect x="427.0" y="268" width="35.0" height="40" rx="5" fill="#e07b1a"/>
+<line x1="411.0" y1="288" x2="424.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<rect x="480.0" y="268" width="35.0" height="40" rx="5" fill="#1f77b4"/>
+<line x1="464.0" y1="288" x2="477.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<circle cx="497.5" cy="330" r="6.5" fill="#222222"/>
+<rect x="533.0" y="268" width="35.0" height="40" rx="5" fill="#1f77b4"/>
+<line x1="517.0" y1="288" x2="530.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<circle cx="550.5" cy="330" r="6.5" fill="#222222"/>
+<rect x="586.0" y="268" width="35.0" height="40" rx="5" fill="#ffffff" stroke="#1f77b4" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="570.0" y1="288" x2="583.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<rect x="639.0" y="268" width="35.0" height="40" rx="5" fill="#ffffff" stroke="#e07b1a" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="623.0" y1="288" x2="636.0" y2="288" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<line x1="48" y1="372" x2="684" y2="372" stroke="#9aa0a8" stroke-width="1.5"/>
+<line x1="48" y1="366" x2="48" y2="378" stroke="#9aa0a8"/>
+<text x="154.0" y="396" font-size="13" fill="#4b525c" font-weight="600" text-anchor="middle">Q1</text>
+<line x1="260" y1="366" x2="260" y2="378" stroke="#9aa0a8"/>
+<text x="366.0" y="396" font-size="13" fill="#4b525c" font-weight="600" text-anchor="middle">Q2</text>
+<line x1="472" y1="366" x2="472" y2="378" stroke="#9aa0a8"/>
+<text x="578.0" y="396" font-size="13" fill="#4b525c" font-weight="600" text-anchor="middle">Q3 (in progress)</text>
+<line x1="684" y1="366" x2="684" y2="378" stroke="#9aa0a8"/>
+<line x1="580.0" y1="72" x2="580.0" y2="372" stroke="#222222" stroke-width="1.4" stroke-dasharray="3 4"/>
+<text x="586.0" y="84" font-size="13" fill="#222222" font-weight="700" text-anchor="start">now</text>
+<text x="588.0" y="154" font-size="13" fill="#5f6670" font-weight="400" text-anchor="start">no nowcast until</text>
+<text x="588.0" y="170" font-size="13" fill="#5f6670" font-weight="400" text-anchor="start">Q3 is complete</text>
+<rect x="48" y="426" width="14" height="14" rx="5" fill="#1f77b4"/>
+<text x="70" y="438" font-size="13" fill="#4b525c" font-weight="400" text-anchor="start">monthly figure</text>
+<rect x="195.39999999999998" y="426" width="14" height="14" rx="5" fill="#e07b1a"/>
+<text x="217.39999999999998" y="438" font-size="13" fill="#4b525c" font-weight="400" text-anchor="start">quarterly figures</text>
+<line x1="364.09999999999997" y1="433" x2="390.09999999999997" y2="433" stroke="#4b525c" stroke-width="1.6" marker-end="url(#a-ink)"/>
+<text x="398.09999999999997" y="438" font-size="13" fill="#4b525c" font-weight="400" text-anchor="start">memory passed to the next step</text>
+<circle cx="644.0999999999999" cy="433" r="6.5" fill="#222222"/>
+<text x="657.0999999999999" y="438" font-size="13" fill="#4b525c" font-weight="400" text-anchor="start">nowcast</text>
+<text x="48" y="460" font-size="13" fill="#5f6670" font-weight="400" text-anchor="start">Dashed: not published yet.</text>
+</svg>
