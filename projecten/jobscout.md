@@ -15,7 +15,7 @@ tools: [Python, LangGraph, FastAPI, Next.js, Large Language Models (LLM)]
 ---
 
 {% include slide.html
-  title="Een eigen profiel, met een chat"
+  title="Maak een profiel met jouw voorkeuren"
   text="Een chatbot vraagt naar je opleiding, je ervaring, wat voor werk je zoekt en wat je belangrijk vindt. Rechts groeit je profiel mee, en daarna verbeteren jij en de AI het samen."
   src="/assets/img/projects/jobscout_gesprek.png"
   alt="Het begingesprek: links de chat met keuzeknoppen om te kiezen wat je belangrijk vindt, rechts het profiel dat zich vult met de antwoorden"
